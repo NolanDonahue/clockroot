@@ -274,21 +274,21 @@
         </h2>
       </ion-card-header>
       <ion-card-content>
-        <h4>{{"SpecificExtra.Cogwheel Corvids.BotInteractions.Overview" | translate }}</h4>
-        <ol>
-          <li
-            class="rule-message"
-            *ngFor="let message of bot.botRules(translateService)"
-          >
-            <para [bot]="bot" [metadata]="message"></para>
-          </li>
-        </ol>
         <h4>{{"SpecificExtra.Cogwheel Corvids.Plot-Tokens.Overview" | translate }}
         </h4>
                 <ol>
           <li
             class="rule-message"
             *ngFor="let message of bot.plotRules(translateService)"
+          >
+            <para [bot]="bot" [metadata]="message"></para>
+          </li>
+        </ol>
+        <h4>{{"SpecificExtra.Cogwheel Corvids.BotInteractions.Overview" | translate }}</h4>
+        <ol>
+          <li
+            class="rule-message"
+            *ngFor="let message of bot.botRules(translateService)"
           >
             <para [bot]="bot" [metadata]="message"></para>
           </li>

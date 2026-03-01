@@ -88,23 +88,35 @@ export class CorvidBot extends Bot {
     const suit = this.customData.currentSuit;
     const difficulty = (this.difficulty === "Easy" ? 1 : this.difficulty === "Normal" ? 2 : this.difficulty === "Challenging" ? 3 : 3);
 
-    return [
+    const base = [
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RevealOrder`)),
       this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Cogwheel Corvids.CraftOrder`)),
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RecruitOrder`,{difficulty, suit })),
       this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Cogwheel Corvids.Flip`))
     ];
+    if (this.rules.some(rules=>rules.traitName === "Vendetta" && rules.isActive)) {
+      base.push(this.createMetaData('text','',translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipVendetta`)));
+    }
+    if (this.rules.some(rules=>rules.traitName === "Gamble" && rules.isActive)) {
+      base.push(this.createMetaData('score',1,translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`)));
+    }    
+    return base;
   }
 
   public daylight(translate: TranslateService) {
     const suit = this.customData.currentSuit;
-
-    return [
+    const base = [
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Battle`,{ suit })),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Move`,{ suit })),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Plot`,{ suit })),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotThickens`)),
     ]
+    
+    if (this.rules.some(rules=>rules.traitName === "Gamble" && rules.isActive)) {
+      base.push(this.createMetaData('text','',translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`)));
+    } 
+    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotThickens`)),)
+    
+    return base
   }
 
   public evening(translate: TranslateService) {
