@@ -92,7 +92,7 @@ export class DuchyBot extends Bot {
   public birdsong(translate: TranslateService) {
     const citadelUsedLength = this.customData.citadels.filter(m => m ===false).length;
     const moleRevealed = (citadelUsedLength === 3 ? 4 : citadelUsedLength) + (this.customData.ministers.find(m => m.id === "foremole").swayed ? 1 : 0)
-    const moleDifficulty = (this.difficulty === "Easy" ? 1 : this.difficulty === "Normal" ? 2 : this.difficulty === "Challenging" ? 3 : 4);
+    const moleDifficulty = (this.difficulty === "Easy" ? 1 : this.difficulty === "Normal" ? 2 : this.difficulty === "Challenging" ? 3 : 3);
     const moleRecruit = moleRevealed + moleDifficulty;
     return [
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Drillbit Duchy.RevealOrder`)),
@@ -111,12 +111,21 @@ export class DuchyBot extends Bot {
     const pointsBaron = (this.customData.ministers.find(m=>m.id === "baron").swayed) ? this.customData.markets.filter(m => m === false).length : 0
     const pointsDuchess = (this.customData.ministers.find(m=>m.id === "duchess").swayed && this.customData.tunnels.filter(m => m === true).length === 0) ? 2 : 0
     const ministerPoints = pointsEarl + pointsBaron + pointsDuchess
+    const checkOverwhelm = this.rules.some(rules=>rules.traitName === "Overwhelm" && rules.isActive)
+    const checkInvader = this.rules.some(rules=>rules.traitName === "Invaders" && rules.isActive)
+    const tunnelValue = checkOverwhelm ? 3 : 4
 
     return [
       this.createMetaData('text', '', 
-        translate.instant(`SpecificDaylight.Drillbit Duchy.Dig` + isBirdOrder, { suit }) + 
-        (hasTunnelSupply ? ' ' + translate.instant(`SpecificDaylight.Drillbit Duchy.DigNoTunnel`) : '')
-      ),
+        translate.instant(`SpecificDaylight.Drillbit Duchy.Dig`, { suit, tunnelValue }) + 
+        (checkOverwhelm? translate.instant(`SpecificDaylight.Drillbit Duchy.DigOverwhelm`):'') + 
+        (checkInvader? translate.instant(`SpecificDaylight.Drillbit Duchy.DigInvaders`, {suit}) : 
+          (isBirdOrder ? (translate.instant(`SpecificDaylight.Drillbit Duchy.DigBird`,{suit})) :
+            (translate.instant(`SpecificDaylight.Drillbit Duchy.DigTie`, {suit}))
+          )
+        ) +
+        (hasTunnelSupply ? ' ' + translate.instant(`SpecificDaylight.Drillbit Duchy.DigNoTunnel`, {suit}) : '')
+        ),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Drillbit Duchy.` + (isCaptainSwayed ? `BattleCaptain` : `Battle`), { suit })),
       this.createMetaData('score', 1, translate.instant(`SpecificDaylight.Drillbit Duchy.Build`)),
       this.createMetaData('score', ministerPoints, translate.instant(`SpecificDaylight.Drillbit Duchy.Ministers`, {ministerPoints}))
