@@ -95,15 +95,15 @@ export class RiverfolkBot extends Bot {
   public daylight(translate: TranslateService) {
     const suit = this.customData.currentSuit;
     const riverDifficulty = (this.difficulty === "Easy" ? 0 : this.difficulty === "Normal" ? 1 : this.difficulty === "Challenging" ? 2 : 2);
-    const daylightActions = [
+    const checkBird = suit === "bird" ? true : false;
+    const base = [
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.BuildAndGarrison`, {riverDifficulty, suit})),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.RecruitOther`, {suit})),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.RecruitBird`)),
-      this.createMetaData('score', 1, translate.instant(`SpecificDaylight.Riverfolk Robots.Organize`))
     ]
-    this.customData.protectionismShield ? daylightActions.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.BattleShield`))) : NEVER,
-    this.customData.protectionismSword ? daylightActions.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.BattleSword`,{suit}))) : NEVER
-    return daylightActions;
+    base.push( checkBird? this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.RecruitOther`, {suit})) : this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.RecruitBird`)))
+    base.push(this.createMetaData('score', 1, translate.instant(`SpecificDaylight.Riverfolk Robots.Organize`)))
+    this.customData.protectionismShield ? base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.BattleShield`))) : NEVER,
+    this.customData.protectionismSword ? base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Riverfolk Robots.BattleSword`,{suit}))) : NEVER
+    return base;
   }
 
   public evening(translate: TranslateService) {
@@ -127,14 +127,15 @@ export class RiverfolkBot extends Bot {
   }
 
   public services(translate: TranslateService) {
-  return [
+    const base = [
     this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.servicesBirdsong`)),
-    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.servicesCost`)),
-    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.servicesVictoryPoints`)),
-    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceCard`)),
-    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceBoat`)),
-    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceMerc`))
+    this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.servicesCost`) +
+    translate.instant(`SpecificExtra.Riverfolk Robots.servicesVictoryPoints`)),
   ];
+  base.push(this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceBoat`)))
+  base.push(this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceCard`)))
+  base.push(this.createMetaData('text','',translate.instant(`SpecificExtra.Riverfolk Robots.serviceMerc`)))
+  return base
 }
   public tradePost(translate: TranslateService) {
   return [

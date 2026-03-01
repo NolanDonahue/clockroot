@@ -99,14 +99,17 @@ export class LizardBot extends Bot {
   public daylight(translate: TranslateService) {
     const suit = this.customData.currentSuit;
     const difficulty = (this.difficulty === "Easy" ? 3 : this.difficulty === "Normal" ? 4 : this.difficulty === "Challenging" ? 5 : 5);
+    const checkBird = suit==="bird";
+    const base = []
 
-    return [
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {suit, difficulty})),
-    ];
+    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {suit, difficulty}) + 
+  (checkBird ? translate.instant(`SpecificDaylight.Logical Lizards.RitualsBird`,{suit}) : translate.instant(`SpecificDaylight.Logical Lizards.RitualsOther`,{suit}))))
+    
+    return base
   }
 
   public evening(translate: TranslateService) {
-    const eveningActions = [
+    const base = [
         this.createMetaData('score', 1, translate.instant(`SpecificEvening.Logical Lizards.Score`)),
         this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.DiscardLostSouls`)),
         this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.ReturnRevealedCards`)),
@@ -114,12 +117,21 @@ export class LizardBot extends Bot {
     ]
 
     if (this.difficulty === 'Nightmare') {
-      eveningActions.push(
+      base.push(
         this.createMetaData('score', 1, translate.instant('SpecificEvening.Electric Eyrie (DC).NightmareScore'))
       );
     }
 
-    return eveningActions;
+    base.push(
+      (
+        
+     this.createMetaData('text','',
+      (this.rules.some(rules=>rules.traitName==="Erratic" && rules.isActive) ?
+      translate.instant(`SpecificEvening.Logical Lizards.ErraticReminder`) : ''))
+      )
+    )
+
+    return base;
   
   }
 

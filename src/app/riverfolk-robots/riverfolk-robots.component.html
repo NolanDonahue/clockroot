@@ -139,7 +139,7 @@
           </div>
         </div>
         <br>
-        <h1 style="text-align: center; font-weight: 700;">Protectionism</h1>
+        <h1 style="text-align: center; font-weight: 700;">{{"Sections.Protectionism" | translate}}</h1>
 <div class="protectionism-column">
   <div
     class="protectionism-row"
@@ -245,7 +245,7 @@
             <para [bot]="bot" [metadata]="message"></para>
           </li>
         </ol>
-        <h2>Services</h2>
+        <h2>{{ "Sections.Services" | translate }}</h2>
         <ol>
           <li class="rule-message" *ngFor="let message of bot.services(translateService)">
             <para [bot]="bot" [metadata]="message"></para>

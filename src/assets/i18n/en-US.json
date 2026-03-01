@@ -85,7 +85,9 @@
     "BotRules": "Corvid Bot Specific Rules",
     "RulesLizard": "Lizard Rules",
     "RulesRiver": "Riverfolk Rules",
-    "Hoard": "The Hoard"
+    "Hoard": "The Hoard",
+    "Protectionism": "Protectionism",
+    "Services": "Services"
   },
   "SpecificSetup": {
     "Electric Eyrie": {
@@ -334,7 +336,7 @@
     "RuleRobotRevenge": "Robot Revenge",
     "TextRobotRevenge": "Whenever any Lizard warriors are removed outside your turn, place one of them in your Acolytes box.",
     "RuleFanatics": "Fanatics",
-    "TextFanatics": "Whenever you **Convert**, battle in that clearing after converting the warrior. In this battle deal an extra hit. * **Player Tie:** Target player with most defenseless buildings, then most points.*.",
+    "TextFanatics": "Whenever you **Convert**, battle in that clearing after converting the warrior. In this battle deal an extra hit. *Player Tie: Target player with most defenseless buildings, then most points.*.",
     "RuleMartyrs": "Martyrs", 
     "TextMartyrs": "Whenever you perform a bird ritual, also place a warrior from your supply into your Acolytes box.",
     "RuleErratic": "Erratic",
@@ -420,7 +422,7 @@
       "Conspiracy": "Perform Conspiracies in **card:{{suit}}** clearings. You will perform the conspiracy shown if able, then remove an acolyte if you did perform it, and continue until you are out of acolytes or cannot conspire."
     },
     "Riverfolk Robots": {
-      "StockMarket": "Draw two cards and add them to the Market's right side. Do not draw a card if the Market would exceed 5 cards.",
+      "StockMarket": "Draw two cards and add them to the Market's right side. Do not draw a card once the Market has reached 5 cards.",
       "CraftOrder": "Craft the first card added to the Market that shows an available item for **vp:1** and then discard it.",
       "SetOrder": "Set order to be the rightmost Market Card."
     },
@@ -535,13 +537,15 @@
       "Ministers": "Take the actions of all your swayed ministers from top to bottom. (Your Lords presently give **{{ministerPoints}}** VP)"
     },
     "Logical Lizards": {
-      "Rituals": "**Rituals**: Reveal the top {{difficulty}} cards from your Lost Souls, one at a time, and perform a ritual for each revealed suit.<br>**card:bird** revealed: Take a Lizard warrior from the clearing with the most Lizard warriors, and place it in the Acolytes box. **Put this card in the DISCARD pile, NOT the Lost Souls pile.**<br>**Other Suit** revealed: Place a warrior in the suited clearing. Then, if you rule there, place a matching garden there. (Clearing Tie: Place warrior in clearing with any open building slots, then most enemy buildings.)"
+      "Rituals": "**Rituals**: Reveal the top {{difficulty}} cards from your Lost Souls, one at a time, and perform a ritual for each revealed suit.",
+      "RitualsBird":"<br>**card:bird**: Take a Lizard warrior from the clearing with the most Lizard warriors, and place it in the Acolytes box. **Put this card in the DISCARD pile, NOT the Lost Souls pile.**",
+      "RitualsOther":"<br>**card:{{suit}}**: Place a warrior in a **card:{{suit}}** clearing. Then, if you rule there, place a matching garden there. (Clearing Tie: Place warrior in clearing with any open building slots, then most enemy buildings.)"
     },
     "Riverfolk Robots": {
-      "BuildAndGarrison": "**Build and Garrison**: Place a trade post and {{riverDifficulty}} warriors in a **card:{{suit}}** clearing with no trade post. (Clearing Tie: Clearing with pieces of player who has the most warriors in payments.)",
-      "RecruitOther": "**Recruit** one warrior in each **card:{{suit}}** clearing. (Not Enough Warriors: Place warriors on clearings with the highest priority.)",
-      "RecruitBird": "**Recruit** one warrior in each clearing on the river. (Not Enough Warriors: Place warriors on clearings with the highest priority.)",
-      "Organize": "Check for Protectionism: If you have either the shield or swords Score **vp:1** and place two warriors in a clearing that has Riverfolk pieces and the most enemy pieces.",
+      "BuildAndGarrison": "**Build and Garrison**: Place a trade post and {{riverDifficulty}} warriors in a **card:{{suit}}** clearing with no trade post. <br>*(Clearing Tie: Clearing with pieces of player who has the most warriors in payments.)*",
+      "RecruitOther": "**Recruit** one warrior in each **card:{{suit}}** clearing. <br>*(Not Enough Warriors: Place warriors on clearings with the highest priority.)*",
+      "RecruitBird": "**Recruit** one warrior in each clearing on the river. <br>*(Not Enough Warriors: Place warriors on clearings with the highest priority.)*",
+      "Organize": "**Check for Protectionism**: If you have either the shield or swords Score **vp:1** and place two warriors in a clearing that has Riverfolk pieces and the most enemy pieces.",
       "BattleShield": "Battle in each clearing. (Defender Tie: Player who has the fewest warriors in payments.)",
       "BattleSword": "Battle in each **card:{{suit}}** clearing. (Defender Tie: Player who has the fewest warriors in payments.)"
     },
@@ -611,16 +615,17 @@
       "Discard": "Discard the order card."
     },
     "Logical Lizards": {
-      "Score": "Score **vp:1** worth the rightmost empty garden space.",
-      "DiscardLostSouls": "Discard Lost Souls.",
-      "ReturnRevealedCards": "Return revealed cards to the top of your Lost Souls, preserving their previous order.",
-      "Craft": "**Craft** the top card of the deck for **vp:1** if it shows an available item. Add it to your Lost Souls (not the discard.)"
+      "Score": "**Score** **vp:1** worth the rightmost empty garden space.",
+      "DiscardLostSouls": "**Discard** Lost Souls.",
+      "ReturnRevealedCards": "**Return** revealed cards to the top of your Lost Souls, preserving their previous order.",
+      "Craft": "**Craft** the top card of the deck for **vp:1** if it shows an available item. Add it to your Lost Souls (not the discard.)",
+      "ErraticReminder": "*Erratic: Draw a card at the end of the turn.*"
     },
     "Riverfolk Robots": {
-      "Score": "Score **vp:1** per warrior of the player with the most warriors in Payments, then remove those warriors from Payments.",
-      "Racketeering": "Protectionism: From each clearing, take all but two Riverfolk warriors and place them in Payments.",
-      "Discard": "Discard the leftmost card from the Market.",
-      "DiscardShield":"Protectionism (Shield Only): Discard the leftmost card from the market again."
+      "Score": "**Score** **vp:1** per warrior of the player with the most warriors in Payments, then remove those warriors from Payments.",
+      "Racketeering": "**Protectionism**: From each clearing, take all but two Riverfolk warriors and place them in Payments.",
+      "Discard": "**Discard** the leftmost card from the Market.",
+      "DiscardShield":"**Protectionism (Shield Only)**: Discard the leftmost card from the market again."
     },
     "Looting Legion": {
       "Incite":"**Incite**: Place a mob in a **card:{{suit}}** clearing adjacent to a mob. If you can't, place a mob in an ordered clearing with one of your warriors without a mob. *Clearing Tie: Clearing with ruins, then most buildings, and tokens. No Mobs Left: First remove a Mob from the clearing with the least adjacent Ruins or buildings.*",
@@ -715,7 +720,7 @@
       "tradePost":"Whenever a player removes a trade post, remove half of their warriors from Payments (rounded up.)",
       "servicesBirdsong":"At the start of Birdsong, another player may buy one service plus one per clearing with a trade post and their faction pieces.",
       "servicesCost":"They pay for the service by placing warriors in Payments, depending on how many victory points they have. If their faction has no warriors, place Riverfolk warriors instead.",
-      "servicesVictoryPoints":"0-9 Victory Points = 2 Warriors | 10-19 Victory Points = 3 Warriors | 20+ Victory Points = 4 Warriors",
+      "servicesVictoryPoints":"<br>*0-9 Victory Points = 2 Warriors | 10-19 Victory Points = 3 Warriors | 20+ Victory Points = 4 Warriors*",
       "serviceCard":"**Hand Card**: Take a card and add it to your hand.",
       "serviceBoat":"**Riverboat**: Treat rivers as paths for this turn.",
       "serviceMerc":"**Mercenaries**: For battle and rule in Daylight and Evening, you treat Riverfolk warriors as your own, except for battle against the Riverfolk. In battle, you must split hits between your faction pieces and Riverfolk warriors."
