@@ -40,7 +40,12 @@
     "Mechanical Marquise (DC)": "El Marquesado Mecánico (DC)",
     "Electric Eyrie (DC)": "El Nido Neumático (DC)",
     "Automated Alliance (DC)": "La Alianza Autómata (DC)",
-    "Vagabot (DC)": "El Vagabot (DC)"
+    "Vagabot (DC)": "El Vagabot (DC)",
+    "Cogwheel Corvids": "Engranajes Cuervos",
+    "Drillbit Duchy": "Brozo Ducado",
+    "Logical Lizards": "Lagartos Lógicos",
+    "Riverfolk Robots": "Robots del Río",
+    "Looting Legion": "Legión Saqueadora"
   },
   "FactionsShort": {
     "Mechanical Marquise": "Marquesado M.",
@@ -50,7 +55,12 @@
     "Mechanical Marquise (DC)": "Marquesado M. (DC)",
     "Electric Eyrie (DC)": "Nido N. (DC)",
     "Automated Alliance (DC)": "Alianza A. (DC)",
-    "Vagabot (DC)": "Vagabot (DC)"
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "C. Cuervos",
+    "Drillbit Duchy": "D. Ducado",
+    "Logical Lizards": "L. Lagartos",
+    "Riverfolk Robots": "R. Robots",
+    "Looting Legion": "L. Legión"
   },
   "Priorities": {
     "Title": "Mapas de prioridad",
@@ -71,7 +81,13 @@
     "BattleTrackBonus": "Bonificación del Contador de batalla",
     "SatchelBattleTrack": "Hatillo y Contador de batalla",
     "SympathyBases": "Simpatía y Bases",
-    "VagabotDifficultyTrait": "Vagabot, Dificultad, Rasgos"
+    "VagabotDifficultyTrait": "Vagabot, Dificultad, Rasgos",
+    "BotRules": "Reglas específicas del bot Corvid",
+    "RulesLizard": "Reglas de Lagarto",
+    "RulesRiver": "Reglas del Pueblo del Río",
+    "Hoard": "La Colección",
+    "Protectionism": "Proteccionismo",
+    "Services": "Servicios"
   },
   "SpecificSetup": {
     "Electric Eyrie": {
@@ -121,6 +137,36 @@
       "Setup2": "Coloca un guerrero en cada claro excepto en el claro que está en la esquina diagonalmente opuesta al claro de la ficha de fortaleza. Coloca un guerrero adicional en el claro con la ficha de fortaleza _(coloca 12 guerreros en total)_.",
       "Setup3": "Coloca 1 aserradero, 1 taller y 1 reclutador al azar entre los claros con la ficha de fortaleza y los claros adyacentes, con un máximo de un edificio en cada claro.",
       "Setup4": "Coge los 15 edificios restantes y colocalos junto a ti."
+    },
+    "Cogwheel Corvids": {
+      "Setup0": "Proporciona 15 guerreros y 8 fichas de trama boca abajo.",
+      "Setup1": "Coloca 1 Guerrero en el despeje de menor prioridad de cada palo (3 en total)."
+    },
+    "Drillbit Duchy": {
+      "Setup0": "Proporciona 20 guerreros, 3 fichas de túnel y 9 coronas.",
+      "Setup1": "Coloque el tablero de la Guarida cerca del mapa.",
+      "Setup2": "Coloca 2 guerreros y 1 túnel en un claro de esquina que no sea el claro de esquina de inicio. Luego, coloca 2 guerreros en cada claro adyacente al claro de esquina elegido, excepto el Nido.",
+      "Setup3": "Coloca 3 fortalezas y 3 mercados en tus espacios de Edificio correspondientes.",
+      "Setup4": "Roba 2 cartas y descártalas. Por cada una, coloca una corona sobre el ministro que coincida y no esté influenciado, situado en la parte superior de tu tablero de facción."
+    },
+    "Logical Lizards": {
+      "Setup0": "Forma un suministro de 25 guerreros.",
+      "Setup1": "Coloca 4 guerreros y 1 jardín con estampado coincidente en un claro aleatorio que no sea el claro de inicio de otro bot (preferiblemente en diagonal). Luego, coloca 1 guerrero en cada claro adyacente.",
+      "Setup2": "Coloca el marcador de marginado en el espacio de Santificación de la pista de la Conspiración en tu tablero de facción.",
+      "Setup3": "Coloque sus 14 jardines restantes en los espacios correspondientes de sus pistas de Jardines de derecha a izquierda.",
+      "Setup4": "Roba 3 cartas y colócalas boca arriba en tus Almas Perdidas en el orden en que fueron robadas."
+    },
+    "Riverfolk Robots": {
+      "Setup0": "Formar un suministro de 15 guerreros.",
+      "Setup1": "Coloca 1 guerrero en cada claro del río.",
+      "Setup2": "Coloca 9 puestos comerciales en los espacios correspondientes de tus pistas de Puestos Comerciales.",
+      "Setup3": "Coloque 1 guerrero en tu caja de Pagos.",
+      "Setup4": "Roba 5 cartas y añádelas a tu Mercado."
+    },
+    "Looting Legion": {
+      "Setup0": "**Reúne** piezas y forma provisiones de 20 guerreros, 1 caudillo y 6 fortalezas.",
+      "Setup1": "Coloca los cuatro elementos 'R' aleatoriamente bajo las ruinas en el mapa.",
+      "Setup2": "**Guarnición**: Coloca tu campamento inicial con un caudillo, cuatro guerreros y una fortaleza en una parcela de esquina aleatoria que no sea la parcela de esquina inicial de otro jugador y, si es posible, esté diagonalmente opuesta a una parcela de esquina inicial."
     }
   },
   "SpecificDifficulty": {
@@ -171,6 +217,36 @@
       "Normal": "No cambia nada.",
       "Challenging": "Cuando **reclutes**, en vez de lo normal, recluta cinco guerreros.",
       "Nightmare": "Cuando **reclutes**, en vez de lo normal, recluta cinco guerreros. Al final de la Noche obtén un punto de victoria por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Cogwheel Corvids": {
+      "Easy": "Cada vez que **Reclutes**, coloca únicamente a un guerrero en cada una de dos áreas despejadas ordenadas.",
+      "Normal": "Cada vez que **Reclutes**, coloca dos guerreros en cada uno de dos claros ordenados.",
+      "Challenging": "Cada vez que **Reclutes**, coloca tres guerreros en cada una de dos claros ordenados.",
+      "Nightmare": "Cada vez que **Reclutes**, coloca tres guerreros en cada uno de dos claros ordenados. Al final de la Tarde, obtén un punto de victoria por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Drillbit Duchy": {
+      "Easy": "Cada vez que **Reclutes**, en lugar de reclutar, recluta solo a un guerrero, más uno por cada topo que aparezca, en la madriguera.",
+      "Normal": "Cada vez que **Reclutes**, en lugar de reclutar un guerrero, recluta dos guerreros, más uno por cada mole que aparezca, en la madriguera.",
+      "Challenging": "Cada vez que **Reclutes**, recluta tres guerreros, más uno por cada mole visible, en la madriguera.",
+      "Nightmare": "Cada vez que **Reclutes**, en lugar de reclutar tres guerreros, recluta tres guerreros más uno por cada mole que aparezca, en el búnker. Al final de la Tarde, obtén un punto de victoria por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Logical Lizards": {
+      "Easy": "Cada vez que realices **Rituales**, revela solo tres cartas de tus Almas Perdidas.",
+      "Normal": "Cada vez que realices **Rituales**, revela únicamente cuatro cartas de tus Almas Perdidas.",
+      "Challenging": "Cada vez que realices **Rituales**, revela cinco cartas de tus Almas Perdidas.",
+      "Nightmare": "Cada vez que realices **Rituales**, revela cinco cartas de tus Almas Perdidas. Al final de la Velada, obtén un punto de victoria por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Riverfolk Robots": {
+      "Easy": "Cada vez que **Construyas y Refuerces**, no coloques ningún guerrero en la plaza comercial.",
+      "Normal": "Cada vez que **Construyas y Reclutes**, coloca a un guerrero en la plaza comercial.",
+      "Challenging": "Cada vez que **Construyas y Refuerces**, coloca dos guerreros en la plaza comercial.",
+      "Nightmare": "Cada vez que **Construyas y Fortifiques**, coloca dos guerreros en la posta comercial. Al final de la Velada, obtén un punto de victoria por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Looting Legion": {
+      "Easy": "Cada vez que **reclutes**, coloca un guerrero menos en el claro de tu caudillo.",
+      "Normal": "Cada vez que **reclutes**, coloca un guerrero adicional en el claro de tu caudillo antes de colocar guerreros en los bastiones.",
+      "Challenging": "Cada vez que **reclutes**, coloca dos guerreros adicionales en el claro de tu caudillo antes de colocar guerreros en los bastiones.",
+      "Nightmare": "Cada vez que **reclutes**, coloca dos guerreros adicionales en la zona de tu caudillo antes de colocar guerreros en los bastiones. Al final de la noche, obtén **PV:1** por cada dos jugadores enemigos (redondeado hacia arriba)."
     }
   },
   "SpecificRules": {
@@ -231,7 +307,53 @@
     "TextHospitalsDC": "Al final de la batalla como defensor, si dos o mas guerreros del Marquesado fueron retirados en la batalla, coloca un guerrero en el claro con la ficha de fortaleza.",
     "RuleIronWill": "Voluntad de Hierro",
     "TextIronWill": "Cuando **reclutes** durante el Día Potenciado, coloca el doble de guerreros.",
-    "TextIronWillDC": "**Repite el Día** puede suceder dos veces por turno en lugar de una sola vez."
+    "TextIronWillDC": "**Repite el Día** puede suceder dos veces por turno en lugar de una sola vez.",
+    "RuleEmbeddedAgents": "Agentes Integrados",
+    "TextEmbeddedAgents": "En combate como defensor con un token de trama boca abajo, infliges un golpe adicional.",
+    "RuleBackupPlans": "Planes de respaldo",
+    "TextBackupPlans": "Cada vez que se elimina un marcador de trama, coloca a un guerrero en el claro del que se eliminó la trama.",
+    "RuleVendetta": "Vendetta",
+    "TextVendetta": "Siempre que se voltea cualquier token de trama, tiene el efecto Cuando se voltea de una trama de Bomba.",
+    "RuleMastermind": "Mente Maestra",
+    "TextMastermind": "Ahora **Graficas** dos veces por turno.",
+    "RuleGamble": "Jugar",
+    "TextGamble": "Cuando se revele una trama, el jugador con más piezas de facción en la zona debe adivinar primero el tipo de trama. Si acierta, la trama se revela y se puntúa, pero no resuelve su efecto Cuando se revele. Luego, la retira (sumando un punto). Si se equivoca, ganas +1 Punto de Victoria.",
+    "RuleCostOfErrors": "Coste de los Errores",
+    "TextCostOfErrors": "Siempre que se eliminen cualquier número de edificios de Ducado, retira la corona del ministro más inferior influenciado.",
+    "RuleFoundations": "Fundamentos",
+    "TextFoundations": "Cada vez que se activa **Coste de Errores**, ahora elimina la corona del ministro balanceado inferior cuyo traje coincida con un espacio despejado del que se retiró un edificio.",
+    "RuleInvestors": "Inversores",
+    "TextInvestors": "Cada vez que un jugador active **Cost of Errors**, debe descartar una carta que coincida con una pradera de la que se haya removido un edificio Duchy. Si descarta una carta que coincide, el Duchy pierde un punto de victoria. Si no puede, el Duchy hace cambiar a un ministro, como en la acción de cambiar, pero el ministro también debe coincidir con una pradera de remoción.",
+    "RuleInvaders": "Invasores",
+    "TextInvaders": "La condición de desempate para la acción de excavación es ahora 'una zona de despeje que tenga el mayor número de edificios enemigos, seguido del menor número de guerreros enemigos'. Si no puedes construir porque no hay espacios de construcción disponibles, lucha en cada zona de despeje en su lugar.",
+    "RuleOverwhelm": "Abrumado",
+    "TextOverwhelm": "Ahora **Excavas** dos veces por turno, y ahora requiere y mueve solo tres guerreros (no cuatro).",
+    "RulePilgrims": "Peregrinos",
+    "TextPilgrims": "Rigeas claros que tienen un jardín.",
+    "RuleRobotRevenge": "Venganza Robótica",
+    "TextRobotRevenge": "Siempre que se eliminen guerreros Lizard fuera de tu turno, coloca uno de ellos en tu caja de Acólitos.",
+    "RuleFanatics": "Fanáticos",
+    "TextFanatics": "Cada vez que **Conviertas**, lucha en ese claro después de convertir al guerrero. En esta batalla, inflige un golpe extra. *Condición de Jugador: Elige como objetivo al jugador que tenga más edificios indefensos, y luego al que tenga más puntos.*",
+    "RuleMartyrs": "Mártires",
+    "TextMartyrs": "Cada vez que realices un ritual de ave, también coloca a un guerrero de tu suministro en tu caja de Acólitos.",
+    "RuleErratic": "Errático",
+    "TextErratic": "Al final de tu turno, roba una carta y añádela a tus Almas Perdidas.",
+    "RuleSpiteful": "Malicioso",
+    "TextSpiteful": "Cada vez que **realices una Cruzada**, obtienes un punto de victoria adicional si eliminas cualquier ficha.",
+    "RuleMarket": "Mercado",
+    "TextMarket": "El mercado es una fila de cartas enfrentadas, el orden de sus cartas no puede cambiar.",
+    "RuleGarrison": "Guarnición",
+    "TextGarrison": "Como defensor en combate, nunca estás indefenso, y cada uno de tus puestos comerciales suma uno a tus golpes máximos tirados.",
+    "RuleGreedy": "Avaricioso",
+    "TextGreedy": "Obtén +1 punto de victoria cada vez que el jugador con más puntos compre cualquier cantidad de tus servicios.",
+    "RuleFerocious": "Feroz",
+    "TextFerocious": "Como atacante en combate, tu número máximo de impactos tirados es siempre tres.",
+    "RuleInvolved": "Implicado",
+    "TextInvolved": "Si un jugador humano no compra el servicio de Mercenarios en su turno, trata a tus guerreros como si todos los enemigos de ese jugador hubieran comprado Mercenarios. El Vagabundo puede comprar Mercenarios para evitar esta penalización pero no se beneficia del servicio.",
+    "RuleAutomatedLooters": "Saqueadores Automatizados",
+    "TextAutomatedLooters": "En combate como atacante contra un defensor con un objeto disponible en un claro, tú gobiernas - toma el objeto pero no infligas golpes.",
+    "RuleWarlord": "El Señor de la Guerra",
+    "TextWarlord": "Su señor tiene el estatus de guerrero que no puede ser retirado fuera de la batalla, movido fuera de su turno o colocado excepto con Ungir. *La explanada del Señor siempre cuenta como la explanada ordenada.*"
   },
   "SpecificBirdsong": {
     "Electric Eyrie": {
@@ -276,6 +398,34 @@
     "Mechanical Marquise (DC)": {
       "RevealOrder": "Revela una carta de orden.",
       "CraftOrder": "Fabrica la carta de orden por **vp:1** si muestra un objeto disponible."
+    },
+    "Cogwheel Corvids": {
+      "RevealOrder": "**Revelar** una carta de pedido.",
+      "CraftOrder": "**Crear** tarjeta de pedido para **vp:1** si muestra un artículo disponible.",
+      "RecruitOrder": "**Recluta** {{difficulty}} guerreros en cada una de dos **card:{{suit}}** clarieras. (Prioridad a las clarieras sin fichas de trama, luego a las con más guerreros Corvid).<br>(Si no tienes guerreros en suministro, realiza inmediatamente el **Plot Thickens** antes de colocar a los guerreros restantes.)",
+      "Flip": "**Voltea** cada ficha de trama (no se requiere guerrero). Cada vez que voltees una trama, obtén +1 punto de victoria por cada trama descubierta en el mapa, y luego resuelve su efecto de Al Voltear si lo hay.",
+      "FlipVendetta": "Vendetta: Todos los efectos 'Al Girar' activan también la bomba.",
+      "FlipGamble": "Apostar: Cuando la trama se invierta, la persona con más piezas en el claro adivina su tipo. Si acierta, se invierte y se puntúa, NO se resuelve el efecto, y se retira el token* **vp:1**. *Si falla, puntúa el Corvus* **vp:1**"
+    },
+    "Drillbit Duchy": {
+      "RevealOrder": "Revelar una carta de pedido.",
+      "CraftOrder": "Crea tarjeta de pedido de oficio para **vp:1** si muestra un artículo disponible.",
+      "RecruitOrder": "**Recluta** {{moleDifficulty}} guerreros, más uno por cada **meeple:ducado** presente, y colócalos en la madriguera. (Actualmente: recluta **{{moleRecruit}}** guerreros.)"
+    },
+    "Logical Lizards": {
+      "Outcasts": "El traje más común en tus Almas Perdidas es el orden. En caso de empate, el orden es **card:pájaro**.",
+      "Conspiracy": "Realiza Conspiraciones en los claros de **card:{{suit}}**. Realizarás la conspiración mostrada si es posible, luego eliminarás a un adepto si la realizaste, y continuarás hasta que te quedes sin adeptos o no puedas conspirar."
+    },
+    "Riverfolk Robots": {
+      "StockMarket": "Roba dos cartas y añádelas al lado derecho del Mercado. No robes una carta una vez que el Mercado haya alcanzado 5 cartas.",
+      "CraftOrder": "Crea la primera carta añadida al Mercado que muestre un artículo disponible por **vp:1** y luego deshazla.",
+      "SetOrder": "Establecer el orden para que sea la Tarjeta de Mercado más a la derecha."
+    },
+    "Looting Legion": {
+      "Reveal": "**Revelar** la carta superior del mazo como carta de orden.",
+      "Craft": "**Crea** la tarjeta de pedido si muestra un artículo disponible, no obtendrás puntos.",
+      "Raze": "**Raze**: En cada horda, elimina todos los edificios y fichas enemigos, toma un objeto de las ruinas si existen, y elimina las ruinas si están vacías.",
+      "Recruit": "**Recluta** {{hoardNum}} guerreros en el claro de tu caudillo, luego uno en cada fortaleza."
     }
   },
   "SpecificDaylight": {
@@ -361,6 +511,45 @@
       "Suit1": "Recluta {{totalWarriors}} guerreros repartidos uniformemente entre los claros ordenados **card:{{suit}}** que gobiernes. Obtén **vp:1** por cada dos guerreros que no hayan podido ser reclutados.<br>_(**Hay más claros elegibles**: Coloca los guerreros en los claros con mayor prioridad primero.)_",
       "Suit2": "Construye un **building:{{building}}** en el claro que gobiernes con más guerreros del Marquesado.",
       "Suit3": "Mueve todos menos tres de tus guerreros de cada uno de los claros ordenados **card:{{suit}}** al claro adyacente que tenga más piezas enemigas. Cada guerrero solo puede moverse una vez durante esta acción."
+    },
+    "Cogwheel Corvids": {
+      "Battle": "**Batalla** en cada una de dos **card:{{suit}}** zonas. (Empate Defensor: Jugador con más edificios y fichas allí, luego con más puntos.)",
+      "Move": "**Mover** todos los guerreros excepto dos de cada **card:{{suit}}** despejando con una trama boca arriba a una zona adyacente sin trama. (Atadura de zona: Más Guerreros Corvid.) (Destino inexistente: Zona de menor prioridad.)",
+      "Plot": "**Trama** en la **card:{{suit}}** con la mayor cantidad de guerreros Corvid y sin trama, elimina un guerrero Corvid allí para colocar una trama boca abajo aleatoria allí.",
+      "PlotMastermind": "<br>*Mastermind: Tramar dos veces por turno.*",
+      "PlotThickens": "**La Intriga se Intensifica**: En un claro que no tiene trama y tres o más guerreros Corvid, retira un guerrero Corvid de allí para colocar una trama boca abajo aleatoria allí. (Vínculo de Claro: Mayoría de Guerreros Corvid.)"
+    },
+    "Drillbit Duchy": {
+      "Dig": "Si el Nido tiene cuatro o más guerreros, coloca un túnel en un claro **card:{{suit}}** sin túnel ni edificios de Ducado. También mueve {{tunnelValue}} guerreros del nido al túnel.",
+      "DigNoTunnel": "No hay túnel disponible, toma y coloca el túnel desde el claro con el menor número de guerreros del Ducado.",
+      "DigBird": "*(Eliminando carta **de palo:{{suit}}**: Una eliminación con la mayor cantidad de edificios y fichas enemigas)*",
+      "DigTie": "*(Eliminando carta de **lazos:{{suit}}**: Una eliminación con la mayor cantidad de ranuras de construcción vacías y el menor número de guerreros enemigos.)*",
+      "DigInvaders": "*(Eliminando la Atadura: Una limpieza de **card:{{suit}}** con la mayor cantidad de edificios enemigos, luego la menor cantidad de guerreros enemigos. Si no puedes construir porque no hay espacios de construcción disponibles, **lucha** en cada limpieza.)*",
+      "DigOverwhelm": "*Excava dos veces por turno.*",
+      "Battle": "**Batalla** en cada **card:{{suit}}** de eliminación. (Empate Defensor: Jugador con más edificios, luego más piezas, luego más puntos.)",
+      "BattleCaptain": "**Batalla** en cada **card:{{suit}}** de limpieza. (Empate Defensor: Jugador con más edificios, luego más piezas, luego más puntos).<br/>El **Capitán** es influenciable, no olvides su efecto en batalla.",
+      "Build": "**Construye** en el claro donde gobiernes con el mayor número de guerreros de Ducado. Coloca una ciudadela si tienes 9 o más guerreros en tu suministro. De lo contrario, coloca un mercado. Obtén **vp:1** si no puedes colocar un edificio mientras uno está en suministro.",
+      "Ministers": "Recoge las acciones de todos tus ministros influenciados de arriba a abajo. (Vuestros Señores otorgan actualmente **{{ministerPoints}}** PV)"
+    },
+    "Logical Lizards": {
+      "Rituals": "**Rituales**: Revela las {{difficulty}} cartas superiores de tus Almas Perdidas, una a la vez, y realiza un ritual para cada palo revelado.",
+      "RitualsBird": "<br>**card:bird**: Toma a guerrera Lagarto del claro con más guerreras Lagarto, y colócala en la caja de los Acólitos. **Pon esta carta en el montón de DESCARTE, NO en el montón de Almas Perdidas.**",
+      "RitualsOther": "**card:{{suit}}**: Coloca un guerrero en una explanada **card:{{suit}}**. Luego, si controlas esa explanada, coloca allí un jardín a juego. (Vínculo de Expanada: Coloca un guerrero en una explanada con cualquier ranura de construcción disponible, luego los edificios enemigos más numerosos.)"
+    },
+    "Riverfolk Robots": {
+      "BuildAndGarrison": "**Construir y Atacar**: Coloca una posta comercial y {{riverDifficulty}} guerreros en un claro **card:{{suit}}** sin posta comercial. <br>*(Lazo de Claro: Claro con piezas del jugador que tenga más guerreros en pagos.)*",
+      "RecruitOther": "**Recluta** a guerrero en cada limpieza de **card:{{suit}}**. <br>*(No hay suficientes guerreros: Coloca guerreros en las limpiezas con la prioridad más alta.)*",
+      "RecruitBird": "**Recluta** a guerrero en cada claro del río. <br>*(No hay suficientes guerreros: Coloca guerreros en los claros con la prioridad más alta.)*",
+      "Organize": "**Comprobar Protecciónismo**: Si tienes el escudo o las espadas puntuación **vp:1** y coloca dos guerreros en un claro que tenga piezas de Riverfolk y la mayor cantidad de piezas enemigas.",
+      "BattleShield": "Batalla en cada claro. (Lazo Defensor: Jugador con el menor número de guerreros en pagos.)",
+      "BattleSword": "Batalla en cada **card:{{suit}}** de limpieza. (Defensor Empate: Jugador que tiene al menor número de guerreros en pagos.)"
+    },
+    "Looting Legion": {
+      "Battle": "**Batalla** en cada **card:{{suit}}** de despeje. *Recuerda a los saqueadores.* *Empate del Defensor: Elige al jugador objetivo con objetos disponibles.*",
+      "Move": "**Mover** todos los guerreros excepto 2 de cada **card:{{suit}}** al claro adyacente con más piezas enemigas. No mover guerreros del claro del Señor de la Guerra.",
+      "Build": "**Construye** una fortaleza en un claro de **card:{{suit}}** que gobiernas.",
+      "Advance": "**Avanzar**: {{hoardNum}} veces: Mueve al Señor de la Guerra y a todos los guerreros de su campamento, excepto 1, al campamento adyacente con más piezas enemigas, y luego lucha. *En caso de empate en el campamento: Mueve al campamento con el número más alto.*",
+      "Anoint": "**Unge con** si el caudillo está fuera del mapa: Coloca al caudillo en el claro con más de tus guerreros."
     }
   },
   "SpecificEvening": {
@@ -409,6 +598,34 @@
       "Score": "Obtén {{score}} PV.",
       "Discard": "Descarta la carta de orden.",
       "NightmareScore": "Obtén **vp:1** por cada dos jugadores (redondeado hacia arriba)."
+    },
+    "Cogwheel Corvids": {
+      "Score": "Puntos **vp:1** por intriga de extorsión boca arriba.",
+      "Discard": "Descartar la tarjeta de pedido."
+    },
+    "Drillbit Duchy": {
+      "Rally": "En cada **card:{{suit}}** de limpieza sin edificios de Ducado y con dos o menos guerreros, mueve todos los guerreros de Ducado a una limpieza adyacente con un edificio de Ducado. Luego, en cada limpieza que controles, coloca todos los guerreros de Ducado excepto cuatro en el Nido. (Empate de Limpieza Objetivo: Menor número de guerreros de Ducado). (Ninguna Limpieza Adecuada: Coloca a los guerreros que se habrían movido en el Nido).",
+      "Score": "Puntuación **vp:1** por mercado en el mapa",
+      "Sway": "Coloca una corona al ministro **card:{{suit}}** más superior e inamovible. (No hay tal ministro: mueve al ministro **card:bird** más inferior e inamovible.)",
+      "Discard": "Descartar la carta de pedido."
+    },
+    "Logical Lizards": {
+      "Score": "**Puntuación** **vp:1** por el espacio de jardín vacío más a la derecha.",
+      "DiscardLostSouls": "Descartar Almas Perdidas.",
+      "ReturnRevealedCards": "**Devolver** las cartas reveladas a la parte superior de tus Almas Perdidas, conservando su orden anterior.",
+      "Craft": "**Artesana** la carta superior del mazo para **vp:1** si muestra un objeto disponible. Añádela a tus Almas Perdidas (no al descarte).",
+      "ErraticReminder": "*Errático: Roba una carta al final del turno.*"
+    },
+    "Riverfolk Robots": {
+      "Score": "**Puntuación** **vp:1** por guerrero del jugador con más guerreros en Pagos, luego retira esos guerreros de Pagos.",
+      "Racketeering": "**Proteccionismo**: De cada claro, toma a todos menos a dos guerreros de los Riverfolk y colócalos en Pagos.",
+      "Discard": "**Descartar** la carta más a la izquierda del Mercado.",
+      "DiscardShield": "**Proteccionismo (Escudo Únicamente)**: Descarta la carta más a la izquierda del mercado de nuevo."
+    },
+    "Looting Legion": {
+      "Incite": "**Incitar**: Coloca una turba en una zona despejada **card:{{suit}}** adyacente a una turba. Si no puedes, coloca una turba en una zona despejada ordenada con uno de tus guerreros sin turba. *Vínculo de la Zona: Zona con ruinas, luego la mayoría de edificios, y luego tokens. Sin Turba: Primero, retira una turba de la zona con menos ruinas o edificios adyacentes.*",
+      "Score": "**Puntuación**: Puntuación **vp:1** por cada 2 eliminaciones que juzgues.",
+      "Discard": "Descartar la carta de pedido."
     }
   },
   "SpecificExtra": {
@@ -459,6 +676,52 @@
       "SatchelExhausted": "Agotado",
       "SatchelDamaged": "Dañado",
       "SatchelBattleTrack": "Batalla"
+    },
+    "Cogwheel Corvids": {
+      "BotInteractions": {
+        "Overview": "Al jugar con los córvidos contra cualquier bot, utiliza estas reglas para las partidas:",
+        "Bomb": "Al voltearse, elimina dos piezas de cada bot en su claro, los guerreros primero, en lugar de todas las piezas.",
+        "Snare": "Los bots ignoran los tokens de trampa con el fin de seleccionar claros para colocar o mover piezas.<br>Si un bot fuera a colocar o mover una pieza desde un claro con una trampa, elimina la trampa en lugar de realizar esa acción.<br>(Vagabot continuará moviéndose después de esto, agotando objetos adicionales.)"
+      },
+      "Plot-Tokens": {
+        "Overview": "Al usar los Cuervos de Engranaje, aplica estas reglas a sus tokens de trama:",
+        "Bomb": "**Bomba**: Al voltearse, elimina todas las unidades enemigas humanas en su zona, luego reemplaza esta casilla con una casilla aleatoria colocada con la cara hacia arriba. (El reemplazo no desencadena ningún efecto y no puede ser una bomba.)",
+        "Snare": "**Trampa**: Mientras esté boca arriba, no se pueden colocar ni mover piezas enemigas en esta zona.",
+        "Extortion": "**Extorsión**: Cuando se activa, cada jugador con alguna pieza de facción en su claro debe descartar una carta aleatoria.",
+        "Raid": "**Redada**: Al retirarse, coloca a un guerrero en cada claro adyacente."
+      }
+    },
+    "Drillbit Duchy": {
+      "Ministers": {
+        "Captain": "Como atacante en batalla, realiza un golpe adicional si la eliminación de la batalla tiene un túnel.",
+        "Marshal": "Coloca a un guerrero de Ducado en un claro que tenga el menor número de guerreros de Ducado y un edificio de Ducado.",
+        "Foremole": "Tiene un meeple revelado adicional: **meeple:duchy**.",
+        "Brigadier": "Realiza la acción de excavación si el Túnel tiene tres o más guerreros de Ducado. Para esta acción de excavación, utiliza la condición de Empate en la Pradera para una orden de zorro.",
+        "Banker": "Realice la acción de compilación.",
+        "Mayor": "Elimina a un guerrero del Ducado de la arboleda que gobiernas y que tenga más guerreros del Ducado. Si lo haces, obtendrás **vp:1**.",
+        "Earl": "Puntuación **vp:1** por ciudadela en el mapa.",
+        "Baron": "Puntuación **vp:1** por mercado en el mapa.",
+        "Duchess": "Obtén **vp:2** si los 3 túneles están en el mapa."
+      }
+    },
+    "Logical Lizards": {
+      "Lost Souls": "**Almas Perdidas**: Cada vez que se juegue o se deseche una carta, colócala en el montón de Almas Perdidas.",
+      "Conspiracy": "**Conspiraciones** *Determina primero el jugador objetivo, luego el de limpieza.*<br><br>**Convertir**<br>En una limpieza ordenada, reemplaza a un guerrero enemigo con un guerrero Lagarto.<br>*Vínculo de Jugador*: Jugador con más puntos.<br>*Vínculo de Limpieza*: Limpieza con más edificios enemigos.<br>**Cruzada**<br>Lucha en cada limpieza **card:{{suit}}** que tenga 2+ guerreros Lagarto.<br>*Vínculo de Defensor*: Jugador con más puntos allí.<br>**Santificar**<br>En una limpieza **card:{{suit}}**, reemplaza a un edificio enemigo con un jardín que coincida.<br>*Vínculo de Jugador*: Jugador con más puntos.<br>*Vínculo de Limpieza*: Limpieza con menos guerreros enemigos."
+    },
+    "Riverfolk Robots": {
+      "prot": "En Organizar (Luz del Día/3.º) compruebe estas condiciones.",
+      "protShield": "¿No tiene los Pagos ningún guerrero?",
+      "protSword": "¿Su suministro no tiene guerreros?",
+      "tradePost": "Cada vez que un jugador elimina una posta comercial, elimina la mitad de sus guerreros de Pagos (redondeado hacia arriba).",
+      "servicesBirdsong": "Al comienzo de Canto de Ave, otro jugador puede comprar un servicio más uno por cada limpieza con una oficina comercial y sus piezas de facción.",
+      "servicesCost": "Pagan la prestación del servicio colocando guerreros en Pagos, dependiendo de cuántos puntos de victoria tengan. Si su facción no tiene guerreros, coloque guerreros Riverfolk en su lugar.",
+      "servicesVictoryPoints": "*0-9 Puntos de Victoria = 2 Guerreros | 10-19 Puntos de Victoria = 3 Guerreros | 20+ Puntos de Victoria = 4 Guerreros*",
+      "serviceCard": "**Carte en mano**: Toma una carta y añádela a tu mano.",
+      "serviceBoat": "**Riverboat**: Considera los ríos como caminos para este turno.",
+      "serviceMerc": "**Mercenarios**: Para la batalla y el dominio en Día y Noche, tratas a los guerreros Riverfolk como propios, excepto en la batalla contra los Riverfolk. En batalla, debes dividir los impactos entre tus piezas de facción y guerreros Riverfolk."
+    },
+    "Looting Legion": {
+      "Hoard": "Puntuación **vp:2** si el botín está lleno y añadirías otro objeto, luego retira ese objeto del juego."
     }
   },
   "ToastMessages": {

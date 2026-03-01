@@ -40,7 +40,12 @@
         "Mechanical Marquise (DC)": "Marquise Mécanique (DC)",
         "Electric Eyrie (DC)": "Canopée Cinétique (DC)",
         "Automated Alliance (DC)": "Alliance Automatisée (DC)",
-        "Vagabot (DC)": "Vagabot (DC)"
+        "Vagabot (DC)": "Vagabot (DC)",
+        "Cogwheel Corvids": "Corbeaux à engrenages",
+        "Drillbit Duchy": "Drillbit Duchy",
+        "Logical Lizards": "Lézards Logiques",
+        "Riverfolk Robots": "Riverfolk Robots",
+        "Looting Legion": "Pillage de la Légion"
     },
     "FactionsShort": {
         "Mechanical Marquise": "Marquise M.",
@@ -50,7 +55,12 @@
         "Mechanical Marquise (DC)": "Marquise M. (DC)",
         "Electric Eyrie (DC)": "Canopée C. (DC)",
         "Automated Alliance (DC)": "Alliance A. (DC)",
-        "Vagabot (DC)": "Vagabot (DC)"
+        "Vagabot (DC)": "Vagabot (DC)",
+        "Cogwheel Corvids": "C. Corvidés",
+        "Drillbit Duchy": "D. Duché",
+        "Logical Lizards": "L. Lézards",
+        "Riverfolk Robots": "R. Robots",
+        "Looting Legion": "L. Légion"
     },
     "Priorities": {
         "Title": "Cartes des Priorités",
@@ -71,7 +81,13 @@
         "BattleTrackBonus": "Bonus Piste de Combat",
         "SatchelBattleTrack": "Sacoche & Piste de Combat",
         "SympathyBases": "Sympathie & Bases",
-        "VagabotDifficultyTrait": "Vagabot, Difficulté, Traits"
+        "VagabotDifficultyTrait": "Vagabot, Difficulté, Traits",
+        "BotRules": "Règles spécifiques au bot Corvid",
+        "RulesLizard": "Règles des Lézards",
+        "RulesRiver": "Les Règles des Habitants des Rivières",
+        "Hoard": "Le butin",
+        "Protectionism": "Protectionnisme",
+        "Services": "Services"
     },
     "SpecificSetup": {
         "Electric Eyrie": {
@@ -121,7 +137,37 @@
             "Setup2": "Placez 1 guerrier dans chaque clairière, excepté dans celle diagonalement opposée au donjon. Placez 1 guerrier supplémentaire dans la clairière du donjon. _(Placez 12 guerriers au total.)_",
             "Setup3": "Placez au hasard 1 scierie, 1 atelier et 1 recruteur parmi les clairières adjacentes à la clairière du donjon. (Placez-en 3 au total. Un par clairière.)",
             "Setup4": "Prenez vos bâtiments restants (5 de chaque type) et placez-les près de vous."
-        }
+        },
+      "Cogwheel Corvids": {
+        "Setup0": "Fournit 15 guerriers et 8 jetons d'intrigue face cachée.",
+        "Setup1": "Placez 1 Guerrier dans le nettoyage de priorité la plus basse de chaque combinaison (3 au total)."
+      },
+      "Drillbit Duchy": {
+        "Setup0": "Fournissez 20 guerriers, 3 jetons de tunnel et 9 couronnes.",
+        "Setup1": "Placez le plateau du terrier près de la carte.",
+        "Setup2": "Placez 2 guerriers et 1 tunnel dans un espace dégagé d'angle qui n'est pas l'espace dégagé d'angle de départ. Ensuite, placez 2 guerriers dans chaque espace dégagé adjacent à l'espace dégagé d'angle choisi, à l'exception du Terrier.",
+        "Setup3": "Placez 3 citadelles et 3 marchés sur vos espaces Bâtiment correspondants.",
+        "Setup4": "Pioyez 2 cartes et défaussez-les. Pour chacune, placez une couronne sur le ministre correspondant le plus en haut de votre plateau de faction."
+      },
+      "Logical Lizards": {
+        "Setup0": "Former une provision de 25 guerriers.",
+        "Setup1": "Placez 4 guerriers et 1 jardin de l'imprimé correspondant dans un coin de clairière aléatoire qui n'est pas le coin de clairière de départ d'un autre bot (de préférence en diagonale). Ensuite, placez 1 guerrier dans chaque clairière adjacente.",
+        "Setup2": "Placez le marqueur d'exilé sur l'espace Sanctifier du circuit de la Conspiration sur le plateau de votre faction.",
+        "Setup3": "Placez vos 14 jardins restants sur les cases correspondantes de vos pistes de jardins, de droite à gauche.",
+        "Setup4": "Piocher 3 cartes et les placer face visible dans vos Âmes Perdues, dans l'ordre de tirage."
+      },
+      "Riverfolk Robots": {
+        "Setup0": "Formez une réserve de 15 guerriers.",
+        "Setup1": "Placez 1 guerrier dans chaque clairière sur la rivière.",
+        "Setup2": "Placez 9 postes de commerce sur les emplacements correspondants de vos pistes de postes de commerce.",
+        "Setup3": "Placez 1 guerrier dans votre case Paiements.",
+        "Setup4": "Piocher 5 cartes et les ajouter à votre Marché."
+      },
+      "Looting Legion": {
+        "Setup0": "**Rassemblez** des pièces et formez des approvisionnements de 20 guerriers, 1 seigneur de guerre et 6 forteresses.",
+        "Setup1": "Placez les quatre objets \"R\" aléatoirement sous les ruines sur la carte.",
+        "Setup2": "**Garnison** : Placez votre zone de départ avec un seigneur de guerre, quatre guerriers et un avant-poste dans un coin aléatoire qui n'est pas le coin de départ d'un autre joueur et, si possible, est diagonalement opposé à un coin de départ."
+      }
     },
     "SpecificDifficulty": {
         "Electric Eyrie": {
@@ -171,7 +217,37 @@
             "Normal": "Mode par défaut.",
             "Challenging": "Lors du **Recrutement**, placez plutôt 5 guerriers.",
             "Nightmare": "Lors du **Recrutement**, placez plutôt 5 guerriers. A la fin du Crépuscule, marquez 1 point de victoire par paire de joueurs humains _(arrondi supérieur)_."
-        }
+        },
+      "Cogwheel Corvids": {
+        "Easy": "Chaque fois que vous **Recrutez**, placez uniquement un guerrier dans chacune des deux clairières ordonnées.",
+        "Normal": "Chaque fois que vous **Recrutez**, placez plutôt deux guerriers dans chacune de deux clairières ordonnées.",
+        "Challenging": "Chaque fois que vous **Recrutez**, placez plutôt trois guerriers dans chacune de deux clairières ordonnées.",
+        "Nightmare": "Chaque fois que vous **Recrutez**, placez trois guerriers dans chacune de deux clairières ordonnées. À la fin du Soir, marquez un point de victoire par deux joueurs (arrondi supérieur)."
+      },
+      "Drillbit Duchy": {
+        "Easy": "Chaque fois que vous **Recrutez**, recrutez plutôt un seul guerrier, plus un par taupe affichée, dans le terrier.",
+        "Normal": "Chaque fois que vous **Recrutez**, recrutez plutôt deux guerriers, plus un par taupe visible, dans la galerie.",
+        "Challenging": "Chaque fois que vous **Recrutez**, recrutez plutôt trois guerriers, plus un par taupe affichée, dans la galerie.",
+        "Nightmare": "Chaque fois que vous **Recrutez**, recrutez plutôt trois guerriers, plus un par taupe visible, dans le terrier. À la fin du Soir, marquez un point de victoire pour deux joueurs (arrondi au supérieur)."
+      },
+      "Logical Lizards": {
+        "Easy": "Chaque fois que vous effectuez des **Rituel(s)**, révélez seulement trois cartes de vos Âmes Perdues.",
+        "Normal": "Chaque fois que vous effectuez un **Rituel**, révélez seulement quatre cartes de vos Âmes Perdues.",
+        "Challenging": "Chaque fois que vous effectuez des **Rituels**, révélez cinq cartes de vos Âmes Perdues.",
+        "Nightmare": "Chaque fois que vous effectuez des **Rituel(s)**, révélez cinq cartes de vos Âmes Perdues. À la fin du Crépuscule, marquez un point de victoire par deux joueurs (arrondi supérieur)."
+      },
+      "Riverfolk Robots": {
+        "Easy": "Chaque fois que vous **Construisez et Affectez**, ne placez aucun guerrier à la place commerciale.",
+        "Normal": "Chaque fois que vous **Construisez et Affectez**, placez un guerrier à la place commerciale.",
+        "Challenging": "Chaque fois que vous **Construisez et Affectez**, placez deux guerriers à la succursale commerciale.",
+        "Nightmare": "Chaque fois que vous **Construisez et Affectez**, placez deux guerriers à la place commerciale. À la fin de la soirée, marquez un point de victoire pour deux joueurs (arrondi supérieur)."
+      },
+      "Looting Legion": {
+        "Easy": "Chaque fois que vous **recrutez**, placez un guerrier de moins dans la clairière de votre seigneur de guerre.",
+        "Normal": "Chaque fois que vous **recrutez**, placez un guerrier supplémentaire dans la clairière de votre seigneur de guerre avant de placer des guerriers aux forteresses.",
+        "Challenging": "Chaque fois que vous **recrutez**, placez deux guerriers supplémentaires dans la clairière de votre seigneur avant de placer des guerriers dans les forteresses.",
+        "Nightmare": "Chaque fois que vous **recrutez**, placez deux guerriers supplémentaires dans la clairière de votre seigneur avant de placer des guerriers dans les forteresses. À la fin de la soirée, marquez **VP:1** par deux joueurs adverses (arrondi au supérieur)."
+      }
     },
     "SpecificRules": {
         "RulePoorManualDexterity": "Dextérité Manuelle Réduite",
@@ -231,7 +307,53 @@
         "TextHospitalsDC": "À la fin de chaque combat en tant que défenseur au cours duquel 2 guerriers ou plus sont retirés, placez 1 guerrier dans la clairière du Donjon.",
         "RuleIronWill": "Implacable",
         "TextIronWill": "Lors du **Recrutement** du Jour Intensifié, placez le double de guerriers.",
-        "TextIronWillDC": "L'expansion peut avoir lieu jusqu'à 2 fois par tour, au lieu d'une seule fois."
+        "TextIronWillDC": "L'expansion peut avoir lieu jusqu'à 2 fois par tour, au lieu d'une seule fois.",
+      "RuleEmbeddedAgents": "Agents intégrés",
+      "TextEmbeddedAgents": "Au combat en tant que défenseur avec un jeton de complot à découvert, vous infligez un coup supplémentaire.",
+      "RuleBackupPlans": "Plans de secours",
+      "TextBackupPlans": "Chaque fois qu'un jeton de trame est retiré, placez un guerrier dans la clairière d'où la trame a été retirée.",
+      "RuleVendetta": "Vendetta",
+      "TextVendetta": "Chaque fois qu'un jeton de trame est retourné, il a l'effet « Quand Retourné » d'une trame Bombe.",
+      "RuleMastermind": "Mastermind",
+      "TextMastermind": "Vous **tracez** maintenant deux fois par tour.",
+      "RuleGamble": "Jouer",
+      "TextGamble": "Chaque fois qu'un emplacement est retourné, le joueur ayant le plus de pièces de faction dans la clairière doit d'abord deviner le type d'emplacement. S'il a raison, l'emplacement se retourne et rapporte des points, mais n'applique pas son effet « Lorsqu'il est retourné ». Il retire ensuite l'emplacement (en marquant un point). S'il a tort, vous gagnez +1 Point de victoire.",
+      "RuleCostOfErrors": "Coût des erreurs",
+      "TextCostOfErrors": "Chaque fois que n'importe quel nombre de bâtiments de Duché sont retirés, retirez la couronne du ministre le plus bas du conseil.",
+      "RuleFoundations": "Fondations",
+      "TextFoundations": "Chaque fois que **Coût des Erreurs** se déclenche, il retire désormais la couronne du ministre le plus bas, dont la tenue correspond à un emplacement à partir duquel un bâtiment a été retiré.",
+      "RuleInvestors": "Investisseurs",
+      "TextInvestors": "Chaque fois qu'un joueur déclenche **Coût des Erreurs**, il doit défausser une carte correspondant à une clairière d'où un bâtiment Duché a été retiré. S'il défausse une carte correspondante, le Duché perd un point de victoire. S'il ne peut pas, le Duché influence un conseiller, comme lors de l'action influence, mais le conseiller doit également correspondre à une clairière de retrait.",
+      "RuleInvaders": "Invasé(e)s",
+      "TextInvaders": "Le critère de sélection des clairières pour l'action de fouille est maintenant « une clairière possédant le plus grand nombre de bâtiments ennemis, puis le plus petit nombre de guerriers ennemis ». Si vous ne pouvez pas construire en raison d'un manque de créneaux, combattez dans chaque clairière à la place.",
+      "RuleOverwhelm": "Submerger",
+      "TextOverwhelm": "Vous **Creusez** désormais deux fois par tour, et cela nécessite désormais et déplace seulement trois guerriers (et non quatre).",
+      "RulePilgrims": "Pèlerins",
+      "TextPilgrims": "Vous réglez les clairières qui ont un jardin.",
+      "RuleRobotRevenge": "La Vengeance des Robots",
+      "TextRobotRevenge": "Chaque fois que des guerriers Lézard sont retirés du jeu en dehors de votre tour, placez-en un dans votre boîte d'Acolytes.",
+      "RuleFanatics": "Passionnés",
+      "TextFanatics": "Chaque fois que vous **Convertissez**, combattez dans la clairière après la conversion du guerrier. Lors de ce combat, infligez un coup supplémentaire. *Lien Joueur : Ciblez le joueur ayant le plus de bâtiments vulnérables, puis le plus de points.*",
+      "RuleMartyrs": "Martyrs",
+      "TextMartyrs": "Chaque fois que vous effectuez un rituel d'oiseau, placez également un guerrier de votre réserve dans votre boîte des acolytes.",
+      "RuleErratic": "Erratique",
+      "TextErratic": "À la fin de votre tour, piochez une carte et ajoutez-la à vos Âmes Perdues.",
+      "RuleSpiteful": "Malicieux",
+      "TextSpiteful": "Chaque fois que vous **lancez une croisade**, vous gagnez un point de victoire supplémentaire si vous retirez des jetons.",
+      "RuleMarket": "Marché",
+      "TextMarket": "Le marché est une rangée de cartes à face visible, l'ordre de ses cartes ne peut pas être modifié.",
+      "RuleGarrison": "Garnison",
+      "TextGarrison": "En tant que défenseur au combat, vous n'êtes jamais sans défense, et vos avant-postes ajoutent chacun un point à votre nombre maximal de touches.",
+      "RuleGreedy": "Cupide",
+      "TextGreedy": "Obtenez +1 point de victoire chaque fois que le joueur avec le plus de points achète un nombre quelconque de vos services.",
+      "RuleFerocious": "Féroce",
+      "TextFerocious": "En tant qu'attaquant au combat, votre nombre maximum de jets de réussite est toujours trois.",
+      "RuleInvolved": "Impliqué(e)",
+      "TextInvolved": "Si un joueur n'achète pas votre service de Mercenaires à son tour, considérez que vos guerriers sont traités comme si tous les ennemis de ce joueur avaient acheté Mercenaires. Le Vagabond peut acheter Mercenaires pour éviter cette pénalité, mais n'en bénéficie pas.",
+      "RuleAutomatedLooters": "Pilleurs Automatisés",
+      "TextAutomatedLooters": "Au combat, en tant qu'attaquant contre un défenseur disposant d'un objet dans une clairière que vous contrôlez - prenez l'objet mais n'infligez aucun coup.",
+      "RuleWarlord": "Le Seigneur de la Guerre",
+      "TextWarlord": "Votre seigneur de guerre est un guerrier qui ne peut être retiré en dehors du combat, déplacé en dehors de votre tour, ou placé sauf avec Consécration. *La clairière du Seigneur de guerre compte toujours comme la clairière ordonnée.*"
     },
     "SpecificBirdsong": {
         "Electric Eyrie": {
@@ -276,7 +398,35 @@
         "Mechanical Marquise (DC)": {
             "RevealOrder": "**Révélez** la carte ordre en piochant une carte.",
             "CraftOrder": "**Fabriquez** la carte ordre pour **vp:1** s'il s'agit d'un objet disponible."
-        }
+        },
+      "Cogwheel Corvids": {
+        "RevealOrder": "Révéler une carte de commande.",
+        "CraftOrder": "**Créer** la carte de commande pour **vp:1** si elle affiche un article disponible.",
+        "RecruitOrder": "**Recrutez** {{difficulty}} guerriers dans chacune des deux clairières **card:{suit}}**. (Priorité aux clairières sans jetons de complot, puis à celles avec le plus grand nombre de guerriers Corvid.)<br>(Si vous n'avez aucun guerrier en réserve, effectuez immédiatement le **Complot S'épaissit** avant de placer les guerriers restants.)",
+        "Flip": "**Retourner** chaque jeton d'intrigue (aucun guerrier requis). Chaque fois que vous retournez une intrigue, marquez +1 point de victoire par intrigue visible sur la carte, puis résolvez son effet \"Lors du retournement\" si existant.",
+        "FlipVendetta": "Vendetta : Tous les effets « Quand inversé » déclenchent également la bombe.",
+        "FlipGamble": "Jeu : Lorsqu’un scénario est inversé – le joueur humain possédant le plus de jetons dans la clairière devine son type. S’il a raison, on inverse et on marque des points, SANS résoudre l’effet, puis on retire le jeton* **vp:1**. *S’il se trompe, le score du Corvid* **vp:1**"
+      },
+      "Drillbit Duchy": {
+        "RevealOrder": "Révéler une carte de commande.",
+        "CraftOrder": "Créez une carte de commande pour **vp:1** si elle affiche un article disponible.",
+        "RecruitOrder": "**Recrutez** {{moleDifficulty}} guerriers, plus un par **meeple:duché** présent, et placez-les dans la galerie. (Actuellement : recrutez **{{moleRecruit}}** guerriers.)"
+      },
+      "Logical Lizards": {
+        "Outcasts": "L'ordre est la faction la plus courante dans vos Âmes Perdues. En cas d'égalité, l'ordre est **card:bird**.",
+        "Conspiracy": "Effectuez les Conspirations dans les clairières **card:{{suit}}**. Vous effectuerez la conspiration indiquée si possible, puis retirerez un acolyte si vous l'avez effectuée, et continuerez jusqu'à ce que vous soyez à court d'acolytes ou ne puissiez plus conspirer."
+      },
+      "Riverfolk Robots": {
+        "StockMarket": "Piocher deux cartes et les ajouter du côté droit du marché. Ne pas piocher de carte lorsque le marché a atteint 5 cartes.",
+        "CraftOrder": "Créez la première carte ajoutée au Marché qui affiche un objet disponible pour **vp:1** puis défaussez-la.",
+        "SetOrder": "Définir l'ordre pour qu'il soit la Carte Marché la plus à droite."
+      },
+      "Looting Legion": {
+        "Reveal": "**Révéler** la première carte du paquet comme carte d'ordre.",
+        "Craft": "**Créez** la carte de commande si elle affiche un article disponible, vous ne gagnez pas de points.",
+        "Raze": "**Raze**: À chaque mob, détruisez tous les bâtiments et jetons ennemis, prenez un objet parmi les ruines s'il y en a, et retirez les ruines si elles sont vides.",
+        "Recruit": "**Recrutez** {{hoardNum}} guerriers dans la clairière de votre seigneur, puis un guerrier dans chaque forteresse."
+      }
     },
     "SpecificDaylight": {
         "Electric Eyrie": {
@@ -361,7 +511,46 @@
             "Suit1": "**Recrutez** {{totalWarriors}} guerriers répartis uniformément dans les clairières **card:{{suit}}** contrôlées. Placez les guerriers en priorité dans les clairières **card:{{suit}}** ayant la plus haute priorité. Marquez **vp:1** par paire de guerriers n'ayant pas pu être placés.",
             "Suit2": "**Construisez** 1 **building:{{building}}** dans la clairière contrôlée avec le plus de vos guerriers.",
             "Suit3": "**Déplacez** tous vos guerriers, sauf 3, depuis chaque clairière **card:{{suit}}** vers la clairière adjacente avec le plus de pièces adverses. _(Chaque guerrier ne peut être déplacé qu'une fois.)_"
-        }
+        },
+      "Cogwheel Corvids": {
+        "Battle": "**Bataille** dans chacune de deux **card:{{suit}}** clairières. (Égalité du Défenseur : Le joueur ayant le plus de bâtiments et de jetons, puis le plus de points.)",
+        "Move": "**Déplacez** tous les guerriers sauf deux de chaque **card:{{suit}}** en les déplaçant vers une clairière adjacente sans intrigue, à l'aide d'une intrigue à face visible. (Lien de Clairière : Le plus grand nombre de guerriers Corvid.) (Destination impossible : Clairière de la plus faible priorité.)",
+        "Plot": "**Intrigue** dans la **card:{{suit}}** avec le plus grand nombre de guerriers Corvid et sans intrigue, retirez un guerrier Corvid pour y placer une intrigue face cachée aléatoire.",
+        "PlotMastermind": "<br>*Maître d'Esprit : Planifiez deux fois par tour.*",
+        "PlotThickens": "**L'Intrigue s'Épaissit** : Dans une clairière sans intrigue et avec trois ou plus de guerriers Corvid, retirez un guerrier Corvid de cet endroit pour y placer une intrigue face cachée aléatoire. (Lien Clairière : Plus grand nombre de guerriers Corvid.)"
+      },
+      "Drillbit Duchy": {
+        "Dig": "Si le Terrier compte quatre guerriers ou plus, placez un tunnel dans une clairière **card:{{suit}}** sans tunnel ni bâtiments de Duché. Déplacez également {{tunnelValue}} guerriers du terrier vers le tunnel.",
+        "DigNoTunnel": "*Pas de tunnel disponible, prenez et placez le tunnel depuis la clairière abritant le moins de guerriers du Duché*",
+        "DigBird": "*(Effacement de la carte **card:{{suit}}**: Un effacement avec le plus grand nombre de bâtiments et jetons ennemis)*",
+        "DigTie": "*(Effacement de la carte **card:{{suit}}**: Un effacement avec le plus grand nombre d'emplacements de bâtiments vides, puis le moins de guerriers ennemis.)*",
+        "DigInvaders": "*(Effacement de liens : Un effacement de **card:{{suit}}** avec le plus grand nombre de bâtiments ennemis, puis le plus petit nombre de guerriers ennemis. Si vous ne pouvez pas construire faute de cases de construction, **combattre** dans chaque effacement.)*",
+        "DigOverwhelm": "*Creuse deux fois par tour.*",
+        "Battle": "**Bataille** dans chaque **card:{{suit}}** de dégagement. (Égalité du défenseur : le joueur ayant le plus de bâtiments, puis le plus de pièces, puis le plus de points.)",
+        "BattleCaptain": "**Bataille** dans chaque **card:{{suit}}** de dégagement. (Égalité du défenseur : Joueur ayant le plus de bâtiments, puis le plus de pièces, puis le plus de points.)<br/>Le **Capitaine** est influençable, n’oubliez pas son effet au combat.",
+        "Build": "**Construisez** dans la clairière où vous avez le plus de guerriers de Duché. Placez une citadelle si vous avez 9 guerriers ou plus dans votre réserve. Sinon, placez un marché. Gagnez **vp:1** si vous ne pouvez pas placer un bâtiment alors qu’il en reste en réserve.",
+        "Ministers": "Prenez les actions de tous vos ministres influencés, de haut en bas. (Vos Seigneurs octroient actuellement **{{ministerPoints}}** PV)"
+      },
+      "Logical Lizards": {
+        "Rituals": "**Rituel** : Révélez les {{difficulty}} cartes du dessus de vos Âmes Perdues, une par une, et effectuez un rituel pour chaque couleur révélée.",
+        "RitualsBird": "**card:bird**: Prenez un guerrier Lézard du lieu éclairé possédant le plus de guerriers Lézards, et placez-le dans la zone des Acolytes. **Mettez cette carte dans la PILE DE REJET, PAS dans la pile des Âmes Perdues.**",
+        "RitualsOther": "**card:{{suit}}**: Placez un guerrier dans une clairière **card:{{suit}}**. Ensuite, si vous y régnez, placez un jardin assorti. (Lien de Clairière : Placez un guerrier dans une clairière comportant des emplacements de construction libres, puis le plus grand nombre de bâtiments ennemis.)"
+      },
+      "Riverfolk Robots": {
+        "BuildAndGarrison": "**Construire et Fortifier**: Placez un avant-poste commercial et {{riverDifficulty}} guerriers dans une clairière **card:{{suit}}** sans avant-poste commercial. <br>*(Lien à la clairière : Clairière avec des pièces du joueur qui a le plus de guerriers dans les paiements.)*",
+        "RecruitOther": "**Recrutez** un guerrier dans chaque zone de cartes **:{{suit}}**. <br>*(Nombre insuffisant de guerriers : Placez des guerriers sur les zones prioritaires.)*",
+        "RecruitBird": "**Recrutez** un guerrier dans chaque clairière au bord de la rivière. <br>*(Nombre de guerriers insuffisant : Placez les guerriers sur les clairières ayant la priorité la plus élevée.)*",
+        "Organize": "**Vérifier le Protectionnisme**: Si vous possédez soit le bouclier, soit les épées Score **vp:1** et placez deux guerriers dans une clairière qui comporte des pièces des Riverfolk et le plus grand nombre de pièces ennemies.",
+        "BattleShield": "Bataille dans chaque clairière. (Égalité du défenseur : le joueur ayant le moins de guerriers en paiement.)",
+        "BattleSword": "Bataille dans chaque **card : {{suit}}** de dégagement. (Égalité du défenseur : Joueur possédant le moins de guerriers dans les paiements.)"
+      },
+      "Looting Legion": {
+        "Battle": "**Bataille** dans chaque **card:{{suit}}** de dégagement. *N'oubliez pas les pilleurs.* *Lien Défenseur : Joueur cible disposant d'objets disponibles.*",
+        "Move": "**Déplacez** tous les guerriers sauf 2 de chaque **card:{{suit}}** vers la clairière adjacente ayant le plus de pièces ennemies. Ne déplacez pas les guerriers de la clairière du Chef de guerre.",
+        "Build": "**Construisez** une forteresse dans un espace **card:{{suit}}** que vous gouvernez.",
+        "Advance": "**Avance** : {{hoardNum}} fois : Déplacez le Seigneur de Guerre et tous les guerriers de son espace, à l'exception d'un seul, vers l'espace adjacent possédant le plus grand nombre de pièces ennemies, puis engagez le combat. *En cas d'égalité d'espace : Déplacez-vous vers l'espace numéroté le plus élevé.*",
+        "Anoint": "**Oignez** si le seigneur de guerre est hors de la carte : Placez le seigneur de guerre dans la clairière où se trouvent le plus de vos guerriers."
+      }
     },
     "SpecificEvening": {
         "Electric Eyrie": {
@@ -409,7 +598,35 @@
             "Score": "**Marquez** {{score}} PV.",
             "Discard": "**Défaussez** la carte ordre.",
             "NightmareScore": "**Marquez** **vp:1** par paire de joueurs humains _(arrondi supérieur)_."
-        }
+        },
+      "Cogwheel Corvids": {
+        "Score": "Score **vp:1** par complot d'extorsion découvert.",
+        "Discard": "Annuler la carte de commande."
+      },
+      "Drillbit Duchy": {
+        "Rally": "Dans chaque **card:{suit}}** où aucun bâtiment de Duchy n'est présent et avec deux guerriers ou moins, déplacez tous les guerriers de Duchy vers une clairière adjacente avec un bâtiment de Duchy. Ensuite, dans chaque clairière que vous contrôlez, placez tous les guerriers de Duchy sauf quatre dans le Terrier. (Priorité de clairière : Moins de guerriers de Duchy.) (Aucune clairière correspondante : Placez les guerriers qui auraient dû être déplacés dans le Terrier.).",
+        "Score": "Score **vp:1** par marché sur la carte",
+        "Sway": "Placez une couronne sur le ministre **card:{{suit}}** le plus élevé et non influencé. (Aucun ministre de ce type : influencez le ministre **card:bird** le plus bas et non influencé.)",
+        "Discard": "Annuler la carte de commande."
+      },
+      "Logical Lizards": {
+        "Score": "**Score** **vp:1** valorisant l'espace jardin vide le plus à droite.",
+        "DiscardLostSouls": "**Jeter** Âmes perdues.",
+        "ReturnRevealedCards": "**Retourner** les cartes révélées au sommet de vos Âmes Perdues, en préservant leur ordre précédent.",
+        "Craft": "**Forge** la première carte du paquet pour vp:1 si elle affiche un objet disponible. Ajoutez-la à vos Âmes Perdues (pas à la défausse).",
+        "ErraticReminder": "Erratique : Piocher une carte à la fin du tour."
+      },
+      "Riverfolk Robots": {
+        "Score": "**Score** **vp:1** par guerrier du joueur ayant le plus de guerriers dans Paiements, puis retirez ces guerriers de Paiements.",
+        "Racketeering": "**Protectionnisme** : De chaque assainissement, prenez tous les guerriers Riverfolk sauf deux et placez-les dans Paiements.",
+        "Discard": "**Défausser** la carte la plus à gauche du Marché.",
+        "DiscardShield": "**Protectionnisme (Bouclier uniquement)** : Défaussez à nouveau la carte la plus à gauche du marché."
+      },
+      "Looting Legion": {
+        "Incite": "**Inciter** : Place une foule dans un espace **card:{{suit}}** adjacent à une foule. Si vous ne pouvez pas, placez une foule dans un espace ordonné avec un de vos guerriers sans foule. *Lien d'espace : Espace avec ruines, puis plus de bâtiments, et jetons. Pas de Foules restantes : Retirez d'abord une foule de l'espace ayant le moins de ruines ou de bâtiments adjacents.*",
+        "Score": "**Score**: Score **vp:1** pour chaque 2 nettoyages que vous jugez.",
+        "Discard": "**Annuler** la carte de commande."
+      }
     },
     "SpecificExtra": {
         "Electric Eyrie": {
@@ -459,7 +676,53 @@
             "SatchelExhausted": "Épuisé",
             "SatchelDamaged": "Endommagé",
             "SatchelBattleTrack": "Combat"
+        },
+      "Cogwheel Corvids": {
+        "BotInteractions": {
+          "Overview": "Lorsqu'on joue avec les Corvid contre des bots, utilisez ces règles pour les scénarios :",
+          "Bomb": "Lorsqu'elle est retournée, retirez deux pièces de chaque bot dans sa zone de dégagement, les guerriers en premier, au lieu de toutes les pièces.",
+          "Snare": "Les bots ignorent les jetons piège pour déterminer les clairières à utiliser pour placer ou déplacer des pièces.<br>Si un bot devait placer ou déplacer une pièce dans une clairière contenant un piège, il retirerait le piège au lieu d'effectuer l'action.<br>(Vagabot continuera de se déplacer après cela, en épuisant les objets supplémentaires.)"
+        },
+        "Plot-Tokens": {
+          "Overview": "Lors de l'utilisation des Corvid à engrenage, appliquez ces règles à leurs jetons de scénario :",
+          "Bomb": "**Bombe**: Lorsqu'elle est retournée, elle élimine toutes les unités ennemies humaines dans son espace, puis remplace cette parcelle par une parcelle aléatoire placée face visible. (Le remplacement ne déclenche pas de réaction et ne peut pas être une bombe.)",
+          "Snare": "**Piège à fosse**: Tant qu'il est face visible, les pièces ennemies ne peuvent ni être placées ni être déplacées de cette clairière.",
+          "Extortion": "**Extorsion** : Lorsqu'il est retourné, chaque joueur ayant des éléments de faction dans sa clairière doit défausser une carte aléatoire.",
+          "Raid": "**Raid** : Lorsqu'elle est retirée, placez un guerrier dans chaque clairière adjacente."
         }
+      },
+      "Drillbit Duchy": {
+        "Ministers": {
+          "Captain": "En tant qu'attaquant au combat, infligez un coup supplémentaire si le nettoyage du combat comporte un tunnel.",
+          "Marshal": "Placez un guerrier de la Principauté dans une clairière qui compte le moins de guerriers de la Principauté et un bâtiment de la Principauté.",
+          "Foremole": "Vous avez un meeple révélé supplémentaire : **meeple:duchy**.",
+          "Brigadier": "Entreprendre l'action de fouille si le Repaire contient trois ou plusieurs guerriers du Duché. Pour cette action de fouille, utilisez la condition de liaison des Clairières pour un ordre de renard.",
+          "Banker": "Effectuez l'action de construction.",
+          "Mayor": "Retirez un guerrier de la duché de la clairière que vous contrôlez et qui en contient le plus. Si vous le faites, vous obtiendrez **vp:1**.",
+          "Earl": "Score **vp:1** par citadelle sur la carte.",
+          "Baron": "Score **vp:1** par marché sur la carte.",
+          "Duchess": "Score **vp:2** si les 3 tunnels sont présents sur la carte."
+        }
+      },
+      "Logical Lizards": {
+        "Lost Souls": "**Âmes perdues** : Chaque fois qu'une carte est dépensée ou défaussée, placez-la dans la pile des Âmes perdues à la place.",
+        "Conspiracy": "**Conspiracies** *Déterminez d'abord le joueur cible, puis la zone à nettoyer.*<br><br>**Convertir**<br>Dans une zone nettoyée ordonnée, remplacez un guerrier ennemi par un guerrier Saurien.<br>*Lien Joueur*: Joueur avec le plus de points.<br>*Lien Zone*: Zone avec le plus de bâtiments ennemis.<br>**Croisade**<br>Bataille dans chaque zone **card:{{suit}}** qui a 2+ guerriers Sauriens.<br>*Lien Défenseur*: Joueur avec le plus de points là-bas.<br>**Sanctifier**<br>Dans une zone **card:{{suit}}**, remplacez un bâtiment ennemi par un jardin correspondant.<br>*Lien Joueur*: Joueur avec le plus de points.<br>*Lien Zone*: Zone avec le moins de guerriers ennemis."
+      },
+      "Riverfolk Robots": {
+        "prot": "Dans Organiser (Jour/3e), vérifiez les conditions suivantes.",
+        "protShield": "Les Paiements n'ont pas de guerriers ?",
+        "protSword": "Votre ravitaillement ne comporte aucun guerrier ?",
+        "tradePost": "Chaque fois qu’un joueur supprime un avant-poste commercial, retirez la moitié de ses guerriers des Paiements (arrondis à l’entier supérieur).",
+        "servicesBirdsong": "Au début de Birdsong, un autre joueur peut acheter un service, plus un par dégagement avec un comptoir de commerce et les pièces de sa faction.",
+        "servicesCost": "Ils paient pour le service en plaçant des guerriers dans les Paiements, selon le nombre de points de victoire dont ils disposent. Si leur faction n'a pas de guerriers, placez des guerriers Riverfolk à la place.",
+        "servicesVictoryPoints": "*0-9 Points de Victoire = 2 Guerriers | 10-19 Points de Victoire = 3 Guerriers | 20+ Points de Victoire = 4 Guerriers*",
+        "serviceCard": "**Carte à la main** : Prendre une carte et l'ajouter à votre main.",
+        "serviceBoat": "**Riverboat**: Traitez les rivières comme des chemins pour ce tour.",
+        "serviceMerc": "**Mercenaires** : Pour la bataille et la domination durant le Jour et le Crépuscule, vous traitez les guerriers Riverfolk comme les vôtres, à l'exception des combats contre les Riverfolk. Au combat, vous devez diviser les coups entre vos unités et les guerriers Riverfolk."
+      },
+      "Looting Legion": {
+        "Hoard": "Score **vp:2** si le butin est plein et que vous ajouteriez un autre objet, puis retirez cet objet du jeu."
+      }
     },
     "ToastMessages": {
         "UpdateScore": "{{ botname }}: +{{ addend }} PV",
