@@ -524,7 +524,7 @@
     },
     "Drillbit Duchy": {
       "Dig": "If the Burrow has four or more warriors, place a tunnel in a **card:{{suit}}** clearing with no tunnel and no Duchy buildings. Also move {{tunnelValue}} warriors from the burrow to the tunnel.",
-      "DigNoTunnel": "<br/>No tunnel in supply, take and place the tunnel from the clearing with the fewest Duchy warriors",
+      "DigNoTunnel": "<br/>*No tunnel in supply, take and place the tunnel from the clearing with the fewest Duchy warriors*",
       "DigBird": "<br>*(Clearing Tie **card:{{suit}}**: Such a clearing with the most enemy buildings and tokens*",
       "DigTie": "<br>*(Clearing Tie **card:{{suit}}**: Such a clearing with the most empty building slots, then fewest enemy warriors.)*",
       "DigInvaders":"<br>*(Clearing Tie: A **card:{{suit}}** clearing with the most enemy buildings, then the fewest enemy warriors. If you cannot build because no building slots are open, **battle** in each clearing.)*",
