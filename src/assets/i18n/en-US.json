@@ -407,8 +407,8 @@
       "CraftOrder": "**Craft** order card for **vp:1** if it shows an available item.",
       "RecruitOrder": "**Recruit** {{difficulty}} warriors in each of two **card:{{suit}}** clearings. (Priority to clearings without plot tokens then with most Corvid warriors.)<br>(If you have no warriors in supply, immediately do the **Plot Thickens** before placing the remaining warriors.)",
       "Flip": "**Flip** each plot token (no warrior required). Each time you flip a plot, score +1 victory point per face-up plot on the map, then resolve its When Flipped effect if any.",
-      "FlipVendetta":"*Vendetta: All 'When Flipped' effects trigger bomb as well.*",
-      "FlipGamble":"*Gamble: When plot's would be flipped - the human with the most pieces in the clearing guesses its type. If correct, flip and score, DO NOT resolve the effect, then remove the token* **vp:1**. *If incorrect, Corvid's score* **vp:1**"
+      "FlipVendetta":"<br>*Vendetta: All 'When Flipped' effects trigger bomb as well.*",
+      "FlipGamble":"<br>*Gamble: When plot's would be flipped - the human with the most pieces in the clearing guesses its type. If correct, flip and score, DO NOT resolve the effect, then remove the token* **vp:1**. *If incorrect, Corvid's score* **vp:1**"
     },
     "Drillbit Duchy": {
       "RevealOrder": "Reveal an order card.",
@@ -519,7 +519,7 @@
       "Battle": "**Battle** in each of two **card:{{suit}}** clearings. (Defender Tie: Player with the most buildings and tokens there, then with the most points.)",
       "Move": "**Move** all but two warriors from each **card:{{suit}}** clearing with a face-up plot to an adjacent clearing with no plot. (Clearing Tie: Most Corvid Warriors.) (No Such Destination: Lowest Priority Clearing.)",
       "Plot": "**Plot** in the **card:{{suit}}** clearing with the most Corvid warriors and no plot, remove one Corvid warrior there to place a random facedown plot there.",
-      "PlotMastermind":"*Mastermind: Plot twice every turn.*",
+      "PlotMastermind":"<br>*Mastermind: Plot twice every turn.*",
       "PlotThickens": "**Plot Thickens**:In a clearing that has no plot and three or more Corvid warriors, remove a Corvid warrior from there to place a random facedown plot there. (Clearing Tie: Most Corvid Warriors.)"
     },
     "Drillbit Duchy": {

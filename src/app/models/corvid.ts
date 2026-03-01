@@ -92,14 +92,12 @@ export class CorvidBot extends Bot {
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RevealOrder`)),
       this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Cogwheel Corvids.CraftOrder`)),
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RecruitOrder`,{difficulty, suit })),
-      this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Cogwheel Corvids.Flip`))
     ];
-    if (this.rules.some(rules=>rules.traitName === "Vendetta" && rules.isActive)) {
-      base.push(this.createMetaData('text','',translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipVendetta`)));
-    }
-    if (this.rules.some(rules=>rules.traitName === "Gamble" && rules.isActive)) {
-      base.push(this.createMetaData('score',1,translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`)));
-    }    
+    const baseString = ''
+    const vendettaCheck = this.rules.some(rule=>rule.traitName === "Vendetta" && rule.isActive)
+    const gambleCheck = this.rules.some(rule=>rule.traitName === "Gamble" && rule.isActive)
+    base.push(this.createMetaData('score', 1, baseString.concat(translate.instant(`SpecificBirdsong.Cogwheel Corvids.Flip`), vendettaCheck ? translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipVendetta`):'', gambleCheck ? translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`):'')))
+
     return base;
   }
 
@@ -108,12 +106,12 @@ export class CorvidBot extends Bot {
     const base = [
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Battle`,{ suit })),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Move`,{ suit })),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Plot`,{ suit })),
     ]
     
-    if (this.rules.some(rules=>rules.traitName === "Gamble" && rules.isActive)) {
-      base.push(this.createMetaData('text','',translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`)));
-    } 
+    const baseString = ''
+    const mastermindCheck = this.rules.some(rules=>rules.traitName === "Mastermind" && rules.isActive)
+    base.push(this.createMetaData('text','',baseString.concat(translate.instant(`SpecificDaylight.Cogwheel Corvids.Plot`,{ suit }),mastermindCheck ? translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotMastermind`):'')));
+
     base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotThickens`)),)
     
     return base
