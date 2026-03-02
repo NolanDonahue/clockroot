@@ -1,0 +1,733 @@
+{
+  "AppTitle": "Root: De Klokwerk Companion",
+  "AppTitleShort": "Klokroot",
+  "NavTitle": "Bots",
+  "CloseText": "Sluiten",
+  "Language": "Taal",
+  "LederPlug": "Krijg de Clockwork Expansion van Leder Games!",
+  "PriorityMaps": "Prioriteitskaarten",
+  "NeedsSetup": "Installatie vereist",
+  "ClockworkBots": "Klokwerk Bots",
+  "DirectorsCut": "Regisseurseditie",
+  "BotSetup": {
+    "Setup": "Instellingen",
+    "PriorityMarkers": "Stel prioriteitsmarkeringen in voor de kaart.",
+    "ChooseDifficulty": "Kies een moeilijkheid",
+    "Difficulty": {
+      "Easy": "Gemakkelijk",
+      "Normal": "Normaal",
+      "Challenging": "Uitdaging",
+      "Nightmare": "Nachtmarel"
+    },
+    "DifficultyDC": {
+      "Easy": "Beginner",
+      "Normal": "Deskundige",
+      "Challenging": "Meester",
+      "Nightmare": "Baasmodus"
+    },
+    "ChooseVagabot": "Kies Vagabot",
+    "ChooseTraits": "Kies Kenmerken",
+    "DifficultyText": "Moeilijkheid",
+    "TurmoilText": "Je raakt in Turmoil als je geen nest kunt plaatsen.",
+    "TurmoilNobilityText": "Je valt in Turmoil als je geen roost of krijger kunt plaatsen."
+  },
+  "AddBot": "Voeg een bot toe door op de te klikken",
+  "Factions": {
+    "Mechanical Marquise": "Mechanische Marquise",
+    "Electric Eyrie": "Elektrisch Eyrie",
+    "Automated Alliance": "Automatiseringsalliantie",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "Mechanische Marquise (Directstroom)",
+    "Electric Eyrie (DC)": "Electric Eyrie (DC)",
+    "Automated Alliance (DC)": "Automatische Alliantie (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "Tandwiel Corviden",
+    "Drillbit Duchy": "Drillbit Hertogdom",
+    "Logical Lizards": "Logische Lizzarden",
+    "Riverfolk Robots": "Riverfolk Robots",
+    "Looting Legion": "Plundering Legioen"
+  },
+  "FactionsShort": {
+    "Mechanical Marquise": "Mr. Marquise",
+    "Electric Eyrie": "E. Eyrie",
+    "Automated Alliance": "A. Alliantie",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "Mr. Marquise (DC)",
+    "Electric Eyrie (DC)": "E. Eyrie (D.C.)",
+    "Automated Alliance (DC)": "A. Alliantie (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "C. Corviden",
+    "Drillbit Duchy": "D. Hertogdom",
+    "Logical Lizards": "L. Lizzarden",
+    "Riverfolk Robots": "R. Robots",
+    "Looting Legion": "L. Legioen"
+  },
+  "Priorities": {
+    "Title": "Kaartprioriteiten",
+    "Fall": "Vallen",
+    "Winter": "Winter",
+    "Lake": "meer",
+    "Mountain": "Berg"
+  },
+  "Sections": {
+    "DifficultyTraits": "Moeilijkheid & Kenmerken",
+    "VPItems": "Overwinningspunten & Items",
+    "DecreeRoosts": "Decreet & Roosts",
+    "Buildings": "Gebouwen",
+    "Birdsong": "Vogelzang",
+    "Daylight": "Daglicht",
+    "Evening": "Avond",
+    "Turmoil": "Oorlog",
+    "BattleTrackBonus": "Gevechtspad Bonus",
+    "SatchelBattleTrack": "Tasje & Slagspoor",
+    "SympathyBases": "Medelijden & Bases",
+    "VagabotDifficultyTrait": "Vagabot, Moeilijkheid, Kenmerken",
+    "BotRules": "Corvid Bot Specifieke Regels",
+    "RulesLizard": "Lizard Regels",
+    "RulesRiver": "Riverfolk Regels /",
+    "Hoard": "De Schat",
+    "Protectionism": "Beschermingsbeleid",
+    "Services": "Diensten"
+  },
+  "SpecificSetup": {
+    "Electric Eyrie": {
+      "Setup0": "Vorm een groep van 20 krijgers bij je.",
+      "Setup1": "Plaats 1 roost en 6 krijgers in de hoekklaar die diagonaal tegenover de klap met het burchttoken ligt. Als de Marquise niet speelt, plaats die stukken in een willekeurige hoekklaar.",
+      "Setup2": "Stek je 2 Loyal Vizier kaarten, zodat hun kleur zichtbaar is, in de meest rechter decreetkolom.",
+      "Setup3": "Verzamel je overgebleven 6 roost gebouwen en plaats ze bij je."
+    },
+    "Vagabot": {
+      "Setup0": "Plaats het Vagabot-pion in het bos dat aangrenzend is aan de meeste openingen. Als er meerdere dergelijke bossen zijn, kies dan willekeurig uit die bossen.",
+      "Setup1": "Meng het quest deck, trek 1 questkaart en leg de kaart open bij je. Deze quest kan alleen worden voltooid door de bot.",
+      "Setup2": "Plaats een willekeurig item gemarkeerd met 'R' onder elke ruïne op de kaart.",
+      "Setup3": "Neem vier willekeurige items gemarkeerd met 'S' en plaats ze in je Satchel. (De Tinker begint met drie items in plaats van vier items.)"
+    },
+    "Automated Alliance": {
+      "Setup0": "Vorm een groep van 10 krijgers bij je.",
+      "Setup1": "Verzamel je 3 bases en plaats ze dichtbij je.",
+      "Setup2": "Verzamel je 10 sympathietokens en plaats ze bij je."
+    },
+    "Mechanical Marquise": {
+      "Setup0": "Vorm een groep van 25 krijgers bij je.",
+      "Setup1": "Plaats het keep token in een willekeurige hoek clearing.",
+      "Setup2": "Plaats een voorsteker in elke open plek, behalve de hoekopen plek diagonaal tegenover de burcht. Plaats een extra voorsteker in de open plek met het burchttoken. _(Plaats 12 voorstekers in totaal.)_",
+      "Setup3": "Plaats 1 zaagfabriek, 1 werkplaats en 1 recruiter willekeurig in de clearing met het kasteel token en de aangrenzende clearings, met maximaal één gebouw per clearing.",
+      "Setup4": "Verzamel je overige 15 gebouwen en plaats ze bij je."
+    },
+    "Electric Eyrie (DC)": {
+      "Setup0": "Creëer een groep van 20 krijgers bij je.",
+      "Setup1": "Plaats 1 roost en 6 krijgers in de hoekkloof diagonaal tegenover de kloof met het token van de burcht. Als de Marquise niet speelt, plaats dan die stukken in een willekeurige hoekkloof.",
+      "Setup2": "Zet jouw 2 Loyal Vizier kaarten, zodanig dat hun kleur zichtbaar is, in de rechterkolom van decreten.",
+      "Setup3": "Verzamel je overgebleven 6 roost gebouwen en plaats ze bij je."
+    },
+    "Vagabot (DC)": {
+      "Setup0": "Plaats het Vagabot-pion in het bos dat het meeste open vlaktes heeft. Als er meerdere dergelijke bossen zijn, kies willekeurig tussen die bossen.",
+      "Setup1": "Schud het quest deck, trek 1 quest kaart en plaats het met de afbeelding naar boven bij je. Deze quest kan alleen worden voltooid door de bot.",
+      "Setup2": "Plaats een willekeurig item gemarkeerd met 'R' onder elke ruïne op de kaart.",
+      "Setup3": "Neem 4 items die gemarkeerd zijn met \"S\" en plaats ze in je Satchel. (De Tinker start met 3 items in plaats van 4 items.)"
+    },
+    "Automated Alliance (DC)": {
+      "Setup0": "Vorm een groep van 10 krijgers bij je.",
+      "Setup1": "Verzamel je 3 bases en plaats ze dichtbij je.",
+      "Setup2": "Verzamel jouw 10 sympathie tokens en plaats ze bij je."
+    },
+    "Mechanical Marquise (DC)": {
+      "Setup0": "Vorm een troep van 25 krijgers bij je.",
+      "Setup1": "Plaats het keep token in een willekeurige hoek clearing.",
+      "Setup2": "Plaats een strijder in elke kloof, behalve de hoekkloof diagonaal tegenover de burcht. Plaats een extra strijder in de kloof met het burchttoken. (Plaats in totaal 12 strijders.)",
+      "Setup3": "Plaats 1 zaagfabriek, 1 werkplaats en 1 recluter willekeurig tussen de open vlakten die aanliggen bij de open vlakte met de token van het kasteel met maximaal één gebouw per open vlakte.",
+      "Setup4": "Verzamel je overige 15 gebouwen en plaats ze bij je."
+    },
+    "Cogwheel Corvids": {
+      "Setup0": "Voorraad van 15 krijgers en 8 verhaaltokens met de afbeelding omlaag vormen.",
+      "Setup1": "Plaats 1 Warrior in de clearing met de laagste prioriteit van elk vak (3 in totaal)."
+    },
+    "Drillbit Duchy": {
+      "Setup0": "Voorraad bestaande uit 20 krijgers, 3 tunneltokens en 9 kroon.",
+      "Setup1": "Plaats het Burrow-bord bij de kaart.",
+      "Setup2": "Plaats 2 krijgers en 1 tunnel in een hoekkloof die niet de start-hoekkloof is. Vervolgens plaats je 2 krijgers in elke kloof die aangrenzend is aan de gekozen hoekkloof, behalve de Burrow.",
+      "Setup3": "Plaats 3 citadels en 3 markten op je overeenkomstige gebouwruimtes.",
+      "Setup4": "Trek 2 kaarten en gooi ze weg. Voor elk, plaats een kroon op de bovenste overeenkomende ongestelde minister op je fractiebord."
+    },
+    "Logical Lizards": {
+      "Setup0": "Vorm een groep van 25 krijgers.",
+      "Setup1": "Plaats 4 krijgers en 1 tuin met een overeenkomstige geprinte kleding in een willekeurige hoekopen plek die niet de startopen plek is van een andere bot (voorkeurlijk diagonaal tegenovergesteld). Vervolgens plaats je 1 krijger in elke aangrenzende open plek.",
+      "Setup2": "Plaats de uitgestoten marker op de Sanctify-ruimte van de Conspireerbaan op je factionspelbord.",
+      "Setup3": "Plaats je 14 overgebleven tuinen op de overeenkomende vakken van je Gardens tracks van rechts naar links.",
+      "Setup4": "Trek 3 kaarten en leg ze open in je Verlorene Zinnen in de volgorde waarin ze getrokken zijn."
+    },
+    "Riverfolk Robots": {
+      "Setup0": "Creëer een groep van 15 krijgers.",
+      "Setup1": "Plaats 1 krijger in elke open plek op de rivier.",
+      "Setup2": "Plaats 9 handelsposten op de overeenkomstige ruimtes van jouw Handelspostenbanen.",
+      "Setup3": "Plaats 1 krijger in je Betalingsdoos.",
+      "Setup4": "Trek 5 kaarten en voeg ze toe aan je Markt."
+    },
+    "Looting Legion": {
+      "Setup0": "Verzamel stukken en vorm voorraden van 20 krijgers, 1 oorlogshoofd en 6 burchten.",
+      "Setup1": "Plaats de vier 'R'-items willekeurig onder de ruïnes op de kaart.",
+      "Setup2": "Garnizoens: Plaats je beginkamp met een oorlogsheer, vier krijgers en één burcht in een willekeurige hoekkamp die niet het beginhoekkamp is van een andere speler en, indien mogelijk, diagonaal over tegenover een beginhoekkamp."
+    }
+  },
+  "SpecificDifficulty": {
+    "Electric Eyrie": {
+      "Easy": "Tijdens het opzetten, voeg alleen één Loyal Vizier toe aan het Decree.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "Tijdens de opstelling, pak één vogel Ambush uit het speelkaartdek en voeg het toe aan de vogelkolom van de Decree.",
+      "Nightmare": "Tijdens de opstelling, neem één vogel Ambush uit het deck en voeg het toe aan de vogelkolom van de Decree. Aan het einde van Avond, score een overwinningspunt."
+    },
+    "Vagabot": {
+      "Easy": "s 's avonds, vernieuw één item minder.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "In de avond, ververs nog een item.",
+      "Nightmare": "Tijdens Avond, ververs één extra item. Aan het einde van Avond, score één overwinningspunt."
+    },
+    "Automated Alliance": {
+      "Easy": "Je organiseert alleen als een clearing vier of meer Alliantie-vochten heeft.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "Je organiseert als een kamp twee of meer Alliantie krijgers heeft.",
+      "Nightmare": "Je organiseert als een open plek twee of meer Alliantie-strijders heeft. Aan het einde van de Avond, scoreer één overwinningspunt."
+    },
+    "Mechanical Marquise": {
+      "Easy": "Wanneer je **Rekrutert**, plaats je in plaats daarvan slechts twee krijgers.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "Elke keer dat je **Rekruteert**, plaats ook twee krijgers in de geordende bossen die je beheerst met de hoogste prioriteit.",
+      "Nightmare": "Wanneer je **Rekruteren** uitvoert, plaats dan ook twee krijgers in de geordende bergplaats die je regiert met de hoogste prioriteit. Aan het einde van de Avond, score één overwinningspunt."
+    },
+    "Electric Eyrie (DC)": {
+      "Easy": "Wanneer je **Rekrutere** voor vogel, plaats dan één minder voorstrijdige.",
+      "Normal": "Er is niets gewijzigd.",
+      "Challenging": "Elke keer dat je **Recruit** voor vogel, plaats dan in plaats daarvan één extra krijger.",
+      "Nightmare": "Wanneer je **rekrutert** voor vogel, plaats dan één extra krijger. Aan het einde van Avond, score één overwinningspunt per twee spelers (afgerond op boven)."
+    },
+    "Vagabot (DC)": {
+      "Easy": "In de avond vernieuw één item minder.",
+      "Normal": "Er is niets gewijzigd.",
+      "Challenging": "S avonds, ververs nog één item.",
+      "Nightmare": "Tijdens de Avond, vernieuw een extra item. Aan het einde van de Avond, score één overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Automated Alliance (DC)": {
+      "Easy": "Je organiseert alleen als een clearing vier of meer Alliantie krijgers heeft.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "Je **organiseert** als een gebied twee of meer Alliantie-oorlogsmannen heeft.",
+      "Nightmare": "Je **organiseert** als een gebied twee of meer Alliantie-krijgers bevat. Aan het einde van Avond, score je 1 overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Easy": "Wanneer je **Recruit**, plaats dan in plaats daarvan alleen drie krijgers.",
+      "Normal": "Er is niets veranderd.",
+      "Challenging": "Elke keer dat je **Rekrutere**rt, plaats dan vijf krijgers.",
+      "Nightmare": "Wanneer je **Recruteert**, in plaats daarvan vijf krijgers plaatsen. Aan het einde van Avond, score één overwinningspunt per twee spelers (afgerond op boven)."
+    },
+    "Cogwheel Corvids": {
+      "Easy": "Wanneer je **rekrutere**rt, plaats dan in plaats daarvan slechts één krijger in elk van de twee geordende kloven.",
+      "Normal": "Elke keer dat je **Recruit**, plaats in plaats daarvan twee krijgers in elk van twee aangewezen bossen.",
+      "Challenging": "Wanneer je rekruteert, plaats je in plaats daarvan drie krijgers in elke van de twee geordende clearings.",
+      "Nightmare": "Wanneer je **Rekruteren** uitvoert, plaats dan drie krijgers in elk van twee bestelde duidelijke bossen. Aan het einde van Avond, score dan één overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Drillbit Duchy": {
+      "Easy": "Wanneer je **Rekruteren** uitvoert, rekruteer in plaats daarvan slechts één krijger, plus één per gesignaleerde mol, in de woning.",
+      "Normal": "Wanneer je **Recruteren** uitvoert, recruteer dan in plaats daarvan twee krijgers, plus één voor elke zichtbare mol, in de grot.",
+      "Challenging": "Elke keer dat je **rekrutereert**, rekruteer in plaats daarvan drie krijgers, plus één per zichtbare mol, in de hol.",
+      "Nightmare": "Elke keer dat je **Rekrutert**, rekruteer je in plaats daarvan drie krijgers, plus één per mol die zichtbaar is, in de hol. Aan het einde van de Avond, scoor je één overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Logical Lizards": {
+      "Easy": "Elke keer dat je **Ritualen** uitvoert, toon je slechts drie kaarten uit je Verlorene Zien.",
+      "Normal": "Elke keer dat je **Ritualen** uitvoert, toon slechts vier kaarten uit je Verlorene Zinnen.",
+      "Challenging": "Bij het uitvoeren van **Ritualen**, toon vijf kaarten uit je Verlorene Ziel.",
+      "Nightmare": "Wanneer je ooit **Ritualen** uitvoert, ontdek vijf kaarten uit je Lost Souls. Aan het einde van Avond, score één overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Riverfolk Robots": {
+      "Easy": "Wanneer je **Bouw en Bezet**, plaats geen krijger bij de handelspost.",
+      "Normal": "Elke keer dat je **Bouw en Bezet**, plaats dan één krijger bij de handelspost.",
+      "Challenging": "Wanneer je **Bouwen en Garnizoens** uitvoert, plaats dan twee krijgers bij de handelspost.",
+      "Nightmare": "Wanneer je **Bouw en Bezetten** uitvoert, plaats dan twee krijgers bij de handelspost. Aan het einde van de Avond, score één overwinningspunt per twee spelers (afgerond naar boven)."
+    },
+    "Looting Legion": {
+      "Easy": "Elke keer dat je **rekrutereert**, plaats je één minder krijgers in de kloof van je oorlogshoofd.",
+      "Normal": "Wanneer je **rekrutert**, plaats dan één extra strijder in het kamp van de oorlogsheer voordat je strijders plaatst in burchten.",
+      "Challenging": "Elke keer dat je **rekrutereert**, plaats twee extra krijgers in het gebied van je oorlogshoofd voordat je krijgers plaatst bij vestingen.",
+      "Nightmare": "Elke keer dat je **recruiteert**, plaats dan twee extra krijgers in je krijgsheer's kamp voor het plaatsen van krijgers bij vestingen. Aan het einde van de avond score **VP:1** per twee vijandige spelers (afgerond naar boven)."
+    }
+  },
+  "SpecificRules": {
+    "RulePoorManualDexterity": "Slechte handvaardigheid",
+    "TextPoorManualDexterity": "Je hebt geen kaarten in je hand. Je kunt geen kaarten afwerpen. Als een mens een kaart van je zou nemen, trekt hij of zij in plaats daarvan een kaart. Als een mens een kaart aan je zou geven, gooit hij of zij die kaart weg, en je scoort **vp:1**.",
+    "RuleHatesSurprises": "Haat verrassingen",
+    "TextHatesSurprises": "Aanvalkaarten kunnen niet tegen je worden gespeeld.",
+    "RuleLordsOfTheForest": "Heeren van het Bos",
+    "TextLordsOfTheForest": "Je beheerst elke kloven waar je gebonden bent in aanwezigheid.",
+    "RuleNobility": "Adel",
+    "TextNobility": "U raakt nu in verwarring als u geen nest of krijger kunt plaatsen. Elke keer dat u in verwarring raakt, verliest u geen overwinningspunten. In plaats daarvan scoort u één overwinningspunt per vogelkaart in de Decree.",
+    "RuleRelentless": "Onvermoeibaar",
+    "TextRelentless": "Na het oplossen van het Decreet, verwijder alle onverdedigde gebouwen en tokens in elke open vlak met Eyrie veldheeren.",
+    "RuleSwoop": "Zweven",
+    "TextSwoop": "Aan het einde van Daglicht, plaats twee krijgers in de open plek met de hoogste prioriteit zonder Eyrie stukken.",
+    "RuleWarTax": "Oorlogsbelasting",
+    "TextWarTax": "Elke keer dat je een vijandig gebouw of token verwijdert, verliest de eigenaar één zegepunt.",
+    "RuleLoneWanderer": "Eenzaam Wandelende",
+    "TextLoneWanderer": "Uw paan is geen krijger en kan niet worden verwijderd van de kaart.",
+    "RuleNimble": "Wendbaar",
+    "TextNimble": "Je kunt je verplaatsen ongeacht wie de controle heeft over je clearing.",
+    "RuleAdventurer": "Avonturier",
+    "TextAdventurer": "Je kunt **Gevecht** niet meer dan één keer per beurt uitvoeren.<br>Aan het einde van Daylight, herhaal **Quest** zo vaak mogelijk.",
+    "RuleBerserker": "Berserker",
+    "TextBerserker": "Elke keer dat je **Slag aantrekt**, verplaats je in plaats daarvan naar de dichtstbijzijnde kloof met de meeste stukken en richt je op de speler met de meeste stukken daar.<br>S 's avonds repareer je één extra item.",
+    "RuleHelper": "Assistent",
+    "TextHelper": "Wanneer je **Aid** gebruikt, scoreert je één extra overwinningspunt, en trekt de gehulpene speler twee kaarten in plaats van één.",
+    "TextHelperDC": "Wanneer je **Hulp** biedt, indien er geen beschikbare items zijn, verplaats je je om de speler met de laagste score te helpen en verbruik één item om **vp:1** te scoren. De gehulpene trekt één kaart.",
+    "RuleMarksman": "Schutter",
+    "TextMarksman": "Aan het begin van de strijd als aanvaller, een directe slag toe_(waarbij je een punt scoort als je een vijandige krijger verwijdert)_",
+    "RuleAutomatedAmbush": "Automatische Aanval",
+    "TextAutomatedAmbush": "Tijdens een veldslag als verdediger met elke Alliantie-oorlogsmannen uitdeel je een extra slag.",
+    "RuleAutomatedOutrage": "Automatische Woede",
+    "TextAutomatedOutrage": "Wanneer een mens een medeleven token verwijdert of eenheidjes verplaatst naar een sympathieke dorp, moeten ze een overeenkomstige kaart afhandelen. Als ze dat niet kunnen, scoor jij **vp:1**.",
+    "RuleMartialLaw": "Militair gezag",
+    "TextMartialLaw": "Elke keer dat je een medeleids token plaatst in een clearing met drie of meer krijgers van een vijandige speler, score je één minder zegepunt (minimum van nul).",
+    "RuleCrackdown": "Actie",
+    "TextCrackdown": "Wanneer een basis wordt verwijderd, verwijder dan alle medeleven tokens van de klearingen die overeenkomen met de kleur van de verwijderde basis.",
+    "TextCrackdownDC": "Elke keer dat een basis wordt verwijderd, geef alle sympathie tokens uit de clearings terug die overeenkomen met de kleur van de verwijderde basis.",
+    "RuleInformants": "Informanten",
+    "TextInformants": "Kwetsbare medeleven tokens baatgeen van Automatische Aanval.",
+    "RulePopularity": "Populariteit",
+    "TextPopularity": "Vijanden verdienen geen overwinningspunten voor het verwijderen van sympathietokens.",
+    "TextPopularityDC": "Vijanden mogen slechts één overwinningspunt per beurt scoren voor het verwijderen van jouw sympatiegetToken.",
+    "RuleVeterans": "Veteranen",
+    "TextVeterans": "Verkrijg de Guerilla Warfare-vaardigheid van de Woodland Alliance. (Bij het vechten als verdediger gebruikt u de hogere rol en de aanvaller gebruikt de lagere rol.)",
+    "TextVeteransDC": "Bij het vechten als verdediger, gebruik hetzelfde dobbelsteenresultaat als de aanvaller. _(Beide spelers gebruiken de hogere dobbelsteen om het aantal geraakte slagen te bepalen.)_",
+    "RuleWildfire": "Woestebrand",
+    "TextWildfire": "Aan het einde van de avond, **Sympathie verspreiden**. Score geen punten voor het plaatsen van dit medeleven token.",
+    "RuleTheKeep": "Het Kasteel",
+    "TextTheKeep": "Alleen jij kunt stukken plaatsen in de open plek met het kasteel token.",
+    "RuleBlitz": "Bliksem",
+    "TextBlitz": "Na verplaatsing, vind de clearing die u heerst met de hoogste prioriteit zonder enige vijandige stukken. Verplaats alle behalve één krijger uit de clearing. Vervolgens moet u slag leveren in de bestemming clearing.",
+    "RuleFortified": "Versterkt",
+    "TextFortified": "Elk gebouw vereist twee treffers om te verwijderen. Een enkele treffer op een gebouw heeft geen effect.",
+    "RuleHospitals": "Ziekenhuizen",
+    "TextHospitals": "Aan het einde van de strijd als verdediger, als twee of meer Marquise-krijgers in de strijd werden verwijderd, plaats dan twee krijgers in het bos met het token van het kasteel.",
+    "TextHospitalsDC": "Aan het einde van de strijd als verdediger, als twee of meer Marquise-gezanten tijdens de strijd werden verwijderd, plaats dan één gezel in het dorp met het burchttoken.",
+    "RuleIronWill": "IJzeren Wil",
+    "TextIronWill": "Wanneer je **recruiten** doet in Escalated Daylight, zet dan twee keer zoveel krijgers.",
+    "TextIronWillDC": "**Repeat Daylight** kan twee keer per beurt voorkomen in plaats van slechts één keer.",
+    "RuleEmbeddedAgents": "Ingebouwde Agents",
+    "TextEmbeddedAgents": "Tijdens een strijd als verdediger met een gevouwen plot token, breng je een extra klap toe.",
+    "RuleBackupPlans": "Back-upplannen",
+    "TextBackupPlans": "Zodra een plot token wordt verwijderd, plaats dan een krijger in de kloof waaruit de plot is verwijderd.",
+    "RuleVendetta": "Vendetta",
+    "TextVendetta": "Elke keer dat een plottoken wordt omgedraaid, heeft het het effect bij omdraaien van een Bomb-plot.",
+    "RuleMastermind": "Mastermind",
+    "TextMastermind": "Je hebt nu **Plot** twee keer per beurt.",
+    "RuleGamble": "Gokken",
+    "TextGamble": "Elke keer dat een plot zou worden omgedraaid, moet de mens met het meeste stukken van de fractie in het open terrein eerst raden welk type plot het is. Als ze het juist raden, draait de plot om en scoort, maar lost het effect \"Wanneer omgedraaid\" niet op. Daarna verwijderen ze de plot (en scoren 1 punt). Als ze het verkeerd raden, scoor jij +1 Victory Point.",
+    "RuleCostOfErrors": "Kosten van Fouten",
+    "TextCostOfErrors": "Elke keer dat een willekeurig aantal Duke gebouwen wordt verwijderd, verwijder dan de kroon van de onderste overgehaalde minister.",
+    "RuleFoundations": "Grondslagen",
+    "TextFoundations": "Wanneer **Kosten van Fouten** wordt geactiveerd, verwijdert het nu de kroon van de onderste overtuigde minister wiens kleding overeenkomt met een open vlak waaruit een gebouw is verwijderd.",
+    "RuleInvestors": "Beleggers",
+    "TextInvestors": "Elke keer dat een mens **Cost of Errors** activeert, moet hij een kaart weggooien die overeenkomt met een dorp waarvan een Duchy-gebouw is verwijderd. Als hij een overeenkomende kaart weggooit, verliest de Duchy één zegepunt. Als hij dat niet kan, zwaait de Duchy een minister, zoals bij de overtuigingsactie, maar de minister moet ook overeenkomen met een dorp van verwijdering.",
+    "RuleInvaders": "Invaders",
+    "TextInvaders": "De prioriteit voor het veld bij de actie graven is nu 'een veld dat het meeste vijandgebouwen heeft, daarna het minste vijandkrijgers.' Als je niet kunt bouwen omdat er geen bouwlocaties beschikbaar zijn, voer dan een strijd uit in elk veld.",
+    "RuleOverwhelm": "Overweldiging",
+    "TextOverwhelm": "Je voert nu **Dig** twee keer per beurt uit, en het vereist en verplaatst nu alleen drie krijgers (niet vier).",
+    "RulePilgrims": "Pelgrims",
+    "TextPilgrims": "U beheert vrijvlakken die een tuin hebben.",
+    "RuleRobotRevenge": "Robot Wraak",
+    "TextRobotRevenge": "Wanneer enige Lizard strijders buiten jouw beurt worden verwijderd, plaats er één van hen in jouw Acolytes box.",
+    "RuleFanatics": "Fanaten",
+    "TextFanatics": "Wanneer je **Converteert**, voer dan een slag uit in dat veld na het converteren van de strijder. In deze slag geef je een extra slag. *Speler gelijkstand: Gerichte speler met de meeste onbeschermde gebouwen, daarna de meeste punten.*",
+    "RuleMartyrs": "Martelaren",
+    "TextMartyrs": "Zoals je een vogelritueel uitvoert, plaats ook een krijger uit je voorraad in je Acolytes-doos.",
+    "RuleErratic": "Onregelmatig",
+    "TextErratic": "Aan het einde van je beurt, trek een kaart en voeg het toe aan je Lost Souls.",
+    "RuleSpiteful": "Kwaadaardig",
+    "TextSpiteful": "Wanneer je **Kruistocht** uitvoert, score je één extra zegepunt als je tokens verwijdert.",
+    "RuleMarket": "Markt",
+    "TextMarket": "De markt is een rij van kaarten met de voorzijde omhoog, de volgorde van haar kaarten kan niet veranderen.",
+    "RuleGarrison": "Garnizoens",
+    "TextGarrison": "Als verdediger in een slag bent u nooit onverdedigbaar, en elke handelspost voegt één toe aan uw maximale geroolde treffers.",
+    "RuleGreedy": "Gierig",
+    "TextGreedy": "Score +1 overwinningspunt elke keer dat de speler met de meeste punten een willekeurig aantal van jouw diensten koopt.",
+    "RuleFerocious": "Woest",
+    "TextFerocious": "Als aanvaller in een strijd, is je maximum aantal geropte treffers altijd drie.",
+    "RuleInvolved": "Betrokken",
+    "TextInvolved": "Als een mens uw dienst Mercenaries niet koopt tijdens hun beurt, behandel uw krijgers alsof alle vijanden van die speler Mercenaries hebben gekocht. De Vagabond kan Mercenaries kopen om deze straf te vermijden, maar profiteert niet van de dienst.",
+    "RuleAutomatedLooters": "Automatische Looters",
+    "TextAutomatedLooters": "Tijdens een veldslag als aanvaller tegen een verdediger met een beschikbaar item in een open plek waar jij de overhand hebt - neem het item maar deel geen treffers.",
+    "RuleWarlord": "De Oorlogshoofd",
+    "TextWarlord": "Je warlord is een krijger die niet kan worden verwijderd buiten de strijd, verplaatst buiten jouw beurt, of geplaatst, behalve met Anoint. *Het clearing van de Warlord wordt altijd beschouwd als de opgegeven clearing.*"
+  },
+  "SpecificBirdsong": {
+    "Electric Eyrie": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Aanmaken bestelkaart voor **vp:1** als het een beschikbaar item toont.",
+      "DecreeOrder": "Voeg de bestelkaart toe aan de overeenkomende decreetkolom.",
+      "NewRoost": "Plaats een roost en 4 krijgers in de geordende open plek met de hoogste prioriteit waar alle die stukken kunnen worden geplaatst. _(Opzettelijk niet op het bord vermeld.)_"
+    },
+    "Vagabot": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Maak een bestelkaart aan voor **vp:1** als het een beschikbaar item toont.",
+      "RestOrder": "Als je twee of minder ongeschonden items hebt, beweeg naar een willekeurige aangrenzende bos, dan ga je naar Evening."
+    },
+    "Automated Alliance": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Aanmaakbestellingkaart voor **vp:1** als het een beschikbaar item toont.",
+      "Revolt": "Verwijder alle vijandige stukken uit het **card:{{suit}}** sympathieke veld met het meeste vijandige stukken, en plaats de **card:{{suit}}** basis daar.",
+      "RevoltSpread": "Als je niet hebt gerevolteerd, **Verspreid medeleven** {{sympathySpread}}.",
+      "Spread": "Verbreid Sympathie {{sympathySpread}}."
+    },
+    "Mechanical Marquise": {
+      "RevealOrder": "Toon een orderkaart.",
+      "CraftOrder": "Bestelkaart voor **vp:1** aanmaken als het een beschikbaar item toont."
+    },
+    "Electric Eyrie (DC)": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Bestelkaart aanmaken voor **vp:1** als het een beschikbaar item toont.",
+      "DecreeOrder": "Voeg de bestelkaart toe aan de overeenkomstige Decreetkolom.",
+      "NewRoost": "Plaats een roost en 3 krijgers in de geordende ruimte van de hoogste prioriteit waar al die stukken kunnen worden geplaatst. _(Deliberately niet op het bord vermeld.)_"
+    },
+    "Vagabot (DC)": {
+      "RevealOrder": "Toon een orderkaart.",
+      "CraftOrder": "Bestelkaart voor **vp:1** maken als het een beschikbaar item toont.",
+      "RestOrder": "Als je twee of minder ongeschonden items hebt, beweeg dan naar een willekeurige aangrenzende bos, en ga daarna naar Evening."
+    },
+    "Automated Alliance (DC)": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Maak een bestelkaart aan voor **vp:1** als het een beschikbaar item toont.",
+      "Revolt": "Verwijder alle vijandige stukken van het **card:{{suit}}** sympathieke veld met de meeste vijandige stukken, en plaats de **card:{{suit}}** basis daar.",
+      "Spread": "**Verspreid medelijden** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "RevealOrder": "Toon een bestelkaart.",
+      "CraftOrder": "Maak een bestelkaart voor **vp:1** als het een beschikbaar item toont."
+    },
+    "Cogwheel Corvids": {
+      "RevealOrder": "Onthul een bestelkaart.",
+      "CraftOrder": "Bestel bestelkaart voor vp:1 als het een beschikbaar item toont.",
+      "RecruitOrder": "**Rekruteer** {{moeilijkheid}} krijgers in elk van de twee **card:{{kleur}}** kloven. (Prioriteit aan kloven zonder verhaaltokens, daarna met de meeste Corvid-krijgers.)<br>(Als je geen krijgers in de voorraad hebt, voer dan direct **Plot Thickens** uit voordat je de overige krijgers plaatst.)",
+      "Flip": "**Omdraaien** van elk plottoken (geen krijger vereist). Elke keer dat je een plot omkeert, score +1 zegepunt per plot die met de juiste kant bovenwaarts ligt op het bord, en voer daarna het effect van 'Wanneer Omdraaid' uit als er een is.",
+      "FlipVendetta": "<br>*Vendetta: Alle 'bij omkeren' effecten activeren ook een bom.*",
+      "FlipGamble": "<br>*Gok: Wanneer de plot zou worden omgekeerd – de speler met de meeste stukken in de openbare ruimte raadt het type. Als correct, keer om en score, LOS HET EFFECT NIET OP, verwijder daarna het token* **vp:1**. *Als incorrect, Corvid's score* **vp:1**"
+    },
+    "Drillbit Duchy": {
+      "RevealOrder": "Toon een orderkaart.",
+      "CraftOrder": "Maak een bestelkaart voor **vp:1** als het een beschikbaar item toont.",
+      "RecruitOrder": "Rekruteer {{moleDifficulty}} soldaten, plus één per **meeple:duchy** die wordt getoond, plaats ze in het gat. (Momenteel: rekruteer **{{moleRecruit}}** soldaten.)"
+    },
+    "Logical Lizards": {
+      "Outcasts": "De meest voorkomende kleur in je Lost Souls is de order. Bij een knoop is de order **card:bird**.",
+      "Conspiracy": "Voer complotten uit in **card:{{suit}}** openingen. Je voert het aangegeven complot uit als mogelijk, verwijder dan een acolyt als je het hebt uitgevoerd, en ga door tot je geen acolyten meer hebt of je geen complot meer kunt uitvoeren."
+    },
+    "Riverfolk Robots": {
+      "StockMarket": "Trek twee kaarten en voeg ze toe aan de rechterkant van de Markt. Trek geen kaart zodra de Markt 5 kaarten heeft bereikt.",
+      "CraftOrder": "Maak de eerste kaart die aan de Market is toegevoegd en toont een beschikbaar item voor **vp:1**, en verwijder deze daarna.",
+      "SetOrder": "Stel de volgorde in als de meest rechter Marktkaart."
+    },
+    "Looting Legion": {
+      "Reveal": "Onthul de bovenste kaart van de kaartentas als de ordekaart.",
+      "Craft": "Creëer de bestelkaart als het een beschikbaar item toont, je scoort geen punten.",
+      "Raze": "**Raze**: Bij elke mob: verwijder alle vijandige gebouwen en tokens, neem een item uit de ruïne op als er een is, en verwijder de ruïne als deze leeg is.",
+      "Recruit": "Rekruteer {{hoardNum}} strijders in het kamp van je oorlogshoofd, daarna één strijder per vesting."
+    }
+  },
+  "SpecificDaylight": {
+    "Electric Eyrie": {
+      "Recruit": "Rekruteer {{totalForSuit}} veldheer(s) in een {{suitText}} kloof met een nest. {{recruitText}}<br>_(**Gelijkstanden**: Rekruteer in zo’n kloof met de meeste vijandige stukken, daarna het minste Eyrie-veldheeren, daarna laagste prioriteit.)_",
+      "Move": "Verplaats je van het {{suitText}} dorp dat je met de meeste van je krijgers beheerst naar een aangrenzend dorp. Laat genoeg krijgers achter om het oorsprongsdorp precies te beheren of {{totalForSuit}}, afhankelijk van welk getal het hoogst is.<br>_(**Destination Ties**: Verplaats je naar een dorp zonder nest, daarna naar een dorp met het minste aantal vijandige stukken, en tenslotte naar een dorp met de laagste prioriteit.)_",
+      "Battle": "Slag leveren in een {{suitText}} kloof tegen de speler met de meeste gebouwen daar. {{extraHit}}<br>_(**Kloof gelijkstellingen**: Slag leveren in zo'n kloof zonder roost, dan meeste onverdedigde gebouwen, dan laagste prioriteit.)_<br>_(**Verdediger gelijkstellingen**: Slag leveren met zo'n speler met de meeste stukken daar, dan de speler met de meeste overwinningspunten.)_",
+      "ExtraHit": "Een extra slag toebrengen.",
+      "ExtraDecree": "Je zou minstens 2 vogelkaarten aan het decreet moeten hebben toegevoegd.",
+      "ExtraRelentless": "Verwijder alle onverdedigde tokens en gebouwen in elke klaarheid met Eyrie warriors.",
+      "ExtraRecruit": "Als je een krijger niet kunt plaatsen, word je overweldigd door turbulentie.",
+      "ExtraBuild": "Plaats een roost in de open plek die u beheert met de hoogste prioriteit zonder roost. Als u geen roost kan plaatsen, valt u in chaos.",
+      "ExtraSwoop": "Plaats twee krijgers in de kloof met de hoogste prioriteit zonder Eyrie-stukken."
+    },
+    "Vagabot": {
+      "ActionExplore": "Beweeg naar het dichtstbijzijnde ruïen, verbruik één item per beweging, en verbruik vervolgens één item om een item te nemen uit die ruïen.",
+      "ActionQuest": "Beweeg naar het dichtstbijzijnde open vlak dat overeenkomt met de opdracht, vervolgens uitput twee willekeurige items om de opdracht te verwijderen en **vp:1** te scoren. _(Negeer kaarttekst.)_ Vervolgens vervang de opdracht.",
+      "ActionQuestRepeat": "Herhaal dit zo vaak als mogelijk.",
+      "ActionAid": "Richt je op de speler in je kamp met items en de minste VP onder die spelers. Verbruik zo veel items mogelijk, maar niet meer dan het aantal items die ze bezitten, neem zo veel items van hen, en score {{aidHelpText}}zo veel VP. Vervolgens trekken ze {{aidHelpText}}zo veel kaarten.",
+      "ActionBattle": "Beweeg naar het dichtstbijzijnde open terrein met enige stukken van de vijand met de meeste {{target}}, verbruik daarna één item om te vechten tegen die speler. Score **vp:1** per verwijderde vijandige strijder.",
+      "ActionBattleTarget": "Vicepresident",
+      "ActionBattleTargetBerserker": "stukken",
+      "ActionBattleAdventurer": "Herhaal deze actie, verbruik twee items per extra gevecht, zo vaak als mogelijk.",
+      "ActionBattleMarksman": "Deel onmiddellijke schade in elke veldslag.",
+      "ActionBattleTiebreaker": "Als de doelverdediger zich in meerdere openingen op gelijke afstand bevindt, verplaats je naar de opening waar ze het meeste gebouwen en tokens hebben, daarna het weinigste krijgers.",
+      "ActionRepair": "Als u beschadigde items heeft, gebruik dan één item om één beschadigd item te repareren, onverbruikt voordat het verbruikt is.",
+      "ActionSpecial": "Verbruik één item om het volgende te doen (overslaan als het geen effect heeft):"
+    },
+    "Automated Alliance": {
+      "Sympathy": "Plaats een sympathie token in de **card:{{suit}}** klaar met de minste vijandige strijders die aangrenzend zijn aan enige sympathieke klaar.<br>(**Geen Dergelijke Klaar**: Plaats in plaats daarvan een sympathie token op de klaar met de minste vijandige stukken.)<br>(**Kan Niet Verspreiden**: Als je geen sympathie token kunt plaatsen, scoor dan 5 VP.)",
+      "Revolt": "Verwijder alle vijandige stukken uit elk sympathieke veld met de meeste vijandige stukken, en plaats het overeenkomstige basis daar."
+    },
+    "Mechanical Marquise": {
+      "Blitz": "Vind het gebied met de hoogste prioriteit dat geen vijandelijke stukken bevat. Verplaats alle vechters behalve één van het gebied. Vervolgens voer je een strijd uit in het bestemming gebied.",
+      "Bird0": "Slag in alle open plekken. _(De verdediger is de speler met het meeste stukken, daarna overwinningspunten.)_",
+      "Bird1": "Rekruteer {{warriorsOverTwo}} veldheer in elk van de twee gebieden die u beheert met de laagste prioriteit. Als u slechts één gebied beheert, plaats dan alle {{totalWarriors}} veldhers daar.",
+      "Bird2": "Bouw een gebouw van het type met het meeste stukken op de kaart in een open vlak dat je beheerst met de meeste Marquise Warriors.<br>_(Bij gelijkstand tussen zagerijen en andere gebouwtypen, plaats dan een zagerij. Bij gelijkstand tussen werkplaatsen en rekruteringsgebouwen, maar niet zagerijen, plaats dan een rekruteringsgebouw.)_",
+      "Bird3": "Verplaats alle behalve drie van jouw krijgers uit elke helderheid naar de aangrenzende helderheid met de meeste vijandelijke stukken. Daarna slag leveren in elke helderheid waar je heen bent gegaan.",
+      "BirdChallenging": "Plaats twee krijgers in de geordende clearing die je beheerst met de hoogste prioriteit.",
+      "Suit0": "Slag in elke **card:{{suit}}** clearing. _(Verdediger is de speler met de meeste stukken, daarna overwinningspunten.)_",
+      "Suit1": "Rekruteer {{totalWarriors}} krijgers gelijkmatig verspreid over **card:{{suit}}** clearings die u beheerst. Als er extra krijgers zijn die niet gelijkmatig kunnen worden geplaatst in **card:{{suit}}** clearings, plaats dan de laatste krijger in de **card:{{suit}}** clearing met de hoogste prioriteit.",
+      "Suit2": "Bouw een **gebouw:{{building}}** in een clearing die je beheerst met de meeste Marquise krijgers.",
+      "Suit3": "Verplaats alle behalve drie van je krijgers uit elk **card:{{suit}}** dorpje naar het aangrenzende dorpje met de meeste vijandelijke stukken.",
+      "Repeat": "Als je dit beurt geen gebouw hebt geplaatst en je vijf of minder gebouwen op de kaart hebt, verwijder dan de orderkaart, trek een nieuwe, en herhaal Daylight."
+    },
+    "Electric Eyrie (DC)": {
+      "Recruit": "Rekruteer {{recruitNum}} strijder(s) in een {{suitText}} clearing met een nest. {{recruitText}}<br>_(**Gelijkstellingen**: Rekruteer in zulke een clearing met de meeste vijandige stukken, daarna het minste aantal Eyrie strijders, daarna de laagste prioriteit.)_",
+      "Move": "Verplaats je van de {{suitText}} kluis die je beheert met de meeste van jouw krijgers naar een aangrenzende kluis. Laat genoeg krijgers achter om de oorsprongskluis precies te beheren of {{totalForSuit}}, afhankelijk van welk getal hoger is. Neem geen kluis in overweging waarin geen krijger zou verplaatsen.<br>_(**Doelkluis gelijkheid**: Verplaats je naar zo'n kluis zonder roost, dan met de minste vijandige stukken, dan met de laagste prioriteit.)_",
+      "Battle": "Slag leveren in een {{suitText}} kloof. {{extraHit}}<br>_(**Kloof gelijkstellingen**: Slag leveren in zo'n kloof zonder roost, dan de meeste onverdedigde gebouwen.)_<br>_(**Verdediger gelijkstellingen**: Slag leveren met zo'n speler die het meeste gebouwen heeft daar, dan de speler met daarna het meeste stukken daar.)_",
+      "ExtraHit": "**Een extra slag toepassen.**",
+      "ExtraDecree": "Je had moeten minstens 2 vogelkaarten toevoegen aan het decreet.",
+      "ExtraRelentless": "Verwijder alle onbeschermde tokens en gebouwen in elke open plek met Eyrie krijgers.",
+      "ExtraRecruit": "Als je geen krijger kunt plaatsen, raak je in turbulentie.",
+      "ExtraBuild": "Plaats een roost in de kloof die je beheerst met de hoogste prioriteit en zonder roost. Als je geen roost kunt plaatsen, raak je in verwarring.",
+      "ExtraSwoop": "Plaats twee krijgers in het vrijvlak met de hoogste prioriteit zonder Eyrie-stukken."
+    },
+    "Vagabot (DC)": {
+      "ActionExplore": "Ga naar de dichtstbijzijnde ruïne, verbruik vervolgens een item om er een item van te nemen.",
+      "ActionQuest": "Beweeg naar het dichtstbijzijnde open veld dat overeenkomt met de opdracht, vermoei daarna twee willekeurige items om de opdracht te verwijderen en 2 VP te behalen. _(Negeer kaarttekst.)_ Vervang daarna de opdracht.",
+      "ActionQuestRepeat": "Herhaal dit zo vaak mogelijk.",
+      "ActionAid": "Beweeg naar de dichtstbijzijnde open plek die stukken bevat van een speler met items, indien mogelijk. Verbruik vervolgens een item om er een van hun items te nemen en dit in je zak te plaatsen. Score **vp:1** en daarna trekken ze een kaart.<br>_(**Speler Gelijk**)_: indien meerdere spelers stukken hebben op gelijke afstand, selecteer de speler met de lagere score.",
+      "ActionBattle": "Beweeg naar het dichtstbijzijnde open terrein met enige stukken van de vijand met de meeste {{target}}, verbruik vervolgens een item om die speler te vechten. Score **vp:1** per verwijderde vijandige krijger.",
+      "ActionBattleTarget": "Vicepresident",
+      "ActionBattleTargetBerserker": "stukken",
+      "ActionBattleAdventurer": "Herhaal deze actie, verbruik twee items per extra gevecht, zoveel keer als mogelijk is.",
+      "ActionBattleMarksman": "Toon directe schade bij elke slag.",
+      "ActionBattleTiebreaker": "Als het doelwitverdediger zich in meerdere openingen op gelijke afstand bevindt, verplaats je naar de opening waar ze de meeste gebouwen en tokens hebben, en vervolgens de opening met de minste krijgers.",
+      "ActionSpecial": "Verbruik één item om het volgende te doen (overslaan als het geen effect zou hebben):"
+    },
+    "Automated Alliance (DC)": {
+      "Sympathy": "Plaats een medeleven token in een niet medeleven aangrenzend plein dat aangrenst aan een medeleven plein.<br>(**Plein Tie**: Vermijd pleinen met 3 of meer krijgers van één speler, en plaats het dan in het **card:{{suit}}** plein.)<br>(**Niet verspreiden**: Als je geen medeleven token kunt plaatsen, score dan 5 VP.)",
+      "SympathyBird": "Plaats een medeleven token in een onmedeleven aangrenzend dorp dat aangrenst aan een medeleven dorp.<br>(**Dorp Tie**: Plaats in het dorp met de laagste prioriteit.)<br>(**Kan Niet Verspreiden**: Als je geen medeleven token kunt plaatsen, score dan 5 VP.)",
+      "Revolt": "Verwijder alle vijandige stukken van elke sympathieke open plek met de meeste vijandige stukken, en plaats het overeenkomstige basis daar.",
+      "RevoltSpread": "Als je niet verzet hebt gedaan, **Verspreid medeleven** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "Blitz": "Vind het vrijvlak dat u beheerst met de hoogste prioriteit zonder enige vijandelijke stukken. Verplaats alle behalve één krijger uit het vrijvlak. Daarna slag leveren in het bestemming vrijvlak.",
+      "Bird0": "Slag in alle openingen. (De verdediger is de speler met het meeste stukken, dan overwinningspunten.)",
+      "Bird1": "Rekruteer {{totalWarriors}} wachter(s) gelijkmatig over de twee gebieden met de laagste prioriteit die u beheert. Als u slechts één gebied beheert, plaats dan alle {{totalWarriors}} daar. Score **vp:1** voor elke twee wachters die niet konden worden aangeworven.",
+      "Bird2": "Bouw een gebouw van het type met het meeste stukken op de kaart in een vrijvlak dat u beheert met de meeste Marquise Warriors.<br>_(Bij gelijke aantallen tussen zagerijen en andere gebouwtypes, plaats dan een zagerij. Bij gelijke aantallen tussen werkplaatsen en rekruteringsposten, maar niet bij zagerijen, plaats dan een werkplaats.)_",
+      "Bird3": "Verplaats alle behalve drie van jouw krijgers uit elke open plek naar de aangrenzende open plek met de meeste vijandelijke stukken. Daarna slag leveren in elke open plek waar je heen bent gegaan.",
+      "Suit0": "Slag in elke **card:{{suit}}** clearing. (De verdediger is de speler met de meeste stukken, daarna zegepunten.)",
+      "Suit1": "Rekruteer {{totalWarriors}} soldaten gelijkmatig verdeeld over **card:{{suit}}** clearings die je beheerst. Score **vp:1** voor elke twee soldaten die niet gerekruteerd konden worden.<br>_(**Clearing tie**: Plaats soldaten in de clearings met de hoogste prioriteit eerst.)_",
+      "Suit2": "Bouw een **gebouw:{{building}}** in een open vlak dat je beheerst met de meeste Marquise soldaten.",
+      "Suit3": "Verplaats allemaal behalve drie van je krijgers uit elk **card:{{suit}}** dorpje naar het aangrenzende dorpje met de meeste vijandelijke stukken. Elke krijger mag slechts één keer verplaatsen tijdens deze actie."
+    },
+    "Cogwheel Corvids": {
+      "Battle": "**Slag** in elk van de twee **card:{{suit}}** clearings. (Gelijkstand bij verdediger: Speler met het meeste gebouwen en tokens daar, daarna met de meeste punten.)",
+      "Move": "**Verplaats** alle behalve twee krijgers van elke **card:{{suit}}** kloof met een open kaart naar een aangrenzende kloof zonder kaart. (Kloof gelijkstand: Meeste Corvid Krijgers.) (Geen dergelijke bestemming: Laagste prioriteitskloof.)",
+      "Plot": "Als er een **Plot** in het **veld:{{suit}}** is met de meeste Corvid soldaten en geen plot, verwijder dan één Corvid soldaat daar om een willekeurige gevouwen plot daar te plaatsen.",
+      "PlotMastermind": "<br>*Mastermind: Spioneren twee keer per beurt.*",
+      "PlotThickens": "**De Plot Dikker**: In een open vlak dat geen plot heeft en drie of meer Corvid-oorlogvoerders bevat, verwijder een Corvid-oorlogvoerder vanaf daar om een willekeurige plot met het gezicht omlaag te plaatsen daar. (Gelijkstand in open vlak: Meeste Corvid-oorlogvoerders.)"
+    },
+    "Drillbit Duchy": {
+      "Dig": "Als de Burcht vier of meer krijgers heeft, plaats dan een tunnel in een **card:{{suit}}** open plek zonder tunnel en zonder Dukale gebouwen. Verplaats ook {{tunnelValue}} krijgers van de burcht naar de tunnel.",
+      "DigNoTunnel": "<br/>*Geen tunnel in voorraad, nem en plaats de tunnel uit de kloof met de minste Dukale krijgers*",
+      "DigBird": "<br>*(Veld Tie **card:{{suit}}**: Zo'n veld met de meeste vijandige gebouwen en tokens*",
+      "DigTie": "<br>*(Zo'n opheffing **card:{{suit}}**: Zo'n opheffing met de meeste lege gebouwvakken, en daarna de minste vijandige krijgers.)*",
+      "DigInvaders": "<br>*(Ongelijkheid in het veld: een **card:{{suit}}** veld met het meeste vijandelijke gebouwen, dan het minste vijandelijke krijgers. Als je niet kunt bouwen omdat er geen bouwslots beschikbaar zijn, **slag leveren** in elk veld.)*",
+      "DigOverwhelm": "<br>*Graven twee keer per beurt.*",
+      "Battle": "**Slag** in elke **card:{{suit}}** opruiming. (Gelijkstand Verdediger: Speler met het meeste gebouwen, daarna het meeste stukken, daarna het meeste punten.)",
+      "BattleCaptain": "**Slag** in elke **card:{{suit}}** verwijderen. (Defender Tie: Speler met het meeste gebouwen, daarna het meeste stukken, daarna het meeste punten.)<br/>**Captain** is beïnvloed, vergeet zijn effect in de slag niet.",
+      "Build": "**Bouw** in de open plek die je beheerst met de meeste Duchy strijders. Plaats een citadel als je 9+ strijders in je voorraad hebt. Anders plaats je een markt. Score **vp:1** als je geen gebouw kunt plaatsen terwijl er een in voorraad is.",
+      "Ministers": "Voer de acties van alle beïnvloede ministers van boven naar beneden uit. (Uw Heeren geven op dit moment **{{ministerPoints}}** VP)"
+    },
+    "Logical Lizards": {
+      "Rituals": "Rituelen: Toon de bovenste {{difficulty}} kaarten uit je Lost Souls één voor één, en voer een ritueel uit voor elke ontdekte kleur.",
+      "RitualsBird": "<br>**card:bird**: Neem een Lizarden strijder van het gebied met het meeste Lizarden strijders, en plaats het in de Acolytes doos. **Plaats deze kaart in de AFVAL stapel, NIET in de Verlore Zielens stapel.**",
+      "RitualsOther": "<br>**card:{{suit}}**: Plaats een krijger in een **card:{{suit}}** kloof. Daarna, als je daar heersert, plaats dan een overeenkomstige tuin daar. (Kloof Tie: Plaats de krijger in de kloof met enige open bouwlocaties, dan meeste vijandige gebouwen.)"
+    },
+    "Riverfolk Robots": {
+      "BuildAndGarrison": "**Bouw en Bewaak**: Plaats een handelspost en {{riverDifficulty}} krijgers in een **card:{{suit}}** bossen zonder handelspost. <br>*(Bossen Tie: Bossen met stukken van de speler die de meeste krijgers heeft in betalingen.)*",
+      "RecruitOther": "**Rekruteer** één krijger per **card:{{kleur}}** open vlak. <br>*(Te weinig krijgers: Plaats krijgers op open vlakken met de hoogste prioriteit.)*",
+      "RecruitBird": "**Rekruteer** één krijger in elk dorpje aan de rivier. <br>*(Niet genoeg krijgers: Plaats krijgers op dorpjes met de hoogste prioriteit.)*",
+      "Organize": "**Controleer op Beschermingsbeleid**: Als je óf het schild óf de zwaarden hebt met Score **vp:1** en twee krijgers plaatst in een open vlak dat Riverfolk-stukken en het meeste vijandelijke stukken bevat.",
+      "BattleShield": "Slag in elke ommegang. (Defender Tie: Speler met het kleinste aantal krijgers in betalingen.)",
+      "BattleSword": "Slag in elk **card:{{suit}}** scherm. (Verdedigingsgelijkstand: Speler met het minste aantal krijgers in betalingen.)"
+    },
+    "Looting Legion": {
+      "Battle": "**Slag** in elke **card:{{suit}}** verwijdering. *Denk aan plunderaars.* *Verdedigingstie: Gerichte speler met beschikbare items.*",
+      "Move": "Verplaats allemaal behalve 2 krijgers uit elke **card:{{suit}}** open vlakte naar de aangrenzende open vlakte met het meeste vijandelijke stukken. Verplaats geen krijgers uit de open vlakte van de Warlord.",
+      "Build": "**Bouw** een vesting in een **card:{{suit}}** dorp dat u beheerst.",
+      "Advance": "**Vooruitgang**: {{hoardNum}} keer: Verplaats de Opperbevelhebber en alle behalve 1 krijger in zijn kloof naar de aangrenzende kloof met het meeste vijandelijke stukken, en daarna slag aangaan.*Gelijkstand: Verplaats naar de hoogst genummerde kloof.*",
+      "Anoint": "Benoem als de oorlogsheer buiten het speelveld is: Plaats de oorlogsheer in het open vlak met het grootste aantal van jouw krijgers."
+    }
+  },
+  "SpecificEvening": {
+    "Electric Eyrie": {
+      "Score": "Score {{score}} VP.",
+      "NightmareScore": "Score **vp:1**."
+    },
+    "Vagabot": {
+      "Refresh": "Als je beschadigde items hebt, vernieuw {{itemRefreshMin}} ongeschonden items. Als je er geen hebt, vernieuw dan {{itemRefreshMax}} in plaats daarvan.",
+      "Forest": "Als je in een bos bent, herstel alle items. Als dat niet het geval is, herstel {{itemRepairs}} item(s). Herstel eerst de niet uitgeputte items, dan de uitgeputte items.",
+      "Discard": "Verwijder de bestelkaart.",
+      "NightmareScore": "Score **vp:1**."
+    },
+    "Automated Alliance": {
+      "Organize": "In elk kamp met een basis en {{organizeVal}} of meer Alliantie krijgers, verwijder alle Alliantie krijgers daar en **Verspreid Sympathie**.",
+      "WarriorPlace": "Plaats een krijger in elke kloof met een basis.",
+      "Wildfire": "Verbreid medelijden, maar score geen zegepunten.",
+      "Discard": "Verwijder de bestelkaart.",
+      "NightmareScore": "Score **ZP:1**."
+    },
+    "Mechanical Marquise": {
+      "Score": "Score {{score}} VP.",
+      "Discard": "Verwijder de bestelkaart.",
+      "NightmareScore": "Score **vp:1**."
+    },
+    "Electric Eyrie (DC)": {
+      "Score": "Score {{score}} VP.",
+      "NightmareScore": "Score **vp:1** voor elke twee spelers (afgerond naar boven)."
+    },
+    "Vagabot (DC)": {
+      "Refresh": "Vernieuw {{itemRefreshMin}} items. Als je geen beschadigde items hebt, vernieuw dan {{itemRefreshMax}} in plaats daarvan.",
+      "Forest": "Als je in een bos bent, herstel alle items. Als niet, herstel {{itemRepairs}} item(s). Herstel eerst niet uitgeputte items voordat je uitgeputte items herstelt.",
+      "Discard": "Bestelkaart verwijderen.",
+      "NightmareScore": "Score **vp:1** voor elke twee spelers (afgerond naar boven)."
+    },
+    "Automated Alliance (DC)": {
+      "Organize": "In elk kamp met een basis en {{organizeVal}} of meer Alliantie strijders, verwijder alle Alliantie strijders daar en **Verspreid medelijden**.",
+      "WarriorPlace": "Plaats een krijger in elke open plek met een basis.",
+      "Wildfire": "Verspreid Medeleven, maar score geen zegepunten.",
+      "Discard": "Verwijder de bestelkaart.",
+      "NightmareScore": "Geef **vp:1** voor elke twee spelers (afgerond naar boven)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Repeat": "Als je dit rondje geen gebouw hebt geplaatst en minder dan 3 overwinningspunten zou scoren, gooi dan de bevelenkaart weg, trek een nieuwe, en herhaal Daylight. Dit mag slechts één keer per rondje gebeuren.",
+      "RepeatIronWill": "Als je deze beurt geen gebouw hebt geplaatst en je hebt vijf of minder gebouwen op de kaart, gooi dan de orderkaart weg, trek een nieuwe kaart en herhaal Daylight. Dit mag slechts twee keer per beurt gebeuren.",
+      "Score": "Score {{score}} Victoriepunten.",
+      "Discard": "Afwerp de bestelkaart.",
+      "NightmareScore": "Score **vp:1** voor elke twee spelers (afgerond naar boven)."
+    },
+    "Cogwheel Corvids": {
+      "Score": "Score **vp:1** per omhooggekeerd extorsieplan.",
+      "Discard": "Verwijder de bestelkaart."
+    },
+    "Drillbit Duchy": {
+      "Rally": "In elk **card:{{suit}}** klaar zonder Duchy gebouwen en twee of minder krijgers, verplaats alle Duchy krijgers naar een aangrenzend klaar met een Duchy gebouw. Vervolgens in elk klaar waar je heerst, plaats alle Duchy krijgers behalve vier in de Burrow. (Doel Klaar Gelijkstand: Minste Duchy krijgers.) (Geen Dergelijk Klaar: Plaats de krijgers die zouden zijn verplaatst in de Burrow.)",
+      "Score": "Score **vp:1** per markt op de kaart",
+      "Sway": "Zet een kroon op de bovenste onverstoorde **card:{{suit}}** minister. (Geen dergelijke minister: Verstuur de onderste onverstoorde **card:bird** minister.)",
+      "Discard": "Verwijder de orderkaart."
+    },
+    "Logical Lizards": {
+      "Score": "**Score** **vp:1** staat gelijk aan de meest rechter lege tuinruimte.",
+      "DiscardLostSouls": "Verwijder verlorene zielen.",
+      "ReturnRevealedCards": "Plaats de geopenbaarde kaarten bovenop je Lost Souls, behoudend hun vorige volgorde.",
+      "Craft": "**Maak** de bovenste kaart van het deck voor **vp:1** als het een beschikbaar item toont. Voeg het toe aan je Lost Souls (niet de afvalstapel.)",
+      "ErraticReminder": "Onvoorspelbaar: Trek een kaart aan het einde van de beurt."
+    },
+    "Riverfolk Robots": {
+      "Score": "Score vp:1 per krijger van de speler met de meeste krijgers in Payments, vervolgens verwijder die krijgers uit Payments.",
+      "Racketeering": "**Beschermingsbeleid**: Van elke schiering, neem alle Riverfolk krijgers behalve twee en plaats ze in Betalingen.",
+      "Discard": "Weerleg de linksste kaart van de Markt.",
+      "DiscardShield": "**Protectionism (Shield Only)**: Werp de linksste kaart van de markt opnieuw weg."
+    },
+    "Looting Legion": {
+      "Incite": "**Incite**: Plaats een mob in een **card:{{suit}}** veld dat aangrenst aan een mob. Als je dat niet kunt, plaats dan een mob in een geordend veld met een van je krijgers die geen mob heeft. *Veld Tie: Veld met ruïnes, dan meeste gebouwen, en tokens. Geen Mobs meer over: Verwijder eerst een Mob uit het veld met de minste aangrenzende ruïnes of gebouwen.*",
+      "Score": "**Score**: Score **vp:1** voor elke 2 clearings die je beheerst.",
+      "Discard": "Verwijder de bestelkaart."
+    }
+  },
+  "SpecificExtra": {
+    "Electric Eyrie": {
+      "Purge": "Verwijderingsdecreet, behalve Viziers.",
+      "Evening": "Ga naar Avond.",
+      "YesNobility": "Één overwinningspunt scoren per vogelkaart in de Decree.",
+      "NoNobility": "Verlies één overwinningspunt per vogelkaart in het Decreet."
+    },
+    "Vagabot": {
+      "NameTinker": "Tinkeren",
+      "DescTinker": "Zoek in de afvalstapel naar de bovenste kaart met een beschikbaar item en maak het, en behaal **vp:1**. _Start het spel met één item minder._",
+      "SpecialTinker": "Zoek in de afvalstapel naar de bovenste kaart met een beschikbaar item en maak het aan, scoren **zp:1**.",
+      "NameThief": "Dief",
+      "DescThief": "Neem een willekeurige kaart van de vijand in je clearing met de meeste punten daar, en vervolgens de meeste stukken daar.",
+      "SpecialThief": "Neem een willekeurige kaart van de vijand in je clearing met de meeste punten daar, daarna de meeste stukken daar.",
+      "NameRanger": "Jager",
+      "DescRanger": "Als je drie of meer beschadigde items hebt, verplaats je naar een willekeurige aangrenzende bos.",
+      "SpecialRanger": "Als je drie of meer beschadigde items hebt, glip dan naar een willekeurige aangrenzende bos.",
+      "BattleTrack0": "Maximale geropte hits: 1",
+      "BattleTrack1": "Maximum gerolde treffers: 2",
+      "BattleTrack2": "Maximaal aantal geropte treffers: 3.",
+      "BattleTrack3": "Maximaal geroolde treffers: 3; als aanvaller, breng 1 extra treffer aan.",
+      "SatchelExhausted": "Uitgeput",
+      "SatchelDamaged": "Geschaduwd",
+      "SatchelBattleTrack": "Slag"
+    },
+    "Electric Eyrie (DC)": {
+      "Purge": "Verwijderingsdecreet, behalve Vizieren.",
+      "Evening": "Ga naar Avond.",
+      "YesNobility": "Scoren 1 zegepunt per vogelkaart in het Decree.",
+      "NoNobility": "Verlies één zegepunt per vogelkaart in het Decree."
+    },
+    "Vagabot (DC)": {
+      "NameTinker": "Tinker",
+      "DescTinker": "Zoek in de afvalstapel naar de bovenste kaart met een beschikbaar item en smelt het, en verdien geen punten. _Start het spel met één item minder._",
+      "SpecialTinker": "Zoek in de afvalstapel naar de bovenste kaart met een beschikbaar item en vervaardig het, zonder punten te winnen.",
+      "NameThief": "Dief",
+      "DescThief": "Neem een willekeurige kaart van de vijand in jouw clearing met de meeste punten daar, en daarna de meeste stukken daar.",
+      "SpecialThief": "Neem een willekeurige kaart van de vijand in je clearing met de meeste punten daar, dan de meeste stukken daar.",
+      "NameRanger": "Wachter",
+      "DescRanger": "Als je beschadigde items hebt, herstel één beschadigd item voordat het is uitgeput.",
+      "SpecialRanger": "Als je beschadigde items hebt, repareer één beschadigd item, niet uitgeput voordat het uitgeput is.",
+      "BattleTrack0": "Maximale gerolde treffers: 1",
+      "BattleTrack1": "Maximum gerolde treffers: 2",
+      "BattleTrack2": "Maximaal aantal geropte treffers: 3.",
+      "BattleTrack3": "Maximaal aantal gerolde hits: 3; als aanvaller, 1 extra hit toegediend.",
+      "SatchelExhausted": "Uitgeput",
+      "SatchelDamaged": "Geschaduwd",
+      "SatchelBattleTrack": "Slag"
+    },
+    "Cogwheel Corvids": {
+      "BotInteractions": {
+        "Overview": "Bij het spelen met de Corvid's tegen alle bots gebruik deze regels voor strategieën:",
+        "Bomb": "Bij omdraaien, verwijder twee stukken van elke bot in zijn clearing, krijgers eerst, in plaats van alle stukken.",
+        "Snare": "Bots negeren valtokens bij het selecteren van duidelijke plekken om stukken te plaatsen of te verplaatsen.<br>Als een bot zou willen plaatsen in of verplaatsen uit een duidelijke plek met een val, verwijderen ze de val in plaats van die actie uit te voeren.<br>(Vagabot zal doorgaan met bewegen na deze gebeurtenis, extra items uitputtend.)"
+      },
+      "Plot-Tokens": {
+        "Overview": "Bij het gebruiken van de Cogwheel Corvid's, pas deze regels toe op hun plot-tokens:",
+        "Bomb": "**Bom**: Bij omdraaien, verwijder alle humane vijandstukken in zijn gebied, vervolgens vervang dit veld met een willekeurig veld dat open gelegd wordt. (De vervanging activeert niets en kan geen bom zijn.)",
+        "Snare": "Snare: Zolang het open is, kunnen vijandelijke stukken niet worden geplaatst in of verplaatst uit dit clearing.",
+        "Extortion": "**Aanschikking**: Bij het omkeren moet elke speler die in zijn schot stukken van een vlag heeft, een willekeurige kaart weggooien.",
+        "Raid": "Raid: Bij verwijdering, plaats één strijder in elk aangrenzend open vlak."
+      }
+    },
+    "Drillbit Duchy": {
+      "Ministers": {
+        "Captain": "Als aanvaller in de strijd, extra slag uitdelen als het veld een tunnel heeft.",
+        "Marshal": "Plaats een Dukale strijder in een open vlak met de minste Dukale strijders en een Dukale gebouw.",
+        "Foremole": "Je hebt een extra ontdekt **meeple:duchy**.",
+        "Brigadier": "Voer de gravenactie uit als de Burrow drie of meer Duchy strijders heeft. Voor deze gravenactie, gebruik de Clearing Tie voorwaarde voor een vossenorder.",
+        "Banker": "Neem de Bouwactie.",
+        "Mayor": "Verwijder een Duchy krijger uit het clearing waar je heerst met het grootste aantal Duchy krijgers. Als je dat doet, score **vp:1**.",
+        "Earl": "Behaal **vp:1** per citadel op de kaart.",
+        "Baron": "Score **vp:1** per markt op de kaart.",
+        "Duchess": "Score **2 zegepunten** als alle 3 de tunnels op de kaart staan."
+      }
+    },
+    "Logical Lizards": {
+      "Lost Souls": "**Lost Souls**: Wanneer een kaart wordt verbruikt of weggeworpen, plaats het dan in de stapel Lost Souls in plaats daarvan.",
+      "Conspiracy": "**Conspiraties** *Stel eerst de doelspeler vast, daarna het doelwit terrein.*<br><br>**Converteer**<br>In een geordend terrein, vervang een vijandige krijger door een slangkrijger.<br>*Speler Tie*: Speler met de meeste punten.<br>*Terrein Tie*: Terrein met de meeste vijandige gebouwen.<br>**Kruistocht**<br>Vecht in elk **card:{{suit}}** terrein dat 2+ slangkrijgers heeft.<br>*Verdediger Tie*: Speler met de meeste punten daar.<br>**Heiligen**<br>In een **card:{{suit}}** terrein, vervang een vijandig gebouw door een overeenkomstige tuin.<br>*Speler Tie*: Speler met de meeste punten.<br>*Terrein Tie*: Terrein met de minste vijandige krijgers."
+    },
+    "Riverfolk Robots": {
+      "prot": "In Organize (Daylight/3rd) controleer deze voorwaarden.",
+      "protShield": "Heeft Payments geen krijgers?",
+      "protSword": "Heeft uw voorraad geen krijgers?",
+      "tradePost": "Elke keer dat een speler een handelspost verwijdert, verwijder de helft van hun krijgers uit Betalingen (afgerond naar boven).",
+      "servicesBirdsong": "Aan het begin van Birdsong mag een andere speler één dienst plus één per duiding kopen met een handelspost en hun fractiestukken.",
+      "servicesCost": "Ze betalen voor de service door krijgers in Betalingen te plaatsen, afhankelijk van het aantal overwinningspunten dat ze hebben. Als hun fractie geen krijgers heeft, plaats dan Riverfolk-krijgers in plaats daarvan.",
+      "servicesVictoryPoints": "<br>*0-9 Overwinningspunten = 2 Krijgers | 10-19 Overwinningspunten = 3 Krijgers | 20+ Overwinningspunten = 4 Krijgers*",
+      "serviceCard": "**Handkaart**: Pak een kaart en voeg het toe aan je hand.",
+      "serviceBoat": "Rivierboot: Beschouw rivieren als paden voor deze beurt.",
+      "serviceMerc": "**Mercenaire**: Tijdens Daglicht en Avond behandelt u Riverfolk-soldaten als uw eigen, behalve bij gevechten tegen de Riverfolk. Tijdens een gevecht moet u treffers verdelen tussen uw fractiestukken en Riverfolk-soldaten."
+    },
+    "Looting Legion": {
+      "Hoard": "<br>Score **vp:2** als de hoard vol is en je zou een ander item toevoegen, dan verwijder je dat item uit het spel."
+    }
+  },
+  "ToastMessages": {
+    "UpdateScore": "De score van {{ botname }} is bijgewerkt met {{ addend }}.",
+    "Actions": {
+      "Undo": "Ongedaan maken"
+    }
+  }
+}

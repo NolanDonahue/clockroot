@@ -1,0 +1,733 @@
+{
+  "AppTitle": "Rdzeń: Mechaniczny Towarzyszu",
+  "AppTitleShort": "Clockroot",
+  "NavTitle": "Boty",
+  "CloseText": "Zamknij",
+  "Language": "Język",
+  "LederPlug": "Pobierz Rozszerzenie Clockwork od Leder Games!",
+  "PriorityMaps": "Mapy priorytetowe",
+  "NeedsSetup": "Wymaga konfiguracji",
+  "ClockworkBots": "Mechaniczne Boty",
+  "DirectorsCut": "Wersja reżyserska",
+  "BotSetup": {
+    "Setup": "Konfiguracja",
+    "PriorityMarkers": "Ustaw znaczniki priorytetowe na mapie.",
+    "ChooseDifficulty": "Wybierz Poziom Trudności",
+    "Difficulty": {
+      "Easy": "Łatwo",
+      "Normal": "Normal",
+      "Challenging": "Trudny",
+      "Nightmare": "Koszmar"
+    },
+    "DifficultyDC": {
+      "Easy": "Początkujący",
+      "Normal": "Ekspert",
+      "Challenging": "Mistrz",
+      "Nightmare": "Tryb Szefa"
+    },
+    "ChooseVagabot": "Wybierz Vagabota",
+    "ChooseTraits": "Wybierz cechy",
+    "DifficultyText": "Poziom trudności",
+    "TurmoilText": "Wpadniesz w Tarmoil, jeśli nie możesz ustawić gniazda.",
+    "TurmoilNobilityText": "Wpadniesz w Zamieszanie, jeśli nie uda Ci się postawić posłania lub wojownika."
+  },
+  "AddBot": "Dodaj bota, klikając w",
+  "Factions": {
+    "Mechanical Marquise": "Maszynowa Markiza",
+    "Electric Eyrie": "Elektryczne Orlęta",
+    "Automated Alliance": "Zautomatyzowana Aliansja",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "Mechaniczna Markiza (DC)",
+    "Electric Eyrie (DC)": "Elektryczna Orlica (DC)",
+    "Automated Alliance (DC)": "Automatyczna Aliansja (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "Korwiaty z Trybuli",
+    "Drillbit Duchy": "Wiertnicze Księstwo",
+    "Logical Lizards": "Logiczne Jaszczki",
+    "Riverfolk Robots": "Roboty Ludzi Rzecznych",
+    "Looting Legion": "Łupieżczy Legion"
+  },
+  "FactionsShort": {
+    "Mechanical Marquise": "M. Marquise",
+    "Electric Eyrie": "E. Eyrie",
+    "Automated Alliance": "A. Sojusz",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "M. Marquise (DC)",
+    "Electric Eyrie (DC)": "E. Eyrie (DC)",
+    "Automated Alliance (DC)": "A. Sojusz (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "Czaple",
+    "Drillbit Duchy": "D. Księstwo",
+    "Logical Lizards": "G. Jaszczurki",
+    "Riverfolk Robots": "R. Roboty",
+    "Looting Legion": "L. Legion"
+  },
+  "Priorities": {
+    "Title": "Priorytety Mapy",
+    "Fall": "Spadek",
+    "Winter": "Zima",
+    "Lake": "Jezioro",
+    "Mountain": "Góra"
+  },
+  "Sections": {
+    "DifficultyTraits": "Stopień Trudności i Cechy",
+    "VPItems": "Punkty zwycięstwa i przedmioty",
+    "DecreeRoosts": "Dekret i Gniazda",
+    "Buildings": "Budynki",
+    "Birdsong": "Śpiew ptaków",
+    "Daylight": "Światło dzienne",
+    "Evening": "Wieczór",
+    "Turmoil": "Zamieszanie",
+    "BattleTrackBonus": "Bonus na Ślad Bitwy",
+    "SatchelBattleTrack": "Sakwa i Torbie Bitewne",
+    "SympathyBases": "Sympatia i Bazy",
+    "VagabotDifficultyTrait": "Vagabot, Trudność, Cechy",
+    "BotRules": "Specjalne zasady dla bota Corvid",
+    "RulesLizard": "Zasady Jaszczurów",
+    "RulesRiver": "Zasady Ludzi Rzecznych",
+    "Hoard": "Skarbiec",
+    "Protectionism": "Protekcjonizm",
+    "Services": "Usługi"
+  },
+  "SpecificSetup": {
+    "Electric Eyrie": {
+      "Setup0": "Zorganizuj zapas 20 wojowników w pobliżu.",
+      "Setup1": "Umieść 1 kurnik i 6 wojowników w narożnej polanie po przekątnej naprzeciwko polany z żetonem zamku. Jeśli Marquise nie gra, umieść te elementy w losowej narożnej polanie.",
+      "Setup2": "Włóż 2 karty Lojalnych Wizjerów, pokazując ich kolor, do najbardziej prawej kolumny dekretów.",
+      "Setup3": "Zbierz pozostałe 6 budynków gniazd i umieść je blisko siebie."
+    },
+    "Vagabot": {
+      "Setup0": "Umieść pionka Vagabota w lesie przylegającym do największej liczby polan. Jeśli istnieje kilka takich lasów, wybierz losowo spośród nich.",
+      "Setup1": "Potaszuj talię questów, dobierz 1 kartę questu i połóż ją odkrytą obok siebie. Ten quest może ukończyć tylko bot.",
+      "Setup2": "Umieść dowolny jeden przedmiot oznaczony \"R\" pod każdą ruiną na mapie.",
+      "Setup3": "Weź 4 dowolne przedmioty oznaczone literą \"S\" i umieść je w Sakiewce. _(Tinker zaczyna z 3 przedmiotami zamiast 4.)_"
+    },
+    "Automated Alliance": {
+      "Setup0": "Zeszkróć zapasy 10 wojowników w twojej okolicy.",
+      "Setup1": "Zbierz swoje 3 bazy i umieść je blisko siebie.",
+      "Setup2": "Zbierz swoje 10 żetonów współczucia i umieść je blisko siebie."
+    },
+    "Mechanical Marquise": {
+      "Setup0": "Zrekrutuj 25 wojowników w pobliżu.",
+      "Setup1": "Umieść żeton utrzymywania w losowym, otwartym rogu.",
+      "Setup2": "Umieść wojownika w każdej polanie, z wyjątkiem polany narożnej, położonej po przekątnej naprzeciwko zamku. Umieść dodatkowego wojownika na polanie z tokenem zamku. _(Umieść łącznie 12 wojowników.)_",
+      "Setup3": "Umieść 1 tartak, 1 warsztat i 1 rekrutera losowo wśród polany z tokenem twierdzy i sąsiednich polan, z maksymalnie jednym budynkiem na polanę.",
+      "Setup4": "Zbierz pozostałe 15 budynków i umieść je w pobliżu siebie."
+    },
+    "Electric Eyrie (DC)": {
+      "Setup0": "Zrekrutuj 20 wojowników w pobliżu.",
+      "Setup1": "Umieść 1 posadź i 6 wojowników w narożnej polanie po przekątnej naprzeciwko polany z żetonem zamku. Jeśli Marquise nie gra, umieść te elementy w losowej narożnej polanie.",
+      "Setup2": "Włóż swoje 2 karty Lojalnych Wizjerów, pokazując ich kolor, do najbardziej prawej kolumny dekretów.",
+      "Setup3": "Zbierz pozostałe 6 budynków gniazd i umieść je w pobliżu siebie."
+    },
+    "Vagabot (DC)": {
+      "Setup0": "Umieść pionka Vagabota w lesie przylegającym do największej liczby polan. Jeśli istnieje kilka takich lasów, wybierz losowo spośród nich.",
+      "Setup1": "Potasuj talię zadań, dobierz 1 kartę zadania i odkryj ją, umieszczając w pobliżu siebie. To zadanie może ukończyć tylko bot.",
+      "Setup2": "Umieść dowolny jeden przedmiot oznaczony literą \"R\" pod każdą ruiną na mapie.",
+      "Setup3": "Weź dowolne 4 przedmioty oznaczone literą „S” i umieść je w Swojej Torbie. _(Tinker zaczyna z 3 przedmiotami zamiast 4.)_"
+    },
+    "Automated Alliance (DC)": {
+      "Setup0": "Zrekrutuj 10 wojowników w Twojej okolicy.",
+      "Setup1": "Zbierz swoje 3 bazy i umieść je blisko siebie.",
+      "Setup2": "Zbierz swoje 10 żetonów współczucia i umieść je blisko siebie."
+    },
+    "Mechanical Marquise (DC)": {
+      "Setup0": "Zrekrutuj 25 wojowników w pobliżu.",
+      "Setup1": "Umieść znacznik zachowania w losowym, otwartym rogu.",
+      "Setup2": "Umieść wojownika w każdej polanie, z wyjątkiem rogatą polany naprzeciwko zamku. Umieść dodatkowego wojownika na polanie z żetonem zamku. _(Umieść łącznie 12 wojowników.)_",
+      "Setup3": "Umieść 1 tartak, 1 warsztat i 1 rekrutera losowo wśród polan przyległych do polany z tokenem zamku, z maksymalnie jednym budynkiem na polanę.",
+      "Setup4": "Zbierz pozostałe 15 budynków i umieść je w pobliżu siebie."
+    },
+    "Cogwheel Corvids": {
+      "Setup0": "Rozłóż 15 kart wojowników i 8 żetonów fabuły, odkryciem do dołu.",
+      "Setup1": "Umieść 1 Wojownika w najniższej priorytetowej strefie czyszczenia w każdej z lokacji (łącznie 3)."
+    },
+    "Drillbit Duchy": {
+      "Setup0": "Dostarcz zapasy dla 20 wojowników, 3 żetonów tuneli i 9 koron.",
+      "Setup1": "Umieść planszę Burrow blisko mapy.",
+      "Setup2": "Umieść 2 wojowników i 1 tunel w odizolowanym zakątku, który nie jest zakątem startowym. Następnie umieść 2 wojowników w każdym zakątku przylegającym do wybranego zakątku, z wyjątkiem Norii.",
+      "Setup3": "Umieść 3 cytadele i 3 torygów na odpowiadających im miejscach budowy.",
+      "Setup4": "Dobierz 2 karty i odłóż je. Za każdą z nich, umieść koronę na najwyższym ministerze pasującym, który nie został przekręcony, na twojej planszy frakcji."
+    },
+    "Logical Lizards": {
+      "Setup0": "Zorganizuj zapas 25 wojowników.",
+      "Setup1": "Umieść 4 wojowników i 1 ogród o pasującym wydruku w losowym, otwartym zagajniku, który nie jest zagajnikiem startowym innego bota (najlepiej po przekątnej). Następnie umieść 1 wojownika w każdym sąsiednim zagajniku.",
+      "Setup2": "Umieść znacznik wykluczonego na polu Świętości na ścieżce Spisku na tablicy swojej frakcji.",
+      "Setup3": "Umieść pozostałe 14 ogrodów na pasujących polach swoich torów ogrodów od prawej do lewej.",
+      "Setup4": "Dobierz 3 karty i odkryj je w swojej Strefie Zagubionych Dusz, w kolejności dobrania."
+    },
+    "Riverfolk Robots": {
+      "Setup0": "Sformuj zapas 15 wojowników.",
+      "Setup1": "Umieść 1 wojownika w każdej polanie nad rzeką.",
+      "Setup2": "Umieść 9 gmachów handlowych na pasujących miejscach na ścieżkach Gmachów Handlowych.",
+      "Setup3": "Umieść 1 wojownika w swoim obszarze Płatności.",
+      "Setup4": "Dobierz 5 kart i dodaj je do swojego rynku."
+    },
+    "Looting Legion": {
+      "Setup0": "**Zbierz** fragmenty i zgromadź zapasy 20 wojowników, 1 władcy i 6 twierdzy.",
+      "Setup1": "Umieść cztery elementy 'R' losowo pod ruinami na mapie.",
+      "Setup2": "**Garnizon**: Umieść swoje początkowe wyczucie z władcą, czterema wojownikami i jedną twierdzą w losowym narożnym wyczuciu, które nie jest początkowym narożnym wyczuciem innego gracza i, jeśli to możliwe, znajduje się po przekątnej od początkowego narożnego wyczucia."
+    }
+  },
+  "SpecificDifficulty": {
+    "Electric Eyrie": {
+      "Easy": "Podczas konfiguracji dodaj do Dekretu tylko jednego Lojalnego Wizjera.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Podczas konfiguracji, weź jedną ptasię zasadzkę z talii i dodaj ją do kolumny ptaków Dekretu.",
+      "Nightmare": "Podczas konfiguracji, weź jedną kartę Ptaka Zasadzki z talii i dodaj ją do kolumny Ptaków Dekretu. Na koniec Wieczoru, zdobądź jeden punkt zwycięstwa."
+    },
+    "Vagabot": {
+      "Easy": "Wieczorem odśwież o jeden element mniej.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Wieczorem odśwież jeszcze jedną pozycję.",
+      "Nightmare": "Wieczorem odśwież jeszcze jedną pozycję. Zakończ wieczór z jednym punktem zwycięstwa."
+    },
+    "Automated Alliance": {
+      "Easy": "Organizuje się tylko, jeśli w miejscu zbiórki znajduje się czterech lub więcej wojowników Sojuszu.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Organizujesz, jeśli na polanie znajdują się dwóch lub więcej wojowników Sojuszu.",
+      "Nightmare": "Organizujesz, jeśli na polanie znajdują się dwaj lub więcej wojowników Sojuszu. Na koniec Wieczora, zdobądź jeden punkt zwycięstwa."
+    },
+    "Mechanical Marquise": {
+      "Easy": "Zawsze, gdy **Rekrutujesz**, umieszczaj tylko dwóch wojowników.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Zawsze, kiedy **Rekrutujesz**, umieść również dwóch wojowników w uporządkowanym wyczyszczonym terenie, którym rządzić będziesz, z najwyższym priorytetem.",
+      "Nightmare": "Za każdym razem, gdy **Rekrutujesz**, umieść również dwóch wojowników w uporządkowanym wyczyszczeniu, którym rządzić jesteś, o najwyższym priorytecie. Na koniec Wieczora, zdobądź jeden punkt zwycięstwa."
+    },
+    "Electric Eyrie (DC)": {
+      "Easy": "Kiedy **Rekrutujesz** ptaka, umieść o jednego wojownika mniej.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Kiedy **Rekrutujesz** ptaka, postaw dodatkowego wojownika zamiast niego.",
+      "Nightmare": "Kiedy **Rekrutujesz** Ptaka, umieść dodatkowo jednego Wojownika. Pod koniec Wieczora, zdobądź jeden punkt zwycięstwa na każdych dwóch graczy (zaokrąglając w górę)."
+    },
+    "Vagabot (DC)": {
+      "Easy": "Wieczorem odśwież o jeden element mniej.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Wieczorem odśwież jeszcze jedną pozycję.",
+      "Nightmare": "Wieczorem odśwież kolejną pozycję. Na koniec Wieczoru, zdobądź jeden punkt zwycięstwa na dwóch graczy (zaokrąglając w górę)."
+    },
+    "Automated Alliance (DC)": {
+      "Easy": "Organizujesz tylko, jeśli na polanie przebywa czterech lub więcej wojowników Sojuszu.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Organizujesz, jeśli na polanie znajdują się dwaj lub więcej wojowników Sojuszu.",
+      "Nightmare": "Organizujesz, jeśli na polanie znajdują się dwaj lub więcej Wojowników Sojuszu. Pod koniec Wieczora, przyznaj jeden punkt zwycięstwa za każdych dwóch graczy (zaokrąglonych w górę)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Easy": "Za każdym razem, gdy **Rekrutujesz**, umieść tylko trzech wojowników.",
+      "Normal": "Nic nie zostało zmienione.",
+      "Challenging": "Kiedy **Rekrutujesz**, umieść pięciu wojowników zamiast nich.",
+      "Nightmare": "Kiedy **Rekrutujesz**, umieść pięciu wojowników zamiast jednego. Na koniec Wieczoru, zdobądź jeden punkt zwycięstwa na dwóch graczy (zaokrąglone w górę)."
+    },
+    "Cogwheel Corvids": {
+      "Easy": "Kiedy wykonujesz **Rekrutację**, umieść tylko jednego wojownika w każdej z dwóch ułożonych sekwencji.",
+      "Normal": "Kiedy **Rekrutujesz**, umieść dwóch wojowników w każdej z dwóch wyznaczonych polan.",
+      "Challenging": "Kiedy rekrutujesz, umieść trzech wojowników w każdej z dwóch wyznaczonych polan.",
+      "Nightmare": "Kiedy **Rekrutujesz**, umieść trzech wojowników w każdej z dwóch ułożonych, wyraźnych polan. Na koniec Wieczora, zdobądź jeden punkt zwycięstwa na każdych dwóch graczy (zaokrąglając w górę)."
+    },
+    "Drillbit Duchy": {
+      "Easy": "Kiedy **Rekrutujesz**, rekrutuj zamiast tego tylko jednego wojownika, plus jednego za każdą wychodzącą mole, do norze.",
+      "Normal": "Za każdym razem, gdy **Rekrutujesz**, rekrutuj dwóch wojowników, plus jednego za każdą pojawiającą się norę, do norze.",
+      "Challenging": "Zawsze, gdy **Rekrutujesz**, rekrutuj trzech wojowników, plus jednego za każdą pokazującą się kreę, do norze.",
+      "Nightmare": "Za każdym razem, gdy **Rekrutujesz**, zamiast tego zwerbuj trzech wojowników, plus jednego na każdą widoczną norę, do nory. Pod koniec Wieczora, zdobądź jeden punkt zwycięstwa na każde dwie osoby grające (zaokrąglając w górę)."
+    },
+    "Logical Lizards": {
+      "Easy": "Kiedykolwiek wykonujesz **Rytuały**, odkrywaj tylko trzy karty z twoich Utraconych Dusz.",
+      "Normal": "Za każdym razem, gdy wykonujesz **Rytuały**, odkrywaj tylko cztery karty z Twoich Utraconych Dusz.",
+      "Challenging": "Za każdym razem, gdy wykonujesz **Rytuały**, odkryj pięć kart z Twoich Utraconych Dusz.",
+      "Nightmare": "Za każdym razem, gdy wykonujesz **Rytuały**, odkryj pięć kart z twoich Utraconych Dusz. Na koniec Wieczora, zdobądź jeden punkt zwycięstwa za każdych dwóch graczy (zaokrąglone w górę)."
+    },
+    "Riverfolk Robots": {
+      "Easy": "Kiedy **Budujesz i Wzmacniasz**, nie umieszczaj żadnego wojownika w zajezdżi.",
+      "Normal": "Za każdym razem, gdy **Budujesz i Ustawiasz Garnizon**, umieść jednego wojownika przy posterunku handlowym.",
+      "Challenging": "Zawsze, gdy **Budujesz i Utrzymujesz**, umieść dwóch wojowników przy posterunku handlowym.",
+      "Nightmare": "Za każdym razem, gdy **Budujesz i Ufortyfikowujesz**, umieść dwóch wojowników na posterunku handlowym. Na koniec Wieczoru, zdobądź jeden punkt zwycięstwa na dwóch graczy (zaokrąglone w górę)."
+    },
+    "Looting Legion": {
+      "Easy": "Zawsze, gdy **rekrutujesz**, umieść o jednego mniej wojowników w zagonie swojego władcy.",
+      "Normal": "Kiedy **rekrutujesz**, umieść dodatkowego wojownika na wyczyszczonej przestrzeni swojego watażki, zanim umieścisz wojowników w fortyfikacjach.",
+      "Challenging": "Kiedy **rekrutujesz**, umieść dodatkowo dwóch wojowników na zrąbnięciu swojego władcy przed postawieniem wojowników w twierdzach.",
+      "Nightmare": "Kiedy **rekrutujesz**, umieść dwóch dodatkowych wojowników na polanie swojego władcy przed postawieniem wojowników w twierdzach. Na koniec wieczoru zdobądź **VP:1** za każdego dwóch wrogich graczy (zaokrąglone w górę)."
+    }
+  },
+  "SpecificRules": {
+    "RulePoorManualDexterity": "Słaba koordynacja ruchowa",
+    "TextPoorManualDexterity": "Nie masz w ręce żadnych kart. Nie możesz odrzucać kart. Jeśli gracz (człowiek) chciałby wziąć kartę od Ciebie, to dobiera kartę. Jeśli gracz (człowiek) chciałby dać Ci kartę, to odrzuca ją, a Ty zdobywasz **vp:1**.",
+    "RuleHatesSurprises": "Nienawidzi niespodzianek",
+    "TextHatesSurprises": "Karty zasadzki nie mogą być przeciwko Tobie zagrywane.",
+    "RuleLordsOfTheForest": "Panowie z Puszczy",
+    "TextLordsOfTheForest": "Panujesz nad każdą polaną, gdzie jesteś związany obecnością.",
+    "RuleNobility": "Szlachta",
+    "TextNobility": "Teraz wpadasz w zamieszanie, jeśli nie możesz umieścić gołębca lub wojownika. Kiedy wpadasz w zamieszanie, nie tracisz punktów zwycięstwa. Zamiast tego, zdobywasz jeden punkt zwycięstwa za każdą kartę ptaka w Dekrecie.",
+    "RuleRelentless": "Nieustraszony",
+    "TextRelentless": "Po rozwiązaniu Dekretu, usuń wszystkie bezbronione budynki i żetony we wszystkich polanach z wojownikami z Jastrzębia.",
+    "RuleSwoop": "Szybki lot",
+    "TextSwoop": "Pod koniec Rozbłysku, umieść dwóch wojowników na najpriorytetowym w αποκλιρών με żadna elementy Ogniska.",
+    "RuleWarTax": "Podatek Wojny",
+    "TextWarTax": "Kiedy usuwasz budynek lub żeton wroga, jego właściciel traci jeden punkt zwycięstwa.",
+    "RuleLoneWanderer": "Samotny Wędrowiec",
+    "TextLoneWanderer": "Twój pion nie jest wojownikiem i nie można go usunąć z mapy.",
+    "RuleNimble": "Zwinny",
+    "TextNimble": "Możesz się przemieszczać niezależnie od tego, kto panuje nad Twoją osadą.",
+    "RuleAdventurer": "Poszukiwacz przygód",
+    "TextAdventurer": "Możesz **Walczyć** nie więcej niż raz na turę.<br>Pod koniec Świtu, powtarzaj **Wyzwanie** tyle razy, ile tylko się da.",
+    "RuleBerserker": "Berserker",
+    "TextBerserker": "Za każdym razem, gdy **Walczysz**, przejdź do najbliższej polany z największą ilością elementów i atakuj gracza posiadającego tam najwięcej elementów.<br>Wieczorem napraw jedno dodatkowe przedmiot.",
+    "RuleHelper": "Pomocnik",
+    "TextHelper": "Kiedy **Pomagasz**, otrzymujesz jeden dodatkowy punkt zwycięstwa, a wspierany gracz dobiera dwie karty zamiast jednej.",
+    "TextHelperDC": "Kiedykolwiek używasz **Pomocy**, jeśli nie ma dostępnych przedmiotów, przejdź do pomocy graczowi z najniższym wynikiem i zużyj jeden przedmiot, aby zdobyć **vp:1**. Pomagany gracz dobiera jedną kartę.",
+    "RuleMarksman": "Strzelec",
+    "TextMarksman": "Na początku bitwy jako atakujący, zadawaj natychmiastowe trafienie _(zdobywając punkt, jeśli wyeliminujesz wroga)_.",
+    "RuleAutomatedAmbush": "Automatyczna zasadzka",
+    "TextAutomatedAmbush": "W walce jako obrońca z jakimiś wojownikami Sojuszu, zadajesz dodatkowe trafienie.",
+    "RuleAutomatedOutrage": "Zautomatyzowany Gniew",
+    "TextAutomatedOutrage": "Kiedykolwiek gracz usunie żeton współczucia lub przeniesie jakichkolwiek wojowników do sprzyjającej polany, musi odrzucić pasującą kartę. Jeśli nie może tego zrobić, otrzymujesz **vp:1**.",
+    "RuleMartialLaw": "Stan wojenny",
+    "TextMartialLaw": "Kiedy umieścisz żeton współczucia na polanie z trzema lub więcej wojownikami gracza przeciwnika, otrzymujesz o jeden punkt zwycięstwa mniej _(minimum zero)_.",
+    "RuleCrackdown": "Akcja represyjna",
+    "TextCrackdown": "Kiedy baza zostanie usunięta, usuń wszystkie żetony współczucia z pól dopasowanych do koloru usuniętej bazy.",
+    "TextCrackdownDC": "Za każdym razem, gdy baza zostanie usunięta, zwróć wszystkie żetony współczucia z czyszczeń pasujących do koloru usuniętej bazy.",
+    "RuleInformants": "Informatorzy",
+    "TextInformants": "Bezbronne żetony współczucia korzystają z Automatycznej zasadzki.",
+    "RulePopularity": "Popularność",
+    "TextPopularity": "Wrzytmi nie zdobywają punktów zwycięstwa za usuwanie żetonów sympatii.",
+    "TextPopularityDC": "Wręcz przeciwnie, przeciwnicy mogą zdobyć tylko jeden punkt zwycięstwa na turę za usuwanie Twoich żetonów sympatii.",
+    "RuleVeterans": "Weterani",
+    "TextVeterans": "Pozyskaj zdolność Wojny Partyzanckiej Sojuszu Leśnego. _(W walce jako obrońca, korzystasz z wyższej rzutu, a atakujący używa niższej rzutu.)_",
+    "TextVeteransDC": "W trakcie walki jako obrońca, użyj takiego samego wyniku rzutu kością jak atakujący. _(Obaj gracze używają wyższej kości do określenia trafień.)_",
+    "RuleWildfire": "Pożar lasów",
+    "TextWildfire": "Pod koniec wieczoru, **Rozłóż Współczucie**. Nie zdobywaj punktów za umieszczenie tego żetonu współczucia.",
+    "RuleTheKeep": "Kwatera",
+    "TextTheKeep": "Tylko Ty możesz umieszczać elementy na polanie z żetonem twierdzy.",
+    "RuleBlitz": "Blitz",
+    "TextBlitz": "Po przesunięciu znajdź pole, które kontrolujesz, o najwyższym priorytecie, bez żadnych wrogich elementów. Przesuń wszystkie, z wyjątkiem jednego wojownika, z tego pola. Następnie stocz bitwę na docelowym polu.",
+    "RuleFortified": "Wzmocniony",
+    "TextFortified": "Two uderzenia są potrzebne, aby usunąć każdy budynek. Pojedyncze uderzenie w budynek nie ma żadnego efektu.",
+    "RuleHospitals": "Szpitale",
+    "TextHospitals": "Pod koniec bitwy jako obrońca, jeśli w bitwie usunięto dwóch lub więcej wojowników z tytułem Markiza, umieść dwóch wojowników w polanie wraz z tokenem twierdzy.",
+    "TextHospitalsDC": "Pod koniec bitwy jako obrońca, jeśli dwóch lub więcej wojowników z rodu Markiza zostało usuniętych z walki, umieść jednego wojownika w zaroślach z tokenem twierdzy.",
+    "RuleIronWill": "Żelazna Wola",
+    "TextIronWill": "Kiedy rekrutujesz w Zaostrzonym Świetle, rozmieszczaj podwójną liczbę wojowników.",
+    "TextIronWillDC": "**Powtórzenie Świtu** może nastąpić dwukrotnie w turze zamiast tylko raz.",
+    "RuleEmbeddedAgents": "Wbudowani Agenci",
+    "TextEmbeddedAgents": "W trakcie walki jako obrońca z odkrytym żetónem intrygi zadajesz dodatkowe trafienie.",
+    "RuleBackupPlans": "Plany awaryjne",
+    "TextBackupPlans": "Za każdym razem, gdy usuwany jest żeton fabuły, umieść wojownika w polanie, z której fabuła została usunięta.",
+    "RuleVendetta": "Vendetta",
+    "TextVendetta": "Za każdym razem, gdy obrócany jest żeton fabuły, aktywuje on efekt \"Kiedy Odwrócony\" bomby fabularnej.",
+    "RuleMastermind": "Mistrz Umysłu",
+    "TextMastermind": "Teraz **Planujesz** dwukrotnie na turę.",
+    "RuleGamble": "Hazardzista",
+    "TextGamble": "Kiedy akcja miałaby się odwrócić, gracz posiadający najwięcej elementów frakcji na polanie musi najpierw odgadnąć typ akcji. Jeśli zgadnie poprawnie, akcja się odwróci i przyniesie punkty, ale nie uruchomi efektu „Gdy Odwrócona”. Następnie usuwa akcję (zdobywając punkt). Jeśli zgadnie niepoprawnie, Ty zyskujesz +1 Punkt Zwycięstwa.",
+    "RuleCostOfErrors": "Koszt błędów",
+    "TextCostOfErrors": "Za każdym razem, gdy usunięto dowolną liczbę budynków Księstwa, usuń koronę z najbardziej dolnego przechylonego ministra.",
+    "RuleFoundations": "Fundamenty",
+    "TextFoundations": "Za każdym razem, gdy wywoływane jest **Koszt Błędów**, usuwana jest teraz korona z głowy najniżej położonego, kołyszącego się ministra, którego strój pasuje do wyczyszczonej przestrzeni, z której usunięto budynek.",
+    "RuleInvestors": "Inwestorzy",
+    "TextInvestors": "Kiedykolwiek gracz aktywuje **Koszt Błędów**, musi odrzucić kartę pasującą do wypadu, z którego usunięto budynek Duchy. Jeśli odrzuci pasującą kartę, Duchy traci jeden punkt zwycięstwa. Jeśli nie może, Duchy przekonuje ministra, jak w akcji przekonywania, ale minister musi również pasować do wypadu usunięcia.",
+    "RuleInvaders": "Najeźdźcy",
+    "TextInvaders": "Procedura wyboru miejsca do kopania została zmieniona: teraz wybierane jest takie miejsce, które ma najwięcej wrogich budynków, a następnie najmniej wrogich wojowników. Jeśli nie możesz budować, ponieważ brakuje Ci miejsc, zamiast tego walcz w każdym z miejsc.",
+    "RuleOverwhelm": "Przytłoczyć",
+    "TextOverwhelm": "Teraz **Kopiesz** dwa razy na turę, a teraz wymaga i przesuwa tylko trzech wojowników (nie czterech).",
+    "RulePilgrims": "Pielgrzymi",
+    "TextPilgrims": "Panujesz nad polanami, które posiadają ogród.",
+    "RuleRobotRevenge": "Maszyna Zemsta",
+    "TextRobotRevenge": "Kiedykolwiek którykolwiek wojownik Jaszczurów zostanie usunięty poza Twoją turę, umieść jednego z nich w swoim pudełku Akolitów.",
+    "RuleFanatics": "Fanatici",
+    "TextFanatics": "Za każdym razem, gdy **Konwertujesz**, walcz w tej polanie po przekształceniu wojownika. W tej bitwie zadaj dodatkowe uderzenie. *Kryterium połączenia graczy: Wybierz gracza, który ma najwięcej bezbronnych budynków, a następnie gracza z największą liczbą punktów.*",
+    "RuleMartyrs": "Męczennicy",
+    "TextMartyrs": "Za każdym razem, gdy wykonujesz rytuał ptasim, umieść również wojownika z twojego zapasu w skrzynce Strażników.",
+    "RuleErratic": "Niejednolite",
+    "TextErratic": "Na koniec swojej tury, dobierz kartę i dodaj ją do swoich Utraconych Dusz.",
+    "RuleSpiteful": "Złośliwy",
+    "TextSpiteful": "Za każdym razem, gdy **Maszerujesz**, zyskujesz dodatkowy punkt zwycięstwa, jeśli usuwasz jakiekolwiek żetony.",
+    "RuleMarket": "Rynek",
+    "TextMarket": "Rynek to rząd kart odkrytych, kolejność kart w nim nie może się zmieniać.",
+    "RuleGarrison": "Garnizon",
+    "TextGarrison": "Jako obrońca w walce nigdy nie jesteś bezbronny, a każdy twój posterunek handlowy dodaje jeden punkt do maksymalnej liczby rzutów trafień.",
+    "RuleGreedy": "Chciwy",
+    "TextGreedy": "Zdobywaj +1 punkt zwycięstwa za każdym razem, gdy gracz z największą liczbą punktów kupuje dowolną ilość twoich usług.",
+    "RuleFerocious": "Fierczyście",
+    "TextFerocious": "Jako atakujący w walce, twoja maksymalna liczba rzuconych trafień wynosi zawsze trzy.",
+    "RuleInvolved": "Zaangażowany",
+    "TextInvolved": "Jeśli gracz nie kupi usługi Najemników w swojej turze, traktuj swoich wojowników tak, jakby wszyscy wrogowie tego gracza kupili Najemników. Wędrowny Zwiadowca może kupić Najemników, by uniknąć tej kary, ale nie korzysta z tej usługi.",
+    "RuleAutomatedLooters": "Automatyzowani Łupieżcy",
+    "TextAutomatedLooters": "W walce jako atakujący przeciwko obrońcy z dostępnym przedmiotem na polanie, masz władzę – weź przedmiot, ale nie zadawaj żadnych trafień.",
+    "RuleWarlord": "Wojewoda",
+    "TextWarlord": "Twój Warlord to wojownik, którego nie można usunąć poza walką, przemieścić poza Twoją turą ani umieścić poza działaniem Anoint. *Wyłom Warlorda zawsze liczy się jako ułożony wyłom.*"
+  },
+  "SpecificBirdsong": {
+    "Electric Eyrie": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zlecenia dla **vp:1**, jeśli pokazuje dostępny przedmiot.",
+      "DecreeOrder": "Dodaj kartę zamówienia do pasującej kolumny Rozporządzenia.",
+      "NewRoost": "Umieść kryjówkę i 4 wojowników na uporządkowanym w najwyższym priorytecie terenie, gdzie wszystkie te elementy mogą się zmieścić. _(Świadomie nie wyświetlane na planszy.)_"
+    },
+    "Vagabot": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "RestOrder": "Jeśli masz dwie lub mniej nieuszkodzonych rzeczy, przesuń się do losowego sąsiadującego lasu, a następnie przejdź do Wieczora."
+    },
+    "Automated Alliance": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Utwórz kartę zamówienia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "Revolt": "Usuń wszystkie wrogie figury z **card:{{suit}}** sprzyjającego zlecenia z największą liczbą wrogich figur i umieść tam bazę **card:{{suit}}**.",
+      "RevoltSpread": "Jeśli nie zbuntowałeś się, **Rozszerz Współczucie** {{sympathySpread}}.",
+      "Spread": "**Rozszerz Wsparcie** {{sympathySpread}}."
+    },
+    "Mechanical Marquise": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Utwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot."
+    },
+    "Electric Eyrie (DC)": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Utwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "DecreeOrder": "Dodaj kartę zamówienia do pasującej kolumny Rozporządzenia.",
+      "NewRoost": "Umieść gniazdo i 3 wojowników w uporządkowanym na wyższym priorytecie miejscu, gdzie wszystkie te elementy mogą zostać rozmieszczone. _(Celowo nie wyświetlane na planszy.)_"
+    },
+    "Vagabot (DC)": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "RestOrder": "Jeśli masz dwie lub mniej nieuszkodzonych rzeczy, przenieś się do losowego sąsiadującego lasu, a następnie przejdź do Wieczora."
+    },
+    "Automated Alliance (DC)": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "Revolt": "Usuń wszystkie wrogie elementy z **card:{{suit}}** życzliwej polany z największą liczbą wrogich elementów i umieść tam bazę **card:{{suit}}**.",
+      "Spread": "**Rozgłaszaj Wsparcie** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zamówienia dla **vp:1**, jeśli wyświetla dostępny przedmiot."
+    },
+    "Cogwheel Corvids": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zamówienia dla **vp:1**, jeśli wyświetla dostępny produkt.",
+      "RecruitOrder": "**Zatrudnij** {{difficulty}} wojowników w każdej z dwóch **card:{{suit}}** polan. (Priorytet dla polan bez żetonów fabularnych, a następnie z największą liczbą wojowników Corvid).<br>(Jeśli nie masz wojowników w zapasie, natychmiast wykonaj **Sprawa się komplikuje** zanim postawisz pozostałych wojowników.)",
+      "Flip": "**Odwróć** każdy żeton fabularny (nie wymagany wojownik). Za każdym razem, gdy odwrócisz fabułę, zdobądź +1 punkt zwycięstwa za każdą odsłoniętą fabułę na mapie, a następnie rozwiąż efekt „Kiedy Odwrócona”, jeśli istnieje.",
+      "FlipVendetta": "<br>*Vendetta: Wszystkie efekty 'Kiedy Odwrócisz' aktywują również bombę.*",
+      "FlipGamble": "<br>*Hazard: Kiedy los odwróci bieg – osoba z największą liczbą żetonów na polanie zgaduje jego rodzaj. Jeśli zgadnie, odwróć i punktuj, NIE rozstrzygaj efektu, a następnie usuń żeton* **vp:1**. *Jeśli się pomyli, punktacja Kruka* **vp:1**"
+    },
+    "Drillbit Duchy": {
+      "RevealOrder": "Ukaż kartę zamówienia.",
+      "CraftOrder": "Stwórz kartę zlecenia dla **vp:1** jeśli wyświetla dostępny przedmiot.",
+      "RecruitOrder": "Zrekrutuj {{moleDifficulty}} wojowników, plus jednego za każdy wyświetlany **meeple:duchy**, i umieść ich w norze. (Obecnie: zrekrutuj **{{moleRecruit}}** wojowników.)"
+    },
+    "Logical Lizards": {
+      "Outcasts": "Najczęstszym strojem w Twoich Zagubionych Duszach jest zakon. W przypadku remisu, zakon to **card:bird**.",
+      "Conspiracy": "Wykonuj Spiski w polach **card:{{suit}}**. Wykonasz spis, jeśli będziesz w stanie, a następnie usuń ucznia, jeśli go wykonałeś, i kontynuuj, aż skończą się uczniowie lub nie będziesz mógł spiskować."
+    },
+    "Riverfolk Robots": {
+      "StockMarket": "Pobierz dwie karty i dodaj je po prawej stronie Targu. Nie dobieraj karty, gdy na Targu znajduje się już 5 kart.",
+      "CraftOrder": "Stwórz pierwszą kartę dodaną do Targu, pokazującą dostępny przedmiot za **vp:1**, a następnie odrzuć ją.",
+      "SetOrder": "Ustaw zamówienie na to, aby karta Market znajdowała się po prawej stronie."
+    },
+    "Looting Legion": {
+      "Reveal": "Ukaż kartę na górze talii jako kartę kolejności.",
+      "Craft": "**Stwórz** kartę zamówienia, jeśli wyświetla dostępny przedmiot, nie zdobędziesz punktów.",
+      "Raze": "**Raze**: Przy każdym potworze usuń wszystkie budynki i żetony wrogów, weź przedmiot z ruin, jeśli jest dostępny, i usuń ruiny, jeśli są puste.",
+      "Recruit": "Zrekrutuj {{hoardNum}} wojowników na zjeździe swojego wójta, a następnie jednego wojownika w każdej warowni."
+    }
+  },
+  "SpecificDaylight": {
+    "Electric Eyrie": {
+      "Recruit": "Rekrutuj {{totalForSuit}} wojownika/ów na {{suitText}} polanie z gniazdem. {{recruitText}}<br>_(**Remisy**: Rekrutuj na polanie z największą liczbą wrogich elementów, następnie najmniejszą liczbą wojowników z Jastrzębnika, a następnie najniższym priorytetem.)_",
+      "Move": "Przenieś część swoich wojowników z polany {{suitText}}, którą kontrolujesz największą liczbą żołnierzy, na sąsiednią polanę. Pozostaw wystarczającą liczbę wojowników, aby dokładnie kontrolować polanę początkową lub {{totalForSuit}}, w zależności od tego, która wartość jest wyższa.<br>_(**Zasady Wyboru Celu**: Przesuń się na polanę bez gniazda, a następnie z najmniejszą liczbą wrogich jednostek, a następnie z najniższym priorytetem.)_",
+      "Battle": "Bitwa na polanie w {{suitText}} przeciwko graczowi z największą liczbą budynków tam. {{extraHit}}<br>_(**Remisy na polach**: Bitwa na takim polaniu bez gniazda, następnie z najsłabszymi budynkami, a potem z najniższym priorytetem.)_<br>_(**Remisy obrońców**: Bitwa z takim graczem, który ma najwięcej jednostek tam, a następnie z graczem z największą liczbą punktów zwycięstwa.)_",
+      "ExtraHit": "**Rozdaj dodatkowe trafienie.**",
+      "ExtraDecree": "Powinieneś dodać co najmniej 2 karty ptaków do dekreta.",
+      "ExtraRelentless": "Usuń wszystkie bezbronne tokeny i budynki na każdej polanie z wojownikami Jastrzębia.",
+      "ExtraRecruit": "Jeśli nie uda Ci się postawić wojownika, popadniesz w zamieszanie.",
+      "ExtraBuild": "Umieść gniazdo w najpriorytetowej polanie, którą kontrolujesz i która nie posiada gniazda. Jeśli nie możesz umieścić gniazda, pogrążysz się w zamęcie.",
+      "ExtraSwoop": "Umieść dwóch wojowników na najpriorytetowym czyszczu bez elementów z Jastrzębia."
+    },
+    "Vagabot": {
+      "ActionExplore": "Przenieś się do najbliższej ruin, zużywając jedną rzecz za każdy ruch, a następnie zużyj jedną rzecz, aby pobrać przedmiot z tej ruin.",
+      "ActionQuest": "Przenieś się do najbliższego zwalonego, które pasuje do zadania, a następnie zużyj dowolne dwa przedmioty, aby odrzucić zadanie i zdobyć **vp:1**. _(Zignoruj tekst kart.)_ Następnie zamień zadanie.",
+      "ActionQuestRepeat": "Powtórz to tak często, jak to tylko możliwe.",
+      "ActionAid": "Wybierz gracza w Twojej polanie, na którego możesz wpłynąć dowolnymi przedmiotami i który ma najmniejszą liczbę VP spośród wszystkich graczy. Użyj jak największej liczby przedmiotów, do maksymalnej liczby przedmiotów, które posiada dany gracz, zabierz mu tyle przedmiotów, i zdobądź {{aidHelpText}} tyle VP. Następnie, on/ona dobiera {{aidHelpText}} tyle kart.",
+      "ActionBattle": "Przesuń się do najbliższego oczyszczonego obszaru z dowolnymi elementami wroga z największą {{target}}, następnie wyczerp jedną rzecz, aby móc walczyć z tym graczem. Zdobywaj **vp:1** za każdego wyeliminowanego wojownika wroga.",
+      "ActionBattleTarget": "VP",
+      "ActionBattleTargetBerserker": "sztuki",
+      "ActionBattleAdventurer": "Powtórz tę akcję, zużywając po dwa przedmioty za każdą dodatkową bitwę, tak często, jak to możliwe.",
+      "ActionBattleMarksman": "Zadaj natychmiastowe trafienie w każdej bitwie.",
+      "ActionBattleTiebreaker": "_(Jeśli obrońca docelowy znajduje się w wielu polanach w równych odległościach, przenieś się na pole, gdzie ma najwięcej budynków i pionków, a następnie najmniej wojowników.)_",
+      "ActionRepair": "Jeśli posiadasz uszkodzone przedmioty, zużyj jeden przedmiot, aby naprawić jeden uszkodzony przedmiot, który nie został wcześniej zużyty.",
+      "ActionSpecial": "Wykonaj jedną akcję, aby wykonać następującą (pomiń, jeśli nie miałoby to wpływu):"
+    },
+    "Automated Alliance": {
+      "Sympathy": "Umieść żeton współczucia w polach **card:{{suit}}** z najmniejszą liczbą wrogich wojowników przylegających do pol współczucia.<br>(**Brak Odpowiednich Pol**: Zamiast tego umieść żeton współczucia na polu z najmniejszą liczbą wrogości.)<br>(**Nie Rozprzestrzenia się**: Jeśli nie możesz umieścić żetonu współczucia, zdobądź 5 VP.)",
+      "Revolt": "Usuń wszystkie wrogie figury z każdego przyjaznego obszaru z największą liczbą wrogiich figur i umieść tam odpowiadającą bazę."
+    },
+    "Mechanical Marquise": {
+      "Blitz": "Znajdź miejsce, którym dowodzisz, o najwyższym priorytecie, bez żadnych wrogich jednostek. Przenieś wszystkich wojowników z tego miejsca, z wyjątkiem jednego. Następnie stocz bitwę w docelowym miejscu.",
+      "Bird0": "Bitwa we wszystkich polanach. _(Obronić musi gracz z największą liczbą żetonów, a następnie z największą liczbą punktów zwycięstwa.)_",
+      "Bird1": "Zrekrutuj {{warriorsOverTwo}} wojownika/ów w każdej z dwóch Twoich najniżej priorytetowych osad. Jeśli kontrolujesz tylko jedną osadę, umieść tam wszystkich {{totalWarriors}} wojowników.",
+      "Bird2": "Zbuduj budynek typu z największą liczbą sztuk na mapie w polanie, którą kontrolujesz z największą liczbą Wojowników Marquise'a.<br>_(W przypadku remisu między tartakami a innymi rodzajami budynków, zbuduj tartak. W przypadku remisu między warsztatami a rekruterami, ale nie tartakami, zbuduj rekrutera.)_",
+      "Bird3": "Przenieś wszystkich, z wyjątkiem trzech, twoich wojowników z każdej polany do sąsiedniej polany z największą liczbą wrogich elementów. Następnie stocz bitwę na każdej polanie, na którą się przeniósł.",
+      "BirdChallenging": "Umieść dwóch wojowników w uporządkowanym, przez ciebie kontrolowanym miejscu, priorytetowo.",
+      "Suit0": "Bitwa w każdej **karcie:{{suit}}** oczyszczania. _(Obronięcym jest gracz z największą liczbą żetonów, a następnie punktami zwycięstwa.)_",
+      "Suit1": "Rekrutuj {{totalWarriors}} wojowników równomiernie rozmieszczonych w **card:{{suit}}** polach, którymi władzesz. Jeśli pozostaną wojownicy, których nie da się równomiernie rozmieścić w **card:{{suit}}** polach, umieść ostatniego wojownika w **card:{{suit}}** polu o najwyższym priorytecie.",
+      "Suit2": "Zbuduj **budynek:{{building}}** na polanie, którą kontrolujesz z największą liczbą wojowników z Markizy.",
+      "Suit3": "Przenieś wszystkich wojowników z każdej **card:{{suit}}** z polany, z wyjątkiem trzech, na sąsiednią polanę z największą liczbą wrogich żetonów.",
+      "Repeat": "Jeśli nie postawiłeś budynku w tej turze i masz pięć lub mniej budynków na mapie, odrzuć kartę rozkazów, dobierz nową i powtórz Rozbrat."
+    },
+    "Electric Eyrie (DC)": {
+      "Recruit": "Zwerbuj {{recruitNum}} wojownika/ów na polanie {{suitText}} z gniazdem. {{recruitText}}<br>_(**Zasady**: Zwerbuj na polanie z największą liczbą wrogów, następnie z najmniejszą liczbą wojowników z Orliska, a potem z najniższym priorytetem.)_",
+      "Move": "Przenieś z {{suitText}} polany, którą kontrolujesz większością swoich wojowników, na sąsiednią polanę. Pozostaw wystarczającą liczbę wojowników, aby dokładnie kontrolować polanę początkową lub {{totalForSuit}}, w zależności od tego, która liczba jest wyższa. Nie uwzględniaj polan, na których nie zostałby przesunięty żaden wojownik.<br>_(**Remisy Celu**: Przenieś się na taką polanę bez gniazda, a następnie z najmniejszą liczbą wrogich elementów, a następnie z najniższym priorytetem.)_",
+      "Battle": "Bitwa na polanie w {{suitText}}. {{extraHit}}<br>_(**Związki z Polanem**: Bitwa na takim polanie bez gniazda, wtedy najbardziej bezbronne budynki.)_<br>_(**Związki z Obrońcą**: Bitwa takiego gracza z największą ilością budynków tam, wtedy gracz z największą ilością wojsk tam.)_",
+      "ExtraHit": "**Zadaj dodatkowe trafienie.**",
+      "ExtraDecree": "Powinieneś dodać co najmniej 2 karty ptaków do zarządzenia.",
+      "ExtraRelentless": "Usuń wszystkie bezbronne tokeny i budynki we wszystkich polanach z wojownikami z Jastrzębia.",
+      "ExtraRecruit": "Jeśli nie możesz postawić wojownika, popadasz w zamieszanie.",
+      "ExtraBuild": "Umieść budkę lęgową w najpriorytetowej polanie, którą kontrolujesz i na której nie ma już żadnej budki. Jeśli nie uda Ci się umieścić budki lęgowej, wpadniesz w zamęt.",
+      "ExtraSwoop": "Umieść dwóch wojowników na najpriorytetowym czyszczysku bez elementów z Jastrzębiego Gniazda."
+    },
+    "Vagabot (DC)": {
+      "ActionExplore": "Przejdź do najbliższych ruin, a następnie zużyj jeden przedmiot, aby zabrać z niego przedmiot.",
+      "ActionQuest": "Przenieś się do najbliższego otwartego terenu pasującego do zadania, następnie zużyj dowolne dwa przedmioty, aby odrzucić zadanie i zdobyć 2 VP. _(Zignoruj tekst na karcie.)_ Następnie zamień zadanie.",
+      "ActionQuestRepeat": "Powtórz to tak często, jak to możliwe.",
+      "ActionAid": "Przesuń się do najbliższego otwartego miejsca zawierającego fragmenty gracza z jakimkolwiek wyposażeniem, jeśli to możliwe. Następnie zużyj jedną rzecz, aby zabrać jedną z ich rzeczy i umieść ją w swoim woreczku. Otrzymuj **vp:1** a następnie oni dobierają kartę.<br>_(**Remis graczy**)_: jeśli kilku graczy ma fragmenty w jednakowej odległości, wybierz gracza z niższym wynikiem.",
+      "ActionBattle": "Przenieś się do najbliższej polany z dowolnymi elementami wroga z największą liczbą {{target}}, a następnie zużyj jedną rzecz, by rozpocząć walkę z tym graczem. Zdobywaj **vp:1** za każdego pokonanego wojownika wroga.",
+      "ActionBattleTarget": "VP",
+      "ActionBattleTargetBerserker": "sztuk",
+      "ActionBattleAdventurer": "Powtórz tę akcję, zużywając dwa przedmioty na każdą dodatkową walkę, tak często, jak to możliwe.",
+      "ActionBattleMarksman": "Zadawaj natychmiastowe ciosy w każdej walce.",
+      "ActionBattleTiebreaker": "_(Jeśli obrońca docelowy znajduje się w kilku polanach w jednakowej odległości, przenieś się na pole, gdzie ma on najwięcej budynków i pionków, a następnie najmniej wojowników.)_",
+      "ActionSpecial": "Wykonaj jedną czynność, aby wykonać następujące (pomiń, jeśli nie miałoby to wpływu):"
+    },
+    "Automated Alliance (DC)": {
+      "Sympathy": "Umieść żeton współczucia w obojętnej sąsiadującej polanie, obok dowolnej polany współczucia.<br>(**Połączenie Polan**: Unikaj polan z 3 lub więcej wojowników jednego gracza, a następnie umieść w polanie **karta:{{suit}}**).<br>(**Brak Rozprzestrzeniania**: Jeśli nie możesz umieścić żetonu współczucia, zdobądź 5 VP.)",
+      "SympathyBird": "Umieść żeton współczucia w obojętnej sąsiadującej polanie, sąsiadującej z dowolną polaną współczucia.<br>(**Powiązanie Polany**: Umieść na polanie o najniższym priorytecie).<br>(**Nie Rozprzestrzenia się**: Jeśli nie możesz umieścić żetonu współczucia, zdobądź 5 VP).",
+      "Revolt": "Usuń wszystkie wrogie pionki z każdej przyjaznej polany z największą liczbą wrogich pionków i umieść tam odpowiadającą bazę.",
+      "RevoltSpread": "Jeśli nie zbuntowałeś się, **Rozgłoś Współczucie** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "Blitz": "Znajdź pole, którym władczesz i ma najwyższy priorytet, bez żadnych wrogich jednostek. Przesuń wszystkie wojowników z pola poza jednym. Następnie, stocz bitwę w docelowym polu.",
+      "Bird0": "Bitwa we wszystkich polanach. _(Obronięciem kieruje gracz z największą liczbą elementów, a następnie zwycięstwo punktów.)_",
+      "Bird1": "Zrekrutuj {{totalWarriors}} wojownika/ów równomiernie pomiędzy dwa najniżej priorytetowe osady, którymi władczysz. Jeśli władczesz tylko jedną osadę, umieść tam wszystkich {{totalWarriors}}. Zdobywaj **vp:1** za każdego drugiego wojownika, którego nie udało się zrekrutować.",
+      "Bird2": "Zbuduj budynek typu, który ma najwięcej elementów na mapie, na terenie, którym władczysz z największą liczbą Wojowników Markizy.<br>_(W przypadku remisu między tartakami a innymi typami budynków, zbuduj tartak. W przypadku remisu między pracowniami a rekruterami, ale nie tartakami, zbuduj pracownię.)_",
+      "Bird3": "Przenieś wszystkie wojowników z każdej polany, z wyjątkiem trzech, do sąsiedniej polany z największą liczbą wrogich jednostek. Następnie stocz walkę na każdej polanie, na którą się przeniósł(a)ś.",
+      "Suit0": "Bitwa w każdej **karcie:{{suit}}** oczyszczania. _(Obronięciem jest gracz z największą liczbą żetonów, a następnie punktów zwycięstwa.)_",
+      "Suit1": "Zwerbuj {{totalWarriors}} wojowników równomiernie rozłożonych na **card:{{suit}}** polanach, którymi rządź. Uzyskaj **vp:1** za każdego drugiego wojownika, którego nie udało się zwerbować.<br>_(**O kolejności zajmowania polan**: Najpierw umieszczaj wojowników na polanach o najwyższym priorytecie.)_",
+      "Suit2": "Zbuduj **budynek:{{building}}** na polanie, którą kontrolujesz z największą liczbą wojowników ze straży markizów.",
+      "Suit3": "Przenieś wszystkich, z wyjątkiem trzech, Twoich wojowników z każdej **card:{{suit}}** polany do sąsiedniej polany z największą liczbą wrogich żołnierzy. Każdy wojownik może wykonać tylko jeden ruch podczas tej akcji."
+    },
+    "Cogwheel Corvids": {
+      "Battle": "**Bitwa** w każdej z dwóch polan **card:{{suit}}**. (Remis obrońcy: Gracz z największą liczbą budynków i znaczników tam, a następnie z największą liczbą punktów.)",
+      "Move": "**Przenieś** wszystkich oprócz dwóch wojowników z każdej **card:{{suit}}**, oczyszczając z odkrytą intrygą do sąsiedniego oczyszczania bez intrygi. (Związek oczyszczania: Najwięcej wojowników Corvid.) (Brak takiego celu: Oczyszczanie o najniższym priorytecie.)",
+      "Plot": "**Intrygacja** w **karcie:{{suit}}** czyszcząc z największą liczbą wojowników Corvid i bez intrygi, usuń jednego wojownika Corvid tam, aby umieścić tam losową intrygę zakrytego typu.",
+      "PlotMastermind": "<br>*Mistrz: Planuj dwa razy na turę.*",
+      "PlotThickens": "**Intryga gęstnieje**: Na polanie, które nie ma intrygi i w którym znajduje się trzech lub więcej wojowników Corvid, usuń jednego wojownika Corvid z tego miejsca, aby umieścić tam losowy, zakryty fabułę. (Związek z polaną: Najwięcej wojowników Corvid.)"
+    },
+    "Drillbit Duchy": {
+      "Dig": "Jeśli Norza ma czterech lub więcej wojowników, umieść tunel w otwarciu **card:{{suit}}** bez tunelu i bez budynków Hrabstwa. Przenieś również {{tunnelValue}} wojowników z Nory do tunelu.",
+      "DigNoTunnel": "<br/>*Brak tunelu w zapasach, weź i umieść tunel z polany z najmniejszą liczbą wojowników z Hrabstwa.*",
+      "DigBird": "<br>*(Usuwanie Karty **card:{{suit}}**: Takie czyszczenie z największą liczbą budynków i żetonów wroga)*",
+      "DigTie": "*(Czyszczenie Karty **card:{{suit}}**: Czyszczenie z największą liczbą pustych miejsc na budynki, a następnie z najmniejszą liczbą wrogich wojowników.)*",
+      "DigInvaders": "*(Czyszczenie Powiązań:  **karta:{{suit}}** czyszcząca z największą liczbą budynków wroga, a następnie z najmniejszą liczbą wojowników wroga. Jeśli nie możesz budować, ponieważ nie masz wolnych slotów na budynki, **walcz** we wszystkich czyszczeniach.)*",
+      "DigOverwhelm": "*Kop dwie razy na turę.*",
+      "Battle": "**Bitwa** w każdej **karcie:{{suit}}** czyszczącej. (Remis w obronie: gracz z największą liczbą budynków, następnie największą liczbą elementów, a następnie największą liczbą punktów.)",
+      "BattleCaptain": "**Bitwa** w każdej **karcie:{{suit}}** oczyszczania. (Remis w obronie: Gracz z największą liczbą budynków, następnie z największą liczbą pionków, a następnie z największą liczbą punktów).<br/>**Kapitan** jest zmienny, nie zapomnij o jego efekcie w bitwie.",
+      "Build": "**Buduj** na polanie tam, gdzie masz najwięcej wojowników Księstwa. Umieść cytadelę, jeśli masz 9+ wojowników w zasobach. W przeciwnym razie, umieść targ. Zdobywaj **vp:1**, jeśli nie możesz umieścić budowli, gdy jedna znajduje się w zasobach.",
+      "Ministers": "Przejrzyj działania wszystkich podległych ministrów od góry do dołu. (Twoi Lordowie aktualnie posiadają **{{ministerPoints}}** VP)"
+    },
+    "Logical Lizards": {
+      "Rituals": "**Rytuały**: Odkryj {{difficulty}} kart z Twoich Zagubionych Dusz, po jednej na raz, i wykonaj rytuał dla każdej odkrytej maści.",
+      "RitualsBird": "<br>**karta:ptak**: Weź wojownika Jaszczurki z polany z największą liczbą wojowników Jaszczurek i umieść go w polu Akolitów. **Umieść tę kartę w WYLĄCZONYM stosie, NIE w stosie Utraconych Dusz.**",
+      "RitualsOther": "<br>**karta:{{suit}}**: Umieść wojownika w **karta:{{suit}}** polanie. Następnie, jeśli tam panujesz, umieść tam pasujący ogród. (Związek z Polaną: Umieść wojownika w polanie z dowolnymi otwartymi slotami budowy, a następnie z największą ilością budynków wroga.)"
+    },
+    "Riverfolk Robots": {
+      "BuildAndGarrison": "**Budowa i Garnizon**: Umieść posterunek handlowy i {{riverDifficulty}} wojowników w **karcie:{{suit}}** z clearingiem bez posterunku handlowego. <br>*(Związek z Clearingiem: Clearing z elementów gracza, który ma najwięcej wojowników w płatnościach.)*",
+      "RecruitOther": "**Zrekrutuj** jednego wojownika w każdej czystej lokacji **card:{{suit}}**. <br>*(Za mało wojowników: Umieść wojowników na lokacjach o najwyższym priorytecie.)*",
+      "RecruitBird": "Zatrudnij jednego wojownika w każdej polanie nad rzeką. <br>*(Brak wystarczającej liczby wojowników: Umieść wojowników na polanach o najwyższym priorytecie.)*",
+      "Organize": "**Sprawdź pod kątem protekcjonizmu**: Jeśli posiadasz tarczę lub miecze Wynik **vp:1** i postaw dwóch wojowników na polanie z elementami Riverfolk oraz największą liczbą wrogich elementów.",
+      "BattleShield": "Bitwa w każdej polanie. (Związek Obronny: Gracz z najmniejszą liczbą wojowników w płatnościach.)",
+      "BattleSword": "Bitwa w każdej **karcie:{{suit}}** oczyszczania. (Remis Obrońcy: Gracz, który ma najmniej wojowników w płatnościach.)"
+    },
+    "Looting Legion": {
+      "Battle": "**Bitwa** w każdej **karcie:{{suit}}** oczyszczania. *Pamiętaj o łupieżcach.* *Remis Obroncy: Wybierz gracza z dostępnymi przedmiotami.*",
+      "Move": "**Przenieś** wszystkich, z wyjątkiem 2 wojowników z każdej karty **{{suit}}**, do sąsiadującego obozu z największą liczbą wrogich elementów. Nie przenoś wojowników z obozu Warlorda.",
+      "Build": "**Zbuduj** twierdzę w polance **card:{{suit}}**, którą będziesz panować.",
+      "Advance": "**Rozkaz**: {{hoardNum}} razy: Przesuń Warlorda i wszystkich wojowników z jego wygrzewu z wyjątkiem 1 do sąsiadującego wygrzewu z największą liczbą wrogich elementów, a następnie rozpocznij walkę.*Remis Wygrzewu: Przesuń się do wygrzewu o najwyższym numerze.*",
+      "Anoint": "**Wyróżnij** jeśli wódz wojny nie znajduje się na mapie: Umieść wódza wojny w polanie z największą liczbą twoich wojowników."
+    }
+  },
+  "SpecificEvening": {
+    "Electric Eyrie": {
+      "Score": "Wynik: {{wynik}} VP.",
+      "NightmareScore": "Wynik **vp:1**."
+    },
+    "Vagabot": {
+      "Refresh": "Jeśli posiadasz uszkodzone przedmioty, odśwież {{itemRefreshMin}} nieuszkodzonych przedmiotów. Jeśli nie posiadasz żadnych, odśwież {{itemRefreshMax}} zamiast tego.",
+      "Forest": "Jeśli jesteś w lesie, napraw wszystkie przedmioty. Jeśli nie, napraw {{itemRepairs}} przedmiot(ów). Napraw niezużyte przedmioty przed zużytymi.",
+      "Discard": "Wyrzuć kartę zamówienia.",
+      "NightmareScore": "Wynik **vp:1**."
+    },
+    "Automated Alliance": {
+      "Organize": "W każdej polanie z bazą i {{organizeVal}} lub więcej wojowników Sojuszu, usuń wszystkich wojowników Sojuszu tam i **Rozszechnij Współczucie**.",
+      "WarriorPlace": "Umieść wojownika w każdej polanie z bazą.",
+      "Wildfire": "**Rozszechnij Współczucie**, ale nie przyznawaj punktów zwycięstwa.",
+      "Discard": "Wyrzuć kartę zamówienia.",
+      "NightmareScore": "Wynik **vp:1**."
+    },
+    "Mechanical Marquise": {
+      "Score": "Wynik: {{score}} VP.",
+      "Discard": "Odrzuć kartę zamówienia.",
+      "NightmareScore": "Wynik **vp:1**."
+    },
+    "Electric Eyrie (DC)": {
+      "Score": "Wynik: {{score}} VP.",
+      "NightmareScore": "Punktacja **vp:1** za każdego dwóch graczy (zaokrąglona w górę)."
+    },
+    "Vagabot (DC)": {
+      "Refresh": "Odśwież {{itemRefreshMin}} przedmiotów. Jeśli nie masz uszkodzonych przedmiotów, odśwież {{itemRefreshMax}} zamiast tego.",
+      "Forest": "Jeśli jesteś w lesie, napraw wszystkie przedmioty. W przeciwnym razie napraw {{itemRepairs}} przedmiot(ów). Naprawiaj przedmioty niewyczerpane przed wyczerpanymi.",
+      "Discard": "Wyrzuć kartę zamówienia.",
+      "NightmareScore": "Wynik **vp:1** za każdego dwóch graczy (zaokrąglone w górę)."
+    },
+    "Automated Alliance (DC)": {
+      "Organize": "W każdej polanie z bazą i {{organizeVal}} lub więcej wojowników Sojuszu, usuń wszystkich wojowników Sojuszu tam i **Rozszechnij Współczucie**.",
+      "WarriorPlace": "Umieść wojownika w każdej polanie z bazą.",
+      "Wildfire": "**Rozszechnij Żal**, ale nie przyznawaj punktów zwycięstwa.",
+      "Discard": "Wyrzuć kartę zamówienia.",
+      "NightmareScore": "Wynik **vp:1** za każdego dwóch graczy (zaokrąglone w górę)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Repeat": "Jeśli w bieżącej turze nie postawiłeś budynków i uzyskałbyś mniej niż 3 punkty zwycięstwa, odrzuć kartę rozkazu, dobierz nową i powtórz Rozbłysk. Może to nastąpić tylko raz na turę.",
+      "RepeatIronWill": "Jeśli nie postawiłeś budynku w tym ruchu i masz pięć lub mniej budynków na mapie, odrzuć kartę rozkazów, dobierz nową i powtórz Świt. Może to się zdarzyć tylko dwukrotnie na turę.",
+      "Score": "Zdobyte {{score}} VP.",
+      "Discard": "Odrzuć kartę zamówienia.",
+      "NightmareScore": "Punktacja **vp:1** za każdego dwóch graczy (zaokrąglana w górę)."
+    },
+    "Cogwheel Corvids": {
+      "Score": "Wynik **vp:1** za każdą widoczną intrygę szantażu.",
+      "Discard": "Wyrzuć kartę zamówienia."
+    },
+    "Drillbit Duchy": {
+      "Rally": "W każdej **karcie:{{suit}}** oczyszczania, bez budynków Księstwa i z dwoma lub mniej wojowników, przenieś wszystkich wojowników Księstwa do sąsiadującego oczyszczania z budynkiem Księstwa. Następnie w każdym oczyszczaniu, którym rządzić, umieść wszystkich wojowników Księstwa poza czterema w Norze. (Kryterium Remisu: Najmniej wojowników Księstwa.) (Brak takiego oczyszczania: Umieść wojowników, którzy by się przenieśli, w Norze.).",
+      "Score": "Wynik **vp:1** na rynek na mapie",
+      "Sway": "Umieść koronę na najwyżej stojącym, nieskażonym **karcie:{{suit}}** ministrze. (Brak Tego Ministra: Skaż kartę **card:bird** ministra na dole.)",
+      "Discard": "Wyrzuć kartę zamówienia."
+    },
+    "Logical Lizards": {
+      "Score": "**Wynik** **vp:1** wartosciuje najbardziej prawy pusty ogródek.",
+      "DiscardLostSouls": "**Wyrzuć** Zagubione Dusze.",
+      "ReturnRevealedCards": "**Wróć** odkryte karty na wierzch Twoich Zagubionych Dusz, zachowując ich poprzednią kolejność.",
+      "Craft": "**Wygeneruj** górną kartę talii dla **vp:1** jeśli pokazuje dostępny przedmiot. Dodaj ją do Twoich Zagubionych Dusz (a nie do wylotu).",
+      "ErraticReminder": "*Niezregularne: Dobierz kartę na końcu tury.*"
+    },
+    "Riverfolk Robots": {
+      "Score": "**Wynik** **vp:1** na każdego wojownika gracza z największą liczbą wojowników w Płatnościach, a następnie usuń tych wojowników z Płatności.",
+      "Racketeering": "**Protekcjonizm**: Z każdej polany zabierz wszystkich wojowników Riverfolk poza dwóch i umieść ich w Płatnościach.",
+      "Discard": "**Odrzuć** lewą kartę z Targu.",
+      "DiscardShield": "**Protekcjonizm (Tarcza Tylko)**: Odrzuć ponownie lewą kartę z rynku."
+    },
+    "Looting Legion": {
+      "Incite": "**Incite**: Umieść tłum w **karcie:{{suit}}** polanie sąsiadującym z tłumem. Jeśli nie możesz, umieść tłum w uporządkowanym polanie z jednym z twoich wojowników bez tłumu. *Związek z Polaniem: Polana z ruinami, następnie z największą liczbą budynków i tokenów. Brak Tłumów: Najpierw usuń Tłum z polany z najmniejszą liczbą przylegających ruin lub budynków.*",
+      "Score": "**Wynik**: Wynik **vp:1** za każde 2 czyszczenia, które uznasz.",
+      "Discard": "**Wyrzuć** kartę zamówienia."
+    }
+  },
+  "SpecificExtra": {
+    "Electric Eyrie": {
+      "Purge": "Dekret Czyszczenia, z wyjątkiem Wizjerów.",
+      "Evening": "Przejdź do Wieczoru.",
+      "YesNobility": "Zdobądź jeden punkt zwycięstwa za każdą kartę ptaka w Dekrecie.",
+      "NoNobility": "Tracimy jeden punkt zwycięstwa za każdą kartę ptaka w Dekrecie."
+    },
+    "Vagabot": {
+      "NameTinker": "Grzebień",
+      "DescTinker": "Przeszukaj wylosowanych kart w poszukiwaniu górnej karty z dostępnym przedmiotem i wytwórz ją, zdobywając **vp:1**. _Rozpocznij grę z jednym przedmiotem mniej._",
+      "SpecialTinker": "Przeszukaj wylosowanych kart w poszukiwaniu górnej karty z dostępnym przedmiotem i wytwórz ją, zdobywając **vp:1**.",
+      "NameThief": "Złodziej",
+      "DescThief": "Wyciągnij losową kartę z przeciwnika w twojej polance z największą liczbą punktów, a następnie z największą liczbą żetonów.",
+      "SpecialThief": "Pobierz losową kartę od przeciwnika w twojej polance z największą liczbą punktów, a następnie z największą liczbą żetonów.",
+      "NameRanger": "Strażnik",
+      "DescRanger": "Jeśli masz trzy lub więcej uszkodzonych przedmiotów, wślizg się do przypadkowej sąsiedniej puszczy.",
+      "SpecialRanger": "Jeśli masz trzy lub więcej uszkodzonych przedmiotów, wślizg się do losowej sąsiedniej puszczy.",
+      "BattleTrack0": "Maksymalna liczba trafień rzutem: 1",
+      "BattleTrack1": "Maksymalna liczba trafień na rzut: 2",
+      "BattleTrack2": "Maksymalna liczba trafień po rzucie: 3.",
+      "BattleTrack3": "Maksymalne trafienia po rzucie: 3; jako atakujący, zadaj 1 dodatkowe trafienie.",
+      "SatchelExhausted": "Wyczerpany",
+      "SatchelDamaged": "Uszkodzone",
+      "SatchelBattleTrack": "Bitwa"
+    },
+    "Electric Eyrie (DC)": {
+      "Purge": "Dekret Czyszczenia, z wyjątkiem Wizjerów.",
+      "Evening": "Przejdź do Wieczoru.",
+      "YesNobility": "Zdobywaj jeden punkt zwycięstwa za każdą kartę ptaka w Dekrecie.",
+      "NoNobility": "Tracimy jeden punkt zwycięstwa za każdą kartę ptaka w Dekrecie."
+    },
+    "Vagabot (DC)": {
+      "NameTinker": "Grzebiąć",
+      "DescTinker": "Przeszukaj wylosowanych kart w poszukiwaniu górnej karty z dostępnym przedmiotem i wytwórz go, nie zdobywając punktów. _Rozpocznij grę z jednym przedmiotem mniej._",
+      "SpecialTinker": "Przeszukaj wylosowanych kart w poszukiwaniu górnej karty z dostępnym przedmiotem i wytwórz ją, nie zyskując punktów.",
+      "NameThief": "Złodziej",
+      "DescThief": "Pobierz losową kartę od wroga w twojej polance z największą liczbą punktów, a następnie największą liczbą elementów.",
+      "SpecialThief": "Pobierz losową kartę od wroga w Twojej polance z największą liczbą punktów, a następnie z największą liczbą pionków.",
+      "NameRanger": "Przewodnik",
+      "DescRanger": "Jeśli masz uszkodzone przedmioty, napraw jedną uszkodzoną rzecz, niezużyte przed zużyciem.",
+      "SpecialRanger": "Jeśli masz uszkodzone przedmioty, napraw jeden uszkodzony przedmiot, zanim zostanie wyczerpany.",
+      "BattleTrack0": "Maksymalna liczba trafień: 1",
+      "BattleTrack1": "Maksymalna liczba trafień po rzucie: 2",
+      "BattleTrack2": "Maksymalna liczba trafień: 3.",
+      "BattleTrack3": "Maksymalne trafienia po rzucie: 3; jako atakujący, zadaj 1 dodatkowe trafienie.",
+      "SatchelExhausted": "Wyczerpany",
+      "SatchelDamaged": "Uszkodzone",
+      "SatchelBattleTrack": "Bitwa"
+    },
+    "Cogwheel Corvids": {
+      "BotInteractions": {
+        "Overview": "Podczas rozgrywki z Ravami przeciwko botom stosuj się do tych zasad dotyczących planów:",
+        "Bomb": "Po odwróceniu usuń po dwa elementy każdego robota z jego pola, najpierw wojowników, zamiast wszystkich elementów.",
+        "Snare": "Boty ignorują tokeny sidła pod kątem wyboru miejsc do postawienia lub przemieszczenia elementów.<br>Jeśli bot miałby postawić lub przenieść element na lub z miejsca z sidłem, usuwa sidło zamiast wykonać tę akcję.<br>(Vagabot będzie kontynuował ruch po tym zdarzeniu, wyczerpując dodatkowe przedmioty.)"
+      },
+      "Plot-Tokens": {
+        "Overview": "Korzystając z Korpogówek, zastosuj te zasady do ich żetonów fabularnych:",
+        "Bomb": "**Bomba**: Po odwróceniu usuwa wszystkie wrogie postacie w swoim zasięgu, a następnie zastępuje to pole losowym polem ustawionym obrazkiem do góry. (Zamiana nie uruchamia efektów i nie może być bombą.)",
+        "Snare": "**Pułapka**: O ile jest odkryta, w tym wyczyszczeniu nie można umieszczać ani przenosić wrogich elementów.",
+        "Extortion": "**Szantaż**: Po odwróceniu, każdy gracz posiadający jakiekolwiek pionki frakcji na swoim terenie musi odrzucić jedną losową kartę.",
+        "Raid": "**Najazd**: Po usunięciu, umieść jednego wojownika w każdej sąsiadującej polanie."
+      }
+    },
+    "Drillbit Duchy": {
+      "Ministers": {
+        "Captain": "Jako atakujący w walce, zadaj dodatkowe uderzenie, jeśli czyszczenie walki posiada tunel.",
+        "Marshal": "Umieść wojownika z Hrabstwa w polanie z najmniejszą liczbą wojowników z Hrabstwa i budynkiem z Hrabstwa.",
+        "Foremole": "Masz dodatkowo odkrytego **meeple:duchy**.",
+        "Brigadier": "Wykonaj akcję kopania, jeśli w Lokacji znajdują się trzy lub więcej Wojowników z Hrabstwa. Do tej akcji kopania użyj warunku Łączenia z Polaną dla polecenia lisa.",
+        "Banker": "Wykonaj akcję kompilacji.",
+        "Mayor": "Usuń wojownika Księstwa z polany, którą dowodzi najwięcej wojowników Księstwa. Jeśli to zrobisz, zdobądź **vp:1**.",
+        "Earl": "Zdobywasz **vp:1** punktów za każdą cytadelę na mapie.",
+        "Baron": "Wynik **vp:1** na rynek na mapie.",
+        "Duchess": "Zdobywaj **vp:2** jeśli wszystkie 3 tunele znajdują się na mapie."
+      }
+    },
+    "Logical Lizards": {
+      "Lost Souls": "**Zagubione Dusze**: Kiedy karta zostanie zużyta lub odrzucona, umieść ją w stosie Zagubionych Dusz.",
+      "Conspiracy": "**Skompromituj** *Najpierw określ cel, a następnie cel czyszczenia.*<br><br>**Przekształć**<br>W uporządkowanym czyszczeniu, zastąp wojownika wroga wojownikiem jaszczurkowym.<br>*Związek gracza*: Gracz z największą liczbą punktów.<br>*Związek czyszczenia*: Czyszczenie z największą liczbą budynków wroga.<br>**Krzyżowy Rzut**<br>Bitwa w każdym czyszczeniu **karta:{{suit}}** z 2+ wojownikami jaszczurkowymi.<br>*Związek obrońcy*: Gracz z największą liczbą punktów tam.<br>**Uświęć**<br>W czyszczeniu **karta:{{suit}}**, zastąp budynek wroga pasującym ogrodem.<br>*Związek gracza*: Gracz z największą liczbą punktów.<br>*Związek czyszczenia*: Czyszczenie z najmniejszą liczbą wojowników wroga."
+    },
+    "Riverfolk Robots": {
+      "prot": "W Organizacji (Światło dzienne/3.) sprawdź te warunki.",
+      "protShield": "Czy Płatności nie mają wojowników?",
+      "protSword": "Czy Twój zapas nie ma wojowników?",
+      "tradePost": "Kiedy gracz usuwa posterunek handlowy, usuń połowę jego wojowników z Płatności (zaokrąglone w górę).",
+      "servicesBirdsong": "Na początku Birdsong, inny gracz może kupić jedną usługę plus jedną za każdą polanę z pocztą handlową i swoimi znacznikami frakcji.",
+      "servicesCost": "Płacą za usługę, rozmieszczając wojowników w Płatnościach, w zależności od liczby zdobytych punktów zwycięstwa. Jeśli ich frakcja nie ma wojowników, rozmieszczaj zamiast nich wojowników z Ludzi Rzecznych.",
+      "servicesVictoryPoints": "*0-9 Punktów Zwycięstwa = 2 Wojownicy | 10-19 Punktów Zwycięstwa = 3 Wojownicy | 20+ Punktów Zwycięstwa = 4 Wojownicy*",
+      "serviceCard": "**Zdarzenie**: Weź kartę i dodaj ją do ręki.",
+      "serviceBoat": "**Riverboat**: Traktuj rzeki jako ścieżki w tej turze.",
+      "serviceMerc": "**Najemnicy**: Podczas walki i panowania w Dniu i Wieczorze traktujesz wojowników Ludzi Rzeki jak swoich własnych, z wyjątkiem walki przeciwko Ludziom Rzeki. Podczas walki musisz rozdzielać obrażenia pomiędzy swoje jednostki i wojowników Ludzi Rzeki."
+    },
+    "Looting Legion": {
+      "Hoard": "<br>Otrzymujesz **vp:2** jeśli skarbiec jest pełny i dodałbyś kolejny przedmiot, a następnie usuwasz ten przedmiot z gry."
+    }
+  },
+  "ToastMessages": {
+    "UpdateScore": "Wynik {{ botname }} został zaktualizowany o {{ addend }}.",
+    "Actions": {
+      "Undo": "Cofnij"
+    }
+  }
+}

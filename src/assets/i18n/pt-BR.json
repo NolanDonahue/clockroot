@@ -1,0 +1,733 @@
+{
+  "AppTitle": "Raiz: O Companheiro Mecânico",
+  "AppTitleShort": "Clockroot",
+  "NavTitle": "Bots",
+  "CloseText": "Fechar",
+  "Language": "Idioma",
+  "LederPlug": "Adquira a Expansão Clockwork da Leder Games!",
+  "PriorityMaps": "Mapas de Prioridade",
+  "NeedsSetup": "Precisa Configuração",
+  "ClockworkBots": "Robôs Mecânicos",
+  "DirectorsCut": "Versão do Diretor",
+  "BotSetup": {
+    "Setup": "Configuração",
+    "PriorityMarkers": "Configurar marcadores de prioridade para o mapa.",
+    "ChooseDifficulty": "Escolha a Dificuldade",
+    "Difficulty": {
+      "Easy": "Fácil",
+      "Normal": "Normal",
+      "Challenging": "Desafiador",
+      "Nightmare": "Pesadelo"
+    },
+    "DifficultyDC": {
+      "Easy": "Iniciante",
+      "Normal": "Especialista",
+      "Challenging": "Mestre",
+      "Nightmare": "Modo Chefe"
+    },
+    "ChooseVagabot": "Escolha Vagabot",
+    "ChooseTraits": "Escolha Características",
+    "DifficultyText": "Dificuldade",
+    "TurmoilText": "Você entra em Turbulência se não conseguir posicionar um poleiro.",
+    "TurmoilNobilityText": "Você entra em Turbulência se não conseguir posicionar um poleiro ou guerreiro."
+  },
+  "AddBot": "Adicione um bot clicando no",
+  "Factions": {
+    "Mechanical Marquise": "Marquesa Mecânica",
+    "Electric Eyrie": "Refúgio Elétrico",
+    "Automated Alliance": "Aliança Automatizada",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "Mechanical Marquise (DC)",
+    "Electric Eyrie (DC)": "Electric Eyrie (DC)",
+    "Automated Alliance (DC)": "Aliança Automatizada (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "Corvos Dentados",
+    "Drillbit Duchy": "Duchado Drillbit",
+    "Logical Lizards": "Lagartos Lógicos",
+    "Riverfolk Robots": "Robôs dos Povoadores do Rio",
+    "Looting Legion": "Legião de Saque"
+  },
+  "FactionsShort": {
+    "Mechanical Marquise": "M. Marquesa",
+    "Electric Eyrie": "E. Eyrie",
+    "Automated Alliance": "A. Aliança",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "M. Marquise (DC)",
+    "Electric Eyrie (DC)": "E. Eyrie (DC)",
+    "Automated Alliance (DC)": "A. Aliança (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "C. Corvídeos",
+    "Drillbit Duchy": "D. Ducado",
+    "Logical Lizards": "L. Lagartos",
+    "Riverfolk Robots": "R. Robôs",
+    "Looting Legion": "L. Legião"
+  },
+  "Priorities": {
+    "Title": "Prioridades do Mapa",
+    "Fall": "Queda",
+    "Winter": "Inverno",
+    "Lake": "Lago",
+    "Mountain": "Montanha"
+  },
+  "Sections": {
+    "DifficultyTraits": "Dificuldade & Características",
+    "VPItems": "Pontos de Vitória & Itens",
+    "DecreeRoosts": "Decreto e Ninhos",
+    "Buildings": "Edifícios",
+    "Birdsong": "Canto de Pássaros",
+    "Daylight": "Luz do dia",
+    "Evening": "Noite",
+    "Turmoil": "Turbulência",
+    "BattleTrackBonus": "Bônus da Faixa de Batalha",
+    "SatchelBattleTrack": "Satchel & Rastro de Batalha",
+    "SympathyBases": "Empatia & Bases",
+    "VagabotDifficultyTrait": "Vagabot, Dificuldade, Características",
+    "BotRules": "Regras Específicas do Corvid Bot",
+    "RulesLizard": "Regras do Lagarto",
+    "RulesRiver": "Regras do Povo do Rio",
+    "Hoard": "A Coleção",
+    "Protectionism": "Protecionismo",
+    "Services": "Serviços"
+  },
+  "SpecificSetup": {
+    "Electric Eyrie": {
+      "Setup0": "Forme um suprimento de 20 guerreiros perto de você.",
+      "Setup1": "Posicione 1 poleiro e 6 guerreiros na clareira do canto diagonalmente oposta à clareira com o token do castelo. Se a Marquesa não estiver jogando, posicione essas peças em uma clareira do canto aleatória.",
+      "Setup2": "Guarde suas 2 cartas de Vizir Leal, exibindo seu naipe, na coluna de decreto mais à direita.",
+      "Setup3": "Reúna suas 6 construções de poleiro restantes e coloque-as perto de você."
+    },
+    "Vagabot": {
+      "Setup0": "Coloque a peça do Vagabot na floresta adjacente ao maior número de clareiras. Se houver múltiplas florestas assim, decida aleatoriamente entre elas.",
+      "Setup1": "Embaralhe o baralho de quests, compre 1 carta de quest e coloque-a com a face para cima perto de você. Esta quest só pode ser completada pelo bot.",
+      "Setup2": "Coloque qualquer 1 item marcado com \"R\" abaixo de cada ruína no mapa.",
+      "Setup3": "Pegue quaisquer 4 itens marcados com \"S\" e coloque-os na sua Bolsa. _(O Inventor começa com 3 itens em vez de 4.)_"
+    },
+    "Automated Alliance": {
+      "Setup0": "Forme um suprimento de 10 guerreiros perto de você.",
+      "Setup1": "Reúna suas 3 bases e coloque-as perto de você.",
+      "Setup2": "Cole seus 10 tokens de simpatia e coloque-os perto de você."
+    },
+    "Mechanical Marquise": {
+      "Setup0": "Forme um suprimento de 25 guerreiros perto de você.",
+      "Setup1": "Coloque o token de retenção em um canto aleatório da clareira.",
+      "Setup2": "Coloque um guerreiro em cada clareira, exceto na clareira de canto diagonalmente oposta do castelo. Coloque um guerreiro extra na clareira com o token do castelo. _(Coloque 12 guerreiros no total.)_",
+      "Setup3": "Coloque 1 serraria, 1 oficina e 1 recrutador aleatoriamente entre a clareira com o token de fortaleza e as clareiras adjacentes com até um edifício por clareira.",
+      "Setup4": "Reúna suas 15 construções restantes e coloque-as perto de você."
+    },
+    "Electric Eyrie (DC)": {
+      "Setup0": "Forme um suprimento de 20 guerreiros perto de você.",
+      "Setup1": "Coloque 1 poleiro e 6 guerreiros na clareira do canto diagonalmente oposta à clareira com o token do castelo. Se a Marquesa não estiver jogando, coloque essas peças em uma clareira do canto aleatória.",
+      "Setup2": "Guarde suas 2 cartas de Vizir Leal, mostrando o naipe, na coluna de decreto mais à direita.",
+      "Setup3": "Reúna suas 6 construções de poleiro restantes e coloque-as perto de você."
+    },
+    "Vagabot (DC)": {
+      "Setup0": "Coloque a peça do Vagabot na floresta adjacente ao maior número de clareiras. Se houver múltiplas florestas assim, escolha aleatoriamente entre elas.",
+      "Setup1": "Embaralhe o baralho de missões, compre 1 carta de missão e coloque-a com a face para cima perto de você. Esta missão só pode ser completada pelo bot.",
+      "Setup2": "Coloque qualquer 1 item marcado com \"R\" sob cada ruína no mapa.",
+      "Setup3": "Pegue quaisquer 4 itens marcados com \"S\" e coloque-os em sua Bolsa. _(O Ferreiro começa com 3 itens em vez de 4.)_"
+    },
+    "Automated Alliance (DC)": {
+      "Setup0": "Forme um suprimento de 10 guerreiros perto de você.",
+      "Setup1": "Cole suas 3 bases e posicione-as perto de você.",
+      "Setup2": "Cole seus 10 tokens de simpatia e coloque-os perto de você."
+    },
+    "Mechanical Marquise (DC)": {
+      "Setup0": "Forme um suprimento de 25 guerreiros perto de você.",
+      "Setup1": "Coloque o token de manutenção em uma clareira aleatória no canto.",
+      "Setup2": "Posicione um guerreiro em cada clareira, exceto na clareira da esquina diagonalmente oposta ao castelo. Posicione um guerreiro extra na clareira com o token do castelo. _(Posicione 12 guerreiros no total.)_",
+      "Setup3": "Posicione 1 serraria, 1 oficina e 1 recrutador aleatoriamente entre as clareiras adjacentes à clareira com o token de castelo, com até um edifício por clareira.",
+      "Setup4": "Colete suas 15 construções restantes e coloque-as perto de você."
+    },
+    "Cogwheel Corvids": {
+      "Setup0": "Forneça 15 guerreiros e 8 marcadores de trama com a face para baixo.",
+      "Setup1": "Coloque 1 Guerreiro na limpeza de menor prioridade de cada naipe (total de 3)."
+    },
+    "Drillbit Duchy": {
+      "Setup0": "Forneça 20 guerreiros, 3 tokens de túnel e 9 coroas.",
+      "Setup1": "Coloque o tabuleiro da toca perto do mapa.",
+      "Setup2": "Posicione 2 guerreiros e 1 túnel em um clareamento de canto que não seja o clareamento de canto inicial. Em seguida, posicione 2 guerreiros em cada clareamento adjacente ao clareamento de canto escolhido, exceto o Burrow.",
+      "Setup3": "Posicione 3 cidadelas e 3 mercados em seus espaços de Construção correspondentes.",
+      "Setup4": "Compre 2 cartas e descarte-as. Para cada uma, coloque uma coroa no ministro correspondente mais superior e não influenciado no seu quadro de facção."
+    },
+    "Logical Lizards": {
+      "Setup0": "Formar um contingente de 25 guerreiros.",
+      "Setup1": "Posicione 4 guerreiros e 1 jardim de tema impresso correspondente em um canto de clareira aleatório que não seja a clareira de partida de outro robô (preferencialmente diagonalmente oposto). Em seguida, posicione 1 guerreiro em cada clareira adjacente.",
+      "Setup2": "Coloque o marcador de proscrito no espaço de Santificação da trilha da Conspiração no seu quadro de facção.",
+      "Setup3": "Posicione suas 14 jardins restantes nos espaços correspondentes de suas trilhas de Jardins, da direita para a esquerda.",
+      "Setup4": "Compre 3 cartas e coloque-as viradas para cima em seus Espíritos Perdidos, na ordem em que foram sorteadas."
+    },
+    "Riverfolk Robots": {
+      "Setup0": "Formar um contingente de 15 guerreiros.",
+      "Setup1": "Coloque 1 guerreiro em cada clareira às margens do rio.",
+      "Setup2": "Posicione 9 postos comerciais nos espaços correspondentes de suas trilhas de Postos Comerciais.",
+      "Setup3": "Coloque 1 guerreiro na sua caixa de Pagamentos.",
+      "Setup4": "Compre 5 cartas e adicione-as ao seu Mercado."
+    },
+    "Looting Legion": {
+      "Setup0": "**Reúna** peças e forme suprimentos de 20 guerreiros, 1 senhor da guerra e 6 fortalezas.",
+      "Setup1": "**Coloque** os quatro itens 'R' aleatoriamente sob as ruínas no mapa.",
+      "Setup2": "**Guarnição**: Posicione sua clareira inicial com um senhor da guerra, quatro guerreiros e um forte em uma clareira de canto aleatória que não seja a clareira de canto inicial de outro jogador e, se possível, esteja diagonalmente oposta à clareira de canto inicial de outro jogador."
+    }
+  },
+  "SpecificDifficulty": {
+    "Electric Eyrie": {
+      "Easy": "Durante a configuração, adicione apenas um Vizir Leal ao Decreto.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Durante a montagem, retire um pássaro Emboscada do baralho e adicione-o à coluna de pássaros do Decreto.",
+      "Nightmare": "Durante a configuração, pegue um pássaro Emboscada do baralho e adicione-o à coluna de pássaros do Decreto. No final da Noite, marque um ponto de vitória."
+    },
+    "Vagabot": {
+      "Easy": "À noite, atualize um item a menos.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "À noite, atualize mais um item.",
+      "Nightmare": "À noite, revitalize mais um item. Ao final da Noite, marque um ponto de vitória."
+    },
+    "Automated Alliance": {
+      "Easy": "Você só pode **Organizar** se houver quatro ou mais guerreiros da Aliança em uma clareira.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Você **Organiza** se uma clareira tiver dois ou mais guerreiros da Aliança.",
+      "Nightmare": "Você **Organiza** se uma clareira tiver dois ou mais Guerreiros da Aliança. Ao final da Noite, marque um ponto de vitória."
+    },
+    "Mechanical Marquise": {
+      "Easy": "Sempre que você **Recrutar**, coloque apenas dois guerreiros.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Sempre que você **Recrutar**, coloque também dois guerreiros na clareira ordenada que você governa de maior prioridade.",
+      "Nightmare": "Sempre que você **Recrutar**, posicione também dois guerreiros na clareira ordenada que você governa de maior prioridade. No final da Noite, marque um ponto de vitória."
+    },
+    "Electric Eyrie (DC)": {
+      "Easy": "Sempre que você **Recrutar** para pássaro, coloque um guerreiro a menos.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Sempre que você **Recrutar** para pássaro, coloque mais um guerreiro.",
+      "Nightmare": "Sempre que você **Recrutar** um pássaro, coloque mais um guerreiro no lugar. No final da noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Vagabot (DC)": {
+      "Easy": "À noite, atualize um item a menos.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "À noite, atualize mais um item.",
+      "Nightmare": "À noite, revitalize mais um item. Ao final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Automated Alliance (DC)": {
+      "Easy": "Você só pode **Organizar** se houver quatro ou mais guerreiros da Aliança em uma clareira.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Você **Organiza** se um campo de visão tiver dois ou mais guerreiros da Aliança.",
+      "Nightmare": "Você **Organiza** se uma clareira tiver dois ou mais guerreiros da Aliança. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Easy": "Sempre que você **Recrutar**, coloque apenas três guerreiros.",
+      "Normal": "Nada foi alterado.",
+      "Challenging": "Sempre que você **Recrutar**, coloque cinco guerreiros no lugar.",
+      "Nightmare": "Sempre que você **Recrutar**, coloque cinco guerreiros em vez disso. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Cogwheel Corvids": {
+      "Easy": "Sempre que você **Recrutar**, coloque apenas um guerreiro em cada uma de duas clareiras ordenadas.",
+      "Normal": "Sempre que você **Recrutar**, coloque dois guerreiros em cada uma de duas clareiras ordenadas.",
+      "Challenging": "Sempre que você **Recrutar**, coloque três guerreiros em cada uma de duas clareiras ordenadas.",
+      "Nightmare": "Sempre que você **Recrutar**, coloque três guerreiros em cada uma de duas clareiras ordenadas. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Drillbit Duchy": {
+      "Easy": "Sempre que você **Recrutar**, recrute apenas um guerreiro, mais um para cada toupeira que aparecer, para a toca.",
+      "Normal": "Sempre que você **Recrutar**, em vez de recrutar dois guerreiros, recrute dois guerreiros, mais um para cada toupeira aparecendo, para a toca.",
+      "Challenging": "Sempre que você **Recrutar**, recrute três guerreiros, mais um para cada toupeira aparecendo, para a toca.",
+      "Nightmare": "Sempre que você **Recrutar**, em vez de recrutar três guerreiros, recrute três guerreiros, mais um para cada toupeira aparecendo, para a toca. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Logical Lizards": {
+      "Easy": "Sempre que você realizar **Rituais**, revele apenas três cartas de seus Espíritos Perdidos.",
+      "Normal": "Sempre que você realizar **Rituais**, revele apenas quatro cartas de seus Espíritos Perdidos.",
+      "Challenging": "Sempre que você realizar **Rituais**, revele cinco cartas de suas Almas Perdidas.",
+      "Nightmare": "Sempre que você realizar **Rituais**, revele cinco cartas de suas Almas Perdidas. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Riverfolk Robots": {
+      "Easy": "Sempre que você **Construir e Reforçar**, não posicione nenhum guerreiro na feitora.",
+      "Normal": "Sempre que você **Construir e Reforçar**, coloque um guerreiro na Estação de Comércio.",
+      "Challenging": "Sempre que você **Construir e Reforçar**, posicione dois guerreiros na postagem comercial.",
+      "Nightmare": "Sempre que você **Construir e Reforçar**, posicione dois guerreiros no posto comercial. No final da Noite, marque um ponto de vitória para cada dois jogadores (arredondado para cima)."
+    },
+    "Looting Legion": {
+      "Easy": "Sempre que você **recruta**, coloque um guerreiro a menos na clareira do seu senhor da guerra.",
+      "Normal": "Sempre que você **recrutar**, coloque um guerreiro extra na clareira do seu senhor da guerra antes de posicionar guerreiros nos redutos.",
+      "Challenging": "Sempre que você **recrutar**, coloque dois guerreiros extras na área do seu senhor da guerra antes de posicionar guerreiros em fortalezas.",
+      "Nightmare": "Sempre que você **recrutar**, coloque dois guerreiros extras na clareira do seu senhor da guerra antes de posicionar guerreiros em fortalezas. No final da fase noturna, pontue **VP:1** a cada dois jogadores inimigos (arredondado para cima)."
+    }
+  },
+  "SpecificRules": {
+    "RulePoorManualDexterity": "Destreza Manual Insuficiente",
+    "TextPoorManualDexterity": "Você não possui mão de cartas. Não pode descartar cartas. Se um jogador humano retirasse uma carta de você, ele compra uma carta em vez disso. Se um jogador humano lhe desse uma carta, ele a descarta e você marca **vp:1**.",
+    "RuleHatesSurprises": "Odia Surpresas",
+    "TextHatesSurprises": "Cartas Emboscada não podem ser jogadas contra você.",
+    "RuleLordsOfTheForest": "Senhores da Floresta",
+    "TextLordsOfTheForest": "Você governa quaisquer clareiras onde você está vinculado em presença.",
+    "RuleNobility": "Nobreza",
+    "TextNobility": "Agora você entra em turbulência caso não consiga posicionar um poleiro ou um guerreiro. Sempre que você entra em turbulência, você não perde pontos de vitória. Em vez disso, você pontua um ponto de vitória por carta de pássaro no Decreto.",
+    "RuleRelentless": "Implacável",
+    "TextRelentless": "Após resolver o Decreto, remova todos os edifícios e unidades indefesos em qualquer clareira com guerreiros da Eyrie.",
+    "RuleSwoop": "Mergulho",
+    "TextSwoop": "Ao fim do Dia Claro, posicione dois guerreiros na clareira de maior prioridade sem peças de Égide.",
+    "RuleWarTax": "Imposto de Guerra",
+    "TextWarTax": "Sempre que você remover uma construção ou peça inimiga, seu dono perde um ponto de vitória.",
+    "RuleLoneWanderer": "Viajante Solitário",
+    "TextLoneWanderer": "Sua peça não é um guerreiro e não pode ser removida do mapa.",
+    "RuleNimble": "Ágil",
+    "TextNimble": "Você pode mover-se independentemente de quem governa sua clareira.",
+    "RuleAdventurer": "Aventureiro",
+    "TextAdventurer": "Você pode **Batalhar** no máximo uma vez por turno.<br>Ao final do Dia Claro, repita **Busca** o máximo de vezes possível.",
+    "RuleBerserker": "Berserker",
+    "TextBerserker": "Sempre que você **Batalhar**, mova-se para a clareira mais próxima com a maior quantidade de peças e ataque o jogador com mais peças lá.<br>À noite, repare mais um item.",
+    "RuleHelper": "Auxílio",
+    "TextHelper": "Sempre que você **Auxiliar**, marque um ponto de vitória extra e o jogador auxiliado compra duas cartas em vez de uma.",
+    "TextHelperDC": "Sempre que você **Auxiliar**, se não houver itens disponíveis, direcione sua ajuda para o jogador com a menor pontuação e gaste um item para marcar **vp:1**. O jogador auxiliado compra um card.",
+    "RuleMarksman": "Atirador",
+    "TextMarksman": "No início da batalha como atacante, cause um impacto imediato _(marcando um ponto se você eliminar um guerreiro inimigo)_.",
+    "RuleAutomatedAmbush": "Emboscada Automatizada",
+    "TextAutomatedAmbush": "Na batalha como defensor com quaisquer guerreiros da Aliança, você causa um dano extra.",
+    "RuleAutomatedOutrage": "Indignação Automatizada",
+    "TextAutomatedOutrage": "Sempre que um jogador remover um token de simpatia ou mover qualquer guerreiro para um clareira simpática, ele deve descartar um card correspondente. Se não puder, você marca **vp:1**.",
+    "RuleMartialLaw": "Lei Marcial",
+    "TextMartialLaw": "Sempre que você colocar uma moeda de simpatia em uma clareira com três ou mais guerreiros de um jogador inimigo, você marca um ponto de vitória a menos _(mínimo de zero)_.",
+    "RuleCrackdown": "Repressão",
+    "TextCrackdown": "Sempre que uma base for removida, remova todos os tokens de simpatia de clareiras correspondentes ao naipe da base removida.",
+    "TextCrackdownDC": "Sempre que uma base for removida, devolva todos os tokens de simpatia das clareiras que correspondem ao naipe da base removida.",
+    "RuleInformants": "Informantes",
+    "TextInformants": "Tokens de simpatia indefesos se beneficiam de Emboscada Automatizada.",
+    "RulePopularity": "Popularidade",
+    "TextPopularity": "Inimigos não recebem pontos de vitória por remover tokens de simpatia.",
+    "TextPopularityDC": "Inimigos só podem marcar um ponto de vitória por turno ao remover seus tokens de simpatia.",
+    "RuleVeterans": "Veteranos",
+    "TextVeterans": "Obtenha a habilidade Guerra de Guerrilha da Aliança da Floresta. _(Em combate como defensor, você usa a rolagem mais alta e o atacante usa a rolagem mais baixa.)_",
+    "TextVeteransDC": "Em batalha como defensor, utilize o mesmo resultado do dado do atacante. _(Ambos os jogadores usam o dado mais alto para determinar os acertos.)_",
+    "RuleWildfire": "Incêndio Florestal",
+    "TextWildfire": "No fim da noite, **Espalhe Empatia**. Não marque pontos ao posicionar este token de empatia.",
+    "RuleTheKeep": "A Fortaleza",
+    "TextTheKeep": "Somente você pode posicionar peças na clareira com o token de fortaleza.",
+    "RuleBlitz": "Blitz",
+    "TextBlitz": "Após se mover, encontre a clareira que você governa de maior prioridade sem nenhuma peça inimiga. Mova todos, exceto um guerreiro, da clareira. Então, batalhe na clareira de destino.",
+    "RuleFortified": "Fortificado",
+    "TextFortified": "Seus edifícios precisam de dois ataques para serem removidos. Um único ataque a um edifício não tem efeito.",
+    "RuleHospitals": "Hospitais",
+    "TextHospitals": "Ao final da batalha como defensor, se dois ou mais guerreiros Marquise forem removidos na batalha, coloque dois guerreiros na clareira com o token do castelo.",
+    "TextHospitalsDC": "Ao final da batalha como defensor, se dois ou mais guerreiros Marquise forem removidos na batalha, coloque um guerreiro na clareira com o token da fortaleza.",
+    "RuleIronWill": "Vontade de Ferro",
+    "TextIronWill": "Sempre que você **Recrutar** em Dia Claro Intensificado, coloque o dobro de guerreiros.",
+    "TextIronWillDC": "**Repetir Aurora Radiante** pode acontecer duas vezes por turno em vez de apenas uma.",
+    "RuleEmbeddedAgents": "Agentes Incorporados",
+    "TextEmbeddedAgents": "Em combate como defensor com um token de trama virado para baixo, você causa um dano extra.",
+    "RuleBackupPlans": "Planos de Backup",
+    "TextBackupPlans": "Sempre que um token de trama for removido, coloque um guerreiro na clareira da qual a trama foi removida.",
+    "RuleVendetta": "Vingança",
+    "TextVendetta": "Sempre que qualquer token de trama for virado, ele terá o efeito \"Quando Virado\" de uma trama de Bomba.",
+    "RuleMastermind": "Mestre",
+    "TextMastermind": "Você agora **Plota** duas vezes por turno.",
+    "RuleGamble": "Jogue",
+    "TextGamble": "Sempre que uma trama fosse virada, o jogador humano com mais peças de facção na clareira deve primeiro adivinhar o tipo da trama. Se estiver correto, a trama vira e pontua, mas não resolve seu efeito \"Quando Virada\". Então, ele remove a trama (pontuando um ponto). Se estiver incorreto, você pontua +1 Ponto de Vitória.",
+    "RuleCostOfErrors": "Custo de Erros",
+    "TextCostOfErrors": "Sempre que qualquer número de edifícios de Ducado for removido, remova a coroa do ministro mais abaixo influenciado.",
+    "RuleFoundations": "Fundamentos",
+    "TextFoundations": "Sempre que **Custo de Erros** é ativado, ele agora remove a coroa do ministro mais basculante cuja roupa combina com uma clareira da qual um edifício foi removido.",
+    "RuleInvestors": "Investidores",
+    "TextInvestors": "Sempre que um jogador humano acionar **Custo de Erros**, ele deve descartar uma carta que corresponda a uma clareira da qual um edifício Duchy foi removido. Se ele descartar uma carta correspondente, o Duchy perde um ponto de vitória. Caso contrário, o Duchy influencia um ministro, como na ação de influência, mas o ministro também deve corresponder a uma clareira de remoção.",
+    "RuleInvaders": "Invasores",
+    "TextInvaders": "A condição de desempate para a ação de escavação agora é 'a clareira que tem o maior número de edifícios inimigos, seguida pela menor quantidade de guerreiros inimigos'. Se você não puder construir devido à falta de vagas de construção, lute em cada clareira em vez disso.",
+    "RuleOverwhelm": "Abrastar",
+    "TextOverwhelm": "Você agora **Escava** duas vezes por turno, e agora requer e move apenas três guerreiros (não quatro.)",
+    "RulePilgrims": "Peregrinos",
+    "TextPilgrims": "Você governa clareiras que têm um jardim.",
+    "RuleRobotRevenge": "Vingança Robótica",
+    "TextRobotRevenge": "Sempre que qualquer guerreiro Lagarto for removido fora do seu turno, coloque um deles na sua caixa de Seguidores.",
+    "RuleFanatics": "Fanáticos",
+    "TextFanatics": "Sempre que você **Converter**, batalhe na clareira após a conversão do guerreiro. Nesta batalha, cause um dano extra. *Vínculo do Jogador: Alvo o jogador com a maior quantidade de edifícios indefesos, depois o jogador com mais pontos.*",
+    "RuleMartyrs": "Mártires",
+    "TextMartyrs": "Sempre que você realizar um ritual de pássaro, também coloque um guerreiro de seu suprimento na sua caixa de Acólitos.",
+    "RuleErratic": "Irregular",
+    "TextErratic": "No final do seu turno, compre uma carta e adicione-a aos seus Perdidos.",
+    "RuleSpiteful": "Malicioso",
+    "TextSpiteful": "Sempre que você **Cruzarada**, ganhe um ponto de vitória extra se remover quaisquer tokens.",
+    "RuleMarket": "Mercado",
+    "TextMarket": "O mercado é uma linha de cartas viradas para cima, a ordem de suas cartas não pode ser alterada.",
+    "RuleGarrison": "Guarnição",
+    "TextGarrison": "Como defensor em batalha, você nunca está indefeso, e suas postações comerciais cada uma adiciona um ao seu número máximo de acertos rolados.",
+    "RuleGreedy": "Avarento",
+    "TextGreedy": "Conceda +1 ponto de vitória sempre que o jogador com mais pontos comprar qualquer número de seus serviços.",
+    "RuleFerocious": "Feroz",
+    "TextFerocious": "Como atacante em batalha, seu número máximo de acertos rolados é sempre três.",
+    "RuleInvolved": "Envolvido",
+    "TextInvolved": "Se um jogador não comprar o serviço de Mercenários durante sua vez, trate seus guerreiros como se todos os inimigos desse jogador tivessem comprado Mercenários. O Vagabundo pode comprar Mercenários para evitar essa penalidade, mas não se beneficia do serviço.",
+    "RuleAutomatedLooters": "Looters Automatizados",
+    "TextAutomatedLooters": "Em batalha como atacante contra um defensor com um item disponível em uma clareira que você domina – pegue o item, mas não cause nenhum dano.",
+    "RuleWarlord": "O Senhor da Guerra",
+    "TextWarlord": "Seu senhor da guerra é um guerreiro que não pode ser removido fora da batalha, movido fora do seu turno ou colocado, exceto com Ungir. *A clareira do Senhor da Guerra sempre conta como a clareira ordenada.*"
+  },
+  "SpecificBirdsong": {
+    "Electric Eyrie": {
+      "RevealOrder": "Revelar um card de pedido.",
+      "CraftOrder": "Crie ordem de fabricação para **vp:1** se mostrar um item disponível.",
+      "DecreeOrder": "Adicione o cartão do pedido à coluna de Decreto correspondente.",
+      "NewRoost": "Posicione um poleiro e 4 guerreiros na clareira ordenada de maior prioridade onde todas essas peças possam ser colocadas. _(Intencionalmente não listado no tabuleiro.)_"
+    },
+    "Vagabot": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Crie um cartão de pedido para **vp:1** se ele mostrar um item disponível.",
+      "RestOrder": "Se você tiver dois ou menos itens intactos, mova-se para uma floresta adjacente aleatória e, em seguida, vá para a Noite."
+    },
+    "Automated Alliance": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Crie um cartão de pedido para **vp:1** caso mostre um item disponível.",
+      "Revolt": "Remova todas as peças inimigas da clareira simpática **card:{{suit}}** com o maior número de peças inimigas e coloque a base **card:{{suit}}** lá.",
+      "RevoltSpread": "Se você não se rebelou, **Espalhe Empatia** {{sympathySpread}}.",
+      "Spread": "**Espalhe a Empatia** {{sympathySpread}}."
+    },
+    "Mechanical Marquise": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Crie ordem de fabricação para **vp:1** se mostrar um item disponível."
+    },
+    "Electric Eyrie (DC)": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Crie ordem de fabricação para **vp:1** caso mostre um item disponível.",
+      "DecreeOrder": "Adicione o cartão do pedido à coluna de Decreto correspondente.",
+      "NewRoost": "Posicione um poleiro e 3 guerreiros na clareira de maior prioridade, ordenada, onde todas essas peças podem ser colocadas. _(Intencionalmente não listado no tabuleiro.)_"
+    },
+    "Vagabot (DC)": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Criar carta de pedido para **vp:1** caso mostre um item disponível.",
+      "RestOrder": "Se você tiver dois ou menos itens intactos, mova-se para uma floresta adjacente aleatória e, em seguida, vá para o Anoitecer."
+    },
+    "Automated Alliance (DC)": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Crie carta de pedido para **vp:1** se mostrar um item disponível.",
+      "Revolt": "Remova todas as peças inimigas do clareira simpática **card:{{suit}}** com o maior número de peças inimigas e coloque a base **card:{{suit}}** lá.",
+      "Spread": "**Espalhe a Empatia** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "RevealOrder": "Revelar um card de pedido.",
+      "CraftOrder": "Crie um cartão de pedido para **vp:1** se ele mostrar um item disponível."
+    },
+    "Cogwheel Corvids": {
+      "RevealOrder": "**Revelar** um card de pedido.",
+      "CraftOrder": "**Criar** cartão de pedido para **vp:1** caso mostre um item disponível.",
+      "RecruitOrder": "**Recrute** {{difficulty}} guerreiros em cada uma das duas **cartas:{{suit}}** clareiras. (Prioridade para clareiras sem marcadores de trama, depois com o maior número de guerreiros Corvid.)<br>(Se você não tiver guerreiros em reserva, faça imediatamente o **A Trama Espessa** antes de colocar os guerreiros restantes.)",
+      "Flip": "**Virar** cada token de trama (nenhum guerreiro necessário). Cada vez que você vira uma trama, marque +1 ponto de vitória por trama virada no mapa, e então resolva seu efeito \"Quando Virada\" se houver.",
+      "FlipVendetta": "Vingança: Todos os efeitos 'Quando Invertido' ativam a bomba também.",
+      "FlipGamble": "<br>*Aposta: Quando a trama for revertida - o humano com mais peças na clareira adivinha o tipo. Se correto, reverta e marque, NÃO resolva o efeito, então remova o token* **vp:1**. *Se incorreto, pontuação do Corvid* **vp:1**"
+    },
+    "Drillbit Duchy": {
+      "RevealOrder": "Revelar um cartão de pedido.",
+      "CraftOrder": "Criar carta de pedido para **vp:1** caso mostre um item disponível.",
+      "RecruitOrder": "Recrute **{{moleDifficulty}}** guerreiros, mais um para cada **meeple:duchy** presente, e coloque-os na toca. (Atualmente: recrute **{{moleRecruit}}** guerreiros.)"
+    },
+    "Logical Lizards": {
+      "Outcasts": "A terno mais comum em suas Almas Perdidas é a ordem. Em caso de empate, a ordem é **card:bird**.",
+      "Conspiracy": "Realize Conspiracões em clareiras de **card:{{suit}}**. Você realizará a conspiração mostrada, se possível, então removerá um acólito se a realizou, e continuará até ficar sem acólitos ou não puder mais conspirar."
+    },
+    "Riverfolk Robots": {
+      "StockMarket": "Compre dois cards e adicione-os ao lado direito do Mercado. Não compre um card quando o Mercado atingir 5 cards.",
+      "CraftOrder": "Crie o primeiro card adicionado ao Mercado que mostre um item disponível para **vp:1** e, em seguida, descarte-o.",
+      "SetOrder": "Defina a ordem para que o Cartão de Mercado seja o mais à direita."
+    },
+    "Looting Legion": {
+      "Reveal": "**Revele** o primeiro card do baralho como o card da ordem.",
+      "Craft": "**Elabore** o cartão de pedido se ele mostrar um item disponível, você não marca pontos.",
+      "Raze": "**Raze**: A cada grupo de inimigos, remova todos os edifícios e tokens inimigos, pegue um item das ruínas, se houver, e remova a ruína se estiver vazia.",
+      "Recruit": "**Recrute** {{hoardNum}} guerreiros na clareira do seu senhor da guerra, depois um guerreiro em cada fortaleza."
+    }
+  },
+  "SpecificDaylight": {
+    "Electric Eyrie": {
+      "Recruit": "Recrute {{totalForSuit}} guerreiro(s) em uma clareira {{suitText}} com um poleiro. {{recruitText}}<br>_(**Empates**: Recrute em uma clareira com o maior número de peças inimigas, depois o menor número de guerreiros da Névoa, depois a menor prioridade.)_",
+      "Move": "Mova do espaço {{suitText}} que você governa com a maioria de seus guerreiros para um espaço adjacente. Deixe um número suficiente de guerreiros para governar exatamente o espaço de origem ou {{totalForSuit}}, o que for maior.<br>_(**Empates de Destino**: Mova-se para um espaço sem ninho, depois com o menor número de peças inimigas e, em seguida, com a menor prioridade.)_",
+      "Battle": "Batalha em uma clareira {{suitText}} contra o jogador com o maior número de construções lá. {{extraHit}}<br>_(**Empates em Clareira**: Batalha em uma clareira sem poleiro, então com as construções menos defendidas e, por último, com a menor prioridade.)_<br>_(**Empates no Defensor**: Batalha contra o jogador com o maior número de peças lá, então o jogador com o maior número de pontos de vitória.)_",
+      "ExtraHit": "**Cause um dano extra.**",
+      "ExtraDecree": "Você deveria ter adicionado pelo menos 2 cartas de pássaro ao decreto.",
+      "ExtraRelentless": "Remova todas as unidades e edifícios indefesos em qualquer clareira com guerreiros da Eyrie.",
+      "ExtraRecruit": "Se você não conseguir posicionar um guerreiro, você cairá em turbulência.",
+      "ExtraBuild": "Coloque um poleiro na clareira que você governa com a maior prioridade, onde não há poleiro. Se você não conseguir colocar um poleiro, você cairá em turbulência.",
+      "ExtraSwoop": "Posicione dois guerreiros na clareira de maior prioridade sem peças de Eyrie."
+    },
+    "Vagabot": {
+      "ActionExplore": "Mova-se para as ruínas mais próximas, gastando um item a cada movimento, e então gaste um item para pegar um item dessas ruínas.",
+      "ActionQuest": "Mova para a clareira mais próxima que corresponda à busca, então esgote quaisquer dois itens para descartar a busca e marcar **vp:1**. _(Ignore o texto da carta.)_ Em seguida, substitua a busca.",
+      "ActionQuestRepeat": "Repita isto o máximo de vezes possível.",
+      "ActionAid": "Direcione o jogador em sua clareira com quaisquer itens e o jogador com a menor quantidade de Pontos de Vitória entre aqueles jogadores. Esgote o máximo de itens possível até o número de itens que ele possui, pegue essa quantidade de itens dele e marque {{aidHelpText}}essa quantidade de Pontos de Vitória. Então, ele compra {{aidHelpText}}essa quantidade de cartas.",
+      "ActionBattle": "Mova para a clareira mais próxima com quaisquer peças do inimigo com o {{target}} mais alto, então esgote um item para lutar contra aquele jogador. Marque **vp:1** por cada guerreiro inimigo removido.",
+      "ActionBattleTarget": "Vice-Presidente",
+      "ActionBattleTargetBerserker": "peças",
+      "ActionBattleAdventurer": "Repita esta ação, consumindo dois itens por batalha extra, o máximo de vezes possível.",
+      "ActionBattleMarksman": "Cause um ataque imediato em cada batalha.",
+      "ActionBattleTiebreaker": "_(Se o defensor estiver em múltiplas clareiras à mesma distância, mova-se para a clareira onde eles têm mais edifícios e marcadores, depois o menor número de guerreiros.)_",
+      "ActionRepair": "Se você tiver itens danificados, gaste um item para reparar um item danificado, não gasto antes do gasto.",
+      "ActionSpecial": "Esgote um item para realizar o seguinte (ignore se não tiver efeito):"
+    },
+    "Automated Alliance": {
+      "Sympathy": "Coloque uma ficha de simpatia na área de **carta:{{suit}}** com o menor número de guerreiros inimigos adjacentes a qualquer área de simpatia.<br>(**Nenhuma Área Adequada**: Caso não haja áreas adequadas, coloque uma ficha de simpatia na área com o menor número de peças inimigas.)<br>(**Não se Propaga**: Se você não puder colocar uma ficha de simpatia, marque 5 VP.)",
+      "Revolt": "Remova todas as peças inimigas de qualquer clareira simpática com o maior número de peças inimigas, e coloque a base correspondente lá."
+    },
+    "Mechanical Marquise": {
+      "Blitz": "Encontre a clareira que você governa com a maior prioridade, sem nenhuma peça inimiga. Mova todos os guerreiros, exceto um, da clareira. Então, batalhe na clareira de destino.",
+      "Bird0": "Batalha em todas as clareiras. _(O Defensor é o jogador com mais peças, então, pontos de vitória.)_",
+      "Bird1": "Recrute {{warriorsOverTwo}} guerreiro(s) em cada uma das duas clareiras que você governa com a menor prioridade. Se você governa apenas uma clareira, coloque todos os {{totalWarriors}} guerreiros lá.",
+      "Bird2": "Construa um edifício do tipo que tiver o maior número de peças no mapa em uma clareira que você governa com o maior número de Guerreiros da Marquise.<br>_(Em caso de empate entre serrarias e quaisquer outros tipos de edifícios, coloque uma serraria. Em caso de empate entre oficinas e recrutadores, mas não serrarias, coloque um recrutador.)_",
+      "Bird3": "Mova todos, exceto três, de seus guerreiros de cada clareira para a clareira adjacente com mais peças inimigas. Em seguida, batalhe em cada clareira onde você moveu seus guerreiros.",
+      "BirdChallenging": "Posicione dois guerreiros na clareira ordenada que você governa, com a mais alta prioridade.",
+      "Suit0": "Batalha em cada **carta:{{suit}}** de limpeza. _(O defensor é o jogador com mais peças, seguido de pontos de vitória.)_",
+      "Suit1": "Recrute {{totalWarriors}} guerreiros distribuídos igualmente por clareiras **card:{{suit}}** sob seu domínio. Se houver guerreiros extras que não possam ser distribuídos igualmente nas clareiras **card:{{suit}}**, coloque o último guerreiro na clareira **card:{{suit}}** com a maior prioridade.",
+      "Suit2": "Construa um **edifício:{{building}}** em uma clareira que você governa com os guerreiros Marquise mais numerosos.",
+      "Suit3": "Mova todos os seus guerreiros, exceto três, de cada **card:{{suit}}** para a clareira adjacente com o maior número de peças inimigas.",
+      "Repeat": "Se você não posicionou uma construção neste turno e possui cinco ou menos construções no mapa, descarte o cartão de ordem, compre um novo e repita o Dia Claro."
+    },
+    "Electric Eyrie (DC)": {
+      "Recruit": "Recrute {{recruitNum}} guerreiro(s) em uma clareira {{suitText}} com um poleiro. {{recruitText}}<br>_(**Empates**: Recrute em uma clareira com o maior número de peças inimigas, depois o menor número de guerreiros da Águia, depois a menor prioridade.)_",
+      "Move": "Mova do círculo de {{suitText}} que você governa com a maioria de seus guerreiros para um círculo adjacente. Deixe o suficiente para governar exatamente o círculo de origem ou {{totalForSuit}}, o que for maior. Não considere círculos nos quais nenhum guerreiro se moveria.<br>_(**Empates de Destino**: Mova-se para um círculo sem ninho, depois com o menor número de peças inimigas e, por fim, com a menor prioridade.)_",
+      "Battle": "Batalha em uma clareira {{suitText}}. {{extraHit}}<br>_(**Empates na Clareira**: Batalha em uma clareira sem ninho, então os edifícios mais indefesos.)_<br>_(**Empates no Defensor**: Batalha contra um jogador com os edifícios mais numerosos ali, então o jogador com as peças mais numerosas ali.)_",
+      "ExtraHit": "**Cause um dano extra.**",
+      "ExtraDecree": "Você deveria ter adicionado pelo menos 2 cartas de pássaro ao decreto.",
+      "ExtraRelentless": "Remova todas as unidades e edifícios indefesos em qualquer clareira com guerreiros da Eyrie.",
+      "ExtraRecruit": "Se você não conseguir posicionar um guerreiro, você cairá em turbulência.",
+      "ExtraBuild": "Coloque um poleiro na clareira que você governa com a mais alta prioridade, caso não haja poleiro. Se você não conseguir colocar um poleiro, você cairá em turbulência.",
+      "ExtraSwoop": "Posicione dois guerreiros na clareira de maior prioridade sem peças de Eyrie."
+    },
+    "Vagabot (DC)": {
+      "ActionExplore": "Mova-se para a ruína mais próxima e, em seguida, esgote um item para pegar um item dela.",
+      "ActionQuest": "Mova para a clareira mais próxima correspondente à busca, então descarte quaisquer dois itens para descartar a busca e marcar 2 VP. _(Ignore o texto do card.)_ Em seguida, substitua a busca.",
+      "ActionQuestRepeat": "Repita isso o máximo de vezes possível.",
+      "ActionAid": "Mova-se para a clareira mais próxima contendo pedaços de um jogador com itens, se possível. Em seguida, gaste um item para pegar um dos itens deles e coloque-o na sua sacola. Marque **vp:1** e então eles compram uma carta.<br>_(**Empate de Jogador**)_: se vários jogadores tiverem pedaços à mesma distância, selecione o jogador com a menor pontuação.",
+      "ActionBattle": "Mova-se para a clareira mais próxima com quaisquer peças do inimigo com o {{target}} mais alto, então esgote um item para batalhar contra aquele jogador. Marque **vp:1** por cada guerreiro inimigo removido.",
+      "ActionBattleTarget": "VP",
+      "ActionBattleTargetBerserker": "peças",
+      "ActionBattleAdventurer": "Repita esta ação, consumindo dois itens por batalha extra, o máximo de vezes possível.",
+      "ActionBattleMarksman": "Cause um golpe imediato em cada batalha.",
+      "ActionBattleTiebreaker": "_(Se o defensor-alvo estiver em múltiplas clareiras à mesma distância, mova-se para a clareira onde eles têm mais edifícios e tokens, então o menor número de guerreiros.)_",
+      "ActionSpecial": "Esgote um item para realizar o seguinte (pule se não tivesse efeito):"
+    },
+    "Automated Alliance (DC)": {
+      "Sympathy": "Coloque um token de simpatia em uma clareira adjacente e insensível, próxima a qualquer clareira simpática.<br>(**Ligação de Clareira**: Evite clareiras com 3 ou mais guerreiros de um único jogador, então coloque em clareira **cartas:{{suit}}**.)<br>(**Não se Propaga**: Se você não puder colocar um token de simpatia, marque 5 VP.)",
+      "SympathyBird": "Coloque uma ficha de simpatia em uma clareira adjacente e insensível, adjacente a qualquer clareira simpática.<br>(**Ligação da Clareira**: Coloque na clareira com a menor prioridade.)<br>(**Não se Propaga**: Se você não puder colocar uma ficha de simpatia, marque 5 VP.)",
+      "Revolt": "Remova todas as peças inimigas de qualquer clareira simpática com o maior número de peças inimigas e coloque a base correspondente lá.",
+      "RevoltSpread": "Se você não se rebelou, **Disseminar Empatia** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "Blitz": "Encontre a clareira que você governa com a maior prioridade, sem nenhuma peça inimiga. Mova todos os guerreiros da clareira, exceto um. Então, batalhe na clareira de destino.",
+      "Bird0": "Batalha em todas as clareiras. _(O Defensor é o jogador com mais peças, então pontos de vitória.)_",
+      "Bird1": "Recrute {{totalWarriors}} guerreiro(s) de forma igualitária entre as duas clareiras de menor prioridade que você governa. Se você governa apenas uma clareira, coloque todos os {{totalWarriors}} lá. Marque **vp:1** para cada dois guerreiros que não puderam ser recrutados.",
+      "Bird2": "Construa um edifício do tipo que tiver mais peças no mapa em uma clareira que você governa com o maior número de Guerreiros da Marca.<br>_(Em caso de empate entre serrarias e quaisquer outros tipos de construção, coloque uma serraria. Em caso de empate entre oficinas e recrutadores, mas não serrarias, coloque uma oficina.)_",
+      "Bird3": "Mova todos, exceto três, dos seus guerreiros de cada clareira para a clareira adjacente com o maior número de peças inimigas. Em seguida, batalhe em cada clareira para a qual você moveu seus guerreiros.",
+      "Suit0": "Batalha em cada **carta:{{suit}}** de limpeza. _(O defensor é o jogador com mais peças, depois pontos de vitória.)_",
+      "Suit1": "Recrute {{totalWarriors}} guerreiros distribuídos uniformemente em clareiras **card:{{suit}}** que você controla. Ganhe **vp:1** para cada dois guerreiros que não puderam ser recrutados.<br>_(**Empate em clareira**: Coloque os guerreiros nas clareiras com prioridade mais alta primeiro.)_",
+      "Suit2": "Construa um **edifício:{{building}}** em uma clareira que você governa com o maior número de guerreiros da Marquesa.",
+      "Suit3": "Mova todos, exceto três dos seus guerreiros de cada **card:{{suit}}** para a clareira adjacente com o maior número de peças inimigas. Cada guerreiro só pode se mover uma vez durante esta ação."
+    },
+    "Cogwheel Corvids": {
+      "Battle": "**Batalha** em cada uma de duas **carta:{{suit}}** clareiras. (Empate no Defensor: Jogador com o maior número de edifícios e tokens lá, então com o maior número de pontos.)",
+      "Move": "**Mova** todos, exceto dois guerreiros de cada **carta:{{suit}}**, para uma clareira adjacente sem trama, utilizando uma trama virada para cima. (Empate na Clareira: Mais Guerreiros Corvídeos.) (Sem Destino Adequado: Clareira de Menor Prioridade.)",
+      "Plot": "**Trama** no **cartas:{{suit}}** com o maior número de guerreiros Corvid e sem trama, remova um guerreiro Corvid dali para colocar uma trama virada para baixo aleatória ali.",
+      "PlotMastermind": "<br>*Mestre: Planejar duas vezes a cada turno.*",
+      "PlotThickens": "**A Trama Espessa:** Em um clareira que não possui trama e três ou mais guerreiros Corvídeos, remova um guerreiro Corvídeo dali para colocar uma trama virada para baixo aleatória. (Ligação da Clareira: Maioria de Guerreiros Corvídeos.)"
+    },
+    "Drillbit Duchy": {
+      "Dig": "Se o Covil tiver quatro ou mais guerreiros, coloque um túnel em uma clareira **card:{{suit}}** sem túnel e sem edifícios de Ducado. Além disso, mova {{tunnelValue}} guerreiros do covil para o túnel.",
+      "DigNoTunnel": "*Nenhum túnel em suprimento, pegue e coloque o túnel da clareira com o menor número de guerreiros do Ducado.*",
+      "DigBird": "<br>*(Removendo Carta de **laço:{{suit}}**: Uma remoção como esta com os edifícios e marcadores inimigos mais numerosos)*",
+      "DigTie": "*(Limpando Carta de Laço **carta:{{suit}}**: Uma limpeza com o maior número de slots de construção vazios e o menor número de guerreiros inimigos.)*",
+      "DigInvaders": "<br>*(Limpando Lares: Um laço **carta:{{suit}}** de limpeza com o maior número de edifícios inimigos, seguido do menor número de guerreiros inimigos. Se você não puder construir porque não há vagas de construção, **batalhe** em cada limpeza.)*",
+      "DigOverwhelm": "*Cave duas vezes por turno.*",
+      "Battle": "**Batalha** em cada limpeza de **carta:{{suit}}**. (Empate no Defensor: Jogador com mais edifícios, depois com mais peças, depois com mais pontos.)",
+      "BattleCaptain": "**Batalha** em cada **carta:{{suit}}** de limpeza. (Empate do Defensor: Jogador com mais edifícios, depois mais peças, depois mais pontos.)<br>**Capitão** é influenciado, não se esqueça de seu efeito em batalha.",
+      "Build": "**Construa** na clareira onde você governa com o maior número de guerreiros do Ducado. Posicione um castelo se você tiver 9+ guerreiros em seu suprimento. Caso contrário, posicione um mercado. Marque **vp:1** se não puder posicionar um edifício enquanto um estiver no suprimento.",
+      "Ministers": "Execute as ações de todos os seus ministros influenciados, de cima a baixo. (Seus Lordes atualmente fornecem **{{ministerPoints}}** PV)"
+    },
+    "Logical Lizards": {
+      "Rituals": "**Rituais**: Revele as {{difficulty}} cartas do topo dos seus Espíritos Perdidos, uma a uma, e realize um ritual para cada naipe revelado.",
+      "RitualsBird": "<br>**card:bird**: Pegue um guerreiro Lagarto do círculo com o maior número de guerreiros Lagarto e coloque-o na caixa dos Acolitos. **Coloque este card no monte de DESCARTE, NÃO no monte de Almas Perdidas.**",
+      "RitualsOther": "<br>**carta:{{suit}}**: Posicione um guerreiro em uma clareira **carta:{{suit}}**. Em seguida, se você dominar ali, posicione um jardim correspondente. (Ligação da Clareira: Posicione o guerreiro em uma clareira com quaisquer slots de construção abertos, então com os edifícios inimigos mais próximos.)"
+    },
+    "Riverfolk Robots": {
+      "BuildAndGarrison": "**Construir e Reforçar**: Coloque um posto comercial e {{riverDifficulty}} guerreiros em uma clareira **carta:{{suit}}** sem posto comercial. <br>*(Ligação da Clareira: Clareira com peças do jogador que tem o maior número de guerreiros em pagamentos.)*",
+      "RecruitOther": "**Recrute** um guerreiro em cada limpeza de **carta:{{suit}}**. <br>*(Poucos Guerreiros: Posicione guerreiros nas limpezas com a maior prioridade.)*",
+      "RecruitBird": "**Recrute** um guerreiro em cada clareira no rio. <br>*(Poucos Guerreiros: Posicione guerreiros em clareiras com a maior prioridade.)*",
+      "Organize": "**Verificar Protecionismo**: Se você possuir tanto o escudo quanto as espadas, pontuação **vp:1** e posicione dois guerreiros em uma clareira que contenha peças de Riverfolk e o maior número de peças inimigas.",
+      "BattleShield": "Batalha em cada clareira. (Empate no Defensor: Jogador com o menor número de guerreiros em pagamentos.)",
+      "BattleSword": "Batalha em cada **carta:{{suit}}** de limpeza. (Defensor Empate: Jogador que tem o menor número de guerreiros em pagamentos.)"
+    },
+    "Looting Legion": {
+      "Battle": "**Batalha** em cada **carta:{{suit}}** de limpeza. *Lembre-se dos saqueadores.* *Defensor Amarrado: Alvo um jogador com itens disponíveis.*",
+      "Move": "Mova todos, exceto 2 guerreiros de cada **carta:{{suit}}** para a clareira adjacente com o maior número de peças inimigas. Não mova guerreiros da clareira do Senhor da Guerra.",
+      "Build": "**Construa** uma fortaleza em uma clareira de **carta:{{suit}}** que você governa.",
+      "Advance": "**Avançar**: {{hoardNum}} vezes: Mova o Guerreiro e todos os guerreiros, exceto 1, em sua clareira para a clareira adjacente com o maior número de peças inimigas, então batalhe. *Empate na clareira: Mova para a clareira com o maior número.*",
+      "Anoint": "**Unja** se o senhor da guerra estiver fora do mapa: Posicione o senhor da guerra na clareira com a maior parte de seus guerreiros."
+    }
+  },
+  "SpecificEvening": {
+    "Electric Eyrie": {
+      "Score": "Pontuação {{score}} PV.",
+      "NightmareScore": "Pontuação **vp:1**."
+    },
+    "Vagabot": {
+      "Refresh": "Se você tiver itens danificados, reponha {{itemRefreshMin}} itens sem danos. Caso não tenha, reponha {{itemRefreshMax}} em vez disso.",
+      "Forest": "Se você estiver em uma floresta, repare todos os itens. Caso contrário, repare {{itemRepairs}} item(ns). Repare itens não esgotados antes de itens esgotados.",
+      "Discard": "Descartar o cartão do pedido.",
+      "NightmareScore": "Pontuação **vp:1**."
+    },
+    "Automated Alliance": {
+      "Organize": "Em cada clareira com uma base e {{organizeVal}} ou mais guerreiros da Aliança, remova todos os guerreiros da Aliança lá e **Espalhe Simpatia**.",
+      "WarriorPlace": "Coloque um guerreiro em cada clareira com uma base.",
+      "Wildfire": "**Espalhe a Compaixão**, mas não marque pontos de vitória.",
+      "Discard": "Descartar o card de pedido.",
+      "NightmareScore": "Pontuação **vp:1**."
+    },
+    "Mechanical Marquise": {
+      "Score": "Pontuação {{score}} VP.",
+      "Discard": "Descartar o cartão de pedido.",
+      "NightmareScore": "Pontuação **vp:1**."
+    },
+    "Electric Eyrie (DC)": {
+      "Score": "Pontuação {{score}} PV.",
+      "NightmareScore": "Pontuação **vp:1** para cada dois jogadores (arredondado para cima)."
+    },
+    "Vagabot (DC)": {
+      "Refresh": "Atualize {{itemRefreshMin}} itens. Se você não tiver itens danificados, atualize {{itemRefreshMax}} em vez disso.",
+      "Forest": "Se você estiver em uma floresta, repare todos os itens. Caso contrário, repare {{itemRepairs}} item(s). Repare itens não esgotados antes de itens esgotados.",
+      "Discard": "Descartar o cartão de pedido.",
+      "NightmareScore": "Pontuação **vp:1** para cada dois jogadores (arredondado para cima)."
+    },
+    "Automated Alliance (DC)": {
+      "Organize": "Em cada clareira com uma base e {{organizeVal}} ou mais guerreiros da Aliança, remova todos os guerreiros da Aliança lá e **Espalhe Empatia**.",
+      "WarriorPlace": "Posicione um guerreiro em cada clareira com uma base.",
+      "Wildfire": "**Espalhe a Simpatia**, mas não marque pontos de vitória.",
+      "Discard": "Descartar o cartão do pedido.",
+      "NightmareScore": "Pontuação **vp:1** para cada dois jogadores (arredondado para cima)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Repeat": "Se você não posicionou uma construção nesta rodada e pontuaria menos de 3 pontos de vitória, descarte o cartão de ordem, compre um novo e repita o Dia. Isso só pode acontecer uma vez por rodada.",
+      "RepeatIronWill": "Se você não posicionou uma construção neste turno e possui cinco ou menos construções no mapa, descarte o cartão de ordem, compre um novo e repita o Dia. Isso só pode acontecer duas vezes por turno.",
+      "Score": "Pontuação {{score}} VP.",
+      "Discard": "Descartar o card de pedido.",
+      "NightmareScore": "Pontuação **vp:1** para cada dois jogadores (arredondado para cima)."
+    },
+    "Cogwheel Corvids": {
+      "Score": "Pontuação **vp:1** por complô de extorsão virado para cima.",
+      "Discard": "Descartar o cartão do pedido."
+    },
+    "Drillbit Duchy": {
+      "Rally": "Em cada **carta:{{suit}}** de limpeza sem construções de Ducado e com dois ou menos guerreiros, mova todos os guerreiros de Ducado para uma limpeza adjacente com uma construção de Ducado. Então, em cada limpeza que você controla, coloque todos, exceto quatro guerreiros de Ducado no Burrow. (Empate de Limpeza Alvo: Menor número de guerreiros de Ducado.) (Nenhuma Limpeza Adequada: Coloque os guerreiros que teriam sido movidos no Burrow.).",
+      "Score": "Pontuação **vp:1** por mercado no mapa",
+      "Sway": "Coloque uma coroa no ministro **carta:{{suit}}** mais superior e inalterado. (Nenhum Ministro Disponível: Altere o ministro **carta:bird** mais inferior e inalterado.)",
+      "Discard": "Descartar o card de pedido."
+    },
+    "Logical Lizards": {
+      "Score": "**Pontuação** **vp:1** pelo espaço do jardim mais à direita disponível.",
+      "DiscardLostSouls": "**Descartar** Almas Perdidas.",
+      "ReturnRevealedCards": "**Retornar** as cartas reveladas para o topo dos seus Espíritos Perdidos, preservando a ordem anterior.",
+      "Craft": "**Artesane** a carta de cima do baralho para **vp:1** se ela mostrar um item disponível. Adicione-a aos seus Perdidos (não ao descarte).",
+      "ErraticReminder": "*Errático: Compre um card no final do turno.*"
+    },
+    "Riverfolk Robots": {
+      "Score": "**Pontuação** **vp:1** por guerreiro do jogador com o maior número de guerreiros em Pagamentos, então remova esses guerreiros de Pagamentos.",
+      "Racketeering": "**Protecionismo**: De cada limpeza, retire todos os guerreiros, exceto dois Riverfolk, e coloque-os em Pagamentos.",
+      "Discard": "**Descartar** o cartão mais à esquerda do Mercado.",
+      "DiscardShield": "**Protecionismo (Escudo Apenas)**: Descarte o card mais à esquerda do mercado novamente."
+    },
+    "Looting Legion": {
+      "Incite": "**Incite**: Posicione uma multidão em uma clareira **card:{{suit}}** adjacente a uma multidão. Se não puder, posicione uma multidão em uma clareira ordenada com um de seus guerreiros sem uma multidão. *Ligação de Clareira: Clareira com ruínas, depois a maioria dos edifícios e tokens. Sem Multidões Restantes: Primeiro, remova uma multidão da clareira com o menor número de Ruínas ou edifícios adjacentes.*",
+      "Score": "**Pontuação**: Pontuação **vp:1** para cada 2 eliminações que você determinar.",
+      "Discard": "**Descartar** o cartão do pedido."
+    }
+  },
+  "SpecificExtra": {
+    "Electric Eyrie": {
+      "Purge": "Decreto de Purga, exceto Vizires.",
+      "Evening": "Ir para Noite.",
+      "YesNobility": "Conquiste um ponto de vitória por carta de pássaro no Decreto.",
+      "NoNobility": "Perda um ponto de vitória por carta de pássaro no Decreto."
+    },
+    "Vagabot": {
+      "NameTinker": "Mexer",
+      "DescTinker": "Pesquise o monte de descarte pela carta de cima com um item disponível e o crie, marcando **vp:1**. _Comece o jogo com um item a menos._",
+      "SpecialTinker": "Pesquise o monte de descarte pela carta de cima com um item disponível e a crie, marcando **vp:1**.",
+      "NameThief": "Ladrão",
+      "DescThief": "Pegue um card aleatório do oponente na sua clareira com mais pontos, e depois com mais peças.",
+      "SpecialThief": "Pegue um card aleatório do inimigo na sua clareira com mais pontos ali, depois o que tiver mais peças ali.",
+      "NameRanger": "Patrulheiro",
+      "DescRanger": "Se você tiver três ou mais itens danificados, deslize para uma floresta adjacente aleatória.",
+      "SpecialRanger": "Se você tiver três ou mais itens danificados, deslize para uma floresta adjacente aleatória.",
+      "BattleTrack0": "Número máximo de acertos rolados: 1",
+      "BattleTrack1": "Número máximo de acertos rolados: 2",
+      "BattleTrack2": "Número máximo de acertos rolados: 3.",
+      "BattleTrack3": "Acertos máximos rolados: 3; como atacante, cause 1 acerto extra.",
+      "SatchelExhausted": "Esgotado",
+      "SatchelDamaged": "Danificado",
+      "SatchelBattleTrack": "Batalha"
+    },
+    "Electric Eyrie (DC)": {
+      "Purge": "Decreto de Purgação, exceto Vizires.",
+      "Evening": "Ir para Noite.",
+      "YesNobility": "Conquiste um ponto de vitória por cada carta de pássaro no Decreto.",
+      "NoNobility": "Perda um ponto de vitória por carta de pássaro no Decreto."
+    },
+    "Vagabot (DC)": {
+      "NameTinker": "Mexer",
+      "DescTinker": "Pesquise o monte de descarte pela carta superior com um item disponível e o crie, não ganhando pontos. _Comece o jogo com um item a menos._",
+      "SpecialTinker": "Pesquise o monte de descarte pela carta de cima com um item disponível e a utilize para criar, sem ganhar pontos.",
+      "NameThief": "Ladrão",
+      "DescThief": "Pegue um card aleatório do inimigo em sua clareira com mais pontos lá, depois com mais peças lá.",
+      "SpecialThief": "Pegue um card aleatório do inimigo em sua clareira com mais pontos, e então com mais peças.",
+      "NameRanger": "Patrulheiro",
+      "DescRanger": "Caso possua itens danificados, repare um item danificado, não esgotado antes de esgotado.",
+      "SpecialRanger": "Caso tenha itens danificados, repare um item danificado, não esgotado antes de esgotado.",
+      "BattleTrack0": "Acertos máximos rolados: 1",
+      "BattleTrack1": "Número máximo de acertos rolados: 2",
+      "BattleTrack2": "Máximo de acertos rolados: 3.",
+      "BattleTrack3": "Acertos máximos rolados: 3; como atacante, cause 1 acerto extra.",
+      "SatchelExhausted": "Esgotado",
+      "SatchelDamaged": "Danificado",
+      "SatchelBattleTrack": "Batalha"
+    },
+    "Cogwheel Corvids": {
+      "BotInteractions": {
+        "Overview": "Ao jogar com os Corvid contra bots, utilize estas regras para os enredos:",
+        "Bomb": "Ao ser virado, remova duas peças de cada bot em sua área de jogo, guerreiros primeiro, em vez de todas as peças.",
+        "Snare": "Bots ignoram tokens de armadilha para fins de direcionamento de clareiras para posicionar ou mover peças.<br>Se um bot tentasse posicionar ou mover uma peça para fora de uma clareira com uma armadilha, ele removeria a armadilha em vez de realizar essa ação.<br>(Vagabot continuará a se mover após isso, esgotando itens extras.)"
+      },
+      "Plot-Tokens": {
+        "Overview": "Ao utilizar os Corvídeos da Engrenagem, aplique estas regras aos seus tokens de trama:",
+        "Bomb": "**Bomba**: Ao ser virada, remove todas as peças inimigas humanas na área, então substitua este espaço por um espaço aleatório posicionado com a face para cima. (A substituição não aciona e não pode ser uma bomba.)",
+        "Snare": "**Laço de Armadilha**: Enquanto virado para cima, peças inimigas não podem ser colocadas ou removidas desta área.",
+        "Extortion": "**Extorsão**: Quando virada, cada jogador com quaisquer peças de facção em sua clareira deve descartar uma carta aleatória.",
+        "Raid": "**Raid**: Ao removido, coloque um guerreiro em cada clareira adjacente."
+      }
+    },
+    "Drillbit Duchy": {
+      "Ministers": {
+        "Captain": "Como atacante em batalha, cause um acerto extra se a limpeza da batalha tiver um túnel.",
+        "Marshal": "Coloque um guerreiro de Ducado em uma clareira que tenha o menor número de guerreiros de Ducado e um edifício de Ducado.",
+        "Foremole": "Você tem um meeple revelado adicional: **duchy**.",
+        "Brigadier": "Tome a ação de escavação se o Burrow tiver três ou mais guerreiros de Ducado. Para esta ação de escavação, utilize a condição de Laço de Clareira para uma ordem de raposa.",
+        "Banker": "Execute a Ação de Construção.",
+        "Mayor": "Remova um guerreiro do Ducado da clareira que você governa com o maior número de guerreiros do Ducado. Se fizer isso, marque **vp:1**.",
+        "Earl": "Pontuação **vp:1** por cidadela no mapa.",
+        "Baron": "Pontuação **vp:1** por mercado no mapa.",
+        "Duchess": "Pontuação **vp:2** se todos os 3 túneis estiverem no mapa."
+      }
+    },
+    "Logical Lizards": {
+      "Lost Souls": "**Almas Perdidas**: Sempre que uma carta for gasta ou descartada, coloque-a no monte de Almas Perdidas.",
+      "Conspiracy": "**Conspirações** *Determine o jogador alvo primeiro, depois o alvo de limpeza.*<br><br>**Converter**<br>Em uma limpeza ordenada, substitua um guerreiro inimigo por um guerreiro Lagarto.<br>*Ligação do Jogador*: Jogador com mais pontos.<br>*Ligação da Limpeza*: Limpeza com mais edifícios inimigos.<br>**Cruzada**<br>Batalhe em cada limpeza **card:{{suit}}** que tenha 2+ guerreiros Lagarto.<br>*Ligação do Defensor*: Jogador com mais pontos ali.<br>**Santificar**<br>Em uma limpeza **card:{{suit}}**, substitua um edifício inimigo por um jardim correspondente.<br>*Ligação do Jogador*: Jogador com mais pontos.<br>*Ligação da Limpeza*: Limpeza com menos guerreiros inimigos."
+    },
+    "Riverfolk Robots": {
+      "prot": "Em Organizar (Dia Claro/3º) verifique estas condições.",
+      "protShield": "Pagamentos não tem guerreiros?",
+      "protSword": "Seu suprimento não tem guerreiros?",
+      "tradePost": "Sempre que um jogador remover uma Estação de Comércio, remova metade de seus guerreiros de Pagamentos (arredondado para cima).",
+      "servicesBirdsong": "No início de Birdsong, outro jogador pode comprar um serviço mais um por limpeza com uma feitoria e suas peças de facção.",
+      "servicesCost": "Eles pagam pelo serviço posicionando guerreiros em Pagamentos, dependendo de quantos pontos de vitória eles têm. Se sua facção não tiver guerreiros, posicione guerreiros Riverfolk em vez disso.",
+      "servicesVictoryPoints": "*0-9 Pontos de Vitória = 2 Guerreiros | 10-19 Pontos de Vitória = 3 Guerreiros | 20+ Pontos de Vitória = 4 Guerreiros*",
+      "serviceCard": "**Comando de Carta**: Pegue uma carta e adicione-a à sua mão.",
+      "serviceBoat": "**Riverboat**: Trate os rios como caminhos neste turno.",
+      "serviceMerc": "**Mercenários**: Para batalha e domínio em Dia Claro e Noite Serena, você trata guerreiros Riverfolk como se fossem seus, exceto em batalhas contra eles. Em batalha, você deve dividir os acertos entre suas peças de facção e guerreiros Riverfolk."
+    },
+    "Looting Legion": {
+      "Hoard": "Pontuação **vp:2** se o depósito estiver cheio e você adicionaria outro item, então remova esse item do jogo."
+    }
+  },
+  "ToastMessages": {
+    "UpdateScore": "A pontuação de {{ botname }} foi atualizada em {{ addend }}.",
+    "Actions": {
+      "Undo": "Desfazer"
+    }
+  }
+}

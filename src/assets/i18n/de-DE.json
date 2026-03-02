@@ -1,0 +1,733 @@
+{
+  "AppTitle": "Wurzel: Der mechanische Begleiter",
+  "AppTitleShort": "Clockroot",
+  "NavTitle": "Bots",
+  "CloseText": "Schließen",
+  "Language": "Sprache",
+  "LederPlug": "Holen Sie sich die Clockwork-Erweiterung von Leder Games!",
+  "PriorityMaps": "Prioritätskarten",
+  "NeedsSetup": "Muss eingerichtet werden",
+  "ClockworkBots": "Werkbots",
+  "DirectorsCut": "Regisseursversion",
+  "BotSetup": {
+    "Setup": "Einrichtung",
+    "PriorityMarkers": "Richten Sie Prioritätsmarkierungen für die Karte ein.",
+    "ChooseDifficulty": "Schwierigkeitsgrad auswählen",
+    "Difficulty": {
+      "Easy": "Einfach",
+      "Normal": "Normal",
+      "Challenging": "Anspruchsvoll",
+      "Nightmare": "Albtraum"
+    },
+    "DifficultyDC": {
+      "Easy": "Anfänger",
+      "Normal": "Experte",
+      "Challenging": "Meister",
+      "Nightmare": "Boss Modus"
+    },
+    "ChooseVagabot": "Wähle Vagabot",
+    "ChooseTraits": "Wähle Eigenschaften",
+    "DifficultyText": "Schwierigkeitsgrad",
+    "TurmoilText": "Sie geraten in Aufruhr, wenn Sie keinen Rastplatz platzieren können.",
+    "TurmoilNobilityText": "Sie geraten in Aufruhr, wenn Sie keinen Sitz oder Krieger auslegen können."
+  },
+  "AddBot": "Fügen Sie einen Bot hinzu, indem Sie auf das klicken.",
+  "Factions": {
+    "Mechanical Marquise": "Mechanische Markise",
+    "Electric Eyrie": "Elektrischer Adlerhorst",
+    "Automated Alliance": "Automatisierte Allianz",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "Mechanische Markise (DC)",
+    "Electric Eyrie (DC)": "Elektrischer Eyrie (DC)",
+    "Automated Alliance (DC)": "Automatisierte Allianz (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "Zahnradkrähen",
+    "Drillbit Duchy": "Drillbit-Fürstentum",
+    "Logical Lizards": "Logische Echsen",
+    "Riverfolk Robots": "Flussvolk-Roboter",
+    "Looting Legion": "Plündernde Legion"
+  },
+  "FactionsShort": {
+    "Mechanical Marquise": "M. Marquise",
+    "Electric Eyrie": "E. Eyrie",
+    "Automated Alliance": "A. Allianz",
+    "Vagabot": "Vagabot",
+    "Mechanical Marquise (DC)": "M. Marquise (DC)",
+    "Electric Eyrie (DC)": "E. Eyrie (DC)",
+    "Automated Alliance (DC)": "A. Allianz (DC)",
+    "Vagabot (DC)": "Vagabot (DC)",
+    "Cogwheel Corvids": "C. Krähen",
+    "Drillbit Duchy": "D. Herzogtum",
+    "Logical Lizards": "L. Echsen",
+    "Riverfolk Robots": "R. Roboter",
+    "Looting Legion": "L. Legion"
+  },
+  "Priorities": {
+    "Title": "Kartenprioritäten",
+    "Fall": "Herbst",
+    "Winter": "Winter",
+    "Lake": "See",
+    "Mountain": "Berg"
+  },
+  "Sections": {
+    "DifficultyTraits": "Schwierigkeitsgrad & Eigenschaften",
+    "VPItems": "Siegpunkte & Gegenstände",
+    "DecreeRoosts": "Dekret & Sitze",
+    "Buildings": "Gebäude",
+    "Birdsong": "Vogelgesang",
+    "Daylight": "Tageslicht",
+    "Evening": "Abend",
+    "Turmoil": "Unruhe",
+    "BattleTrackBonus": "Kampf-Track-Bonus",
+    "SatchelBattleTrack": "Satchel & Schlachtverfolgung",
+    "SympathyBases": "Mitgefühl & Basen",
+    "VagabotDifficultyTrait": "Vagabot, Schwierigkeit, Eigenschaften",
+    "BotRules": "Corvid Bot Spezifische Regeln",
+    "RulesLizard": "Eidechsenregeln",
+    "RulesRiver": "Flussvolk-Regeln",
+    "Hoard": "Der Hort",
+    "Protectionism": "Protektionismus",
+    "Services": "Dienste"
+  },
+  "SpecificSetup": {
+    "Electric Eyrie": {
+      "Setup0": "Bilden Sie einen Trupp aus 20 Kriegern in Ihrer Nähe.",
+      "Setup1": "Platziere 1 Ruhestatt und 6 Krieger in der Ecklichtung diagonal gegenüber der Lichtung mit dem Burgmarken-Token. Wenn die Markgräfin nicht mitspielt, platziere diese Figuren in einer zufälligen Ecklichtung.",
+      "Setup2": "Stecken Sie Ihre 2 Karten Loyalitätsvizier, wobei die Farbe angezeigt wird, in die äußerste Rechte-Säule der Dekrete.",
+      "Setup3": "Sammeln Sie Ihre verbleibenden 6 Brutgebäude ein und platzieren Sie sie in Ihrer Nähe."
+    },
+    "Vagabot": {
+      "Setup0": "Platziere den Vagabot-Chip im Wald, der an die meisten Lichtungen grenzt. Wenn es mehrere solcher Wälder gibt, entscheide dich zufällig zwischen diesen.",
+      "Setup1": "Mische den Quest-Stapel, ziehe 1 Quest-Karte und lege sie offen vor dich. Nur der Bot kann diesen Quest abschließen.",
+      "Setup2": "Platzieren Sie jeweils ein beliebiges Item mit dem Label \"R\" unter jedem Ruin auf der Karte.",
+      "Setup3": "Nimm 4 beliebige Gegenstände mit dem Merkmal \"S\" und lege sie in deine Tasche. _(Der Tüftler beginnt mit 3 Gegenständen statt 4.)_"
+    },
+    "Automated Alliance": {
+      "Setup0": "Bilden Sie einen Nachschub von 10 Kriegern in Ihrer Nähe.",
+      "Setup1": "Sammeln Sie Ihre 3 Basen und platzieren Sie diese in Ihrer Nähe.",
+      "Setup2": "Sammeln Sie Ihre 10 Mitleidstokens und platzieren Sie diese in Ihrer Nähe."
+    },
+    "Mechanical Marquise": {
+      "Setup0": "Bilden Sie einen Nachschub von 25 Kriegern in Ihrer Nähe.",
+      "Setup1": "Platziere den Haltepunkt in einer zufälligen, freien Ecke.",
+      "Setup2": "Platziere einen Krieger in jeder Lichtung, außer in der diagonal gegenüberliegenden Ecke zur Burg. Platziere einen zusätzlichen Krieger in der Lichtung mit dem Burg-Marker. _(Platziere insgesamt 12 Krieger.)_",
+      "Setup3": "Platziere zufällig 1 Sägewerk, 1 Werkstatt und 1 Werber unter dem Hügel-Token und den angrenzenden Lichtungen, wobei jede Lichtung höchstens ein Gebäude enthalten darf.",
+      "Setup4": "Sammeln Sie Ihre verbleibenden 15 Gebäude ein und platzieren Sie sie in Ihrer Nähe."
+    },
+    "Electric Eyrie (DC)": {
+      "Setup0": "Bilden Sie einen Nachschub von 20 Kriegern in Ihrer Nähe.",
+      "Setup1": "Platzieren Sie 1 Ruhestätte und 6 Krieger in der Ecklichtung, die diagonal gegenüber der Lichtung mit dem Burgtoken liegt. Wenn die Markgräfin nicht spielt, platzieren Sie diese Figuren in einer zufälligen Ecklichtung.",
+      "Setup2": "Stecke deine 2 Karten Loyalitätsvizier, wobei die Farbe angezeigt wird, in die äußerste rechte Dekretenspalte.",
+      "Setup3": "Sammeln Sie Ihre verbleibenden 6 Taubenhäuser und platzieren Sie diese in Ihrer Nähe."
+    },
+    "Vagabot (DC)": {
+      "Setup0": "Platziere den Vagabot-Gespielen im Wald, der an die meisten Lichtungen grenzt. Wenn es mehrere solcher Wälder gibt, entscheide zufällig unter diesen.",
+      "Setup1": "Mische den Quest-Stapel, ziehe 1 Quest-Karte und lege diese offen in deine Nähe. Diese Quest kann nur vom Bot abgeschlossen werden.",
+      "Setup2": "Platzieren Sie jeweils ein beliebiges Item mit dem Label \"R\" unter jedem Ruin auf der Karte.",
+      "Setup3": "Nehmen Sie 4 beliebige Artikel mit dem Etikett \"S\" und legen Sie diese in Ihre Tasche. _(Der Tüftler beginnt mit 3 Artikeln anstelle von 4.)_"
+    },
+    "Automated Alliance (DC)": {
+      "Setup0": "Bilden Sie einen Nachschub von 10 Kriegern in Ihrer Nähe.",
+      "Setup1": "Sammeln Sie Ihre 3 Basen und platzieren Sie diese in Ihrer Nähe.",
+      "Setup2": "Sammeln Sie Ihre 10 Mitleidstokens und platzieren Sie diese in Ihrer Nähe."
+    },
+    "Mechanical Marquise (DC)": {
+      "Setup0": "Bilden Sie einen Truppenstamm aus 25 Kriegern in Ihrer Nähe.",
+      "Setup1": "Platziere den Haltepunkt in einer zufälligen, offenen Ecke.",
+      "Setup2": "Platziere einen Krieger in jeder Lichtung, außer in der diagonal gegenüberliegenden Ecke zur Burg. Platziere einen zusätzlichen Krieger in der Lichtung mit dem Burg-Marker. _(Platziere insgesamt 12 Krieger.)_",
+      "Setup3": "Platziere 1 Sägewerk, 1 Werkstatt und 1 Rekruter zufällig unter den Lichtungen, die an die Lichtung mit dem Festungstoken angrenzen, mit bis zu einem Gebäude pro Lichtung.",
+      "Setup4": "Sammeln Sie Ihre verbleibenden 15 Gebäude ein und platzieren Sie diese in Ihrer Nähe."
+    },
+    "Cogwheel Corvids": {
+      "Setup0": "Lege 15 Krieger und 8 Plot-Marker verdeckt bereit.",
+      "Setup1": "Platziere 1 Krieger in der niedrigsten Prioritäts-Auflösung jeder Farbe (insgesamt 3)."
+    },
+    "Drillbit Duchy": {
+      "Setup0": "Versorge 20 Krieger, 3 Tunnel-Marker und 9 Kronen.",
+      "Setup1": "Platzieren Sie das Burrow-Brett in der Nähe der Karte.",
+      "Setup2": "Platziere 2 Krieger und 1 Tunnel in einer Ecklichtung, die nicht die Startlichtung ist. Platziere dann je 2 Krieger in jeder Lichtung, die an die gewählte Ecklichtung angrenzt, mit Ausnahme der Baumhöhle.",
+      "Setup3": "Platzieren Sie 3 Zitadellen und 3 Märkte auf Ihren passenden Bauplätzen.",
+      "Setup4": "Ziehe 2 Karten und lege sie ab. Platziere für jede Karte eine Krone auf den obersten übereinstimmenden, nicht beeinflussten Minister auf deinem Fraktionsbrett."
+    },
+    "Logical Lizards": {
+      "Setup0": "Stelle eine Einheit von 25 Kriegern auf.",
+      "Setup1": "Platziere 4 Krieger und 1 Garten mit passendem aufgedrucktem Anzug in einer zufälligen, freien Lichtung, die nicht die Startlichtung eines anderen Bots ist (vorzugsweise diagonal gegenüber). Platziere anschließend 1 Krieger in jeder angrenzenden Lichtung.",
+      "Setup2": "Platziere den Ausgestossenen-Marker auf dem Weihe-Feld des Konspirationspfads auf deinem Fraktionsbrett.",
+      "Setup3": "Platzieren Sie Ihre verbleibenden 14 Gärten auf den passenden Feldern Ihrer Gartenbahnen von rechts nach links.",
+      "Setup4": "Ziehe 3 Karten und lege sie offen in deine Verlorene Seelen in der Reihenfolge des Ziehens."
+    },
+    "Riverfolk Robots": {
+      "Setup0": "Bildet einen Nachschub von 15 Kriegern.",
+      "Setup1": "Platziere 1 Krieger in jede Lichtung am Fluss.",
+      "Setup2": "Platziere 9 Handelsstützpunkte auf den passenden Feldern deiner Handelsstützpunkte-Bahnen.",
+      "Setup3": "Platziere 1 Krieger in deinem Zahlungsbereich.",
+      "Setup4": "Ziehe 5 Karten und füge sie deinem Markt hinzu."
+    },
+    "Looting Legion": {
+      "Setup0": "**Sammle** Fragmente und stelle Vorräte für 20 Krieger, 1 Kriegsfürsten und 6 Festungen bereit.",
+      "Setup1": "Platzieren Sie die vier 'R'-Artikel zufällig unter den Ruinen auf der Karte.",
+      "Setup2": "**Festung**: Platziere deine Startlichtung mit einem Kriegsfürsten, vier Kriegern und einem Stützpunkt in einer zufälligen Ecklichtung, die nicht die Startlichtung eines anderen Spielers ist und, wenn möglich, diagonal gegenüber einer Startlichtung eines anderen Spielers liegt."
+    }
+  },
+  "SpecificDifficulty": {
+    "Electric Eyrie": {
+      "Easy": "Während der Einrichtung nur einen loyalen Wesir zum Dekret hinzufügen.",
+      "Normal": "Es hat sich nichts geändert.",
+      "Challenging": "Während der Einrichtung nimm eine Vogel-Falle aus dem Deck und füge ihn der Vogelspalte des Dekrets hinzu.",
+      "Nightmare": "Während der Einrichtung nimm eine Vogel-Ambussch Einheit vom Deck und füge sie der Vogelspalte des Dekrets hinzu. Am Ende des Abends erhältst du einen Siegpunkt."
+    },
+    "Vagabot": {
+      "Easy": "Am Abend wird ein Artikel weniger aktualisiert.",
+      "Normal": "Es wurde nichts geändert.",
+      "Challenging": "Am Abend noch einen Gegenstand auffrischen.",
+      "Nightmare": "Am Abend noch einen Gegenstand auffrischen. Am Ende des Abends einen Siegpunkt erzielen."
+    },
+    "Automated Alliance": {
+      "Easy": "Du **organisierst** nur, wenn eine Freifläche vier oder mehr Allianz-Krieger hat.",
+      "Normal": "Es hat sich nichts geändert.",
+      "Challenging": "Sie **organisieren**, wenn eine Lichtung zwei oder mehr Allianz-Krieger hat.",
+      "Nightmare": "Du **Organisierst**, wenn eine Lichtung zwei oder mehr Allianz-Krieger hat. Am Ende des Abends erhältst du einen Siegpunkt."
+    },
+    "Mechanical Marquise": {
+      "Easy": "Wenn du **rekrutierst**, platziere stattdessen nur zwei Krieger.",
+      "Normal": "Es wurde nichts geändert.",
+      "Challenging": "Wenn Sie **rekrutieren**, platzieren Sie zusätzlich zwei Krieger im ordentlichen, von Ihnen regierten Freifeld mit höchster Priorität.",
+      "Nightmare": "Immer wenn du **Rekrutierst**, platziere auch zwei Krieger im geordneten Freifeld, das du mit höchster Priorität beherrschst. Am Ende des Abends erhältst du einen Siegpunkt."
+    },
+    "Electric Eyrie (DC)": {
+      "Easy": "Wenn Sie einen Vogel **rekrutieren**, stellen Sie stattdessen einen Krieger weniger auf.",
+      "Normal": "Es hat sich nichts geändert.",
+      "Challenging": "Wenn Sie einen Vogel **rekrutieren**, stellen Sie stattdessen einen weiteren Krieger.",
+      "Nightmare": "Immer wenn du **Truppen rekrutierst** für einen Vogel, stelle stattdessen einen zusätzlichen Krieger auf. Am Ende des Abends erhältst du pro zwei Spieler einen Siegpunkt (aufgerundet)."
+    },
+    "Vagabot (DC)": {
+      "Easy": "Am Abend einen Gegenstand weniger auffrischen.",
+      "Normal": "Es hat sich nichts geändert.",
+      "Challenging": "Am Abend noch einen Artikel aktualisieren.",
+      "Nightmare": "Am Abend einen weiteren Gegenstand auffrischen. Am Ende des Abends einen Siegpunkt pro zwei Spieler(n) vergeben (aufgerundet)."
+    },
+    "Automated Alliance (DC)": {
+      "Easy": "Sie **organisieren** nur, wenn eine Lichtung vier oder mehr Allianz-Krieger hat.",
+      "Normal": "Es wurde nichts geändert.",
+      "Challenging": "Sie **organisieren**, wenn eine Lichtung zwei oder mehr Allianz-Krieger hat.",
+      "Nightmare": "Sie **organisieren**, wenn eine Lichtung zwei oder mehr Allianz-Krieger hat. Am Ende des Abends erhaltet ihr einen Siegpunkt pro zwei Spielern (aufgerundet)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Easy": "Wenn Sie **rekrutieren**, platzieren Sie stattdessen nur drei Krieger.",
+      "Normal": "Es wurde nichts geändert.",
+      "Challenging": "Wenn du **rekrutierst**, platziere stattdessen fünf Krieger.",
+      "Nightmare": "Immer wenn du **rekrutierst**, platziere stattdessen fünf Krieger. Am Ende des Abends erhältst du einen Siegpunkt pro zwei Spieler (aufgerundet)."
+    },
+    "Cogwheel Corvids": {
+      "Easy": "Wenn Sie **rekrutieren**, platzieren Sie jeweils nur einen Krieger in je zwei geordneten Lichtungen.",
+      "Normal": "Wenn Sie **rekrutieren**, platzieren Sie stattdessen zwei Krieger in jeder von zwei geordneten Lichtungen.",
+      "Challenging": "Wenn du **Rekrutierst**, platziere stattdessen drei Krieger in je zwei geordneten Lichtungen.",
+      "Nightmare": "Immer wenn du **rekrutierst**, platziere stattdessen drei Krieger in je zwei angeordnete Lichtungen. Am Ende des Abends erhältst du für je zwei Spieler einen Siegpunkt (aufgerundet)."
+    },
+    "Drillbit Duchy": {
+      "Easy": "Immer wenn du **rekrutierst**, rekrutiere stattdessen nur einen Krieger, plus einen pro Maulwurf, der auftaucht, in den Bau.",
+      "Normal": "Immer wenn du **rekrutierst**, rekrutiere stattdessen zwei Krieger, plus einen pro sichtbarer Maulwurf, in den Bau.",
+      "Challenging": "Wenn Sie **rekrutieren**, rekrutieren Sie stattdessen drei Krieger, plus einen pro Maulwurf, der auftaucht, in die Bauhöhle.",
+      "Nightmare": "Immer wenn du **Rekrutierst**, rekrutiere stattdessen drei Krieger, plus einen pro sichtbarem Maulwurf, in den Bau. Am Ende des Abends erhältst du einen Siegpunkt pro zwei Spielern (aufgerundet)."
+    },
+    "Logical Lizards": {
+      "Easy": "Wenn Sie **Rituale** durchführen, zeigen Sie nur drei Karten aus Ihren verlorenen Seelen.",
+      "Normal": "Wenn Sie **Rituale** durchführen, decken Sie nur vier Karten aus Ihren Verlorenen Seelen auf.",
+      "Challenging": "Immer wenn du **Rituale** ausführst, zeige fünf Karten aus deinen verlorenen Seelen.",
+      "Nightmare": "Immer wenn du **Rituale** durchführst, zeige fünf Karten aus deinen Verlorenen Seelen auf. Am Ende des Abends erhältst du einen Siegpunkt pro zwei Spieler (aufgerundet)."
+    },
+    "Riverfolk Robots": {
+      "Easy": "Wenn Sie **bauen und verstärken**, stellen Sie keinen Krieger am Handelsstützpunkt auf.",
+      "Normal": "Jedes Mal, wenn Sie **bauen und verstärken**, platzieren Sie einen Krieger am Handelsplatz.",
+      "Challenging": "Wenn Sie **bauen und verstärken**, platzieren Sie zwei Krieger am Handelsplatz.",
+      "Nightmare": "Immer wenn Sie **bauen und befestigen**, platzieren Sie zwei Krieger am Handelsplatz. Am Ende des Abends erzielen Sie einen Siegpunkt pro zwei Spieler (aufgerundet)."
+    },
+    "Looting Legion": {
+      "Easy": "Wenn Sie **rekrutieren**, platzieren Sie einen Krieger weniger in der Freifläche Ihres Kriegsherrn.",
+      "Normal": "Wenn Sie **rekrutieren**, platzieren Sie vor dem Platzieren von Kriegern an Stützpunkten jeweils einen zusätzlichen Krieger in der Lichtung Ihres Kriegsherrn.",
+      "Challenging": "Wenn Sie **rekrutieren**, platzieren Sie vor dem Platzieren von Kriegern an Stützpunkten zwei zusätzliche Krieger in der Freifläche Ihres Kriegsherrn.",
+      "Nightmare": "Wenn Sie **rekrutieren**, platzieren Sie vor dem Platzieren von Kriegern an Stützpunkten zwei zusätzliche Krieger in der Lichtung Ihres Kriegsherrn. Am Ende des Abends erhalten Sie **VP:1** pro zwei feindliche Spieler (aufgerundet)."
+    }
+  },
+  "SpecificRules": {
+    "RulePoorManualDexterity": "Mangelnde Geschicklichkeit",
+    "TextPoorManualDexterity": "Sie haben keine Karten auf der Hand. Sie können keine Karten abwerfen. Wenn ein Spieler Ihnen eine Karte geben würde, zieht er stattdessen eine Karte. Wenn ein Spieler Ihnen eine Karte geben würde, wird diese verworfen und Sie erzielen **vp:1**.",
+    "RuleHatesSurprises": "Has keine Überraschungen",
+    "TextHatesSurprises": "Überfallkarten können nicht gegen Sie gespielt werden.",
+    "RuleLordsOfTheForest": "Die Herren des Waldes",
+    "TextLordsOfTheForest": "Sie herrschen über alle Lichtungen, in denen Sie anwesend sind.",
+    "RuleNobility": "Adel",
+    "TextNobility": "Sie geraten nun in Aufruhr, wenn Sie keinen Rastplatz oder einen Krieger auslegen können. Immer wenn Sie in Aufruhr geraten, verlieren Sie keine Siegpunkte. Stattdessen erhalten Sie einen Siegpunkt pro Vogelkarte im Erlass.",
+    "RuleRelentless": "Unerbittlich",
+    "TextRelentless": "Nach der Lösung des Dekrets alle schutzlosen Gebäude und Einheiten in jeder Lichtung mit Eyrie-Kriegern entfernen.",
+    "RuleSwoop": "Stürzen Sie sich",
+    "TextSwoop": "Am Ende von Daylight, platziere zwei Krieger im bevorzugten Bereich ohne Eyrie-Stücke.",
+    "RuleWarTax": "Kriegssteuer",
+    "TextWarTax": "Jedes Mal, wenn Sie ein feindliches Gebäude oder einen Token entfernen, verliert der Besitzer einen Siegpunkt.",
+    "RuleLoneWanderer": "Einsamer Wanderer",
+    "TextLoneWanderer": "Ihr Bauer ist kein Krieger und kann nicht von der Karte entfernt werden.",
+    "RuleNimble": "Flink",
+    "TextNimble": "Sie können sich bewegen, unabhängig davon, wer Ihren Bezirk kontrolliert.",
+    "RuleAdventurer": "Abenteurer",
+    "TextAdventurer": "Sie können **Kämpfen** höchstens einmal pro Runde.<br>Am Ende von Tageslicht wiederholen Sie **Quest** so oft wie möglich.",
+    "RuleBerserker": "Berserker",
+    "TextBerserker": "Immer wenn du **kämpfen**, bewege dich stattdessen zur nächstgelegenen Lichtung mit den meisten Einheiten und greife den Spieler mit den meisten Einheiten dort an.<br>Am Abend repariere ein weiteres Item.",
+    "RuleHelper": "Helfer",
+    "TextHelper": "Immer wenn du **Hilfe** gewährst, erhältst du einen zusätzlichen Siegpunkt, und der unterstützte Spieler zieht zwei Karten statt einer.",
+    "TextHelperDC": "Immer wenn du **Hilfe** leistest, bewege dich, falls keine Gegenstände verfügbar sind, zu dem Spieler mit der niedrigsten Punktzahl und verbrauche einen Gegenstand, um **vp:1** zu erzielen. Der unterstützte Spieler zieht eine Karte.",
+    "RuleMarksman": "Scharfschütze",
+    "TextMarksman": "Kampfbeginn als Angreifer: Füge einen sofortigen Treffer zu _(und erziele einen Punkt, wenn du einen feindlichen Krieger beseitigst)_.",
+    "RuleAutomatedAmbush": "Automatisierte Hinterhalte",
+    "TextAutomatedAmbush": "Im Kampf als Verteidiger mit allen Allianz-Kriegern verursachst du einen zusätzlichen Treffer.",
+    "RuleAutomatedOutrage": "Automatisierte Empörung",
+    "TextAutomatedOutrage": "Wenn ein Spieler ein Mitleids-Token entfernt oder Krieger in eine mitleidsvolle Lichtung bewegt, muss er eine passende Karte ablegen. Kann er dies nicht, erhältst du **vp:1**.",
+    "RuleMartialLaw": "Kriegsrecht",
+    "TextMartialLaw": "Immer wenn Sie ein Beileidszeichen in einer Lichtung mit drei oder mehr Kriegern eines gegnerischen Spielers platzieren, erzielen Sie einen Punkt weniger Siegpunkte _(mindestens null)_.",
+    "RuleCrackdown": "Einsatz",
+    "TextCrackdown": "Wenn eine Basis entfernt wird, entferne alle Sympathie-Marker aus den Lichtungen, die zur Farbe der entfernten Basis passen.",
+    "TextCrackdownDC": "Wenn eine Basis entfernt wird, gibe alle Mitleids-Token von Lichtungen zurück, die zur Farbe der entfernten Basis passen.",
+    "RuleInformants": "Informanten",
+    "TextInformants": "Schutzlose Sympathie-Token profitieren von Automatisiertem Hinterhalt.",
+    "RulePopularity": "Beliebtheit",
+    "TextPopularity": "Gegner erzielen keine Siegpunkte durch das Entfernen von Sympathie-Marken.",
+    "TextPopularityDC": "Gegner können pro Runde maximal einen Siegpunkt durch das Entfernen Ihrer Sympathie-Marker erzielen.",
+    "RuleVeterans": "Veteranen",
+    "TextVeterans": "Erlange die Guerilla-Kriegsführung-Fähigkeit der Wald-Allianz. _(Im Kampf als Verteidiger verwendest du den höheren Würfel und der Angreifer den niedrigeren Würfel.)_",
+    "TextVeteransDC": "Im Kampf als Verteidiger, verwende das gleiche Würfelergebnis wie der Angreifer. _(Beide Spieler verwenden den höheren Würfel, um Treffer zu bestimmen.)_",
+    "RuleWildfire": "Waldbrand",
+    "TextWildfire": "Am Ende des Abends **Verbreite Mitgefühl**. Gib keine Punkte für das Platzieren dieses Mitgefühl-Tokens.",
+    "RuleTheKeep": "Die Festung",
+    "TextTheKeep": "Nur Sie können Spielsteine im Feld mit dem Burg-Token platzieren.",
+    "RuleBlitz": "Blitz",
+    "TextBlitz": "Nachdem du dich bewegt hast, finde die Lichtung, die du priorisiert hast, ohne feindliche Figuren. Bewege alle Krieger außer einem aus der Lichtung. Kämpfe dann in der Ziellichtung.",
+    "RuleFortified": "Verstärkt",
+    "TextFortified": "Ihre Gebäude benötigen jeweils zwei Treffer, um zerstört zu werden. Ein einzelner Treffer auf ein Gebäude hat keine Auswirkung.",
+    "RuleHospitals": "Krankenhäuser",
+    "TextHospitals": "Am Ende der Schlacht als Verteidiger, wenn zwei oder mehr Markgrafen-Krieger im Kampf entfernt wurden, platziere zwei Krieger in der Lichtung mit dem Burgtoken.",
+    "TextHospitalsDC": "Am Ende der Schlacht als Verteidiger, wenn zwei oder mehr Marquise-Krieger in der Schlacht entfernt wurden, platziere einen Krieger in der Lichtung mit dem Burgtoken.",
+    "RuleIronWill": "Eiserner Wille",
+    "TextIronWill": "Wenn Sie in Eskaliertem Tageslicht **rekrutieren**, stellen Sie doppelt so viele Krieger auf.",
+    "TextIronWillDC": "**Wiederholter Tageslicht** kann zweimal pro Runde statt nur einmal auftreten.",
+    "RuleEmbeddedAgents": "Eingebettete Agenten",
+    "TextEmbeddedAgents": "Im Kampf als Verteidiger mit einem verdeckten Plan-Token verursachst du einen zusätzlichen Treffer.",
+    "RuleBackupPlans": "Sicherheitsvorkehrungen",
+    "TextBackupPlans": "Wenn ein Handlungstoken entfernt wird, platziere einen Krieger in der Lichtung, aus der das Handlungstoken entfernt wurde.",
+    "RuleVendetta": "Vendetta",
+    "TextVendetta": "Immer wenn ein Plot-Token umgedreht wird, hat es den Effekt „Bei Umdrehen“ einer Bomben-Plot-Karte.",
+    "RuleMastermind": "Das Mastermind",
+    "TextMastermind": "Sie würfeln jetzt **einmal** zweimal pro Runde.",
+    "RuleGamble": "Spielen",
+    "TextGamble": "Wenn ein Plot gewendet werden soll, muss die Person mit den meisten Fraktionsstücken im Bereich zuerst den Plot-Typ erraten. Wenn sie richtig liegen, wird der Plot gewendet und Punkte vergeben, sein \"Bei Wendung\"-Effekt wird jedoch nicht ausgelöst. Anschließend wird der Plot entfernt (und ein Punkt erzielt). Wenn sie falsch liegen, erhältst du +1 Siegpunkt.",
+    "RuleCostOfErrors": "Kosten für Fehler",
+    "TextCostOfErrors": "Wenn eine beliebige Anzahl von Herzog-Gebäuden entfernt wird, entferne die Krone vom untersten, hin- und hergewendeten Minister.",
+    "RuleFoundations": "Fundamente",
+    "TextFoundations": "Wenn **Kosten von Fehlern** ausgelöst wird, entfernt es jetzt die Krone vom untersten schwankenden Minister, dessen Anzug zu einer Lichtung passt, von der ein Gebäude entfernt wurde.",
+    "RuleInvestors": "Investoren",
+    "TextInvestors": "Wenn ein Spieler **Kosten von Fehlern** auslöst, muss er eine Karte abwerfen, die mit einer Lichtung übereinstimmt, aus der ein Gräfliches Anwesen entfernt wurde. Wenn er eine passende Karte abwirft, verliert das Gräfliche Anwesen einen Siegpunkt. Kann er dies nicht, beeinflusst das Gräfliche Anwesen einen Berater, wie bei der Beeinflussungsaktion, aber der Berater muss ebenfalls mit einer Lichtung der Entfernung übereinstimmen.",
+    "RuleInvaders": "Invasoren",
+    "TextInvaders": "Die Löschbedingung für die Ausgrabungsaktion lautet nun: „Eine Fläche mit den meisten feindlichen Gebäuden, gefolgt von den wenigsten feindlichen Kriegern“. Wenn Sie aufgrund fehlender Gebäudeplätze nicht bauen können, kämpfen Sie stattdessen in jeder Fläche.",
+    "RuleOverwhelm": "Überforderung",
+    "TextOverwhelm": "Sie **graben** jetzt zweimal pro Runde, und es werden nur noch drei Krieger benötigt und bewegt (nicht vier).",
+    "RulePilgrims": "Pilger",
+    "TextPilgrims": "Sie beherrschen Lichtungen mit einem Garten.",
+    "RuleRobotRevenge": "Roboter-Rache",
+    "TextRobotRevenge": "Immer wenn Eidechsenkrieger außerhalb deines Zuges entfernt werden, platziere einen von ihnen in deiner Acolytes-Box.",
+    "RuleFanatics": "Fanatiker",
+    "TextFanatics": "Immer wenn du **Konvertierst**, kämpfe in dieser Lichtung nach der Konvertierung des Kriegers. Gib in diesem Kampf einen zusätzlichen Treffer aus. *Spielerbindung: Spieler mit den meisten schutzlosen Gebäuden anvisieren, dann Spieler mit den meisten Punkten.*",
+    "RuleMartyrs": "Martyrer",
+    "TextMartyrs": "Jedes Mal, wenn Sie ein Vogeltanzritual durchführen, legen Sie außerdem einen Krieger aus Ihrem Nachschub in Ihre Akolythen-Kiste.",
+    "RuleErratic": "Unberechenbar",
+    "TextErratic": "Am Ende deines Zuges ziehe eine Karte und füge sie deinen Verlorenen Seelen hinzu.",
+    "RuleSpiteful": "Boshaft",
+    "TextSpiteful": "Immer wenn Sie einen **Kreuzzug** durchführen, erhalten Sie einen zusätzlichen Siegpunkt, wenn Sie Marker entfernen.",
+    "RuleMarket": "Markt",
+    "TextMarket": "Der Markt ist eine Reihe offengelegter Karten, die Reihenfolge dieser Karten darf nicht verändert werden.",
+    "RuleGarrison": "Garnison",
+    "TextGarrison": "Als Kämpfer in der Schlacht bist du niemals schutzlos, und deine Handelsstützpunkte erhöhen jeweils dein maximal gewürfeltes Trefferpunkte-Maximum um eins.",
+    "RuleGreedy": "Gierig",
+    "TextGreedy": "Erhalten Sie +1 Siegpunkt jedes Mal, wenn der Spieler mit den meisten Punkten beliebig viele Ihrer Dienste kauft.",
+    "RuleFerocious": "Furchteuerregend",
+    "TextFerocious": "Als Angreifer im Kampf sind deine maximal gewürfelten Treffer immer drei.",
+    "RuleInvolved": "Beteiligt",
+    "TextInvolved": "Wenn ein Spieler in seinem Zug Ihren Söldnerdienst nicht kauft, behandeln Sie Ihre Krieger so, als hätten alle Feinde dieses Spielers Söldner gekauft. Der Vagabund kann Söldner kaufen, um diese Strafe zu vermeiden, profitiert aber nicht von dem Dienst.",
+    "RuleAutomatedLooters": "Automatisierte Plünderer",
+    "TextAutomatedLooters": "Im Kampf als Angreifer gegen einen Verteidiger mit einem verfügbaren Gegenstand in einer Lichtung herrschst du - nimm den Gegenstand, führe aber keine Treffer aus.",
+    "RuleWarlord": "Der Kriegsfürst",
+    "TextWarlord": "Ihr Kriegsfürst ist ein Krieger, der nicht außerhalb des Kampfes entfernt, außerhalb Ihrer Runde bewegt oder außer mit Anoint platziert werden kann. *Die Lichtung des Kriegsfürsten zählt immer als die geordnete Lichtung.*"
+  },
+  "SpecificBirdsong": {
+    "Electric Eyrie": {
+      "RevealOrder": "Eine Auftragskarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "DecreeOrder": "Fügen Sie die Bestellkarte der zugehörigen Verfügung-Spalte hinzu.",
+      "NewRoost": "Platziere einen Sitzplatz und 4 Krieger im geordneten, höchsten Prioritäts-Lichtung, wo alle diese Einheiten platziert werden können. _(Wird absichtlich nicht auf dem Brett angezeigt.)_"
+    },
+    "Vagabot": {
+      "RevealOrder": "Eine Bestellkarte enthüllen.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "RestOrder": "Wenn Sie zwei oder weniger unbeschädigte Gegenstände haben, bewegen Sie sich in einen zufälligen benachbarten Wald und gehen Sie dann zu Abend."
+    },
+    "Automated Alliance": {
+      "RevealOrder": "Eine Bestellkarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "Revolt": "Entferne alle feindlichen Figuren aus der **card:{{suit}}**-freundlichen Lichtung mit der höchsten Anzahl an feindlichen Figuren und platziere die **card:{{suit}}**-Basis dort.",
+      "RevoltSpread": "Wenn Sie nicht rebelliert haben, **Verbreiten Sie Mitgefühl** {{sympathySpread}}.",
+      "Spread": "**Verbreite Anteilnahme** {{sympathySpread}}."
+    },
+    "Mechanical Marquise": {
+      "RevealOrder": "Eine Bestellkarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird."
+    },
+    "Electric Eyrie (DC)": {
+      "RevealOrder": "Eine Auftrags-Karte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "DecreeOrder": "Fügen Sie die Bestellkarte der zugehörigen Verordnungsspalte hinzu.",
+      "NewRoost": "Platziere einen Sitzplatz und 3 Krieger im angeordneten, am höchsten priorisierten Feld, wo alle diese Einheiten platziert werden können. _(Wird absichtlich nicht auf dem Brett angezeigt.)_"
+    },
+    "Vagabot (DC)": {
+      "RevealOrder": "Eine Auftragskarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "RestOrder": "Wenn Sie zwei oder weniger unbeschädigte Gegenstände haben, bewegen Sie sich in einen zufälligen benachbarten Wald und gehen Sie dann zu Abend."
+    },
+    "Automated Alliance (DC)": {
+      "RevealOrder": "Eine Auftragskarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "Revolt": "Entferne alle feindlichen Einheiten aus der **card:{{suit}}** unterstützenden Lichtung mit den meisten feindlichen Einheiten und platziere die **card:{{suit}}** Basis dort.",
+      "Spread": "**Verbreite Mitgefühl** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "RevealOrder": "Eine Auftragskarte enthüllen.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird."
+    },
+    "Cogwheel Corvids": {
+      "RevealOrder": "**Enthülle** eine Auftrags-Karte.",
+      "CraftOrder": "**Erstelle** eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "RecruitOrder": "**Rekrutiere** {{difficulty}} Krieger in je zwei **Karten:{{suit}}** Lichtungen. (Priorität bei Lichtungen ohne Handlungskristalle, dann bei den meisten Raberkriegern).<br>(Falls du keine Krieger im Vorrat hast, führe sofort **Handlung verdichtet** aus, bevor du die verbleibenden Krieger platzierst.)",
+      "Flip": "**Unerdrehen** jeden Handlungsträger (kein Krieger erforderlich). Jedes Mal, wenn du einen Handlungsträger umdrehst, erhältst du +1 Siegpunkt pro offen liegendem Handlungsträger auf der Karte, und löst anschließend dessen \"Beim Umdrehen\"-Effekt aus, falls vorhanden.",
+      "FlipVendetta": "Vendetta: Alle 'Beim Aktivieren'-Effekte lösen ebenfalls eine Bombe aus.",
+      "FlipGamble": "Glücksspiel: Wenn der Spielablauf umgekehrt wird – der Mensch mit den meisten Figuren auf der Lichtung errät die Art. Bei richtiger Vermutung wird umgedreht und gewertet, die Auswirkung wird NICHT aufgelöst, dann wird der Token entfernt* **vp:1**. Bei falscher Vermutung wird der Wert von Corvid* **vp:1**"
+    },
+    "Drillbit Duchy": {
+      "RevealOrder": "Eine Bestellkarte aufdecken.",
+      "CraftOrder": "Erstelle eine Auftragskarte für **vp:1**, falls ein verfügbares Element angezeigt wird.",
+      "RecruitOrder": "Rekrutiere {{moleDifficulty}} Krieger, plus einen pro sichtbarem **meeple:duchy**, und platziere sie im Bau. (Derzeit: Rekrutiere **{{moleRecruit}}** Krieger.)"
+    },
+    "Logical Lizards": {
+      "Outcasts": "Die am häufigsten vorkommende Einheit in Ihren Verlorenen Seelen ist die Ordnung. Bei Gleichstand ist die Ordnung **card:bird**.",
+      "Conspiracy": "Führe Verschwörungen in **card:{{suit}}**-Lagerungen aus. Du führst die angezeigte Verschwörung aus, falls möglich, entfernst dann einen Akolythen, falls du sie ausgeführt hast, und setzt dies fort, bis du keine Akolythen mehr hast oder nicht mehr verleumden kannst."
+    },
+    "Riverfolk Robots": {
+      "StockMarket": "Ziehe zwei Karten und lege sie rechts neben den Markt. Ziehe keine Karte, sobald der Markt 5 Karten enthält.",
+      "CraftOrder": "Erstelle die erste Karte, die dem Markt hinzugefügt wird, welche einen verfügbaren Gegenstand für **vp:1** zeigt, und verwerfe sie anschließend.",
+      "SetOrder": "Setze die Reihenfolge so, dass die Marktkarte ganz rechts positioniert wird."
+    },
+    "Looting Legion": {
+      "Reveal": "**Enthüllen** Sie die oberste Karte des Decks als Ordnungskarte.",
+      "Craft": "**Erstellen** Sie die Bestellkarte, falls sie einen verfügbaren Artikel anzeigt, erhalten Sie keine Punkte.",
+      "Raze": "**Plattmachen**: Bei jeder Kreatur werden alle feindlichen Gebäude und Marker entfernt, ein Gegenstand aus Trümmern entnommen (falls vorhanden) und die Trümmer entfernt, falls sie leer sind.",
+      "Recruit": "**Rekrutiere** {{hoardNum}} Krieger in der Lichtung deines Kriegsfürsten, danach einen Krieger in jeder Festung."
+    }
+  },
+  "SpecificDaylight": {
+    "Electric Eyrie": {
+      "Recruit": "Rekrutiere {{totalForSuit}} Krieger/in in einer {{suitText}}-Freifläche mit einem Rastplatz. {{recruitText}}<br>_(**Ties**: Rekrutiere in einer Freifläche mit den meisten Feindstücken, dann den wenigsten Eyrie-Kriegern, dann der niedrigsten Priorität.)_",
+      "Move": "Verschieben Sie Ihre Truppen mit der Mehrheit von dem {{suitText}}-Lichtung, die Sie beherrschen, in eine benachbarte Lichtung. Lassen Sie genügend Truppen zurück, um die ursprüngliche Lichtung genau zu beherrschen oder {{totalForSuit}}, je nachdem, welcher Wert höher ist.<br>_(**Zielort-Bindungen**: Bewegen Sie sich in eine Lichtung ohne Nest, dann mit den wenigsten feindlichen Einheiten, dann mit der niedrigsten Priorität.)_",
+      "Battle": "Schlacht in einer {{suitText}} Lichtung gegen den Spieler mit den meisten Gebäuden dort. {{extraHit}}<br>_(**Lichtungsgleichstand**: Schlacht in einer solchen Lichtung ohne Nest, dann mit den am wenigsten verteidigten Gebäuden, dann mit der niedrigsten Priorität.)_<br>_(**Verteidigergleichstand**: Schlacht gegen einen solchen Spieler mit den meisten Einheiten dort, dann den Spieler mit den meisten Siegpunkten.)_",
+      "ExtraHit": "**Einen zusätzlichen Treffer austeilen.**",
+      "ExtraDecree": "Sie hätten mindestens 2 Vogelkarten zum Dekret hinzugefügt haben sollen.",
+      "ExtraRelentless": "Entfernen Sie alle schutzlosen Einheiten und Gebäude in jeder Lichtung mit Eyrie-Kriegern.",
+      "ExtraRecruit": "Wenn Sie keinen Krieger einsetzen können, geraten Sie in Aufruhr.",
+      "ExtraBuild": "Platziere einen Rastplatz in der Lichtung, die du regierst, mit höchster Priorität, wenn dort noch kein Rastplatz vorhanden ist. Wenn du keinen Rastplatz platzieren kannst, gerätst du in Aufruhr.",
+      "ExtraSwoop": "Platziere zwei Krieger in der Prioritätslichtung ohne Eyrie-Stücke."
+    },
+    "Vagabot": {
+      "ActionExplore": "Verschieben Sie zum nächstgelegenen Ruin, wobei pro Bewegung ein Gegenstand verbraucht wird, und verbrauchen Sie anschließend einen weiteren Gegenstand, um einen Gegenstand aus dem Ruin zu erhalten.",
+      "ActionQuest": "Verschieben Sie sich zum nächstgelegenen Lichtung, die mit dem Quest übereinstimmt, und verbrauchen Sie anschließend zwei beliebige Gegenstände, um den Quest zu verwerfen und **vp:1** zu erzielen. _(Ignorieren Sie Kartenbeschreibungen.)_ Ersetzen Sie dann den Quest.",
+      "ActionQuestRepeat": "Wiederhole dies so oft wie möglich.",
+      "ActionAid": "Ziele den Spieler in deiner Lichtung mit beliebigen Gegenständen an, der die wenigsten VP unter den Spielern hat. Leere so viele Gegenstände wie möglich bis zur Anzahl der Gegenstände, die er besitzt, nimm so viele Gegenstände von ihm und erreiche {{aidHelpText}}so viele VP. Ziehe dann {{aidHelpText}}so viele Karten.",
+      "ActionBattle": "Bewegen Sie sich zum nächstgelegenen freien Feld mit allen Teilen des Feindes mit der höchsten {{target}}, verbrauchen Sie dann einen Gegenstand, um gegen diesen Spieler zu kämpfen. Erzielten Sie **vp:1** pro beseigtem Feind-Krieger.",
+      "ActionBattleTarget": "VP",
+      "ActionBattleTargetBerserker": "Stücke",
+      "ActionBattleAdventurer": "Wiederholen Sie diese Aktion so oft wie möglich und verbrauchen Sie dabei zwei Gegenstände pro zusätzlichem Kampf.",
+      "ActionBattleMarksman": "Erhältet bei jeder Schlacht einen sofortigen Treffer.",
+      "ActionBattleTiebreaker": "_(Falls der Zielverteidiger in mehreren Löschungen in gleichem Abstand steht, bewege dich in die Löschung mit den meisten Gebäuden und Einheiten, dann mit den wenigsten Kriegern.)_",
+      "ActionRepair": "Wenn Sie beschädigte Gegenstände haben, verbrauchen Sie einen Gegenstand, um einen beschädigten Gegenstand zu reparieren, der zuvor nicht verbraucht war.",
+      "ActionSpecial": "Verbrauchen einen Gegenstand, um Folgendes auszuführen (überspringen, wenn dies keinen Effekt hätte):"
+    },
+    "Automated Alliance": {
+      "Sympathy": "Lege einen Beileid-Token in die **card:{{suit}}**-Freifläche mit der geringsten Anzahl angrenzender feindlicher Krieger aus.<br>(**Keine geeigneten Freiflächen**: Platziere stattdessen einen Beileid-Token auf der Freifläche mit der geringsten Anzahl feindlicher Einheiten.)<br>(**Kann nicht verteilt werden**: Wenn du keinen Beileid-Token platzieren kannst, erziele 5 VP.)",
+      "Revolt": "Entferne alle feindlichen Einheiten aus der sympathischen Lichtung mit den meisten feindlichen Einheiten und platziere dort die entsprechende Basis."
+    },
+    "Mechanical Marquise": {
+      "Blitz": "Finden Sie die von Ihnen beherrschte, höchste Priorität aufweisende Lichtung ohne feindliche Einheiten. Bewegen Sie alle Krieger bis auf einen von der Lichtung. Anschließend kämpfen Sie in der Ziellichtung.",
+      "Bird0": "Kampf in allen Lichtungen. _(Verteidiger ist der Spieler mit den meisten Figuren, danach Siegpunkte.)_",
+      "Bird1": "Rekrutiere {{warriorsOverTwo}} Krieger/in in jeder der beiden von dir herrschenden Lichtungen mit niedrigster Priorität. Falls du nur eine Lichtung beherrschst, platziere alle {{totalWarriors}} Krieger/innen dort.",
+      "Bird2": "Errichte ein Gebäude des Typs mit der größten Anzahl an Teilen auf der Karte in einer von dir kontrollierten Lichtung mit den meisten Markgrafenkriegern.<br>_(Bei Gleichstand zwischen Sägewerken und anderen Gebäudetypen wird ein Sägewerk errichtet. Bei Gleichstand zwischen Werkstätten und Rekrutierungszentren, aber nicht bei Sägewerken, wird ein Rekrutierungszentrum errichtet.)_",
+      "Bird3": "Verschiebe alle deine Krieger außer drei aus jeder Lichtung in die angrenzende Lichtung mit den meisten feindlichen Einheiten. Kämpfe dann in jeder Lichtung, in die du Krieger verschoben hast.",
+      "BirdChallenging": "Platziere zwei Krieger in der geordneten Lichtung, die du mit höchster Priorität beherrschst.",
+      "Suit0": "Kampf in jeder **card:{{suit}}**-Ausreißerzone. _(Verteidiger ist der Spieler mit den meisten Figuren, danach folgen Siegpunkte.)_",
+      "Suit1": "Rekrutiere {{totalWarriors}} Krieger gleichmäßig verteilt auf **card:{{suit}}** Lichtungen, die du beherrschst. Sollten zusätzliche Krieger nicht gleichmäßig auf **card:{{suit}}** Lichtungen verteilt werden können, platziere den letzten Krieger in der **card:{{suit}}** Lichtung mit der höchsten Priorität.",
+      "Suit2": "Errichte ein **Gebäude:{{building}}** in einer Lichtung, die du mit den meisten Marquisen-Kriegern kontrollierst.",
+      "Suit3": "Verschieben Sie alle außer drei Ihrer Krieger von jeder **card:{{suit}}**-Lichtung in die angrenzende Lichtung mit den meisten feindlichen Einheiten.",
+      "Repeat": "Wenn Sie in diesem Zug kein Gebäude platziert haben und fünf oder weniger Gebäude auf der Karte haben, verwerfen Sie die Befehlskarte, ziehen Sie eine neue und wiederholen Sie Morgenlicht."
+    },
+    "Electric Eyrie (DC)": {
+      "Recruit": "Rekrutiere {{recruitNum}} Krieger(in) in einer {{suitText}}-Reinigung mit einem Nest. {{recruitText}}<br>_(**Priorisierung**: Rekrutiere in einer solchen Reinigung mit den meisten Feindstücken, dann den wenigsten Eyrie-Kriegern, dann der niedrigsten Priorität.)_",
+      "Move": "Bewegen Sie Ihre Truppen von der {{suitText}}-Lichtung, die Sie mit den meisten Ihrer Krieger beherrschen, in eine angrenzende Lichtung. Lassen Sie genügend Krieger zurück, um die ursprüngliche Lichtung genau zu beherrschen oder {{totalForSuit}}, je nachdem, welcher Wert höher ist. Berücksichtigen Sie keine Lichtungen, in denen keine Krieger bewegt werden könnten.<br>_(**Ziel-Unentschlossenheit**: Bewegen Sie sich in eine Lichtung ohne Brutstätte, dann mit den wenigsten feindlichen Einheiten und dann mit der niedrigsten Priorität.)_",
+      "Battle": "Schlacht in einer {{suitText}} Lichtung. {{extraHit}}<br>_(**Lichtungsbindungen**: Eine Schlacht in einer solchen Lichtung ohne Nest ist dann die am wenigsten verteidigungsfähige Gebäudeanordnung.)_<br>_(**Verteidigerbindungen**: Eine Schlacht mit einem solchen Spieler mit den meisten Gebäuden dort, dann mit dem Spieler mit den meisten Einheiten dort.)_",
+      "ExtraHit": "**Einen zusätzlichen Treffer austeilen.**",
+      "ExtraDecree": "Sie hätten mindestens 2 Vogelkarten zum Dekret hinzufügen sollen.",
+      "ExtraRelentless": "Entferne alle schutzlosen Einheiten und Gebäude in jeder Lichtung, in der Eyrie-Krieger stationiert sind.",
+      "ExtraRecruit": "Wenn Sie keinen Krieger einsetzen können, geraten Sie in Aufruhr.",
+      "ExtraBuild": "Platziere einen Rastplatz in der Lichtung, die du regierst, mit höchster Priorität, falls dort noch kein Rastplatz vorhanden ist. Falls du keinen Rastplatz platzieren kannst, gerätst du ins Chaos.",
+      "ExtraSwoop": "Platziert zwei Krieger in der Prioritätslichtung ohne Eyrie-Stücke."
+    },
+    "Vagabot (DC)": {
+      "ActionExplore": "Gehen Sie zum nächstgelegenen Ruin und verbrauchen Sie anschließend einen Gegenstand, um einen Gegenstand von ihm zu erhalten.",
+      "ActionQuest": "Verschiebe dich zum nächstgelegenen offenen Feld, das zum Auftrag passt, und verbrauche dann zwei beliebige Gegenstände, um den Auftrag abzuwerfen und 2 VP zu erhalten. _(Ignoriere Text auf Karten.)_ Ersetze anschließend den Auftrag.",
+      "ActionQuestRepeat": "Wiederhole dies so oft wie möglich.",
+      "ActionAid": "Bewege dich zum nächstgelegenen Freifeld, das Teile eines Spielers mit Gegenständen enthält, falls möglich. Verbrauche dann einen Gegenstand, um einen ihrer Gegenstände zu nehmen und in deine Tasche zu legen. Erziele **vp:1** und ziehe anschließend eine Karte.<br>_(**Spielerentscheidung**)_: Wenn mehrere Spieler Teile in gleicher Entfernung haben, wähle den Spieler mit der niedrigeren Punktzahl.",
+      "ActionBattle": "Bewegen Sie sich mit allen Stücken des Feindes, die die meisten {{target}} haben, zur nächsten Lichtung und verbrauchen Sie dann einen Gegenstand, um gegen diesen Spieler zu kämpfen. Erreichen Sie **vp:1** pro beseitigtem Feindkrieger.",
+      "ActionBattleTarget": "VP",
+      "ActionBattleTargetBerserker": "Stücke",
+      "ActionBattleAdventurer": "Wiederholen Sie diese Aktion so oft wie möglich, wobei Sie pro zusätzlichem Kampf zwei Gegenstände verbrauchen.",
+      "ActionBattleMarksman": "Verursache in jeder Schlacht sofort einen Treffer.",
+      "ActionBattleTiebreaker": "_(Wenn das Zielgebäude in mehreren Lichtungen mit gleichem Abstand steht, bewege dich in die Lichtung mit den meisten Gebäuden und Einheiten, dann mit den wenigsten Kriegern.)_",
+      "ActionSpecial": "Verbrauchen einen Gegenstand, um Folgendes zu tun (überspringen, wenn dies keinen Effekt hätte):"
+    },
+    "Automated Alliance (DC)": {
+      "Sympathy": "Platziere einen Mitleid-Marker in einen unbeteiligten benachbarten Lichtung neben einer mitleidigen Lichtung.<br>(**Lichtungsbindung**: Vermeide Lichtungen mit 3 oder mehr Kriegern eines einzelnen Spielers, bevor du in der **card:{{suit}}** Lichtung platzierst.)<br>(**Kann nicht verbreitet werden**: Wenn du keinen Mitleid-Marker platzieren kannst, erhalte 5 VP.)",
+      "SympathyBird": "Platziere einen Mitleid-Token in eine unbeteiligte, benachbarte Lichtung neben einer mitleidigen Lichtung.<br>(**Lichtung-Verbindung**: Platziere in die Lichtung mit der niedrigsten Priorität.)<br>(**Kann nicht verbreiten**: Wenn du keinen Mitleid-Token platzieren kannst, erhalte 5 VP.)",
+      "Revolt": "Entferne alle feindlichen Einheiten aus der sympathischen Lichtung mit den meisten feindlichen Einheiten und platziere dort die entsprechende Basis.",
+      "RevoltSpread": "Wenn Sie nicht rebelliert haben, **Verbreiten Sie Mitgefühl** {{sympathySpread}}."
+    },
+    "Mechanical Marquise (DC)": {
+      "Blitz": "Finden Sie die von Ihnen beherrschte und höchste Priorität genießende Lichtung ohne feindliche Einheiten. Bewegen Sie alle Krieger bis auf einen von der Lichtung. Kämpfen Sie dann in der Ziellichtung.",
+      "Bird0": "Schlacht in allen Lichtungen. _(Der Verteidiger ist der Spieler mit den meisten Figuren, dann Siegpunkten.)_",
+      "Bird1": "Rekrutiere {{totalWarriors}} Krieger/in gleichmäßig auf die beiden mit der niedrigsten Priorität kontrollierten Lichtungen. Falls du nur eine Lichtung kontrollierst, platziere alle {{totalWarriors}} dort. Erhalte **vp:1** für je zwei Krieger/in, die nicht rekrutiert werden konnten.",
+      "Bird2": "Errichte ein Gebäude des Typs mit der größten Anzahl an Teilen auf der Karte in einer von dir kontrollierten Lichtung mit den meisten Markgrafenkriegern.<br>_(Bei Gleichstand zwischen Sägewerken und allen anderen Gebäudetypen wird ein Sägewerk errichtet. Bei Gleichstand zwischen Werkstätten und Rekrutierungszentren, aber nicht bei Sägewerken, wird eine Werkstatt errichtet.)_",
+      "Bird3": "Verschieben Sie alle, außer drei, Ihrer Krieger aus jeder Lichtung in die angrenzende Lichtung mit den meisten feindlichen Einheiten. Kämpfen Sie dann in jeder Lichtung, in die Sie bewegt sind.",
+      "Suit0": "Kampf in jeder **card:{{suit}}**-Reinigung. _(Verteidiger ist der Spieler mit den meisten Figuren, danach kommen Siegpunkte.)_",
+      "Suit1": "Rekrutiere {{totalWarriors}} Krieger gleichmäßig verteilt auf **card:{{suit}}** Lichtungen, die du beherrschst. Erhalte **vp:1** für alle zwei Krieger, die nicht rekrutiert werden konnten.<br>_(**Lichtungs-Priorität**: Platziere Krieger zuerst in den Lichtungen mit höchster Priorität.)_",
+      "Suit2": "Errichte ein **Gebäude:{{building}}** in einer Lichtung, die du mit den meisten Marquise-Kriegern beherrschst.",
+      "Suit3": "Verlag alle Krieger außer drei aus jeder **card:{{suit}}**-Lichtung in die angrenzende Lichtung mit den meisten feindlichen Einheiten. Jeder Krieger darf bei dieser Aktion nur einmal bewegt werden."
+    },
+    "Cogwheel Corvids": {
+      "Battle": "**Schlacht** in je zwei **card:{{suit}}** Lichtungen. (Verteidiger-Unentschieden: Spieler mit den meisten Gebäuden und Token dort, dann mit den meisten Punkten.)",
+      "Move": "**Verschiebe** alle außer zwei Kriegern von jeder **card:{{suit}}** und rücke sie mit einem offenen Komplott in eine angrenzende Lichtung ohne Komplott ab. (Lichtungsknüpfung: Krieger mit den meisten Rabben.) (Kein solches Ziel: Lichtung mit niedrigster Priorität.)",
+      "Plot": "**Intrige** im **card:{{suit}}** in dem Bereich mit den meisten Rabenkriegern und ohne Intrige, entferne einen Rabenkrieger dort, um eine zufällige verdeckte Intrige dort zu platzieren.",
+      "PlotMastermind": "<br>*Mastermind: Plane zweimal pro Runde.*",
+      "PlotThickens": "**Die Intrige verdickt**: In einer Lichtung ohne Intrige und mit drei oder mehr Rabenkriegern, entferne einen Rabenkrieger von dort, um dort einen zufälligen, verdeckten Intrigen-Marker zu platzieren. (Lichtung-Bindung: Die meisten Rabenkrieger.)"
+    },
+    "Drillbit Duchy": {
+      "Dig": "Wenn das Bauwerk vier oder mehr Krieger hat, platziere einen Tunnel in einer **card:{{suit}}** Lichtung ohne Tunnel und ohne Lehnsgut-Gebäude. Bewege außerdem {{tunnelValue}} Krieger vom Bauwerk in den Tunnel.",
+      "DigNoTunnel": "Kein Tunnel verfügbar, nimm und platziere den Tunnel vom Ort mit der geringsten Anzahl an Duchy-Kriegern.",
+      "DigBird": "*(Lösche Bindungskarte **card:{{suit}}**: Eine solche Löschung mit den meisten feindlichen Gebäuden und Token)*",
+      "DigTie": "*(Lösche Bindungskarte **card:{{suit}}**: Eine solche Löschung mit den meisten leeren Bauplätzen, dann die wenigsten feindlichen Kriegern.)*",
+      "DigInvaders": "*(Löschen von Bindungen: Ein **card:{{suit}}**-Löschen mit den meisten feindlichen Gebäuden, dann mit den wenigsten feindlichen Kriegern. Wenn du nicht bauen kannst, weil keine Bauplätze frei sind, **kämpfe** in jedem Löschen.)*",
+      "DigOverwhelm": "*Grabe zweimal pro Runde.*",
+      "Battle": "**Schlacht** in jeder **card:{{suit}}**-Räumung. (Unentschieden beim Verteidiger: Spieler mit den meisten Gebäuden, dann den meisten Einheiten, dann den meisten Punkten.)",
+      "BattleCaptain": "**Kampf** in jeder **card:{{suit}}**-Lichtung. (Verteidiger-Unentschieden: Spieler mit den meisten Gebäuden, dann den meisten Einheiten, dann den meisten Punkten.)<br/>Der **Kapitän** ist beeinflussbar, vergessen Sie nicht seinen Effekt im Kampf.",
+      "Build": "**Errichte** auf der Lichtung, in dem Feld, das die meisten Herzöge-Krieger besitzt. Platziere eine Zitadelle, wenn du 9 oder mehr Krieger in deinem Lager hast. Andernfalls platziere einen Markt. Erziele **vp:1**, wenn du kein Gebäude platzieren kannst, während eines im Lager ist.",
+      "Ministers": "Übernehmen Sie die Aktionen all Ihrer beeinflussten Minister von oben nach unten. (Ihre Lords geben aktuell **{{ministerPoints}}** VP)"
+    },
+    "Logical Lizards": {
+      "Rituals": "**Rituale**: Lege die obersten {{difficulty}} Karten deiner Verlorenen Seelen einzeln auf und führe für jede aufgelegte Farbe ein Ritual durch.",
+      "RitualsBird": "**card:bird**: Nimm einen Echsenkrieger aus der Fläche mit den meisten Echsenkriegern und lege ihn in die Anhängerkiste. **Lege diese Karte in den ABLAGESTAPEL, NICHT in den Verlorene Seelen Stapel.**",
+      "RitualsOther": "**card:{{suit}}**: Platziere einen Krieger in einer **card:{{suit}}**-Freifläche. Wenn du dort herrschst, platziere dann einen passenden Garten. (Freiflächen-Bindung: Platziere Krieger in Freifläche mit offenen Gebäudeplätzen, dann die meisten feindlichen Gebäude.)"
+    },
+    "Riverfolk Robots": {
+      "BuildAndGarrison": "**Aufstellen und Besetzen**: Platziere einen Handelsposten und {{riverDifficulty}} Krieger in einer **card:{{suit}}** Lichtung ohne Handelsposten. <br>*(Lichtungsvorbindung: Lichtung mit Figuren des Spielers mit den meisten Kriegern in Zahlungen.)*",
+      "RecruitOther": "Rekrutiere einen Krieger in jeder **Karten:{{suit}}**-Lichtung.<br>*(Nicht genügend Krieger: Platziere Krieger auf den Lichttungen mit der höchsten Priorität.)*",
+      "RecruitBird": "Rekrutiere einen Krieger in jeder Lichtung am Fluss. <br>*(Nicht genügend Krieger: Platziere Krieger auf den Lichtungen mit der höchsten Priorität.)*",
+      "Organize": "**Überprüfen auf Protektionismus**: Wenn du entweder den Schild oder die Schwerter Score **vp:1** hast, platziere zwei Krieger in einer Lichtung mit Riverfolk-Stücken und den meisten feindlichen Stücken.",
+      "BattleShield": "Kampf in jeder Lichtung. (Verteidiger-Bindung: Spieler mit der geringsten Anzahl an Kriegern in Zahlungen.)",
+      "BattleSword": "Kampf in jeder **card:{{suit}}**-Säuberung. (Verteidiger-Unentschieden: Spieler mit der geringsten Anzahl an Kriegern in Zahlungen.)"
+    },
+    "Looting Legion": {
+      "Battle": "**Schlacht** in jeder **card:{{suit}}**-Lichtung. *Denke an die Plünderer.* *Verteidiger-Bindung: Wähle einen Spieler mit verfügbaren Gegenständen.*",
+      "Move": "**Verschiebe** alle, außer 2 Kriegern, von jeder **card:{{suit}}** Lichtung in die angrenzende Lichtung mit den meisten feindlichen Einheiten. Verschiebe keine Krieger aus der Warlord-Lichtung.",
+      "Build": "**Errichte** eine Festung in einer **card:{{suit}}** Lichtung, die du beherrschst.",
+      "Advance": "**Vorwärts**: {{hoardNum}} Mal: Bewege den Kriegsfürsten und alle, bis auf 1 Krieger, in seinem Bereich in den angrenzenden Bereich mit den meisten feindlichen Einheiten, und beginne dann eine Schlacht.*Bei Gleichstand im Bereich: Bewege dich in den Bereich mit der höchsten Nummer.*",
+      "Anoint": "**Segne** den Kriegsherrn, wenn er sich außerhalb der Karte befindet: Platziere den Kriegsherrn in der Lichtung mit den meisten deiner Krieger."
+    }
+  },
+  "SpecificEvening": {
+    "Electric Eyrie": {
+      "Score": "Score {{score}} VP.",
+      "NightmareScore": "Punktzahl **vp:1**."
+    },
+    "Vagabot": {
+      "Refresh": "Wenn Sie beschädigte Artikel haben, erfrischen Sie {{itemRefreshMin}} unbeschädigte Artikel. Falls Sie keine haben, erfrischen Sie stattdessen {{itemRefreshMax}}.",
+      "Forest": "Wenn Sie sich in einem Wald befinden, reparieren Sie alle Gegenstände. Andernfalls reparieren Sie {{itemRepairs}} Gegenstand(e). Reparieren Sie nicht erschöpfte Gegenstände vor erschöpften Gegenständen.",
+      "Discard": "Die Kartenbestellung verwerfen.",
+      "NightmareScore": "Punkte **vp:1**."
+    },
+    "Automated Alliance": {
+      "Organize": "In jeder Lichtung mit einer Basis und {{organizeVal}} oder mehr Allianz-Kriegern, entferne alle Allianz-Krieger dort und **Verbreite Sympathie**.",
+      "WarriorPlace": "Setzen Sie in jeder Lichtung mit einem Basislager einen Krieger ein.",
+      "Wildfire": "**Verteile Mitgefühl**, aber erziele keine Siegpunkte.",
+      "Discard": "Die Orderkarte verwerfen.",
+      "NightmareScore": "Punktzahl **vp:1**."
+    },
+    "Mechanical Marquise": {
+      "Score": "Score {{score}} VP.",
+      "Discard": "Die Auftragskarte verwerfen.",
+      "NightmareScore": "Punktzahl **vp:1**."
+    },
+    "Electric Eyrie (DC)": {
+      "Score": "Score {{score}} VP.",
+      "NightmareScore": "Punkte **vp:1** für je zwei Spieler (aufgerundet)."
+    },
+    "Vagabot (DC)": {
+      "Refresh": "Aktualisiere {{itemRefreshMin}} Gegenstände. Falls du keine beschädigten Gegenstände hast, aktualisiere stattdessen {{itemRefreshMax}}.",
+      "Forest": "Wenn Sie sich in einem Wald befinden, reparieren Sie alle Gegenstände. Andernfalls reparieren Sie {{itemRepairs}} Gegenstand(e). Reparieren Sie nicht erschöpfte Gegenstände vor erschöpften Gegenständen.",
+      "Discard": "Die Bestellkarte verwerfen.",
+      "NightmareScore": "Punkte **vp:1** für alle zwei Spieler (aufgerundet)."
+    },
+    "Automated Alliance (DC)": {
+      "Organize": "In jeder Lichtung mit einer Basis und {{organizeVal}} oder mehr Allianz-Kriegern, entferne alle Allianz-Krieger dort und **Verteile Mitgefühl**.",
+      "WarriorPlace": "Platzieren Sie einen Krieger in jeder Lichtung mit einer Basis.",
+      "Wildfire": "**Verbreitet Mitgefühl**, aber erziele keine Siegpunkte.",
+      "Discard": "Die Auftragskarte verwerfen.",
+      "NightmareScore": "Punkte **vp:1** für alle zwei Spieler (aufgerundet)."
+    },
+    "Mechanical Marquise (DC)": {
+      "Repeat": "Wenn Sie in diesem Zug kein Gebäude platziert haben und weniger als 3 Siegpunkte erzielen würden, verwerfen Sie die Befehlskarte, ziehen Sie eine neue und wiederholen Sie den Tag. Dies darf nur einmal pro Zug geschehen.",
+      "RepeatIronWill": "Wenn Sie in diesem Zug kein Gebäude platziert haben und fünf oder weniger Gebäude auf der Karte haben, verwerfen Sie die Befehlskarte, ziehen Sie eine neue Karte und wiederholen Sie Tageslicht. Dies darf nur zweimal pro Zug passieren.",
+      "Score": "Score {{score}} VP.",
+      "Discard": "Die Bestellkarte verwerfen.",
+      "NightmareScore": "Punkte **vp:1** für je zwei Spieler (aufgerundet)."
+    },
+    "Cogwheel Corvids": {
+      "Score": "Punktzahl **vp:1** pro offenliegendem Erpressungsplan.",
+      "Discard": "Die Kartenbestellung verwerfen."
+    },
+    "Drillbit Duchy": {
+      "Rally": "In jeder **card:{{suit}}**-Räumung ohne Herzogtum-Gebäude und mit zwei oder weniger Kriegern, verschiebe alle Herzogtum-Krieger in eine benachbarte Räumung mit einem Herzogtum-Gebäude. Platziere anschließend in jeder von dir kontrollierten Räumung alle, außer vier, Herzogtum-Krieger im Bau. (Ziel-Räumungsgleichstand: Wenigste Herzogtum-Krieger.) (Keine solche Räumung: Platziere die zu verschiebenden Krieger im Bau.).",
+      "Score": "Score **vp:1** pro Markt auf der Karte",
+      "Sway": "Setze eine Krone auf den höchstplatzierten unerschütterten **Kartenminister:{{suit}}**. (Kein solcher Minister: Erschüttere den am tiefsten liegenden unerschütterten **Kartenminister:bird**.)",
+      "Discard": "Die Bestellkarte verwerfen."
+    },
+    "Logical Lizards": {
+      "Score": "**Wert** **vp:1** für den am weitesten rechts liegenden, leeren Gartenbereich.",
+      "DiscardLostSouls": "**Verwerfen** Verlorene Seelen.",
+      "ReturnRevealedCards": "**Zurücksetzen** legt aufgedeckte Karten oben auf deine Verlorene Seelen, wobei ihre vorherige Reihenfolge erhalten bleibt.",
+      "Craft": "**Bastel** die oberste Karte des Decks für **vp:1**, falls sie einen verfügbaren Gegenstand zeigt. Füge sie deinen Verlorenen Seelen (nicht dem Ablagestapel) hinzu.",
+      "ErraticReminder": "*Unberechenbar: Eine Karte am Ende der Runde ziehen.*"
+    },
+    "Riverfolk Robots": {
+      "Score": "**Punkte** **vp:1** pro Krieger des Spielers mit den meisten Kriegern in Zahlungen, anschließend diese Krieger aus Zahlungen entfernen.",
+      "Racketeering": "**Protektionismus**: Aus jeder Reinigung nimm alle, außer zwei Flussvolk-Krieger, und platziere sie in Zahlungen.",
+      "Discard": "**Verwerfen** Sie die linke Karte vom Markt.",
+      "DiscardShield": "**Protektionismus (Schild nur)**: Verwerfe erneut die linke Karte vom Markt."
+    },
+    "Looting Legion": {
+      "Incite": "**Anstiften**: Platziere eine Meute in einer **card:{{suit}}** Lichtung neben einer Meute. Wenn du das nicht kannst, platziere eine Meute in einer geordneten Lichtung mit einem deiner Krieger ohne Meute. *Lichtungsknüpfen: Lichtung mit Ruinen, dann die meisten Gebäude und Token. Keine Meuten mehr: Entferne zuerst eine Meute aus der Lichtung mit den wenigsten angrenzenden Ruinen oder Gebäuden.*",
+      "Score": "**Punkte**: Punkte **vp:1** für jede 2. Regelung, die du verhängst.",
+      "Discard": "**Verwerfen** Sie die AuftragsKarte."
+    }
+  },
+  "SpecificExtra": {
+    "Electric Eyrie": {
+      "Purge": "Vertreibungsverordnung, außer Wesire.",
+      "Evening": "Gehe zu Abend.",
+      "YesNobility": "Erhalten Sie einen Siegpunkt pro Vogelkarte in der Verordnung.",
+      "NoNobility": "Verlieren Sie einen Siegpunkt pro Vogelkarte in der Verordnung."
+    },
+    "Vagabot": {
+      "NameTinker": "Basteln",
+      "DescTinker": "Durchsuche den Ablagestapel nach der obersten Karte mit einem verfügbaren Gegenstand und fertige diese an, um **vp:1** zu erzielen. _Beginne das Spiel mit einem Gegenstand weniger._",
+      "SpecialTinker": "Durchsuche den Ablagestapel nach der obersten Karte mit einem verfügbaren Gegenstand und fertige diese an, um **vp:1** zu erhalten.",
+      "NameThief": "Dieb",
+      "DescThief": "Nimm eine zufällige Karte von dem Gegner in deiner Lichtung mit den meisten Punkten, dann mit den meisten Figuren dort.",
+      "SpecialThief": "Nimm eine zufällige Karte von dem Gegner in deiner Lichtung mit den meisten Punkten, dann mit den meisten Stücken dort.",
+      "NameRanger": "Waldläufer",
+      "DescRanger": "Wenn Sie drei oder mehr beschädigte Gegenstände haben, gleiten Sie in einen zufälligen benachbarten Wald.",
+      "SpecialRanger": "Wenn Sie drei oder mehr beschädigte Gegenstände haben, schleichen Sie in einen zufälligen benachbarten Wald.",
+      "BattleTrack0": "Maximale gewürfelte Treffer: 1",
+      "BattleTrack1": "Maximale gewürfelte Treffer: 2",
+      "BattleTrack2": "Maximale gewürfelte Treffer: 3.",
+      "BattleTrack3": "Maximale gewürfelte Treffer: 3; als Angreifer, führe 1 zusätzlichen Treffer aus.",
+      "SatchelExhausted": "Erschöpft",
+      "SatchelDamaged": "Beschädigt",
+      "SatchelBattleTrack": "Schlacht"
+    },
+    "Electric Eyrie (DC)": {
+      "Purge": "Reinigungsverordnung, ausgenommen Wesire.",
+      "Evening": "Gehen Sie zum Abend.",
+      "YesNobility": "Erhalten Sie einen Siegpunkt pro Vogelkarte in der Verordnung.",
+      "NoNobility": "Verlieren Sie pro Vogelkarte in der Verordnung einen Siegpunkt."
+    },
+    "Vagabot (DC)": {
+      "NameTinker": "Basteln",
+      "DescTinker": "Suchen Sie in einem Ablagestapel nach der obersten Karte mit einem verfügbaren Gegenstand und fertigen Sie diese an, ohne Punkte zu erhalten. _Beginnen Sie das Spiel mit einem Gegenstand weniger._",
+      "SpecialTinker": "Durchsuche den Ablagestapel nach der obersten Karte mit einem verfügbaren Gegenstand und fertige sie an, ohne Punkte zu erhalten.",
+      "NameThief": "Dieb",
+      "DescThief": "Ziehe eine zufällige Karte von dem Gegner in deiner Lichtung mit den meisten Punkten, dann mit den meisten Einheiten dort.",
+      "SpecialThief": "Nimm eine zufällige Karte von dem Gegner in deiner Lichtung mit den meisten Punkten, dann mit den meisten Einheiten dort.",
+      "NameRanger": "Waldläufer",
+      "DescRanger": "Wenn Sie beschädigte Gegenstände haben, reparieren Sie einen beschädigten Gegenstand, bevor er aufgebraucht ist.",
+      "SpecialRanger": "Wenn Sie beschädigte Gegenstände haben, reparieren Sie einen beschädigten Gegenstand, bevor er aufgebraucht ist.",
+      "BattleTrack0": "Maximale gewürfelte Treffer: 1",
+      "BattleTrack1": "Maximale gewürfelte Treffer: 2",
+      "BattleTrack2": "Maximale gewürfelte Treffer: 3.",
+      "BattleTrack3": "Maximale gewürfelte Treffer: 3; als Angreifer, füge 1 zusätzlichen Treffer hinzu.",
+      "SatchelExhausted": "Erschöpft",
+      "SatchelDamaged": "Beschädigt",
+      "SatchelBattleTrack": "Schlacht"
+    },
+    "Cogwheel Corvids": {
+      "BotInteractions": {
+        "Overview": "Wenn Sie mit den Raben gegen Bots spielen, beachten Sie bei der Gestaltung der Plots diese Regeln:",
+        "Bomb": "Beim Umdrehen werden zwei Einheiten jedes Roboters in seinem Einsatzgebiet entfernt, zuerst Krieger, anstatt alle Einheiten.",
+        "Snare": "Bots ignorieren Fallen-Marker für die Zielauswahl bei der Platzierung oder Bewegung von Figuren.<br>Wenn ein Bot eine Figur in oder aus einer Falle platzieren oder bewegen würde, entfernt er die Falle anstelle der Ausführung dieser Aktion.<br>(Vagabot setzt seine Bewegung danach fort und verbraucht dabei zusätzliche Gegenstände.)"
+      },
+      "Plot-Tokens": {
+        "Overview": "Bei der Verwendung der Zahnrad-Krähen, befolge diese Regeln für ihre Handlungsmarken:",
+        "Bomb": "**Bombe**: Wenn umgedreht, werden alle menschlichen Feindtruppen im Umkreis beseitigt und dieses Feld durch ein zufälliges, offen liegendes Feld ersetzt. (Der Austausch löst keine Auslösung aus und kann keine Bombe sein.)",
+        "Snare": "**Falle**: Solange sie offenliegt, können keine feindlichen Einheiten in diese Lichtung platziert oder daraus bewegt werden.",
+        "Extortion": "**Erpressung**: Wenn gewirkt, muss jeder Spieler mit Fraktionsstücken in seinem Bereich eine zufällige Karte ablegen.",
+        "Raid": "**Raid**: Wenn entfernt, platziere einen Krieger in jeder benachbarten Lichtung."
+      }
+    },
+    "Drillbit Duchy": {
+      "Ministers": {
+        "Captain": "Als Angreifer im Kampf, füge einen zusätzlichen Treffer zu, falls die Schlachtfeldräumung einen Tunnel aufweist.",
+        "Marshal": "Platziere einen Herzogswarrior in eine Lichtung mit der geringsten Anzahl von Herzogswarriors und einem Herzogsbau.",
+        "Foremole": "Sie haben einen zusätzlichen aufgedeckten **meeple:duchy**.",
+        "Brigadier": "Ergreifen Sie die Ausgrabungsaktion, wenn das Erdreich drei oder mehr Herzog-Krieger besitzt. Verwenden Sie für diese Ausgrabungsaktion die Bedingung \"Freifläche\" für eine Fuchs-Anordnung.",
+        "Banker": "Führen Sie die Build-Aktion aus.",
+        "Mayor": "Entferne einen Krieger des Herzogtums aus der Lichtung, die du mit den meisten Kriegern des Herzogtums kontrollierst. Falls du das tust, erhältst du **vp:1**.",
+        "Earl": "Punkte **vp:1** pro Zitadelle auf der Karte.",
+        "Baron": "Punktzahl **vp:1** pro Markt auf der Karte.",
+        "Duchess": "Erhalte **vp:2** Punkte, wenn alle 3 Tunnel auf der Karte sind."
+      }
+    },
+    "Logical Lizards": {
+      "Lost Souls": "**Verlorene Seelen**: Immer wenn eine Karte ausgegeben oder abgeworfen wird, lege sie stattdessen in den Haufen der Verlorenen Seelen.",
+      "Conspiracy": "**Verschwörungen** *Zuerst das Zielspielersymbol bestimmen, dann die Zielausräumung.*<br><br>**Umwandeln**<br>In einer geordneten Ausräumung einen feindlichen Krieger durch einen Eidechsenkrieger ersetzen.<br>*Spielerentscheidung*: Spieler mit den meisten Punkten.<br>*Ausräumungsentscheidung*: Ausräumung mit den meisten feindlichen Gebäuden.<br>**Kreuzzug**<br>Kämpfe in jeder **card:{{suit}}** Ausräumung mit 2+ Eidechsenkriegern.<br>*Verteidigungsentscheidung*: Spieler mit den meisten Punkten dort.<br>**Heiligen**<br>In einer **card:{{suit}}** Ausräumung ein feindliches Gebäude durch einen passenden Garten ersetzen.<br>*Spielerentscheidung*: Spieler mit den meisten Punkten.<br>*Ausräumungsentscheidung*: Ausräumung mit den wenigsten feindlichen Kriegern."
+    },
+    "Riverfolk Robots": {
+      "prot": "Im Organisieren (Tagwacht/3.) prüfe auf folgende Bedingungen.",
+      "protShield": "Hat Zahlungen keine Krieger?",
+      "protSword": "Hat deine Versorgung keine Krieger?",
+      "tradePost": "Wenn ein Spieler einen Handelsplatz entfernt, werden die Hälfte seiner Krieger aus den Zahlungen entfernt (aufgerundet).",
+      "servicesBirdsong": "Zu Beginn von Birdsong darf ein anderer Spieler einen Dienst sowie einen zusätzlichen Dienst pro Reinigung mit einem Handelsstützpunkt und ihren Fraktionsstücken kaufen.",
+      "servicesCost": "Sie bezahlen für den Dienst, indem sie Krieger in Zahlungen einsetzen, abhängig davon, wie viele Siegpunkte sie besitzen. Falls ihre Fraktion keine Krieger hat, setze Flussvolk-Krieger ein.",
+      "servicesVictoryPoints": "*0-9 Siegpunkte = 2 Krieger | 10-19 Siegpunkte = 3 Krieger | 20+ Siegpunkte = 4 Krieger*",
+      "serviceCard": "**Handkarte ziehen**: Nimm eine Karte und füge sie deiner Hand hinzu.",
+      "serviceBoat": "**Riverboot**: Behandle Flüsse in diesem Zug als Pfade.",
+      "serviceMerc": "**Söldner**: Für Kämpfe und Herrschaft in Tag und Abend behandelt ihr Flussvolk-Krieger wie eure eigenen, außer im Kampf gegen das Flussvolk. Im Kampf müsst ihr Treffer zwischen euren Fraktionsstücken und Flussvolk-Kriegern aufteilen."
+    },
+    "Looting Legion": {
+      "Hoard": "Score **vp:2**, wenn der Vorrat voll ist und du ein weiteres Element hinzufügen würdest, entferne dieses Element dann aus dem Spiel."
+    }
+  },
+  "ToastMessages": {
+    "UpdateScore": "{{ botname }}'s Wert wurde um {{ addend }} aktualisiert.",
+    "Actions": {
+      "Undo": "Rückgängig machen"
+    }
+  }
+}

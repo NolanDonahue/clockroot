@@ -22,11 +22,27 @@ import { PriorityModalComponent } from './priority-modal/priority-modal.componen
 import * as enUS from '../assets/i18n/en-US.json';
 import * as frFR from '../assets/i18n/fr-FR.json';
 import * as esES from '../assets/i18n/es-ES.json';
+import * as deDE from '../assets/i18n/de-DE.json';
+import * as jaJP from '../assets/i18n/ja-JP.json';
+import * as koKR from '../assets/i18n/ko-KR.json';
+import * as nlNL from '../assets/i18n/nl-NL.json';
+import * as plPL from '../assets/i18n/pl-PL.json';
+import * as ptBR from '../assets/i18n/pt-BR.json';
+import * as ruRU from '../assets/i18n/ru-RU.json';
+import * as zhCN from '../assets/i18n/zh-CN.json';
 
 const langs = { 
   'en-US': (enUS as any).default || enUS, 
   'fr-FR': (frFR as any).default || frFR,
-  'es-ES': (esES as any).default || esES  
+  'es-ES': (esES as any).default || esES, 
+  'de-DE': (deDE as any).default || deDE,
+  'ja-JP': (jaJP as any).default || jaJP,
+  'ko-KR': (koKR as any).default || koKR,
+  'nl-NL': (nlNL as any).default || nlNL, 
+  'pl-PL': (plPL as any).default || plPL,
+  'pt-BR': (ptBR as any).default || ptBR, 
+  'ru-RU': (ruRU as any).default || ruRU,
+  'zh-CN': (zhCN as any).default || zhCN  
 };
 
 export class JSONLoader implements TranslateLoader {
