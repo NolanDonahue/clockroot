@@ -36,7 +36,7 @@ export class LegionComponent implements OnInit
 
     const hoard = this.bot.customData.hoardItems;
     
-    if (hoard.length < 5) {
+    if (hoard.length < 4) {
       hoard.push(item);
       this.botService.saveBots();
     }

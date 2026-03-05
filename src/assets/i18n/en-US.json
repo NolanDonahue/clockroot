@@ -356,9 +356,9 @@
     "TextInvolved": "If a human does not buy your Mercenaries service on their turn, treat your warriors as if all of that player's enemies bought Mercenaries. The Vagabond can buy Mercenaries to avoid this penalty but does not benefit from the service.",
 
     "RuleAutomatedLooters":"Automated Looters",
-    "TextAutomatedLooters":"In battle as attacker against a defender with an available item in a clearing you rule - take the item but deal no hits.",
+    "TextAutomatedLooters":"In battle as attacker **with the warlord** against a defender with an available item in a clearing you rule - deal no rolled hits and take 1 item from the Defender.",
     "RuleWarlord":"The Warlord",
-    "TextWarlord":"Your warlord is a warrior that cannot be removed outside battle, moved outside your turn, or placed except with Anoint. *The Warlord's clearing always counts as the ordered clearing.*"
+    "TextWarlord":"Your warlord is a warrior that cannot be removed outside battle, moved outside your turn, or placed except with Anoint. *The Warlord's clearing always matches the ordered suit.*"
   },
   "SpecificBirdsong": {
     "Electric Eyrie": {
@@ -428,9 +428,8 @@
     },
     "Looting Legion": {
       "Reveal":"**Reveal** the top card of the deck as the order card.",
-      "Craft":"**Craft** the order card if it shows an available item, you score no points.",
       "Raze":"**Raze**: At each mob, remove all enemy buildings and tokens, take an item from ruin if any, and remove the ruin if it's empty.",
-      "Recruit":"**Recruit** {{hoardNum}} warriors in your warlord's clearing, then one warrior at each stronghold."
+      "Recruit":"**Recruit** {{hoardNum}} {{warriorsWord}} in your warlord's clearing, then one warrior at each stronghold."
     }
   },
   "SpecificDaylight": {
@@ -550,10 +549,10 @@
       "BattleSword": "Battle in each **card:{{suit}}** clearing. (Defender Tie: Player who has the fewest warriors in payments.)"
     },
     "Looting Legion": {
-      "Battle":"**Battle** in each **card:{{suit}}** clearing. *Remember looters.* *Defender Tie: Target player with available items.*",
+      "Battle":"**Battle** in each **card:{{suit}}** clearing. <i>(Remember looters.)</i> <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Defender Tie</b>: Target player with available items.</i>",
       "Move":"**Move** all but 2 warriors from each **card:{{suit}}** clearing to the adjacent clearing with the most enemy pieces. Do not move warriors from the Warlord's clearing.",
       "Build":"**Build** a stronghold in a **card:{{suit}}** clearing you rule.",
-      "Advance":"**Advance**: {{hoardNum}} times: Move the Warlord and all but 1 warriors in its clearing to the adjacent clearing with the most enemy pieces, then battle.*Clearing Tie: Move to the highest-numbered clearing.*",
+      "Advance":"**Advance** {{hoardNum}} {{timesWord}}: To advance, each time move the Warlord and all but 1 warriors in its clearing to the adjacent clearing with the most enemy pieces and battle there.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Move to a clearing you do not rule, then the highest-numbered (lowest priority) clearing.*<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Cannot Move</i></b>*: If unable to move, still battle.* <br> Each time the Warlord moves into a clearing with a Ruin and no mob, immediately place a mob in that clearing.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</i></b>*: First remove a mob from a clearing with the least adjacent Ruins or buildings.*",
       "Anoint":"**Anoint** if the warlord is off the map: Place the warlord into the clearing with the most of your warriors."
     }
   },
@@ -628,7 +627,7 @@
       "DiscardShield":"**Protectionism (Shield Only)**: Discard the leftmost card from the market again."
     },
     "Looting Legion": {
-      "Incite":"**Incite**: Place a mob in a **card:{{suit}}** clearing adjacent to a mob. If you can't, place a mob in an ordered clearing with one of your warriors without a mob. *Clearing Tie: Clearing with ruins, then most buildings, and tokens. No Mobs Left: First remove a Mob from the clearing with the least adjacent Ruins or buildings.*",
+      "Incite":"**Incite**: Place a mob in a **card:{{suit}}** clearing adjacent to a mob. If you can't, place a mob in an ordered clearing with one of your warriors without a mob. <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Clearing with ruins, then most buildings, and tokens. <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</b></i>*: First remove a Mob from the clearing with the least adjacent Ruins or buildings.*",
       "Score":"**Score**: Score **vp:1** for every 2 clearings you rule.",
       "Discard":"**Discard** the order card."
     }
