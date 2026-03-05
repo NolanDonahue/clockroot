@@ -63,13 +63,13 @@ export class LegionBot extends Bot {
     //Allows you to reference the ordered suit as a variable locally
     const suit = this.customData.currentSuit;
     const hoardLength = (this.customData.hoardItems && this.customData.hoardItems.length) || 1;
-    const hoardNum = Math.min(3,Math.ceil(hoardLength/2))
+    const hoardNum = Math.min(3,Math.floor(hoardLength/2)+1)
+    const warriorsWord = hoardNum === 1 ? 'warrior' : 'warriors';
 
     const base = [
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Looting Legion.Reveal`)),
-      this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Looting Legion.Craft`)),
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Looting Legion.Raze`)),
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Looting Legion.Recruit`, {hoardNum}))
+      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Looting Legion.Recruit`, {hoardNum, warriorsWord}))
     ];
     return base;
   }
@@ -77,14 +77,15 @@ export class LegionBot extends Bot {
   public daylight(translate: TranslateService) {
     const suit = this.customData.currentSuit;
     const hoardLength = (this.customData.hoardItems && this.customData.hoardItems.length) || 1;
-    const hoardNum = Math.min(3,Math.ceil(hoardLength/2))
+    const hoardNum = Math.min(3,Math.floor(hoardLength/2)+1)
+    const timesWord = hoardNum === 1 ? 'time' : 'times';
 
     //You can include logic to spit out the text as appropriate to the faction. It's best to define a base array and add to it
     const base = [
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Battle`, {suit})),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Move`, {suit})),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Build`, {suit})),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Advance`, {hoardNum})),
+      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Advance`, {hoardNum, timesWord})),
       this.createMetaData('text', '', translate.instant(`SpecificDaylight.Looting Legion.Anoint`)),
     ];
     return base;
