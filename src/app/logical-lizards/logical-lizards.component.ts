@@ -39,6 +39,10 @@ export class LizardComponent implements OnInit {
     ['fox', 'bunny', 'mouse'].forEach(suit => {
       this.bot.customData.buildings[suit] = this.bot.customData.buildings[suit] || [];
     });
+
+    if (this.bot.customData.conspiracyIndex === undefined) {
+      this.bot.customData.conspiracyIndex = 4;
+    }
   }
   toggleBuilding(suit, index) {
     this.bot.customData.buildings[suit] = this.bot.customData.buildings[suit] || [];
@@ -52,12 +56,8 @@ export class LizardComponent implements OnInit {
 
     this.botService.saveBots();
   }
-
-  getOverlayIndex(): number {
-    if (this.bot.customData.acolyteTracker === 0) {
-      return -1;
-    }
-    return (this.bot.customData.acolyteTracker - 1) % 5;
+  advanceConspiracy() {
+    this.bot.customData.conspiracyIndex = (this.bot.customData.conspiracyIndex + 1) % 5;
+    this.botService.saveBots();
   }
-
 }

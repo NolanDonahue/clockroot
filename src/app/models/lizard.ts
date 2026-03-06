@@ -82,6 +82,7 @@ export class LizardBot extends Bot {
     },    
 
     acolyteTracker: 0,
+    conspiracyIndex: 4,
   };
 
   public setup(): void {
@@ -93,6 +94,7 @@ export class LizardBot extends Bot {
     return [
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Logical Lizards.Outcasts`)),
       this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Logical Lizards.Conspiracy`, {suit})),
+      this.createMetaData('text', '',translate.instant(`SpecificExtra.Logical Lizards.Conspiracy`, {suit}))
     ];
   }
 
@@ -102,8 +104,7 @@ export class LizardBot extends Bot {
     const checkBird = suit==="bird";
     const base = []
 
-    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {suit, difficulty}) + 
-  (checkBird ? translate.instant(`SpecificDaylight.Logical Lizards.RitualsBird`,{suit}) : translate.instant(`SpecificDaylight.Logical Lizards.RitualsOther`,{suit}))))
+    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {difficulty})))
     
     return base
   }
@@ -140,7 +141,6 @@ export class LizardBot extends Bot {
 
     return [
       this.createMetaData('text', '',translate.instant(`SpecificExtra.Logical Lizards.Lost Souls`)),
-      this.createMetaData('text', '',translate.instant(`SpecificExtra.Logical Lizards.Conspiracy`, {suit}))
     ]
   }
 }

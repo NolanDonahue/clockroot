@@ -45,8 +45,14 @@ ion-toolbar {
   position: relative;
   display: inline-block;
   margin: 0 5px;
-  width: 6em;       
-  height: 5em;      
+
+  width: 4.5em;       
+  height: 5em;
+
+  @media (min-width: 768px) {
+    width: 6em;     
+    height: 6em;
+  }      
 }
 
 .acolyte-wrapper img { /*...and then forcing the image to fit that box*/
@@ -77,4 +83,13 @@ ion-toolbar {
 .building-row {
   display: flex;
   align-items: center;
+}
+
+.acolyte-row-center {
+  justify-content: center;
+  margin-top: 10px; 
+}
+
+.row-additions.center-fix {
+  padding-left: 0; 
 }
