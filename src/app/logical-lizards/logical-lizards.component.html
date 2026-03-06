@@ -30,8 +30,7 @@
           <li>
             <a (click)="botService.showPriorities()">{{ 'BotSetup.PriorityMarkers' | translate }}</a>
           </li>
-          <li *ngFor="let rule of bot.setupRules"
-            [innerHTML]="('SpecificSetup.Logical Lizards.' + rule) | translate | format"></li>
+          <li *ngFor="let rule of bot.setupRules" [innerHTML]="('SpecificSetup.Logical Lizards.' + rule) | translate | format"></li>
         </ol>
       </ion-card-content>
     </ion-card>
@@ -46,9 +45,10 @@
         <ion-list>
           <ion-radio-group>
             <ion-item *ngFor="let diff of ['Easy', 'Normal', 'Challenging', 'Nightmare']">
-              <ion-radio slot="start" [value]="diff" (click)="botService.changeDifficulty(bot, diff)"
-                [checked]="bot.difficulty === diff"></ion-radio>
-
+              <ion-radio slot="start" 
+                        [value]="diff" 
+                        (click)="botService.changeDifficulty(bot, diff)"
+                        [checked]="bot.difficulty === diff"></ion-radio>
               <ion-label class="ion-text-wrap">
                 <h2>{{ 'BotSetup.Difficulty.' + diff | translate }}</h2>
                 <p [innerHTML]="('SpecificDifficulty.Logical Lizards.' + diff) | translate | format"></p>
@@ -68,9 +68,10 @@
       <ion-card-content>
         <ion-list>
           <ion-item *ngFor="let rule of bot.rules">
-            <ion-checkbox slot="start" [disabled]="!rule.canToggle" (click)="botService.toggleRule(rule)"
-              [checked]="rule.isActive"></ion-checkbox>
-
+            <ion-checkbox slot="start" 
+                          [disabled]="!rule.canToggle" 
+                          (click)="botService.toggleRule(rule)"
+                          [checked]="rule.isActive"></ion-checkbox>
             <ion-label class="ion-text-wrap">
               <h2>{{ 'SpecificRules.' + rule.name | translate }}</h2>
               <p [innerHTML]="('SpecificRules.' + rule.text) | translate | format"></p>
@@ -124,11 +125,13 @@
             <div class="flip-container" *ngFor="let num of [0, 1, 2, 3, 4]">
               <div class="flip-icon">
                 <img [src]="'assets/inicon/building-' + building.building + '-' + building.suit + '.png'"
-                  class="flip-back" [class.transparent]="bot.customData.buildings[building.suit][num]"
+                  class="flip-back" 
+                  [class.transparent]="bot.customData.buildings[building.suit][num]"
                   (click)="toggleBuilding(building.suit, num)" />
 
-                <div class="flip-front" *ngIf="bot.customData.buildings[building.suit][num]"
-                  (click)="toggleBuilding(building.suit, num)">+{{ num === 1 ? 2 : num }}</div>
+                <div class="flip-front" 
+                     *ngIf="bot.customData.buildings[building.suit][num]"
+                     (click)="toggleBuilding(building.suit, num)">+{{ num === 1 ? 2 : num }}</div>
               </div>
             </div>
           </div>
@@ -186,9 +189,10 @@
         <h2 class="birdsong-has-buttons">
           {{ 'Sections.Birdsong' | translate }}
           <ion-button class="ion-margin-start" (click)="changeSuit(suit)"
-            [class.transparent]="bot.customData.currentSuit !== suit"
-            *ngFor="let suit of ['bird', 'fox', 'bunny', 'mouse']">
-            <img class="click-icon" slot="icon-only" [src]="'assets/inicon/card-' + suit + '.png'" />
+              [class.transparent]="bot.customData.currentSuit !== suit"
+              *ngFor="let suit of ['bird', 'fox', 'bunny', 'mouse']">
+            <img class="click-icon" slot="icon-only" 
+            [src]="'assets/inicon/card-' + suit + '.png'" />
           </ion-button>
         </h2>
       </ion-card-header>
