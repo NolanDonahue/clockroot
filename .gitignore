@@ -31,3 +31,4 @@ npm-debug.log*
 /www
 /src/app/**/*.md
 /src/assets/inicon/Root Assets
+/.vs
