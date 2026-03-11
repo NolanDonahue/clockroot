@@ -538,7 +538,7 @@
       "Ministers": "Take the actions of all your swayed ministers from top to bottom. (Your Lords presently give **{{ministerPoints}}** VP)"
     },
     "Logical Lizards": {
-      "Rituals": "**Rituals**: Reveal the top {{difficulty}} cards from your Lost Souls, one at a time, and perform a ritual for each revealed suit. <br><br> If the revealed card is **card:bird**, remove a Lizard warrior from the clearing with the most Lizard warriors and place it into the Acolytes box [*add an Acolyte*]. Then, put the revealed pile in the **discard pile** (NOT the Lost Souls pile!) <br><br> Otherwise, place a warrior in a clearing matching the revealed card. Then, if you rule there, place a matching garden there.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</b>: Place warrior in clearing with any open building slots, then most enemy buildings.</i>"
+      "Rituals": "**Rituals**: Reveal the top {{difficulty}} cards from your Lost Souls, one at a time, and perform a ritual for each revealed suit. <br><br> If the revealed card is **card:bird**, remove a Lizard warrior from the clearing with the most Lizard warriors and place it into the Acolytes box [*add an Acolyte*]. Then, put the revealed card in the **discard pile** (NOT the Lost Souls pile!) <br><br> Otherwise, place a warrior in a clearing matching the revealed card. Then, if you rule there, place a matching garden there.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</b>: Place warrior in clearing with any open building slots, then most enemy buildings.</i>"
     },
     "Riverfolk Robots": {
       "BuildAndGarrison": "**Build and Garrison**: Place a trade post and {{riverDifficulty}} warriors in a **card:{{suit}}** clearing with no trade post. <br>*(Clearing Tie: Clearing with pieces of player who has the most warriors in payments.)*",
@@ -614,7 +614,7 @@
       "Discard": "Discard the order card."
     },
     "Logical Lizards": {
-      "Score": "**Score** **vp:1** worth the rightmost empty garden space.",
+      "Score": "**Score** **vp:1** based on the rightmost empty Gardens space.",
       "DiscardLostSouls": "**Discard** Lost Souls.",
       "ReturnRevealedCards": "**Return** revealed cards to the top of your Lost Souls, preserving their previous order.",
       "Craft": "**Craft** the top card of the deck for **vp:1** if it shows an available item. Add it to your Lost Souls (not the discard.)",
