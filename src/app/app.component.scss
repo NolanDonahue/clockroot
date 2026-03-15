@@ -34,3 +34,12 @@ ion-item.bot {
     left: 50%;
     transform: translate(-50%, -10%);
 }
+
+.difficulty, .traits {
+  ion-label {
+    padding-left: 32px;
+  }
+}
+.random-icon {
+  padding-right: 32px;
+}

@@ -1,7 +1,13 @@
+import { ActivatedRoute } from '@angular/router';
+
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { BotService } from './bot.service';
+import { Difficulty } from './models/bot';
+
+const INITIAL_SEARCH = window.location.search;
+const INITIAL_HASH = window.location.hash;
 
 @Component({
   selector: 'app-root',
@@ -11,9 +17,12 @@ import { BotService } from './bot.service';
 export class AppComponent implements OnInit {
 
   public language: string;
+  public selectedTraitCount: number = 1;
+  public selectedDifficulty: string = "Challenging";
 
   constructor(
     private translateService: TranslateService,
+    private route: ActivatedRoute,
     public botService: BotService
   ) {
   }
@@ -46,15 +55,51 @@ export class AppComponent implements OnInit {
     }
 
     this.updateTranslate();
+    this.checkUrlForRandomize();
   }
 
-  public languageChange() {
-    localStorage.setItem('lang', this.language);
+private checkUrlForRandomize() {
+    const queryString = INITIAL_SEARCH || INITIAL_HASH.split('?')[1] || '';
+    const params = new URLSearchParams(queryString);
+    
+    const difficulty = params.get('difficulty');
+    const traits = params.get('traits');;
 
-    this.updateTranslate();
+    if (difficulty) {
+      if (difficulty.toLowerCase() === 'random') {
+        this.difficultyRandom();
+      } else {
+        const formattedDifficulty = (difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase()) as Difficulty;
+        this.changeAllDifficulties(formattedDifficulty); 
+      }
+    }
+    if (traits) {
+      const parsedTraits = parseInt(traits, 10);
+      if (!isNaN(parsedTraits)) {
+        this.selectedTraitCount = parsedTraits;
+        this.setTrait(parsedTraits);
+      }
+    }
   }
-
-  private updateTranslate() {
-    this.translateService.use(this.language);
-  }
+    public languageChange() {
+      localStorage.setItem('lang', this.language);
+      this.updateTranslate();
+    }
+    
+    private updateTranslate() {
+      this.translateService.use(this.language);
+    }
+    
+    public changeAllDifficulties(difficulty: Difficulty) {
+      this.selectedDifficulty = difficulty;
+      this.botService.changeAllDifficulties(difficulty);
+    }
+    
+    public difficultyRandom() {
+      this.botService.difficultyRandom();
+    } 
+    
+    public setTrait(num: number) {
+      this.botService.setTrait(num);
+    }
 }

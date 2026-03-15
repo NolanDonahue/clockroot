@@ -120,29 +120,78 @@ export class BotService {
     Torch3: 'torch'
   };
 
+  private getRandomIntInclusive(min: number, max: number) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.round(Math.floor(Math.random() * (max - min + 1))) + min;
+  }
+
+  private shuffleArray(array: any[]) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
+
+  
   constructor(private modalCtrl: ModalController, private alertCtrl: AlertController) {
     this.loadBots();
     this.checkUrlForBots();
   }
-
+  
   // URL on init params for which bots to load: clockroot.seiyria.com/?bots=faction,names,here (such as /?bots=Corvid,Duchy)
   // For referencing the names in the URL ctrl+f for 'public name: BotName = ' 
   private checkUrlForBots() {
     const params = new URLSearchParams(window.location.search);
     const botsParam = params.get('bots');
-
+    
     if (botsParam) {
       this.clearBots()
       const botNames = botsParam.split(',') as BotName[];
       botNames.forEach(name => {
         if (this.botHash[name]) { const newBot = new this.botHash[name]()
           this.addBot(newBot);
-        }
-      })
-    }
-
-    window.history.replaceState({}, document.title, window.location.pathname)
+      }
+    })
   }
+  
+  window.history.replaceState({}, document.title, window.location.pathname)
+}
+
+public changeAllDifficulties(difficulty: Difficulty) {
+  this.bots.forEach(bot => {
+    this.changeDifficulty(bot, difficulty);
+  });
+}
+
+public difficultyRandom() {
+  const difficulties: Difficulty[] = ['Easy', 'Normal', 'Challenging', 'Nightmare'];
+  
+  this.bots.forEach(bot => {
+    const randomDiff = difficulties[this.getRandomIntInclusive(0, 3)];
+    this.changeDifficulty(bot, randomDiff);
+  });
+} 
+
+public setTrait(num: number) {
+  if (num === null || num === undefined) return; 
+
+  this.bots.forEach(bot => {
+    const togglableRules = bot.rules.filter(rule => rule.canToggle);
+    togglableRules.forEach(rule => rule.isActive = false);
+
+    if (num > 0) {
+      const shuffled = this.shuffleArray(togglableRules);
+      const amountToSelect = num === 99 ? shuffled.length : num;
+      const selectedRules = shuffled.slice(0, amountToSelect);
+      selectedRules.forEach(rule => rule.isActive = true);
+    }
+  });
+
+  this.saveBots();
+}
 
   public addBot(bot: Bot) {
     if (this.bots.some(x => x.name === bot.name)) { return; }
@@ -208,7 +257,7 @@ export class BotService {
   public toggleItem(bot: Bot, item: Item) {
     bot.items[item] = !bot.items[item];
 
-    // exceptionssss
+    // exceptions
     if (bot.items[item] && bot.name === 'Vagabond') {
       (bot as VagaBot).customData.satchelItems[item] = 0;
     }

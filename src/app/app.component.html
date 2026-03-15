@@ -32,7 +32,7 @@
             </ng-container>
             <ion-item (click)="botService.showPriorities()">
               <div class="inline-icon ion-margin-end"></div>
-              {{ 'PriorityMaps' | translate }}
+                {{ 'PriorityMaps' | translate }}
             </ion-item>
           </ion-menu-toggle>
 
@@ -52,11 +52,51 @@
               <ion-select-option value="zh-CN">中文</ion-select-option>
             </ion-select>
           </ion-item>
-        </ion-list>
-        <h2 class="ion-text-center call-to-action">Want to contribute?<br>Check out the <a href="https://github.com/Vagabottos/clockroot">GitHub repo!</a></h2>
-      </ion-content>
-    </ion-menu>
-    
+          </ion-list>
+
+              <div class="inline-icon ion-margin-end"></div>
+                <ion-title>
+                  {{ 'GlobalSettings' | translate }}
+                </ion-title>
+            
+              <ion-list classname="preserve-padding ion-no-padding">
+
+          <ion-item class="difficulty">
+            <ion-label>Set All Difficulties</ion-label>
+            <ion-select [value]="selectedDifficulty" (ionChange)="changeAllDifficulties($event.detail.value)">
+              <ion-select-option value="Easy">Easy</ion-select-option>
+              <ion-select-option value="Normal">Normal</ion-select-option>
+              <ion-select-option value="Challenging">Challenging</ion-select-option>
+              <ion-select-option value="Nightmare">Nightmare</ion-select-option>
+            </ion-select>
+          </ion-item>
+                
+                <ion-item class="difficulty" (click)="difficultyRandom()" button detail="false">
+                  <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon> <ion-label>Randomize Difficulties</ion-label>
+                </ion-item>
+
+          <ion-item class="traits">
+            <ion-label>Traits to Randomize</ion-label>
+            <ion-select [value]="selectedTraitCount" (ionChange)="selectedTraitCount = $event.detail.value">
+              <ion-select-option [value]="0">None</ion-select-option>
+              <ion-select-option [value]="1">1 Trait</ion-select-option>
+              <ion-select-option [value]="2">2 Traits</ion-select-option>
+              <ion-select-option [value]="3">3 Traits</ion-select-option>
+              <ion-select-option [value]="4">4 Traits</ion-select-option>
+              <ion-select-option [value]="99">All Traits</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item class="traits" (click)="setTrait(selectedTraitCount)" button detail="false">
+            <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon> <ion-label>Randomize Traits</ion-label>
+          </ion-item>
+              
+            </ion-list>
+              
+          <h2 class="ion-text-center call-to-action">Want to contribute?<br>Check out the <a href="https://github.com/Vagabottos/clockroot">GitHub repo!</a></h2>
+        </ion-content>
+      </ion-menu>
+      
     <ion-router-outlet id="main"></ion-router-outlet>
 
   </ion-split-pane>

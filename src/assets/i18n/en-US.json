@@ -3,6 +3,7 @@
   "AppTitleShort": "Clockroot",
   "NavTitle": "Bots",
   "CloseText": "Close",
+  "GlobalSettings": "-Below Options Randomize ALL selected Bots-",
   "Language": "Language",
   "LederPlug": "Get the Clockwork Expansion from Leder Games!",
   "PriorityMaps": "Priority Maps",
@@ -732,6 +733,6 @@
     "UpdateScore": "{{ botname }}'s score has been updated by {{ addend }}.",
     "Actions": {
       "Undo": "Undo"
-    }
+        }
   }
 }
