@@ -122,6 +122,26 @@ export class BotService {
 
   constructor(private modalCtrl: ModalController, private alertCtrl: AlertController) {
     this.loadBots();
+    this.checkUrlForBots();
+  }
+
+  // URL on init params for which bots to load: clockroot.seiyria.com/?bots=faction,names,here (such as /?bots=Corvid,Duchy)
+  // For referencing the names in the URL ctrl+f for 'public name: BotName = ' 
+  private checkUrlForBots() {
+    const params = new URLSearchParams(window.location.search);
+    const botsParam = params.get('bots');
+
+    if (botsParam) {
+      this.clearBots()
+      const botNames = botsParam.split(',') as BotName[];
+      botNames.forEach(name => {
+        if (this.botHash[name]) { const newBot = new this.botHash[name]()
+          this.addBot(newBot);
+        }
+      })
+    }
+
+    window.history.replaceState({}, document.title, window.location.pathname)
   }
 
   public addBot(bot: Bot) {
