@@ -66,9 +66,11 @@ private checkUrlForRandomize() {
     const traits = params.get('traits');;
 
     if (difficulty) {
+      const difficultyString = ["easy","normal","challenging","hard"]
       if (difficulty.toLowerCase() === 'random') {
         this.difficultyRandom();
-      } else {
+      } 
+      else if (difficultyString.includes(difficulty.toLowerCase()) {
         const formattedDifficulty = (difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase()) as Difficulty;
         this.changeAllDifficulties(formattedDifficulty); 
       }
