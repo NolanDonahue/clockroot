@@ -70,7 +70,7 @@ private checkUrlForRandomize() {
       if (difficulty.toLowerCase() === 'random') {
         this.difficultyRandom();
       } 
-      else if (difficultyString.includes(difficulty.toLowerCase()) {
+      else if (difficultyString.includes(difficulty.toLowerCase())) {
         const formattedDifficulty = (difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase()) as Difficulty;
         this.changeAllDifficulties(formattedDifficulty); 
       }
