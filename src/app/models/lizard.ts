@@ -109,9 +109,28 @@ export class LizardBot extends Bot {
     return base
   }
 
+    public calculateEveningScore(): number {
+        const buildings = this.customData.buildings;
+        let rightmostIndex = -1;
+
+        for (let i = 0; i < 5; i++) {
+            if (buildings.fox[i] || buildings.bunny[i] || buildings.mouse[i]) {
+                rightmostIndex = i;
+            }
+        }
+
+        if (rightmostIndex === 1 || rightmostIndex === 2) return 2;
+        if (rightmostIndex === 3) return 3;
+        if (rightmostIndex === 4) return 4;
+
+        return 0;
+    }
+
   public evening(translate: TranslateService) {
-    const base = [
-        this.createMetaData('score', 1, translate.instant(`SpecificEvening.Logical Lizards.Score`)),
+      const dynamicScore = this.calculateEveningScore();
+
+      const base = [
+        this.createMetaData('score', dynamicScore, translate.instant(`SpecificEvening.Logical Lizards.Score`)),
         this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.DiscardLostSouls`)),
         this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.ReturnRevealedCards`)),
         this.createMetaData('score', 1, translate.instant(`SpecificEvening.Logical Lizards.Craft`)),
