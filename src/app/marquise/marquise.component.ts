@@ -2,6 +2,7 @@ import { Component, OnInit, Input, inject } from '@angular/core';
 import { MarquiseBot } from '../models/marquise';
 import { BotService } from '../bot.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MetaData } from '../paragraph/paragraph.component';
 
 @Component({
   selector: 'app-marquise',
@@ -14,6 +15,9 @@ export class MarquiseComponent implements OnInit {
   translateService = inject(TranslateService);
 
   @Input() public bot: MarquiseBot;
+  public birdsongMessages: MetaData[] = [];
+  public daylightMessages: MetaData[] = [];
+  public eveningMessages: MetaData[] = [];
 
   public buildings = [
     { suit: 'fox', building: 'sawmill' },
@@ -26,11 +30,29 @@ export class MarquiseComponent implements OnInit {
       this.bot.customData.buildings[suit] =
         this.bot.customData.buildings[suit] || [];
     });
+    this.refreshTurnMessages();
   }
 
-  changeSuit(suit) {
+  private refreshTurnMessages() {
+    this.birdsongMessages = this.bot.birdsong(this.translateService);
+    this.daylightMessages = this.bot.daylight(this.translateService);
+    this.eveningMessages = this.bot.evening(this.translateService);
+  }
+
+  toggleSetup() {
+    this.botService.toggleSetup(this.bot);
+    this.refreshTurnMessages();
+  }
+
+  changeDifficulty(difficulty: string) {
+    this.botService.changeDifficulty(this.bot, difficulty);
+    this.refreshTurnMessages();
+  }
+
+  changeSuit(suit: string) {
     this.bot.customData.currentSuit = suit;
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   toggleBuilding(suit, index) {
@@ -40,5 +62,6 @@ export class MarquiseComponent implements OnInit {
       !this.bot.customData.buildings[suit][index];
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 }

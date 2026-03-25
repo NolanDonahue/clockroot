@@ -12,7 +12,7 @@
     @if (!bot.setupHidden) {
       <ng-container>
         <ion-button
-          (click)="botService.toggleSetup(bot)"
+          (click)="toggleSetup()"
           [disabled]="!bot.customData.chosenVaga"
         >
           <ion-icon slot="icon-only" name="checkmark-circle"></ion-icon>
@@ -22,7 +22,7 @@
     @if (bot.setupHidden) {
       <ng-container>
         <ion-button
-          (click)="botService.toggleSetup(bot)"
+          (click)="toggleSetup()"
           [disabled]="!bot.customData.chosenVaga"
         >
           <ion-icon slot="icon-only" name="radio-button-off"></ion-icon>
@@ -120,7 +120,7 @@
                     <ion-radio
                       slot="start"
                       [value]="diff"
-                      (click)="botService.changeDifficulty(bot, diff)"
+                      (click)="changeDifficulty(diff)"
                     ></ion-radio>
 
                     <ion-label class="ion-text-wrap">
@@ -360,7 +360,7 @@
           </ion-card-header>
           <ion-card-content>
             <ol>
-              @for (message of bot.birdsong(translateService); track message) {
+              @for (message of birdsongMessages; track $index) {
                 <li class="rule-message">
                   <para [bot]="bot" [metadata]="message"></para>
                 </li>
@@ -381,7 +381,7 @@
           </ion-card-header>
           <ion-card-content>
             <ol>
-              @for (message of bot.daylight(translateService); track message) {
+              @for (message of daylightMessages; track $index) {
                 <li class="rule-message">
                   <para [bot]="bot" [metadata]="message"></para>
                 </li>
@@ -402,7 +402,7 @@
           </ion-card-header>
           <ion-card-content>
             <ol>
-              @for (message of bot.evening(translateService); track message) {
+              @for (message of eveningMessages; track $index) {
                 <li class="rule-message">
                   <para [bot]="bot" [metadata]="message"></para>
                 </li>

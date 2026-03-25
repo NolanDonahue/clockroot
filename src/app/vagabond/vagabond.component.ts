@@ -2,6 +2,7 @@ import { Component, Input, inject } from '@angular/core';
 import { VagaBot } from '../models/vagabond';
 import { BotService } from '../bot.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MetaData } from '../paragraph/paragraph.component';
 
 @Component({
   selector: 'app-vagabond',
@@ -14,6 +15,9 @@ export class VagabondComponent {
   translateService = inject(TranslateService);
 
   @Input() public bot: VagaBot;
+  public birdsongMessages: MetaData[] = [];
+  public daylightMessages: MetaData[] = [];
+  public eveningMessages: MetaData[] = [];
 
   public get descriptions() {
     return this.bot.descriptions;
@@ -38,9 +42,30 @@ export class VagabondComponent {
     }
   }
 
+  private refreshTurnMessages() {
+    this.birdsongMessages = this.bot.birdsong(this.translateService);
+    this.daylightMessages = this.bot.daylight(this.translateService);
+    this.eveningMessages = this.bot.evening(this.translateService);
+  }
+
+  ngOnInit() {
+    this.refreshTurnMessages();
+  }
+
+  toggleSetup() {
+    this.botService.toggleSetup(this.bot);
+    this.refreshTurnMessages();
+  }
+
+  changeDifficulty(difficulty: string) {
+    this.botService.changeDifficulty(this.bot, difficulty);
+    this.refreshTurnMessages();
+  }
+
   changeVaga(newVaga) {
     this.bot.customData.chosenVaga = newVaga;
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   toggleSatchelItem(item) {
@@ -50,16 +75,20 @@ export class VagabondComponent {
     }
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   removeSatchelItem($event, item) {
     $event.preventDefault();
     $event.stopPropagation();
     delete this.bot.customData.satchelItems[item];
+    this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
-  changeSuit(suit) {
+  changeSuit(suit: string) {
     this.bot.customData.currentSuit = suit;
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 }

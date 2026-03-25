@@ -2,6 +2,7 @@ import { Component, OnInit, Input, inject } from '@angular/core';
 import { EyrieBot } from '../models/eyrie';
 import { BotService } from '../bot.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MetaData } from '../paragraph/paragraph.component';
 
 @Component({
   selector: 'app-eyrie',
@@ -14,9 +15,29 @@ export class EyrieComponent implements OnInit {
   translateService = inject(TranslateService);
 
   @Input() public bot: EyrieBot;
+  public birdsongMessages: MetaData[] = [];
+  public daylightMessages: MetaData[] = [];
+  public eveningMessages: MetaData[] = [];
 
   ngOnInit() {
     this.bot.customData.buildings = this.bot.customData.buildings || [];
+    this.refreshTurnMessages();
+  }
+
+  private refreshTurnMessages() {
+    this.birdsongMessages = this.bot.birdsong(this.translateService);
+    this.daylightMessages = this.bot.daylight(this.translateService);
+    this.eveningMessages = this.bot.evening(this.translateService);
+  }
+
+  toggleSetup() {
+    this.botService.toggleSetup(this.bot);
+    this.refreshTurnMessages();
+  }
+
+  changeDifficulty(difficulty: string) {
+    this.botService.changeDifficulty(this.bot, difficulty);
+    this.refreshTurnMessages();
   }
 
   modifySuitCard(suit, diff = 1) {
@@ -26,6 +47,7 @@ export class EyrieComponent implements OnInit {
     );
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   toggleBuilding(index) {
@@ -33,5 +55,6 @@ export class EyrieComponent implements OnInit {
       !this.bot.customData.buildings[index];
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 }

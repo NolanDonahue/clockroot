@@ -6,6 +6,7 @@ import { BotService } from '../bot.service';
   selector: 'app-bot-resources',
   templateUrl: './bot-resources.component.html',
   styleUrls: ['./bot-resources.component.scss'],
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
 })
 export class BotResourcesComponent {

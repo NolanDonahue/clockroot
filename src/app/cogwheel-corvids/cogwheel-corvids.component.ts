@@ -2,6 +2,7 @@ import { Component, OnInit, Input, inject } from '@angular/core';
 import { CorvidBot } from '../models/corvid';
 import { BotService } from '../bot.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MetaData } from '../paragraph/paragraph.component';
 
 @Component({
   selector: 'app-corvid',
@@ -14,6 +15,9 @@ export class CorvidComponent implements OnInit {
   translateService = inject(TranslateService);
 
   @Input() public bot: CorvidBot;
+  public birdsongMessages: MetaData[] = [];
+  public daylightMessages: MetaData[] = [];
+  public eveningMessages: MetaData[] = [];
 
   public plots = [
     { type: 'bomb', name: 'Bomb' },
@@ -28,11 +32,29 @@ export class CorvidComponent implements OnInit {
         0, 0,
       ];
     });
+    this.refreshTurnMessages();
   }
 
-  changeSuit(suit) {
+  private refreshTurnMessages() {
+    this.birdsongMessages = this.bot.birdsong(this.translateService);
+    this.daylightMessages = this.bot.daylight(this.translateService);
+    this.eveningMessages = this.bot.evening(this.translateService);
+  }
+
+  toggleSetup() {
+    this.botService.toggleSetup(this.bot);
+    this.refreshTurnMessages();
+  }
+
+  changeDifficulty(difficulty: string) {
+    this.botService.changeDifficulty(this.bot, difficulty);
+    this.refreshTurnMessages();
+  }
+
+  changeSuit(suit: string) {
     this.bot.customData.currentSuit = suit;
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   // Cycles the plot token: //true = face-up // false = stowed or face-down
@@ -64,6 +86,7 @@ export class CorvidComponent implements OnInit {
     }
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 
   // Returns the correct icon path based on the token's current state
@@ -79,5 +102,6 @@ export class CorvidComponent implements OnInit {
     );
 
     this.botService.saveBots();
+    this.refreshTurnMessages();
   }
 }

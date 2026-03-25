@@ -35,6 +35,10 @@
                     botService.botMeta[bot.name].icon +
                     '.png'
                   "
+                  [attr.alt]="
+                    'Factions.' + botService.botMeta[bot.name].fullName
+                      | translate
+                  "
                 />
                 {{
                   'Factions.' + botService.botMeta[bot.name].fullName
@@ -59,6 +63,7 @@
               placeholder="Select Language"
               (ionChange)="languageChange()"
               [(ngModel)]="language"
+              [interfaceOptions]="{ header: 'Language' }"
             >
               <ion-select-option value="en-US"
                 >English (verified)</ion-select-option
