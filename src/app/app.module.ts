@@ -52,28 +52,25 @@ export class JSONLoader implements TranslateLoader {
 }
 
 @NgModule({
-  declarations: [FactionMenuComponent, PriorityModalComponent, AppComponent],
-  bootstrap: [AppComponent],
-  entryComponents: [FactionMenuComponent, PriorityModalComponent],
-  imports: [
-    BrowserModule, 
-    IonicModule.forRoot(), 
-    AppRoutingModule,
-    FormsModule,
-    
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useClass: JSONLoader
-      }
-    }),
-
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ]
+    declarations: [FactionMenuComponent, PriorityModalComponent, AppComponent],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(),
+        AppRoutingModule,
+        FormsModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useClass: JSONLoader
+            }
+        }),
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ],
+    providers: [
+        StatusBar,
+        SplashScreen,
+        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    ]
 })
 export class AppModule {}
