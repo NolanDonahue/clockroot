@@ -22,27 +22,52 @@
 
 <ion-content>
   <div class="blank-slate" *ngIf="botService.bots.length === 0">
-    {{ 'AddBot' | translate }} <ion-button class="ion-margin-start" (click)="addBot($event)"><ion-icon slot="icon-only" name="add"></ion-icon></ion-button>
+    {{ 'AddBot' | translate }}
+    <ion-button class="ion-margin-start" (click)="addBot($event)"
+      ><ion-icon slot="icon-only" name="add"></ion-icon
+    ></ion-button>
   </div>
 
   <ion-list lines="none" class="ion-no-padding">
-    <ion-item *ngFor="let bot of botService.bots"> <!-- Possible reason the new factions are breaking the view width? -->
+    <ion-item *ngFor="let bot of botService.bots">
+      <!-- Possible reason the new factions are breaking the view width? -->
       <app-marquise *ngIf="bot.name === 'Marquise'" [bot]="bot"></app-marquise>
       <app-eyrie *ngIf="bot.name === 'Eyrie'" [bot]="bot"></app-eyrie>
       <app-woodland *ngIf="bot.name === 'Woodland'" [bot]="bot"></app-woodland>
       <app-vagabond *ngIf="bot.name === 'Vagabond'" [bot]="bot"></app-vagabond>
-      
-      <app-marquise-dc *ngIf="bot.name === 'MarquiseDC'" [bot]="bot"></app-marquise-dc>
+
+      <app-marquise-dc
+        *ngIf="bot.name === 'MarquiseDC'"
+        [bot]="bot"
+      ></app-marquise-dc>
       <app-eyrie-dc *ngIf="bot.name === 'EyrieDC'" [bot]="bot"></app-eyrie-dc>
-      <app-woodland-dc *ngIf="bot.name === 'WoodlandDC'" [bot]="bot"></app-woodland-dc>
-      <app-vagabond-dc *ngIf="bot.name === 'VagabondDC'" [bot]="bot"></app-vagabond-dc>
+      <app-woodland-dc
+        *ngIf="bot.name === 'WoodlandDC'"
+        [bot]="bot"
+      ></app-woodland-dc>
+      <app-vagabond-dc
+        *ngIf="bot.name === 'VagabondDC'"
+        [bot]="bot"
+      ></app-vagabond-dc>
 
       <app-duchy *ngIf="bot.name === 'Duchy'" [bot]="bot"></app-duchy>
       <app-corvid *ngIf="bot.name === 'Corvid'" [bot]="bot"></app-corvid>
       <app-lizard *ngIf="bot.name === 'Lizard'" [bot]="bot"></app-lizard>
-      <app-riverfolk *ngIf="bot.name === 'Riverfolk'" [bot]="bot"></app-riverfolk>
+      <app-riverfolk
+        *ngIf="bot.name === 'Riverfolk'"
+        [bot]="bot"
+      ></app-riverfolk>
 
       <app-legion *ngIf="bot.name === 'Legion'" [bot]="bot"></app-legion>
+
+      <app-chameleandroid
+        *ngIf="bot.name === 'Chameleandroid'"
+        [bot]="bot"
+      ></app-chameleandroid>
+      <app-circuit-board-goats
+        *ngIf="bot.name === 'CircuitBoardGoats'"
+        [bot]="bot"
+      ></app-circuit-board-goats>
     </ion-item>
   </ion-list>
 </ion-content>

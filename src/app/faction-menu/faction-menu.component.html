@@ -1,27 +1,60 @@
 <ion-list class="preserve-padding">
-
-  <ion-list-header>{{ 'Expansion 1' | translate }}</ion-list-header>
-  <ion-item (click)="close(faction.id)" *ngFor="let faction of originalFactions">
-    <ion-img class="inline-icon" [src]="'assets/inicon/faction-' + faction.icon + '.png'" slot="start"></ion-img>
-    <ion-label>{{ ('Factions.' + faction.name) | translate }}</ion-label>
+  <ion-list-header>{{ "Expansion 1" | translate }}</ion-list-header>
+  <ion-item
+    (click)="close(faction.id)"
+    *ngFor="let faction of originalFactions"
+  >
+    <ion-img
+      class="inline-icon"
+      [src]="'assets/inicon/faction-' + faction.icon + '.png'"
+      slot="start"
+    ></ion-img>
+    <ion-label>{{ "Factions." + faction.name | translate }}</ion-label>
   </ion-item>
 
-  <ion-list-header>{{ 'DirectorsCut' | translate }}</ion-list-header>
+  <ion-list-header>{{ "DirectorsCut" | translate }}</ion-list-header>
   <ion-item (click)="close(faction.id)" *ngFor="let faction of dcFactions">
-    <ion-img class="inline-icon" [src]="'assets/inicon/faction-' + faction.icon + '.png'" slot="start"></ion-img>
-    <ion-label>{{ ('Factions.' + faction.name) | translate }}</ion-label>
-  </ion-item>
-  
-  <ion-list-header>{{ 'Expansion 2' | translate }}</ion-list-header>
-  <ion-item (click)="close(faction.id)" *ngFor="let faction of expansion2Factions">
-    <ion-img class="inline-icon" [src]="'assets/inicon/faction-' + faction.icon + '.png'" slot="start"></ion-img>
-    <ion-label>{{ ('Factions.' + faction.name) | translate }}</ion-label>
+    <ion-img
+      class="inline-icon"
+      [src]="'assets/inicon/faction-' + faction.icon + '.png'"
+      slot="start"
+    ></ion-img>
+    <ion-label>{{ "Factions." + faction.name | translate }}</ion-label>
   </ion-item>
 
-  <ion-list-header>{{ 'Expansion 3 (BETA)' | translate }}</ion-list-header>
-  <ion-item (click)="close(faction.id)" *ngFor="let faction of expansion3Factions">
-    <ion-img class="inline-icon" [src]="'assets/inicon/faction-' + faction.icon + '.png'" slot="start"></ion-img>
-    <ion-label>{{ ('Factions.' + faction.name) | translate }}</ion-label>
+  <ion-list-header>{{ "Expansion 2" | translate }}</ion-list-header>
+  <ion-item
+    (click)="close(faction.id)"
+    *ngFor="let faction of expansion2Factions"
+  >
+    <ion-img
+      class="inline-icon"
+      [src]="'assets/inicon/faction-' + faction.icon + '.png'"
+      slot="start"
+    ></ion-img>
+    <ion-label>{{ "Factions." + faction.name | translate }}</ion-label>
   </ion-item>
-  
+
+  <ion-list-header>{{ "Expansion 3 (BETA)" | translate }}</ion-list-header>
+  <ion-item
+    (click)="close(faction.id)"
+    *ngFor="let faction of expansion3Factions"
+  >
+    <ion-img
+      class="inline-icon"
+      [src]="'assets/inicon/faction-' + faction.icon + '.png'"
+      slot="start"
+    ></ion-img>
+    <ion-label>{{ "Factions." + faction.name | translate }}</ion-label>
+  </ion-item>
+
+  <ion-list-header>{{ "Fan Bots" | translate }}</ion-list-header>
+  <ion-item (click)="close(faction.id)" *ngFor="let faction of fanBots">
+    <ion-img
+      class="inline-icon"
+      [src]="'assets/inicon/faction-' + faction.icon + '.png'"
+      slot="start"
+    ></ion-img>
+    <ion-label>{{ "Factions." + faction.name | translate }}</ion-label>
+  </ion-item>
 </ion-list>

@@ -1,0 +1,136 @@
+:host {
+  --theme-color: #e07a37;
+  display: block;
+  width: 100%;
+}
+
+ion-toolbar {
+  --ion-color-primary: var(--theme-color);
+}
+
+.flip-back {
+  border-color: var(--theme-color) !important;
+}
+
+.ego-id-trackers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.checkbox-daylight {
+  align-self: center;
+}
+
+.tracker-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+
+  h3 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ego track: egoTrack[i][0] false = transparent token + egoTrack[i][1] VP overlay */
+.building-row .flip-container .ego-track-slot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.building-row .flip-container .ego-token-img {
+  display: block;
+  max-width: 64px;
+  max-height: 64px;
+  object-fit: contain;
+}
+
+.building-row .flip-container .ego-slot-value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--theme-color);
+  pointer-events: none;
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+}
+
+.ego-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.ego-token {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5em;
+  min-height: 2.5em;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.03);
+
+  &.on-track {
+    background: rgba(224, 122, 55, 0.15);
+  }
+
+  &.placed {
+    background: rgba(224, 122, 55, 0.3);
+  }
+}
+
+.ego-vp-icon {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+
+.ego-vp-zero {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.ego-on-board {
+  font-size: 1.2rem;
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+.row-additions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tracker-count {
+  font-size: 1.1rem;
+  min-width: 2.5em;
+  text-align: center;
+}
+
+.escalated-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  ion-checkbox {
+    flex-shrink: 0;
+  }
+
+  ion-label {
+    flex: 1;
+  }
+}

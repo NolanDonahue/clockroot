@@ -1,0 +1,44 @@
+:host {
+  --theme-color: #6b4c9a;
+  display: block;
+  width: 100%;
+}
+
+ion-toolbar {
+  --ion-color-primary: var(--theme-color);
+}
+
+.goats-tunnel-row {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.row-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.big-top-icon {
+  width: 4em;
+  height: 4em;
+  object-fit: contain;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.transparent {
+  opacity: 0.35;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--ion-color-medium, #666);
+}
+
+.birdsong-has-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
