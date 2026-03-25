@@ -77,7 +77,7 @@ this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Cor
 ```
 Updating ecosystem checklist
 
-[] Current: Angular 8.1.2 -> Projected: Angular 17+
+[x] Current: Angular 8.1.2 -> Projected: Angular 17+
 [] Current: TSLint -> Projected: ESLint
 [] Current: core-js -> Projected: includes legacy polyfills which support outdated browsers that are no longer relevant
 [] Node_modules dependency vulnerabilities
@@ -86,4 +86,18 @@ Updating ecosystem checklist
 Path: incremental update of angular CLI and core libraries
 Run the angular migration schematic for eslint
 Run npm audit to identify and fix critical vulnerabilities in the dependency tree
+```
+
+[] Toolbar for randomization is completely broken
+[] Angular 17 was last version that was not apparently totally broken
+[] Remove rules in eslint.config.ts to work through type problems
+
+```
+Don't look at this as a beautiful, shique, modernization. This is a dirty start to get in the mud.
+
+Ran the full sweep of updates for Angular, Ionic, Lint, and dependencies to bring the project up to date. I got sick of dealing with the outdated stuff so I just bit the bullet and did it. Treat this as a draft so you can just give me the wavetops on how/if you want to bother dealing with this migration. I tried to keep the commits iterative so it can be reverted to the version you're comfortable with if you want to upgrade but not dive into the full experience. Happy to make this a quick conversation to meet your vision.
+
+Angular: Updated one version at a time from Angular 8 -> Angular 21.2.3 (https://angular.dev/update-guide?v=9.1-21.0&l=1)
+Ionic: Updated as needed from Ionic 4 -> Ionic 7.2.1
+Lint: Migrated from TSLint to ESLint (https://github.com/angular-eslint/angular-eslint/blob/main/docs/MIGRATING_FROM_TSLINT.md)
 ```

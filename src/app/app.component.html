@@ -1,6 +1,6 @@
 <ion-app>
-  <ion-split-pane contentId="main" [disabled]="botService.bots.length === 0">
-    <ion-menu contentId="main">
+  <ion-split-pane content-id="main" [disabled]="botService.bots.length === 0">
+    <ion-menu content-id="main">
       <ion-header>
         <ion-toolbar>
           <ion-title>
@@ -23,7 +23,6 @@
 
           <ion-menu-toggle autoHide="false">
             @for (bot of botService.bots; track bot) {
-
               <ion-item
                 color="transparent"
                 class="bot"
@@ -42,13 +41,12 @@
                     | translate
                 }}
                 @if (!bot.setupHidden) {
-<em class="ion-margin-start"
-                  >({{ "NeedsSetup" | translate }})</em
-                >
-}
+                  <em class="ion-margin-start"
+                    >({{ "NeedsSetup" | translate }})</em
+                  >
+                }
               </ion-item>
-            
-}
+            }
             <ion-item (click)="botService.showPriorities()">
               <div class="inline-icon ion-margin-end"></div>
               {{ "PriorityMaps" | translate }}
@@ -86,7 +84,7 @@
           {{ "GlobalSettings" | translate }}
         </ion-title>
 
-        <ion-list classname="preserve-padding ion-no-padding">
+        <ion-list class="preserve-padding ion-no-padding">
           <ion-item class="difficulty">
             <ion-label>Set All Difficulties</ion-label>
             <ion-select
