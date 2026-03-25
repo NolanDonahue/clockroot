@@ -18,8 +18,8 @@ const INITIAL_HASH = window.location.hash;
 export class AppComponent implements OnInit {
 
   public language: string;
-  public selectedTraitCount: number = 1;
-  public selectedDifficulty: string = "Challenging";
+  public selectedTraitCount = 1;
+  public selectedDifficulty = "Challenging";
 
   constructor(
     private translateService: TranslateService,

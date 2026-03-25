@@ -21,7 +21,7 @@ import { PriorityModalComponent } from "./priority-modal/priority-modal.componen
   providedIn: "root",
 })
 export class BotService {
-  public botHash: { [key in BotName]: any } = {
+  public botHash: Record<BotName, any> = {
     Marquise: MarquiseBot,
     Eyrie: EyrieBot,
     Woodland: WoodlandBot,
@@ -39,7 +39,7 @@ export class BotService {
 
   public bots: Bot[] = [];
 
-  public botMeta: { [key in BotName]: { icon: string; fullName: string } } = {
+  public botMeta: Record<BotName, { icon: string; fullName: string }> = {
     Marquise: {
       icon: "marquise",
       fullName: "Mechanical Marquise",
@@ -94,7 +94,7 @@ export class BotService {
     },
   };
 
-  public itemImages: { [key in Item]: string } = {
+  public itemImages: Record<Item, string> = {
     Sack: "sack",
     Sack2: "sack",
     Sack3: "sack",

@@ -32,13 +32,13 @@ export abstract class Bot {
   public abstract name: BotName;
   public abstract setupPosition: string;
 
-  public traitHash: { [key: string]: boolean } = {};
+  public traitHash: Record<string, boolean> = {};
   public setupHidden: boolean;
 
   public setupRules: string[] = [];
   public difficulty: Difficulty = 'Normal';
-  public difficultyDescriptions: { [key in Difficulty]: string } = { Easy: '', Normal: '', Challenging: '', Nightmare: '' };
-  public items: { [key in Item]?: boolean } = {};
+  public difficultyDescriptions: Record<Difficulty, string> = { Easy: '', Normal: '', Challenging: '', Nightmare: '' };
+  public items: Partial<Record<Item, boolean>> = {};
   public rules: Rule[] = [];
   public vp = 0;
 
@@ -59,7 +59,7 @@ export abstract class Bot {
   }
 
   protected createMetaData(metatype: string, metaval: any, metatext: string): MetaData {
-    let obj = {
+    const obj = {
       text: metatext,
       type: metatype, 
       value: metaval
