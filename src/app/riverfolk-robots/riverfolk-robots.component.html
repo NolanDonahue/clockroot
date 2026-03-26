@@ -1,4 +1,3 @@
-<!-- eslint-disable @angular-eslint/template/click-events-have-key-events, @angular-eslint/template/interactive-supports-focus -->
 <ion-toolbar color="primary">
   <ion-title>
     <span id="Riverfolk">
@@ -32,10 +31,10 @@
   </ion-buttons>
 </ion-toolbar>
 
-<ion-list lines="none" class="no-pointer">
+<ion-list lines="none" class="no-pointer" [class.setup-hidden]="bot.setupHidden">
   @if (!bot.setupHidden) {
     <ng-container>
-      <ion-item>
+      <ion-item class="setup-bottom-container">
         <ion-card>
           <ion-card-header>
             <h2

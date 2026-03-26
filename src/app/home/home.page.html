@@ -21,7 +21,7 @@
 </ion-header>
 
 <ion-content>
-  @if (botService.bots.length === 0) {
+  @if (botService.bots().length === 0) {
     <div class="blank-slate">
       {{ 'AddBot' | translate }}
       <ion-button class="ion-margin-start" (click)="addBot($event)"
@@ -31,50 +31,50 @@
   }
 
   <ion-list lines="none" class="ion-no-padding">
-    @for (bot of botService.bots; track bot) {
+    @for (bot of botService.bots(); track bot) {
       <ion-item>
         <!-- Possible reason the new factions are breaking the view width? -->
         @if (bot.name === 'Marquise') {
-          <app-marquise [bot]="bot"></app-marquise>
+          <app-marquise [bot]="$any(bot)"></app-marquise>
         }
         @if (bot.name === 'Eyrie') {
-          <app-eyrie [bot]="bot"></app-eyrie>
+          <app-eyrie [bot]="$any(bot)"></app-eyrie>
         }
         @if (bot.name === 'Woodland') {
-          <app-woodland [bot]="bot"></app-woodland>
+          <app-woodland [bot]="$any(bot)"></app-woodland>
         }
         @if (bot.name === 'Vagabond') {
-          <app-vagabond [bot]="bot"></app-vagabond>
+          <app-vagabond [bot]="$any(bot)"></app-vagabond>
         }
 
         @if (bot.name === 'MarquiseDC') {
-          <app-marquise-dc [bot]="bot"></app-marquise-dc>
+          <app-marquise-dc [bot]="$any(bot)"></app-marquise-dc>
         }
         @if (bot.name === 'EyrieDC') {
-          <app-eyrie-dc [bot]="bot"></app-eyrie-dc>
+          <app-eyrie-dc [bot]="$any(bot)"></app-eyrie-dc>
         }
         @if (bot.name === 'WoodlandDC') {
-          <app-woodland-dc [bot]="bot"></app-woodland-dc>
+          <app-woodland-dc [bot]="$any(bot)"></app-woodland-dc>
         }
         @if (bot.name === 'VagabondDC') {
-          <app-vagabond-dc [bot]="bot"></app-vagabond-dc>
+          <app-vagabond-dc [bot]="$any(bot)"></app-vagabond-dc>
         }
 
         @if (bot.name === 'Duchy') {
-          <app-duchy [bot]="bot"></app-duchy>
+          <app-duchy [bot]="$any(bot)"></app-duchy>
         }
         @if (bot.name === 'Corvid') {
-          <app-corvid [bot]="bot"></app-corvid>
+          <app-corvid [bot]="$any(bot)"></app-corvid>
         }
         @if (bot.name === 'Lizard') {
-          <app-lizard [bot]="bot"></app-lizard>
+          <app-lizard [bot]="$any(bot)"></app-lizard>
         }
         @if (bot.name === 'Riverfolk') {
-          <app-riverfolk [bot]="bot"></app-riverfolk>
+          <app-riverfolk [bot]="$any(bot)"></app-riverfolk>
         }
 
         @if (bot.name === 'Legion') {
-          <app-legion [bot]="bot"></app-legion>
+          <app-legion [bot]="$any(bot)"></app-legion>
         }
       </ion-item>
     }

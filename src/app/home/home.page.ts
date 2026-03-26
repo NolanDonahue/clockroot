@@ -1,4 +1,4 @@
-import { Component, inject, NgZone } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import {
   AlertController,
@@ -47,7 +47,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class HomePage {
   private popoverCtrl = inject(PopoverController);
   private alertCtrl = inject(AlertController);
-  private ngZone = inject(NgZone);
   botService = inject(BotService);
 
   public async addBot(ev: Event) {
@@ -63,10 +62,8 @@ export class HomePage {
         return;
       }
       const botName = res.data as BotName;
-      this.ngZone.run(() =>
-        this.botService.addBot(
-          new (this.botService.botHash[botName] as new () => Bot)(),
-        ),
+      this.botService.addBot(
+        new (this.botService.botHash[botName] as new () => Bot)(),
       );
     });
 
@@ -87,7 +84,7 @@ export class HomePage {
         {
           text: 'Yes, reset!',
           handler: () => {
-            this.ngZone.run(() => this.botService.clearBots());
+            this.botService.clearBots();
           },
         },
       ],

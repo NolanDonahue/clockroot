@@ -1,4 +1,4 @@
-import { Injectable, NgZone, computed, inject, signal } from '@angular/core';
+import { Injectable, computed, inject, signal } from '@angular/core';
 
 import { Bot, Difficulty, Rule, Item, BotName } from './models/bot';
 import { MarquiseBot } from './models/marquise';
@@ -23,26 +23,11 @@ import { PriorityModalComponent } from './priority-modal/priority-modal.componen
 export class BotService {
   private modalCtrl = inject(ModalController);
   private alertCtrl = inject(AlertController);
-  private ngZone = inject(NgZone);
 
-  /** Drives `ion-split-pane` without `appRef.tick()` (avoids NG0100 on AppComponent). */
-  private readonly botsLengthSig = signal(0);
-  readonly splitPaneDisabled = computed(() => this.botsLengthSig() === 0);
-
-  /**
-   * App shell menu iterates this signal so list updates use signal-based CD.
-   * Plain `bots` + ion-item img [src] was still hitting NG0100 after popover dismiss.
-   */
-  private readonly menuBotsSig = signal<Bot[]>([]);
-  readonly menuBots = this.menuBotsSig.asReadonly();
-
-  private syncSplitPaneFromBots(): void {
-    this.botsLengthSig.set(this.bots.length);
-  }
-
-  private syncMenuBotsFromSource(): void {
-    this.menuBotsSig.set([...this.bots]);
-  }
+  private readonly _bots = signal<Bot[]>([]);
+  readonly bots = this._bots.asReadonly();
+  readonly menuBots = this.bots;
+  readonly splitPaneDisabled = computed(() => this._bots().length === 0);
 
   public botHash: Record<BotName, new () => Bot> = {
     Marquise: MarquiseBot,
@@ -59,8 +44,6 @@ export class BotService {
     Riverfolk: RiverfolkBot,
     Legion: LegionBot,
   };
-
-  public bots: Bot[] = [];
 
   public botMeta: Record<BotName, { icon: string; fullName: string }> = {
     Marquise: {
@@ -195,7 +178,7 @@ export class BotService {
   }
 
   public changeAllDifficulties(difficulty: Difficulty) {
-    this.bots.forEach((bot) => {
+    this._bots().forEach((bot) => {
       this.changeDifficulty(bot, difficulty);
     });
   }
@@ -208,7 +191,7 @@ export class BotService {
       'Nightmare',
     ];
 
-    this.bots.forEach((bot) => {
+    this._bots().forEach((bot) => {
       const randomDiff = difficulties[this.getRandomIntInclusive(0, 3)];
       this.changeDifficulty(bot, randomDiff);
     });
@@ -217,7 +200,7 @@ export class BotService {
   public setTrait(num: number) {
     if (num === null || num === undefined) return;
 
-    this.bots.forEach((bot) => {
+    this._bots().forEach((bot) => {
       const togglableRules = bot.rules.filter((rule) => rule.canToggle);
       togglableRules.forEach((rule) => (rule.isActive = false));
 
@@ -233,12 +216,11 @@ export class BotService {
   }
 
   public addBot(bot: Bot) {
-    if (this.bots.some((x) => x.name === bot.name)) {
+    if (this._bots().some((x) => x.name === bot.name)) {
       return;
     }
 
-    this.bots = [...this.bots, bot];
-    this.syncMenuBotsFromSource();
+    this._bots.update((current) => [...current, bot]);
     this.saveBots();
   }
 
@@ -256,11 +238,8 @@ export class BotService {
         {
           text: 'Yes, remove!',
           handler: () => {
-            this.ngZone.run(() => {
-              this.bots = this.bots.filter((x) => x !== bot);
-              this.syncMenuBotsFromSource();
-              this.saveBots();
-            });
+            this._bots.update((current) => current.filter((x) => x !== bot));
+            this.saveBots();
           },
         },
       ],
@@ -270,8 +249,7 @@ export class BotService {
   }
 
   public clearBots() {
-    this.bots = [];
-    this.syncMenuBotsFromSource();
+    this._bots.set([]);
     this.saveBots();
   }
 
@@ -341,19 +319,17 @@ export class BotService {
   }
 
   public saveBots() {
-    localStorage.setItem('bots', JSON.stringify(this.bots));
-    this.syncSplitPaneFromBots();
+    localStorage.setItem('bots', JSON.stringify(this._bots()));
   }
 
   private loadBots() {
     const loadedBots = localStorage.getItem('bots') || '[]';
     const parsedBots: unknown = JSON.parse(loadedBots);
 
-    this.bots = [];
+    const nextBots: Bot[] = [];
 
     if (!Array.isArray(parsedBots)) {
-      this.syncMenuBotsFromSource();
-      this.syncSplitPaneFromBots();
+      this._bots.set([]);
       return;
     }
 
@@ -392,10 +368,9 @@ export class BotService {
       }
 
       this.generateTraitHash(botRef);
-      this.bots.push(botRef);
+      nextBots.push(botRef);
     });
-    this.syncMenuBotsFromSource();
-    this.syncSplitPaneFromBots();
+    this._bots.set(nextBots);
   }
 
   public async showPriorities() {

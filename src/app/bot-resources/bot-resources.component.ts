@@ -41,7 +41,10 @@ export class BotResourcesComponent {
 
   public vagaItemOrder: Item[] = Object.keys(this.itemImages) as Item[];
 
-  setVP($event: CustomEvent<{ value: number }>) {
+  setVP($event: CustomEvent<{ value: number | { lower: number; upper: number } | undefined }>) {
+    if (typeof $event.detail.value !== 'number') {
+      return;
+    }
     this.botService.setVP(this.bot, $event.detail.value);
   }
 

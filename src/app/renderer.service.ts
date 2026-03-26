@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { marked, Renderer } from 'marked';
+import { marked, Renderer, Tokens } from 'marked';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +15,9 @@ export class RendererService {
   private getCustomRenderer(): Renderer {
     const renderer = new Renderer();
 
-    renderer.strong = (text: string) => {
+    renderer.strong = function ({ tokens }: Tokens.Strong): string {
+      const text = this.parser.parseInline(tokens);
+
       if (text.includes(':')) {
         const [type, subtype] = text.split(':');
         return `<img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />`;
@@ -23,8 +25,10 @@ export class RendererService {
       return `<strong>${text}</strong>`;
     };
 
-    renderer.paragraph = (text: string) => {
-      return `<p class="paragraph">${text}</p>`;
+    renderer.paragraph = function ({ tokens }: Tokens.Paragraph): string {
+      const text = this.parser.parseInline(tokens);
+
+      return `<span class="paragraph">${text}</span>`;
     };
 
     return renderer;
@@ -34,7 +38,6 @@ export class RendererService {
     if (!str) {
       return '';
     }
-    const rendered = marked(str, { renderer: this.renderer });
-    return rendered;
+    return marked(str, { renderer: this.renderer, async: false }) as string;
   }
 }

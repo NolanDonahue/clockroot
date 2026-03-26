@@ -1,5 +1,3 @@
-import { ActivatedRoute } from '@angular/router';
-
 import { Component, OnInit, inject } from '@angular/core';
 import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
@@ -18,6 +16,18 @@ import { FormsModule } from '@angular/forms';
 
 const INITIAL_SEARCH = window.location.search;
 const INITIAL_HASH = window.location.hash;
+const LANGUAGE_MAP: Record<string, string> = {
+  fr: 'fr-FR',
+  es: 'es-ES',
+  de: 'de-DE',
+  ja: 'ja-JP',
+  ko: 'ko-KR',
+  nl: 'nl-NL',
+  pl: 'pl-PL',
+  pt: 'pt-BR',
+  ru: 'ru-RU',
+  zh: 'zh-CN',
+};
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -26,7 +36,6 @@ const INITIAL_HASH = window.location.hash;
 })
 export class AppComponent implements OnInit {
   private translateService = inject(TranslateService);
-  private route = inject(ActivatedRoute);
   botService = inject(BotService);
 
   public language = 'en-US';
@@ -46,29 +55,8 @@ export class AppComponent implements OnInit {
     this.language = localStorage.getItem('lang') ?? '';
     if (!this.language) {
       const baseLang = navigator.language || 'en-US';
-      if (baseLang.split('-')[0] === 'fr') {
-        this.language = 'fr-FR';
-      } else if (baseLang.split('-')[0] === 'es') {
-        this.language = 'es-ES';
-      } else if (baseLang.split('-')[0] === 'de') {
-        this.language = 'de-DE';
-      } else if (baseLang.split('-')[0] === 'ja') {
-        this.language = 'ja-JP';
-      } else if (baseLang.split('-')[0] === 'ko') {
-        this.language = 'ko-KR';
-      } else if (baseLang.split('-')[0] === 'nl') {
-        this.language = 'nl-NL';
-      } else if (baseLang.split('-')[0] === 'pl') {
-        this.language = 'pl-PL';
-      } else if (baseLang.split('-')[0] === 'pt') {
-        this.language = 'pt-BR';
-      } else if (baseLang.split('-')[0] === 'ru') {
-        this.language = 'ru-RU';
-      } else if (baseLang.split('-')[0] === 'zh') {
-        this.language = 'zh-CN';
-      } else {
-        this.language = 'en-US';
-      }
+      const languageCode = baseLang.split('-')[0];
+      this.language = LANGUAGE_MAP[languageCode] ?? 'en-US';
     }
 
     this.updateTranslate();

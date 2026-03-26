@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+ion-content {
+  --padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+
 // Fill the main (router) column; ion-split-pane leaves only part of the viewport for this page.
 ion-content ion-list {
   width: 100%;

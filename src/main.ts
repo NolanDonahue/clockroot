@@ -1,29 +1,55 @@
 import '@angular/compiler';
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { importProvidersFrom } from '@angular/core';
 
-import { JSONLoader } from './app/app.module';
+import { JSONLoader } from './app/translate-loader';
 import { environment } from './environments/environment';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { RouteReuseStrategy } from '@angular/router';
-import { IonicRouteStrategy, IonicModule } from '@ionic/angular';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
-import { AppRoutingModule } from './app/app-routing.module';
+import {
+  PreloadAllModules,
+  RouteReuseStrategy,
+  provideRouter,
+  withPreloading,
+} from '@angular/router';
+import { AlertController, IonicRouteStrategy, ModalController } from '@ionic/angular';
+import { provideIonicAngular } from '@ionic/angular/standalone';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { provideServiceWorker } from '@angular/service-worker';
+import { addIcons } from 'ionicons';
+import {
+  add,
+  arrowForward,
+  checkmarkCircle,
+  radioButtonOff,
+  refresh,
+  remove,
+  shuffle,
+  trash,
+} from 'ionicons/icons';
 import { AppComponent } from './app/app.component';
+import { routes } from './app/app.routes';
 
-if (environment.production) {
-  enableProdMode();
-}
+addIcons({
+  add,
+  arrowForward,
+  checkmarkCircle,
+  radioButtonOff,
+  refresh,
+  remove,
+  shuffle,
+  trash,
+});
 
 bootstrapApplication(AppComponent, {
   providers: [
+    provideRouter(routes, withPreloading(PreloadAllModules)),
+    provideIonicAngular({}),
+    AlertController,
+    ModalController,
+    provideServiceWorker('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
     importProvidersFrom(
-      BrowserModule,
-      IonicModule.forRoot(),
-      AppRoutingModule,
       FormsModule,
       TranslateModule.forRoot({
         loader: {
@@ -31,18 +57,8 @@ bootstrapApplication(AppComponent, {
           useClass: JSONLoader,
         },
       }),
-      ServiceWorkerModule.register('ngsw-worker.js', {
-        enabled: environment.production,
-      }),
     ),
-    StatusBar,
-    SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
 })
-  .then(() => {
-    if ('serviceWorker' in navigator && environment.production) {
-      navigator.serviceWorker.register('./ngsw-worker.js');
-    }
-  })
   .catch((err) => console.log(err));
