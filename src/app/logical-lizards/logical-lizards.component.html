@@ -301,7 +301,7 @@
                 <ion-button style="visibility: hidden">
                   <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
                 </ion-button>
-                @for (img of acolyteActions; track img; let i = $index) {
+                @for (img of acolyteActions; track $index; let i = $index) {
                   <div class="acolyte-wrapper">
                     <img [src]="img" alt="" class="flip-back" />
 
