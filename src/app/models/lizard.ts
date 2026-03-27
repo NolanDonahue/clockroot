@@ -2,23 +2,16 @@ import { TranslateService } from '@ngx-translate/core';
 import { Bot, BotName } from './bot';
 
 export class LizardBot extends Bot {
-
   public name: BotName = 'Lizard';
 
   public setupPosition = 'F';
-  public setupRules = [
-    `Setup0`,
-    `Setup1`,
-    `Setup2`,
-    `Setup3`,
-    `Setup4`
-  ];
+  public setupRules = [`Setup0`, `Setup1`, `Setup2`, `Setup3`, `Setup4`];
 
   public difficultyDescriptions = {
     Easy: `Easy`,
     Normal: 'Normal',
     Challenging: `Challenging`,
-    Nightmare: `Nightmare`
+    Nightmare: `Nightmare`,
   };
 
   public rules = [
@@ -26,140 +19,201 @@ export class LizardBot extends Bot {
       traitName: 'Poor Manual Dexterity',
       name: 'RulePoorManualDexterity',
       text: `TextPoorManualDexterity`,
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Hates Surprises',
       name: 'RuleHatesSurprises',
       text: 'TextHatesSurprises',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Pilgrims',
       name: 'RulePilgrims',
       text: 'TextPilgrims',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Robot Revenge',
       name: 'RuleRobotRevenge',
       text: 'TextRobotRevenge',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Fanatics',
       name: 'RuleFanatics',
       text: 'TextFanatics',
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Martyrs',
       name: 'RuleMartyrs',
       text: `TextMartyrs`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Erratic',
       name: 'RuleErratic',
       text: `TextErratic`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Spiteful',
       name: 'RuleSpiteful',
       text: `TextSpiteful`,
-      canToggle: true
+      canToggle: true,
     },
   ];
   // This one is gonna need a sermon on the mount with how whacky Lizards is. SpecificExtras may need to be used to address Lost Souls, Conspiracies, Acolytes... I'll probably think about this one last.
-  public customData = {
+  public customData: {
+    currentSuit: string;
+    buildings: Record<string, boolean[]>;
+    acolyteTracker: number;
+    conspiracyIndex: number;
+  } = {
     currentSuit: 'bird',
 
     buildings: {
       fox: [],
       bunny: [],
-      mouse: []
-    },    
+      mouse: [],
+    },
 
     acolyteTracker: 0,
     conspiracyIndex: 4,
   };
 
   public setup(): void {
+    // Intentional empty hook for subclasses
   }
 
   public birdsong(translate: TranslateService) {
     const suit = this.customData.currentSuit;
 
     return [
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Logical Lizards.Outcasts`)),
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Logical Lizards.Conspiracy`, {suit})),
-      this.createMetaData('text', '',translate.instant(`SpecificExtra.Logical Lizards.Conspiracy`, {suit}))
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Logical Lizards.Outcasts`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Logical Lizards.Conspiracy`, {
+          suit,
+        }),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificExtra.Logical Lizards.Conspiracy`, { suit }),
+      ),
     ];
   }
 
   public daylight(translate: TranslateService) {
-    const suit = this.customData.currentSuit;
-    const difficulty = (this.difficulty === "Easy" ? 3 : this.difficulty === "Normal" ? 4 : this.difficulty === "Challenging" ? 5 : 5);
-    const checkBird = suit==="bird";
-    const base = []
+    const difficulty =
+      this.difficulty === 'Easy'
+        ? 3
+        : this.difficulty === 'Normal'
+          ? 4
+          : this.difficulty === 'Challenging'
+            ? 5
+            : 5;
+    const base = [];
 
-    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {difficulty})))
-    
-    return base
+    base.push(
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificDaylight.Logical Lizards.Rituals`, {
+          difficulty,
+        }),
+      ),
+    );
+
+    return base;
   }
 
-    public calculateEveningScore(): number {
-        const buildings = this.customData.buildings;
-        let rightmostIndex = -1;
+  public calculateEveningScore(): number {
+    const buildings = this.customData.buildings;
+    let rightmostIndex = -1;
 
-        for (let i = 0; i < 5; i++) {
-            if (buildings.fox[i] || buildings.bunny[i] || buildings.mouse[i]) {
-                rightmostIndex = i;
-            }
-        }
-
-        if (rightmostIndex === 1 || rightmostIndex === 2) return 2;
-        if (rightmostIndex === 3) return 3;
-        if (rightmostIndex === 4) return 4;
-
-        return 0;
+    for (let i = 0; i < 5; i++) {
+      if (buildings.fox[i] || buildings.bunny[i] || buildings.mouse[i]) {
+        rightmostIndex = i;
+      }
     }
 
-  public evening(translate: TranslateService) {
-      const dynamicScore = this.calculateEveningScore();
+    if (rightmostIndex === 1 || rightmostIndex === 2) return 2;
+    if (rightmostIndex === 3) return 3;
+    if (rightmostIndex === 4) return 4;
 
-      const base = [
-        this.createMetaData('score', dynamicScore, translate.instant(`SpecificEvening.Logical Lizards.Score`)),
-        this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.DiscardLostSouls`)),
-        this.createMetaData('text', '', translate.instant(`SpecificEvening.Logical Lizards.ReturnRevealedCards`)),
-        this.createMetaData('score', 1, translate.instant(`SpecificEvening.Logical Lizards.Craft`)),
-    ]
+    return 0;
+  }
+
+  public evening(translate: TranslateService) {
+    const dynamicScore = this.calculateEveningScore();
+
+    const base = [
+      this.createMetaData(
+        'score',
+        dynamicScore,
+        translate.instant(`SpecificEvening.Logical Lizards.Score`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificEvening.Logical Lizards.DiscardLostSouls`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(
+          `SpecificEvening.Logical Lizards.ReturnRevealedCards`,
+        ),
+      ),
+      this.createMetaData(
+        'score',
+        1,
+        translate.instant(`SpecificEvening.Logical Lizards.Craft`),
+      ),
+    ];
 
     if (this.difficulty === 'Nightmare') {
       base.push(
-        this.createMetaData('score', 1, translate.instant('SpecificEvening.Electric Eyrie (DC).NightmareScore'))
+        this.createMetaData(
+          'score',
+          1,
+          translate.instant(
+            'SpecificEvening.Electric Eyrie (DC).NightmareScore',
+          ),
+        ),
       );
     }
 
     base.push(
-      (
-        
-     this.createMetaData('text','',
-      (this.rules.some(rules=>rules.traitName==="Erratic" && rules.isActive) ?
-      translate.instant(`SpecificEvening.Logical Lizards.ErraticReminder`) : ''))
-      )
-    )
+      this.createMetaData(
+        'text',
+        '',
+        this.rules.some(
+          (rules) => rules.traitName === 'Erratic' && rules.isActive,
+        )
+          ? translate.instant(`SpecificEvening.Logical Lizards.ErraticReminder`)
+          : '',
+      ),
+    );
 
     return base;
-  
   }
 
-  public extra(translate:TranslateService) {
-    const suit = this.customData.currentSuit;
-
+  public extra(translate: TranslateService) {
     return [
-      this.createMetaData('text', '',translate.instant(`SpecificExtra.Logical Lizards.Lost Souls`)),
-    ]
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificExtra.Logical Lizards.Lost Souls`),
+      ),
+    ];
   }
 }

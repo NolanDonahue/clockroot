@@ -1,42 +1,43 @@
 import { Injectable } from '@angular/core';
 
-import * as marked from 'marked';
+import { marked, Renderer, Tokens } from 'marked';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RendererService {
-
-  private renderer: any;
+  private renderer: Renderer;
 
   constructor() {
     this.renderer = this.getCustomRenderer();
   }
 
-  private getCustomRenderer(): marked.Renderer {
-    const renderer = new marked.Renderer();
+  private getCustomRenderer(): Renderer {
+    const renderer = new Renderer();
 
-    // custom inline image formatter
-    renderer.strong = (text: string) => {
+    renderer.strong = function ({ tokens }: Tokens.Strong): string {
+      const text = this.parser.parseInline(tokens);
+
       if (text.includes(':')) {
         const [type, subtype] = text.split(':');
-
         return `<img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />`;
       }
-
       return `<strong>${text}</strong>`;
     };
 
-    renderer.paragraph = (text: string) => {
-      return `<p class="paragraph">${text}</p>`
-    }
+    renderer.paragraph = function ({ tokens }: Tokens.Paragraph): string {
+      const text = this.parser.parseInline(tokens);
+
+      return `<span class="paragraph">${text}</span>`;
+    };
 
     return renderer;
   }
 
   public formatString(str: string): string {
-    if (!str) { return ''; }
-    return marked(str, { renderer: this.renderer });
+    if (!str) {
+      return '';
+    }
+    return marked(str, { renderer: this.renderer, async: false }) as string;
   }
-
 }

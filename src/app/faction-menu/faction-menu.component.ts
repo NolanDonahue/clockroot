@@ -1,98 +1,93 @@
-import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
-
+import { Component, inject } from '@angular/core';
+import { PopoverController, IonicModule } from '@ionic/angular';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-faction-menu',
   templateUrl: './faction-menu.component.html',
   styleUrls: ['./faction-menu.component.scss'],
+  imports: [IonicModule, TranslatePipe],
 })
-export class FactionMenuComponent implements OnInit {
+export class FactionMenuComponent {
+  popoverCtrl = inject(PopoverController);
 
   public originalFactions = [
     {
       name: 'Automated Alliance',
       id: 'Woodland',
-      icon: 'woodland'
+      icon: 'woodland',
     },
     {
       name: 'Electric Eyrie',
       id: 'Eyrie',
-      icon: 'eyrie'
+      icon: 'eyrie',
     },
     {
       name: 'Mechanical Marquise',
       id: 'Marquise',
-      icon: 'marquise'
+      icon: 'marquise',
     },
     {
       name: 'Vagabot',
       id: 'Vagabond',
-      icon: 'vagabond'
-    }
+      icon: 'vagabond',
+    },
   ];
 
   public dcFactions = [
     {
       name: 'Automated Alliance (DC)',
       id: 'WoodlandDC',
-      icon: 'woodland'
+      icon: 'woodland',
     },
     {
       name: 'Electric Eyrie (DC)',
       id: 'EyrieDC',
-      icon: 'eyrie'
+      icon: 'eyrie',
     },
     {
       name: 'Mechanical Marquise (DC)',
       id: 'MarquiseDC',
-      icon: 'marquise'
+      icon: 'marquise',
     },
     {
       name: 'Vagabot (DC)',
       id: 'VagabondDC',
-      icon: 'vagabond'
-    }
+      icon: 'vagabond',
+    },
   ];
 
   public expansion2Factions = [
     {
       name: 'Cogwheel Corvids',
       id: 'Corvid',
-      icon: 'corvid'
+      icon: 'corvid',
     },
     {
       name: 'Drillbit Duchy',
       id: 'Duchy',
-      icon: 'duchy'
-    },    
-        {
+      icon: 'duchy',
+    },
+    {
       name: 'Logical Lizards',
       id: 'Lizard',
-      icon: 'lizard'
+      icon: 'lizard',
     },
-        {
+    {
       name: 'Riverfolk Robots',
       id: 'Riverfolk',
-      icon: 'riverfolk'
-    }
+      icon: 'riverfolk',
+    },
   ];
 
   public expansion3Factions = [
     {
       name: 'Looting Legion',
       id: 'Legion',
-      icon: 'legion'
-    }
-  ]
+      icon: 'legion',
+    },
+  ];
 
-  constructor(
-    public popoverCtrl: PopoverController
-  ) { }
-
-  ngOnInit() {}
-
-  close(res) {
+  close(res: string) {
     this.popoverCtrl.dismiss(res);
   }
-
 }

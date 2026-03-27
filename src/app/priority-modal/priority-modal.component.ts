@@ -1,44 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-
+import { Component, inject } from '@angular/core';
+import { ModalController, IonicModule } from '@ionic/angular';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-priority-modal',
   templateUrl: './priority-modal.component.html',
   styleUrls: ['./priority-modal.component.scss'],
+  imports: [IonicModule, TranslatePipe],
 })
-export class PriorityModalComponent implements OnInit {
+export class PriorityModalComponent {
+  private modalCtrl = inject(ModalController);
 
   public img = 'fall';
 
   public buttonsAndImages = [
     {
       name: 'Fall',
-      map: 'fall'
+      map: 'fall',
     },
     {
       name: 'Winter',
-      map: 'winter'
+      map: 'winter',
     },
     {
       name: 'Lake',
-      map: 'lake'
+      map: 'lake',
     },
     {
       name: 'Mountain',
-      map: 'mountain'
-    }
+      map: 'mountain',
+    },
   ];
 
-  constructor(private modalCtrl: ModalController) { }
-
-  ngOnInit() {}
-
-  changeMap(img) {
+  changeMap(img: string) {
     this.img = img;
   }
 
   dismiss() {
     this.modalCtrl.dismiss();
   }
-
 }

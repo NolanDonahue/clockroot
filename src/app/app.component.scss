@@ -1,6 +1,10 @@
+// When split mode is active (menu + main side-by-side), Ionic defaults can leave the menu fairly wide.
+// Tighter menu column gives more horizontal space to bot content in `ion-router-outlet`.
+ion-split-pane {
+  --side-max-width: 25%;
+}
 
 .language {
-
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 
@@ -11,9 +15,7 @@
   ion-select {
     width: 100%;
     max-width: 100%;
-    padding-left: 32px;
   }
-
 }
 
 .plug {
@@ -22,24 +24,19 @@
   padding-top: 8px;
 }
 
+ion-select.select-wrapper::part(wrapper) {
+  justify-content: flex-end;
+}
+
 ion-item.bot {
   font-size: 0.8rem;
 }
 
 .call-to-action {
-    position:fixed;
-    bottom: 0;
-    min-width: 100%;
-    max-width: 100%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-}
-
-.difficulty, .traits {
-  ion-label {
-    padding-left: 32px;
-  }
-}
-.random-icon {
-  padding-right: 32px;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }

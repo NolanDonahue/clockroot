@@ -2,20 +2,16 @@ import { TranslateService } from '@ngx-translate/core';
 import { Bot, BotName } from './bot';
 
 export class CorvidBot extends Bot {
-
   public name: BotName = 'Corvid';
 
   public setupPosition = 'I';
-  public setupRules = [
-    `Setup0`,
-    `Setup1`
-  ];
+  public setupRules = [`Setup0`, `Setup1`];
 
   public difficultyDescriptions = {
     Easy: `Easy`,
     Normal: 'Normal',
     Challenging: `Challenging`,
-    Nightmare: `Nightmare`
+    Nightmare: `Nightmare`,
   };
 
   public rules = [
@@ -23,80 +19,126 @@ export class CorvidBot extends Bot {
       traitName: 'Poor Manual Dexterity',
       name: 'RulePoorManualDexterity',
       text: `TextPoorManualDexterity`,
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Hates Surprises',
       name: 'RuleHatesSurprises',
       text: 'TextHatesSurprises',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Embedded Agents',
       name: 'RuleEmbeddedAgents',
       text: 'TextEmbeddedAgents',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Nimble',
       name: 'RuleNimble',
       text: 'TextNimble',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Backup Plans',
       name: 'RuleBackupPlans',
       text: 'TextBackupPlans',
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Vendetta',
       name: 'RuleVendetta',
       text: `TextVendetta`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Gamble',
       name: 'RuleGamble',
       text: `TextGamble`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Mastermind',
       name: 'RuleMastermind',
       text: `TextMastermind`,
-      canToggle: true
+      canToggle: true,
     },
   ];
 
-  public customData = {
+  public customData: {
+    currentSuit: string;
+    stowedPlots: number;
+    plots: Record<string, boolean[]>;
+  } = {
     currentSuit: 'bird',
     stowedPlots: 8, //Tracks number of plots currently stowed, not face-up or face-down on board
     plots: {
-      bomb: [false, false],       
-      snare: [false, false],      //true = face-up // false = stowed or face-down
+      bomb: [false, false],
+      snare: [false, false], //true = face-up // false = stowed or face-down
       extortion: [false, false],
-      raid: [false, false]
-    }
+      raid: [false, false],
+    },
   };
 
   public setup(): void {
-
+    // Intentional empty hook for subclasses
   }
 
   public birdsong(translate: TranslateService) {
     const suit = this.customData.currentSuit;
-    const difficulty = (this.difficulty === "Easy" ? 1 : this.difficulty === "Normal" ? 2 : this.difficulty === "Challenging" ? 3 : 3);
+    const difficulty =
+      this.difficulty === 'Easy'
+        ? 1
+        : this.difficulty === 'Normal'
+          ? 2
+          : this.difficulty === 'Challenging'
+            ? 3
+            : 3;
 
     const base = [
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RevealOrder`)),
-      this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Cogwheel Corvids.CraftOrder`)),
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Cogwheel Corvids.RecruitOrder`,{difficulty, suit })),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Cogwheel Corvids.RevealOrder`),
+      ),
+      this.createMetaData(
+        'score',
+        1,
+        translate.instant(`SpecificBirdsong.Cogwheel Corvids.CraftOrder`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Cogwheel Corvids.RecruitOrder`, {
+          difficulty,
+          suit,
+        }),
+      ),
     ];
-    const baseString = ''
-    const vendettaCheck = this.rules.some(rule=>rule.traitName === "Vendetta" && rule.isActive)
-    const gambleCheck = this.rules.some(rule=>rule.traitName === "Gamble" && rule.isActive)
-    base.push(this.createMetaData('score', 1, baseString.concat(translate.instant(`SpecificBirdsong.Cogwheel Corvids.Flip`), vendettaCheck ? translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipVendetta`):'', gambleCheck ? translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`):'')))
+    const baseString = '';
+    const vendettaCheck = this.rules.some(
+      (rule) => rule.traitName === 'Vendetta' && rule.isActive,
+    );
+    const gambleCheck = this.rules.some(
+      (rule) => rule.traitName === 'Gamble' && rule.isActive,
+    );
+    base.push(
+      this.createMetaData(
+        'score',
+        1,
+        baseString.concat(
+          translate.instant(`SpecificBirdsong.Cogwheel Corvids.Flip`),
+          vendettaCheck
+            ? translate.instant(
+                `SpecificBirdsong.Cogwheel Corvids.FlipVendetta`,
+              )
+            : '',
+          gambleCheck
+            ? translate.instant(`SpecificBirdsong.Cogwheel Corvids.FlipGamble`)
+            : '',
+        ),
+      ),
+    );
 
     return base;
   }
@@ -104,28 +146,71 @@ export class CorvidBot extends Bot {
   public daylight(translate: TranslateService) {
     const suit = this.customData.currentSuit;
     const base = [
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Battle`,{ suit })),
-      this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.Move`,{ suit })),
-    ]
-    
-    const baseString = ''
-    const mastermindCheck = this.rules.some(rules=>rules.traitName === "Mastermind" && rules.isActive)
-    base.push(this.createMetaData('text','',baseString.concat(translate.instant(`SpecificDaylight.Cogwheel Corvids.Plot`,{ suit }),mastermindCheck ? translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotMastermind`):'')));
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificDaylight.Cogwheel Corvids.Battle`, { suit }),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificDaylight.Cogwheel Corvids.Move`, { suit }),
+      ),
+    ];
 
-    base.push(this.createMetaData('text', '', translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotThickens`)),)
-    
-    return base
+    const baseString = '';
+    const mastermindCheck = this.rules.some(
+      (rules) => rules.traitName === 'Mastermind' && rules.isActive,
+    );
+    base.push(
+      this.createMetaData(
+        'text',
+        '',
+        baseString.concat(
+          translate.instant(`SpecificDaylight.Cogwheel Corvids.Plot`, { suit }),
+          mastermindCheck
+            ? translate.instant(
+                `SpecificDaylight.Cogwheel Corvids.PlotMastermind`,
+              )
+            : '',
+        ),
+      ),
+    );
+
+    base.push(
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificDaylight.Cogwheel Corvids.PlotThickens`),
+      ),
+    );
+
+    return base;
   }
 
   public evening(translate: TranslateService) {
     const suit = this.customData.currentSuit;
     const eveningActions = [
-      this.createMetaData('score', 1, translate.instant(`SpecificEvening.Cogwheel Corvids.Score`,{ suit })),
-      this.createMetaData('text', '', translate.instant(`SpecificEvening.Cogwheel Corvids.Discard`))
-    ]
+      this.createMetaData(
+        'score',
+        1,
+        translate.instant(`SpecificEvening.Cogwheel Corvids.Score`, { suit }),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificEvening.Cogwheel Corvids.Discard`),
+      ),
+    ];
     if (this.difficulty === 'Nightmare') {
       eveningActions.push(
-        this.createMetaData('score', 1, translate.instant('SpecificEvening.Electric Eyrie (DC).NightmareScore'))
+        this.createMetaData(
+          'score',
+          1,
+          translate.instant(
+            'SpecificEvening.Electric Eyrie (DC).NightmareScore',
+          ),
+        ),
       );
     }
 
@@ -133,20 +218,48 @@ export class CorvidBot extends Bot {
   }
 
   public botRules(translate: TranslateService) {
-    const suit = this.customData.currentSuit;
-
-    return[
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.BotInteractions.Bomb`)),
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.BotInteractions.Snare`))
+    return [
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(
+          `SpecificExtra.Cogwheel Corvids.BotInteractions.Bomb`,
+        ),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(
+          `SpecificExtra.Cogwheel Corvids.BotInteractions.Snare`,
+        ),
+      ),
     ];
   }
 
   public plotRules(translate: TranslateService) {
     return [
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Bomb`)),
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Snare`)),
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Extortion`)),
-      this.createMetaData('text', '', translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Raid`))
-    ]
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Bomb`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Snare`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(
+          `SpecificExtra.Cogwheel Corvids.Plot-Tokens.Extortion`,
+        ),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificExtra.Cogwheel Corvids.Plot-Tokens.Raid`),
+      ),
+    ];
   }
 }

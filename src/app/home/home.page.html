@@ -21,28 +21,62 @@
 </ion-header>
 
 <ion-content>
-  <div class="blank-slate" *ngIf="botService.bots.length === 0">
-    {{ 'AddBot' | translate }} <ion-button class="ion-margin-start" (click)="addBot($event)"><ion-icon slot="icon-only" name="add"></ion-icon></ion-button>
-  </div>
+  @if (botService.bots().length === 0) {
+    <div class="blank-slate">
+      {{ 'AddBot' | translate }}
+      <ion-button class="ion-margin-start" (click)="addBot($event)"
+        ><ion-icon slot="icon-only" name="add"></ion-icon
+      ></ion-button>
+    </div>
+  }
 
   <ion-list lines="none" class="ion-no-padding">
-    <ion-item *ngFor="let bot of botService.bots"> <!-- Possible reason the new factions are breaking the view width? -->
-      <app-marquise *ngIf="bot.name === 'Marquise'" [bot]="bot"></app-marquise>
-      <app-eyrie *ngIf="bot.name === 'Eyrie'" [bot]="bot"></app-eyrie>
-      <app-woodland *ngIf="bot.name === 'Woodland'" [bot]="bot"></app-woodland>
-      <app-vagabond *ngIf="bot.name === 'Vagabond'" [bot]="bot"></app-vagabond>
-      
-      <app-marquise-dc *ngIf="bot.name === 'MarquiseDC'" [bot]="bot"></app-marquise-dc>
-      <app-eyrie-dc *ngIf="bot.name === 'EyrieDC'" [bot]="bot"></app-eyrie-dc>
-      <app-woodland-dc *ngIf="bot.name === 'WoodlandDC'" [bot]="bot"></app-woodland-dc>
-      <app-vagabond-dc *ngIf="bot.name === 'VagabondDC'" [bot]="bot"></app-vagabond-dc>
+    @for (bot of botService.bots(); track bot) {
+      <ion-item>
+        <!-- Possible reason the new factions are breaking the view width? -->
+        @if (bot.name === 'Marquise') {
+          <app-marquise [bot]="$any(bot)"></app-marquise>
+        }
+        @if (bot.name === 'Eyrie') {
+          <app-eyrie [bot]="$any(bot)"></app-eyrie>
+        }
+        @if (bot.name === 'Woodland') {
+          <app-woodland [bot]="$any(bot)"></app-woodland>
+        }
+        @if (bot.name === 'Vagabond') {
+          <app-vagabond [bot]="$any(bot)"></app-vagabond>
+        }
 
-      <app-duchy *ngIf="bot.name === 'Duchy'" [bot]="bot"></app-duchy>
-      <app-corvid *ngIf="bot.name === 'Corvid'" [bot]="bot"></app-corvid>
-      <app-lizard *ngIf="bot.name === 'Lizard'" [bot]="bot"></app-lizard>
-      <app-riverfolk *ngIf="bot.name === 'Riverfolk'" [bot]="bot"></app-riverfolk>
+        @if (bot.name === 'MarquiseDC') {
+          <app-marquise-dc [bot]="$any(bot)"></app-marquise-dc>
+        }
+        @if (bot.name === 'EyrieDC') {
+          <app-eyrie-dc [bot]="$any(bot)"></app-eyrie-dc>
+        }
+        @if (bot.name === 'WoodlandDC') {
+          <app-woodland-dc [bot]="$any(bot)"></app-woodland-dc>
+        }
+        @if (bot.name === 'VagabondDC') {
+          <app-vagabond-dc [bot]="$any(bot)"></app-vagabond-dc>
+        }
 
-      <app-legion *ngIf="bot.name === 'Legion'" [bot]="bot"></app-legion>
-    </ion-item>
+        @if (bot.name === 'Duchy') {
+          <app-duchy [bot]="$any(bot)"></app-duchy>
+        }
+        @if (bot.name === 'Corvid') {
+          <app-corvid [bot]="$any(bot)"></app-corvid>
+        }
+        @if (bot.name === 'Lizard') {
+          <app-lizard [bot]="$any(bot)"></app-lizard>
+        }
+        @if (bot.name === 'Riverfolk') {
+          <app-riverfolk [bot]="$any(bot)"></app-riverfolk>
+        }
+
+        @if (bot.name === 'Legion') {
+          <app-legion [bot]="$any(bot)"></app-legion>
+        }
+      </ion-item>
+    }
   </ion-list>
 </ion-content>

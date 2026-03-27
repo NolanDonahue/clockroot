@@ -1,0 +1,10 @@
+# Ignore artifacts
+build
+coverage
+
+# Ignore dependencies
+node_modules
+
+# Ignore specific file types
+*.min.js
+*.svg

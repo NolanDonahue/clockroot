@@ -1,4 +1,3 @@
-
 :host {
   --theme-color: #ddd432;
 }
@@ -12,8 +11,8 @@ ion-toolbar {
 }
 
 :host {
-  display: block;   /* Add this */
-  width: 100%;      /* Add this */
+  display: block; /* Add this */
+  width: 100%; /* Add this */
   --theme-color: #ddd432;
 }
 
@@ -30,36 +29,38 @@ ion-toolbar {
 }
 
 .building-count {
-    font-size: 1.5rem;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30px;
-    text-align: center;
-  }
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+  text-align: center;
+}
 .row-additions {
-    display: flex;
-    align-items: center;
-    padding-left: 1em;
-  }
-.acolyte-wrapper { /*This stops the higher res images from taking up more of the screen by locking the size of the box... */
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+.acolyte-wrapper {
+  /*This stops the higher res images from taking up more of the screen by locking the size of the box... */
   position: relative;
   display: inline-block;
   margin: 0 5px;
 
-  width: 4.5em;       
+  width: 4.5em;
   height: 5em;
 
   @media (min-width: 768px) {
-    width: 6em;     
+    width: 6em;
     height: 6em;
-  }      
+  }
 }
 
-.acolyte-wrapper img { /*...and then forcing the image to fit that box*/
-  display: block; 
-  width: 100%;      
-  height: 100%;     
-  object-fit: contain; 
+.acolyte-wrapper img {
+  /*...and then forcing the image to fit that box*/
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .acolyte-overlay {
@@ -68,16 +69,16 @@ ion-toolbar {
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   /* Centers the background image nicely */
   background-image: url(/assets/inicon/token-outcast-hatred.png);
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 20%;
-  border: .3em solid #000000;
+  border: 0.3em solid #000000;
   /* Prevents the overlay from blocking clicks if you ever make the images clickable */
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .building-row {
@@ -87,9 +88,26 @@ ion-toolbar {
 
 .acolyte-row-center {
   justify-content: center;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .row-additions.center-fix {
-  padding-left: 0; 
+  padding-left: 0;
+}
+
+ion-list.no-pointer:not(.setup-hidden) > ion-item:nth-of-type(3) {
+  margin-bottom: 16px;
+}
+
+ion-list.no-pointer.setup-hidden > ion-item:last-child {
+  margin-bottom: 16px;
+}
+
+ion-card-content {
+  padding-bottom: 16px;
+}
+
+ion-card-content > ol {
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }

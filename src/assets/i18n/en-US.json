@@ -167,9 +167,9 @@
       "Setup4": "Draw 5 cards and add them to your Market."
     },
     "Looting Legion": {
-      "Setup0":"**Gather** pieces and form supplies of 20 warriors, 1 warlord, and 6 strongholds.",
-      "Setup1":"**Place** the four 'R' items randomly under the ruins on the map.",
-      "Setup2":"**Garrison**: Place your starting clearing with a warlord, four warriors, and one stronghold in a random corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing."
+      "Setup0": "**Gather** pieces and form supplies of 20 warriors, 1 warlord, and 6 strongholds.",
+      "Setup1": "**Place** the four 'R' items randomly under the ruins on the map.",
+      "Setup2": "**Garrison**: Place your starting clearing with a warlord, four warriors, and one stronghold in a random corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing."
     }
   },
   "SpecificDifficulty": {
@@ -196,7 +196,7 @@
       "Normal": "Nothing is changed.",
       "Challenging": "Whenever you **Recruit**, also place two warriors in the ordered clearing you rule of highest priority.",
       "Nightmare": "Whenever you **Recruit**, also place two warriors in the ordered clearing you rule of highest priority. At the end of Evening, score one victory point."
-    }, 
+    },
     "Electric Eyrie (DC)": {
       "Easy": "Whenever you **Recruit** for bird, instead place one fewer warrior.",
       "Normal": "Nothing is changed.",
@@ -221,35 +221,35 @@
       "Challenging": "Whenever you **Recruit**, instead place five warriors.",
       "Nightmare": "Whenever you **Recruit**, instead place five warriors. At the end of Evening, score one victory point per two players (rounded up)."
     },
-    "Cogwheel Corvids": {  
-      "Easy": "Whenever you **Recruit**, instead place only one warrior in each of two ordered clearings.",  
-      "Normal": "Whenever you **Recruit**, instead place two warriors in each of two ordered clearings.",  
-      "Challenging": "Whenever you **Recruit**, instead place three warriors in each of two ordered clearings.",  
+    "Cogwheel Corvids": {
+      "Easy": "Whenever you **Recruit**, instead place only one warrior in each of two ordered clearings.",
+      "Normal": "Whenever you **Recruit**, instead place two warriors in each of two ordered clearings.",
+      "Challenging": "Whenever you **Recruit**, instead place three warriors in each of two ordered clearings.",
       "Nightmare": "Whenever you **Recruit**, instead place three warriors in each of two ordered clearings. At the end of Evening, score one victory point per two players (rounded up)."
     },
-    "Drillbit Duchy": {  
-      "Easy": "Whenever you **Recruit**, instead recruit only one warrior, plus one per mole showing, into the burrow.",  
-      "Normal": "Whenever you **Recruit**, instead recruit two warriors, plus one per mole showing, into the burrow.",  
-      "Challenging": "Whenever you **Recruit**, instead recruit three warriors, plus one per mole showing, into the burrow.",  
+    "Drillbit Duchy": {
+      "Easy": "Whenever you **Recruit**, instead recruit only one warrior, plus one per mole showing, into the burrow.",
+      "Normal": "Whenever you **Recruit**, instead recruit two warriors, plus one per mole showing, into the burrow.",
+      "Challenging": "Whenever you **Recruit**, instead recruit three warriors, plus one per mole showing, into the burrow.",
       "Nightmare": "Whenever you **Recruit**, instead recruit three warriors, plus one per mole showing, into the burrow. At the end of Evening, score one victory point per two players (rounded up)."
     },
-    "Logical Lizards": {  
-      "Easy": "Whenever you perform **Rituals**, reveal only three cards from your Lost Souls.",  
-      "Normal": "Whenever you perform **Rituals**, reveal only four cards from your Lost Souls.",  
-      "Challenging": "Whenever you perform **Rituals**, reveal five cards from your Lost Souls.",  
+    "Logical Lizards": {
+      "Easy": "Whenever you perform **Rituals**, reveal only three cards from your Lost Souls.",
+      "Normal": "Whenever you perform **Rituals**, reveal only four cards from your Lost Souls.",
+      "Challenging": "Whenever you perform **Rituals**, reveal five cards from your Lost Souls.",
       "Nightmare": "Whenever you perform **Rituals**, reveal five cards from your Lost Souls. At the end of Evening, score one victory point per two players (rounded up)."
     },
-    "Riverfolk Robots": {  
-      "Easy": "Whenever you **Build and Garrison**, place no warrior at the trade post.",  
-      "Normal": "Whenever you **Build and Garrison**, place one warrior at the trade post.",  
-      "Challenging": "Whenever you **Build and Garrison**, place two warriors at the trade post.",  
+    "Riverfolk Robots": {
+      "Easy": "Whenever you **Build and Garrison**, place no warrior at the trade post.",
+      "Normal": "Whenever you **Build and Garrison**, place one warrior at the trade post.",
+      "Challenging": "Whenever you **Build and Garrison**, place two warriors at the trade post.",
       "Nightmare": "Whenever you **Build and Garrison**, place two warriors at the trade post. At the end of Evening, score one victory point per two players (rounded up)."
     },
     "Looting Legion": {
-      "Easy":"Whenever you **recruit**, place one fewer warriors in your warlord's clearing.",
-      "Normal":"Whenever you **recruit**, place one extra warrior in your warlord's clearing before placing warriors at strongholds.",
-      "Challenging":"Whenever you **recruit**, place two extra warriors in your warlord's clearing before placing warriors at strongholds.",
-      "Nightmare":"Whenever you **recruit**, place two extra warriors in your warlord's clearing before placing warriors at strongholds. At the end of evening score **VP:1** per two enemy players (rounded up)."
+      "Easy": "Whenever you **recruit**, place one fewer warriors in your warlord's clearing.",
+      "Normal": "Whenever you **recruit**, place one extra warrior in your warlord's clearing before placing warriors at strongholds.",
+      "Challenging": "Whenever you **recruit**, place two extra warriors in your warlord's clearing before placing warriors at strongholds.",
+      "Nightmare": "Whenever you **recruit**, place two extra warriors in your warlord's clearing before placing warriors at strongholds. At the end of evening score **VP:1** per two enemy players (rounded up)."
     }
   },
   "SpecificRules": {
@@ -340,7 +340,7 @@
     "TextRobotRevenge": "Whenever any Lizard warriors are removed outside your turn, place one of them in your Acolytes box.",
     "RuleFanatics": "Fanatics",
     "TextFanatics": "Whenever you **Convert**, battle in that clearing after converting the warrior. In this battle deal an extra hit. *Player Tie: Target player with most defenseless buildings, then most points.*.",
-    "RuleMartyrs": "Martyrs", 
+    "RuleMartyrs": "Martyrs",
     "TextMartyrs": "Whenever you perform a bird ritual, also place a warrior from your supply into your Acolytes box.",
     "RuleErratic": "Erratic",
     "TextErratic": "At the end of your turn, draw a card and add it to your Lost Souls.",
@@ -358,10 +358,10 @@
     "RuleInvolved": "Involved",
     "TextInvolved": "If a human does not buy your Mercenaries service on their turn, treat your warriors as if all of that player's enemies bought Mercenaries. The Vagabond can buy Mercenaries to avoid this penalty but does not benefit from the service.",
 
-    "RuleAutomatedLooters":"Automated Looters",
-    "TextAutomatedLooters":"In battle as attacker **with the warlord** against a defender with an available item in a clearing you rule - deal no rolled hits and take 1 item from the Defender.",
-    "RuleWarlord":"The Warlord",
-    "TextWarlord":"Your warlord is a warrior that cannot be removed outside battle, moved outside your turn, or placed except with Anoint. *The Warlord's clearing always matches the ordered suit.*"
+    "RuleAutomatedLooters": "Automated Looters",
+    "TextAutomatedLooters": "In battle as attacker **with the warlord** against a defender with an available item in a clearing you rule - deal no rolled hits and take 1 item from the Defender.",
+    "RuleWarlord": "The Warlord",
+    "TextWarlord": "Your warlord is a warrior that cannot be removed outside battle, moved outside your turn, or placed except with Anoint. *The Warlord's clearing always matches the ordered suit.*"
   },
   "SpecificBirdsong": {
     "Electric Eyrie": {
@@ -412,8 +412,8 @@
       "CraftOrder": "**Craft** order card for **vp:1** if it shows an available item.",
       "RecruitOrder": "**Recruit** {{difficulty}} warriors in each of two **card:{{suit}}** clearings. (Priority to clearings without plot tokens then with most Corvid warriors.)<br>(If you have no warriors in supply, immediately do the **Plot Thickens** before placing the remaining warriors.)",
       "Flip": "**Flip** each plot token (no warrior required). Each time you flip a plot, score +1 victory point per face-up plot on the map, then resolve its When Flipped effect if any.",
-      "FlipVendetta":"<br>*Vendetta: All 'When Flipped' effects trigger bomb as well.*",
-      "FlipGamble":"<br>*Gamble: When plot's would be flipped - the human with the most pieces in the clearing guesses its type. If correct, flip and score, DO NOT resolve the effect, then remove the token* **vp:1**. *If incorrect, Corvid's score* **vp:1**"
+      "FlipVendetta": "<br>*Vendetta: All 'When Flipped' effects trigger bomb as well.*",
+      "FlipGamble": "<br>*Gamble: When plot's would be flipped - the human with the most pieces in the clearing guesses its type. If correct, flip and score, DO NOT resolve the effect, then remove the token* **vp:1**. *If incorrect, Corvid's score* **vp:1**"
     },
     "Drillbit Duchy": {
       "RevealOrder": "Reveal an order card.",
@@ -430,9 +430,9 @@
       "SetOrder": "Set order to be the rightmost Market Card."
     },
     "Looting Legion": {
-      "Reveal":"**Reveal** the top card of the deck as the order card.",
-      "Raze":"**Raze**: At each mob, remove all enemy buildings and tokens, take an item from ruin if any, and remove the ruin if it's empty.",
-      "Recruit":"**Recruit** {{hoardNum}} {{warriorsWord}} in your warlord's clearing, then one warrior at each stronghold."
+      "Reveal": "**Reveal** the top card of the deck as the order card.",
+      "Raze": "**Raze**: At each mob, remove all enemy buildings and tokens, take an item from ruin if any, and remove the ruin if it's empty.",
+      "Recruit": "**Recruit** {{hoardNum}} {{warriorsWord}} in your warlord's clearing, then one warrior at each stronghold."
     }
   },
   "SpecificDaylight": {
@@ -523,7 +523,7 @@
       "Battle": "**Battle** in each of two **card:{{suit}}** clearings. (Defender Tie: Player with the most buildings and tokens there, then with the most points.)",
       "Move": "**Move** all but two warriors from each **card:{{suit}}** clearing with a face-up plot to an adjacent clearing with no plot. (Clearing Tie: Most Corvid Warriors.) (No Such Destination: Lowest Priority Clearing.)",
       "Plot": "**Plot** in the **card:{{suit}}** clearing with the most Corvid warriors and no plot, remove one Corvid warrior there to place a random facedown plot there.",
-      "PlotMastermind":"<br>*Mastermind: Plot twice every turn.*",
+      "PlotMastermind": "<br>*Mastermind: Plot twice every turn.*",
       "PlotThickens": "**Plot Thickens**:In a clearing that has no plot and three or more Corvid warriors, remove a Corvid warrior from there to place a random facedown plot there. (Clearing Tie: Most Corvid Warriors.)"
     },
     "Drillbit Duchy": {
@@ -531,8 +531,8 @@
       "DigNoTunnel": "<br/>*No tunnel in supply, take and place the tunnel from the clearing with the fewest Duchy warriors*",
       "DigBird": "<br>*(Clearing Tie **card:{{suit}}**: Such a clearing with the most enemy buildings and tokens*",
       "DigTie": "<br>*(Clearing Tie **card:{{suit}}**: Such a clearing with the most empty building slots, then fewest enemy warriors.)*",
-      "DigInvaders":"<br>*(Clearing Tie: A **card:{{suit}}** clearing with the most enemy buildings, then the fewest enemy warriors. If you cannot build because no building slots are open, **battle** in each clearing.)*",
-      "DigOverwhelm":"<br>*Dig twice per turn.*",
+      "DigInvaders": "<br>*(Clearing Tie: A **card:{{suit}}** clearing with the most enemy buildings, then the fewest enemy warriors. If you cannot build because no building slots are open, **battle** in each clearing.)*",
+      "DigOverwhelm": "<br>*Dig twice per turn.*",
       "Battle": "**Battle** in each **card:{{suit}}** clearing. (Defender Tie: Player with the most buildings, then the most pieces, then the most points.)",
       "BattleCaptain": "**Battle** in each **card:{{suit}}** clearing. (Defender Tie: Player with the most buildings, then the most pieces, then the most points.)<br/>**Captain** is swayed, do not forget his effect in battle.",
       "Build": "**Build** in the clearing you rule with the most Duchy warriors. Place a citadel if you have 9+ warriors in your supply. Otherwise, place a market. Score **vp:1** if you cannot place a building while one is in supply.",
@@ -550,11 +550,11 @@
       "BattleSword": "Battle in each **card:{{suit}}** clearing. (Defender Tie: Player who has the fewest warriors in payments.)"
     },
     "Looting Legion": {
-      "Battle":"**Battle** in each **card:{{suit}}** clearing. <i>(Remember looters.)</i> <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Defender Tie</b>: Target player with available items.</i>",
-      "Move":"**Move** all but 2 warriors from each **card:{{suit}}** clearing to the adjacent clearing with the most enemy pieces. Do not move warriors from the Warlord's clearing.",
-      "Build":"**Build** a stronghold in a **card:{{suit}}** clearing you rule.",
-      "Advance":"**Advance** {{hoardNum}} {{timesWord}}: To advance, each time move the Warlord and all but 1 warriors in its clearing to the adjacent clearing with the most enemy pieces and battle there.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Move to a clearing you do not rule, then the highest-numbered (lowest priority) clearing.*<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Cannot Move</i></b>*: If unable to move, still battle.* <br> Each time the Warlord moves into a clearing with a Ruin and no mob, immediately place a mob in that clearing.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</i></b>*: First remove a mob from a clearing with the least adjacent Ruins or buildings.*",
-      "Anoint":"**Anoint** if the warlord is off the map: Place the warlord into the clearing with the most of your warriors."
+      "Battle": "**Battle** in each **card:{{suit}}** clearing. <i>(Remember looters.)</i> <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Defender Tie</b>: Target player with available items.</i>",
+      "Move": "**Move** all but 2 warriors from each **card:{{suit}}** clearing to the adjacent clearing with the most enemy pieces. Do not move warriors from the Warlord's clearing.",
+      "Build": "**Build** a stronghold in a **card:{{suit}}** clearing you rule.",
+      "Advance": "**Advance** {{hoardNum}} {{timesWord}}: To advance, each time move the Warlord and all but 1 warriors in its clearing to the adjacent clearing with the most enemy pieces and battle there.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Move to a clearing you do not rule, then the highest-numbered (lowest priority) clearing.*<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Cannot Move</i></b>*: If unable to move, still battle.* <br> Each time the Warlord moves into a clearing with a Ruin and no mob, immediately place a mob in that clearing.<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</i></b>*: First remove a mob from a clearing with the least adjacent Ruins or buildings.*",
+      "Anoint": "**Anoint** if the warlord is off the map: Place the warlord into the clearing with the most of your warriors."
     }
   },
   "SpecificEvening": {
@@ -625,12 +625,12 @@
       "Score": "**Score** **vp:1** per warrior of the player with the most warriors in Payments, then remove those warriors from Payments.",
       "Racketeering": "**Protectionism**: From each clearing, take all but two Riverfolk warriors and place them in Payments.",
       "Discard": "**Discard** the leftmost card from the Market.",
-      "DiscardShield":"**Protectionism (Shield Only)**: Discard the leftmost card from the market again."
+      "DiscardShield": "**Protectionism (Shield Only)**: Discard the leftmost card from the market again."
     },
     "Looting Legion": {
-      "Incite":"**Incite**: Place a mob in a **card:{{suit}}** clearing adjacent to a mob. If you can't, place a mob in an ordered clearing with one of your warriors without a mob. <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Clearing with ruins, then most buildings, and tokens.* <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</b></i>*: First remove a Mob from the clearing with the least adjacent Ruins or buildings.*",
-      "Score":"**Score**: Score **vp:1** for every 2 clearings you rule.",
-      "Discard":"**Discard** the order card."
+      "Incite": "**Incite**: Place a mob in a **card:{{suit}}** clearing adjacent to a mob. If you can't, place a mob in an ordered clearing with one of your warriors without a mob. <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Clearing Tie</i></b>*: Clearing with ruins, then most buildings, and tokens.* <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>No Mobs Left</b></i>*: First remove a Mob from the clearing with the least adjacent Ruins or buildings.*",
+      "Score": "**Score**: Score **vp:1** for every 2 clearings you rule.",
+      "Discard": "**Discard** the order card."
     }
   },
   "SpecificExtra": {
@@ -710,85 +710,70 @@
       }
     },
     "Logical Lizards": {
-      "Lost Souls" : "**Lost Souls**: Whenever a card is spent or discarded, place it in the Lost Souls pile instead.",
+      "Lost Souls": "**Lost Souls**: Whenever a card is spent or discarded, place it in the Lost Souls pile instead.",
       "Conspiracy": "**Conspiracies** *Determine target player first, then target clearing.*<br><br>**Convert**<br>In an ordered clearing, replace an enemy warrior with a Lizard warrior.<br>*Player Tie*: Player with the most points.<br>*Clearing Tie*: Clearing with the most enemy buildings.<br>**Crusade**<br>Battle in each **card:{{suit}}** clearing that has 2+ Lizard warriors.<br>*Defender Tie*: Player with the most points there.<br>**Sanctify**<br>In a **card:{{suit}}** clearing, replace an enemy building with a matching garden.<br>*Player Tie*: Player with the most points.<br>*Clearing Tie*: Clearing with the least enemy warriors."
     },
     "Riverfolk Robots": {
       "prot": "In Organize (Daylight/3rd) check for these conditions.",
       "protShield": "Does Payments have no warriors?",
       "protSword": "Does your supply have no warriors?",
-      "tradePost":"Whenever a player removes a trade post, remove half of their warriors from Payments (rounded up.)",
-      "servicesBirdsong":"At the start of Birdsong, another player may buy one service plus one per clearing with a trade post and their faction pieces.",
-      "servicesCost":"They pay for the service by placing warriors in Payments, depending on how many victory points they have. If their faction has no warriors, place Riverfolk warriors instead.",
-      "servicesVictoryPoints":"<br>*0-9 Victory Points = 2 Warriors | 10-19 Victory Points = 3 Warriors | 20+ Victory Points = 4 Warriors*",
-      "serviceCard":"**Hand Card**: Take a card and add it to your hand.",
-      "serviceBoat":"**Riverboat**: Treat rivers as paths for this turn.",
-      "serviceMerc":"**Mercenaries**: For battle and rule in Daylight and Evening, you treat Riverfolk warriors as your own, except for battle against the Riverfolk. In battle, you must split hits between your faction pieces and Riverfolk warriors."
+      "tradePost": "Whenever a player removes a trade post, remove half of their warriors from Payments (rounded up.)",
+      "servicesBirdsong": "At the start of Birdsong, another player may buy one service plus one per clearing with a trade post and their faction pieces.",
+      "servicesCost": "They pay for the service by placing warriors in Payments, depending on how many victory points they have. If their faction has no warriors, place Riverfolk warriors instead.",
+      "servicesVictoryPoints": "<br>*0-9 Victory Points = 2 Warriors | 10-19 Victory Points = 3 Warriors | 20+ Victory Points = 4 Warriors*",
+      "serviceCard": "**Hand Card**: Take a card and add it to your hand.",
+      "serviceBoat": "**Riverboat**: Treat rivers as paths for this turn.",
+      "serviceMerc": "**Mercenaries**: For battle and rule in Daylight and Evening, you treat Riverfolk warriors as your own, except for battle against the Riverfolk. In battle, you must split hits between your faction pieces and Riverfolk warriors."
     },
     "Looting Legion": {
-      "Hoard":"<br>Score **vp:2** if the hoard is full and you would add another item, then remove that item from the game."
+      "Hoard": "<br>Score **vp:2** if the hoard is full and you would add another item, then remove that item from the game."
     }
   },
   "ToastMessages": {
     "UpdateScore": "{{ botname }}'s score has been updated by {{ addend }}.",
     "Actions": {
       "Undo": "Undo"
-        }
-  },    
-      "Looting Legion": {
-        "section": {
-    
-        },
-        "setup": {
-          "setup0": "Place Chameleandroid in the lowest priority clearing.",
-          "setup1": "Place ego tokens in any order on each space of the ego track (randomly if playing with Patron trait card.)"
-        },
-        "traits": {
-          "charmingName": "Charming Mech",
-          "charmingText": "Chameleandroid is a warrior that ignores rule while moving and can deal 2 rolled hits in battle. Your warriors cannot be removed from the board or be moved outside your turn. Remove ego for hits you take in your clearing.",
-          "cloakingName": "Cloaking Tech",
-          "clockingText":"For a human to initiate battle with you, they must discard a card."
-        },
-        "birdsong": {
-          "reveal":"**Reveal** the top card of the deck as the order card.",
-          "craft": "**Craft** order card for **vp:1** if it shows an available item."
-        },
-        "daylight": {
-          "daylightX": "If no enemies have **fewer** VP, perform Escalated Daylight instead.",
-          "appear":"**Appear**. Move directly to a **card:{{suit}}** clearing with any open building slots, then with the most warriors of the player with the fewest VP. <br>*Player Tie: The player with the fewest VP that is latest in turn order.*",
-          "place":"**Place** ego.",
-          "gentrify":"**Gentrify**. Force the player with the fewest VP to recruit 2 warriors into your clearing. They then may place a token or building (scoring as normal), ignoring placement restrictions. (Buildings must go in open slots; if Vagabond, they may repair or refresh an item.) If they placed a building or token (or repaired/refreshed an item) then place ego. If they didn't, move an ego onto the ID without scoring. <br>*Player Tie: The player with the fewest VP that is latest in turn order.*",
-          "targetX": "**Target**. Move directly to the **card:{{suit}}** clearing where the enemy player with the most VP has the most buildings and tokens, then the fewest warriors, (if Vagabond, move to their clearing now.)<br>*Player Tie: Pick the enemy player with the most VP that is in a clearing and that is first in turn order. If no enemies are in a **card:{{suit}}** clearing, replace the order card until one is. Then, Target.*"
-        },
-        "evening": {
-          "disappear":"*Disappear**. Move directly to the clearing with the fewest tokens, then fewest buildings, then fewest warriors.",
-          "discard":"**Discard** the order card."
-        },
-        "extra": {
-          "ego":"For each ego you can't place when prompted, score **vp:3**. Ego moves with Chameleandroid. Ego is placed in Chameleandroid's clearing. Once per turn, if an effect would try to remove or replace your warrior, remove an ego instead. Once per turn, if an effect would let you place or replace 1 or more warriors anywhere on the map, place an ego in your clearing instead, scoring as normal.",
-          "id":"Ego moved here cannot be removed from here nor placed again."
-    
-        }
-      },
-        "chameleandroid": {
-        "section": {
-    
-        },
-        "setup": {
-    
-        },
-        "traits": {
-    
-        },
-        "birdsong": {
-    
-        },
-        "daylight": {
-    
-        },
-        "evening": {
-    
-        },
-        "extra": {
-          
-}}}
+    }
+  },
+  "Looting Legion": {
+    "section": {},
+    "setup": {
+      "setup0": "Place Chameleandroid in the lowest priority clearing.",
+      "setup1": "Place ego tokens in any order on each space of the ego track (randomly if playing with Patron trait card.)"
+    },
+    "traits": {
+      "charmingName": "Charming Mech",
+      "charmingText": "Chameleandroid is a warrior that ignores rule while moving and can deal 2 rolled hits in battle. Your warriors cannot be removed from the board or be moved outside your turn. Remove ego for hits you take in your clearing.",
+      "cloakingName": "Cloaking Tech",
+      "clockingText": "For a human to initiate battle with you, they must discard a card."
+    },
+    "birdsong": {
+      "reveal": "**Reveal** the top card of the deck as the order card.",
+      "craft": "**Craft** order card for **vp:1** if it shows an available item."
+    },
+    "daylight": {
+      "daylightX": "If no enemies have **fewer** VP, perform Escalated Daylight instead.",
+      "appear": "**Appear**. Move directly to a **card:{{suit}}** clearing with any open building slots, then with the most warriors of the player with the fewest VP. <br>*Player Tie: The player with the fewest VP that is latest in turn order.*",
+      "place": "**Place** ego.",
+      "gentrify": "**Gentrify**. Force the player with the fewest VP to recruit 2 warriors into your clearing. They then may place a token or building (scoring as normal), ignoring placement restrictions. (Buildings must go in open slots; if Vagabond, they may repair or refresh an item.) If they placed a building or token (or repaired/refreshed an item) then place ego. If they didn't, move an ego onto the ID without scoring. <br>*Player Tie: The player with the fewest VP that is latest in turn order.*",
+      "targetX": "**Target**. Move directly to the **card:{{suit}}** clearing where the enemy player with the most VP has the most buildings and tokens, then the fewest warriors, (if Vagabond, move to their clearing now.)<br>*Player Tie: Pick the enemy player with the most VP that is in a clearing and that is first in turn order. If no enemies are in a **card:{{suit}}** clearing, replace the order card until one is. Then, Target.*"
+    },
+    "evening": {
+      "disappear": "*Disappear**. Move directly to the clearing with the fewest tokens, then fewest buildings, then fewest warriors.",
+      "discard": "**Discard** the order card."
+    },
+    "extra": {
+      "ego": "For each ego you can't place when prompted, score **vp:3**. Ego moves with Chameleandroid. Ego is placed in Chameleandroid's clearing. Once per turn, if an effect would try to remove or replace your warrior, remove an ego instead. Once per turn, if an effect would let you place or replace 1 or more warriors anywhere on the map, place an ego in your clearing instead, scoring as normal.",
+      "id": "Ego moved here cannot be removed from here nor placed again."
+    }
+  },
+  "chameleandroid": {
+    "section": {},
+    "setup": {},
+    "traits": {},
+    "birdsong": {},
+    "daylight": {},
+    "evening": {},
+    "extra": {}
+  }
+}

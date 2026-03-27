@@ -2,22 +2,16 @@ import { TranslateService } from '@ngx-translate/core';
 import { Bot, BotName } from './bot';
 
 export class VagaBotDC extends Bot {
-
   public name: BotName = 'VagabondDC';
 
   public setupPosition = 'D';
-  public setupRules = [
-    `Setup0`,
-    `Setup1`,
-    `Setup2`,
-    `Setup3`
-  ];
+  public setupRules = [`Setup0`, `Setup1`, `Setup2`, `Setup3`];
 
   public difficultyDescriptions = {
     Easy: `Easy`,
     Normal: 'Normal',
     Challenging: `Challenging`,
-    Nightmare: `Nightmare`
+    Nightmare: `Nightmare`,
   };
 
   public rules = [
@@ -25,60 +19,65 @@ export class VagaBotDC extends Bot {
       traitName: 'Poor Manual Dexterity',
       name: 'RulePoorManualDexterity',
       text: `TextPoorManualDexterity`,
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Hates Surprises',
       name: 'RuleHatesSurprises',
       text: 'TextHatesSurprises',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Lone Wanderer',
       name: 'RuleLoneWanderer',
       text: 'TextLoneWanderer',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Nimble',
       name: 'RuleNimble',
       text: 'TextNimble',
-      isActive: true
+      isActive: true,
     },
     {
       traitName: 'Adventurer',
       name: 'RuleAdventurer',
       text: `TextAdventurer`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Berserker',
       name: 'RuleBerserker',
       text: `TextBerserker`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Helper',
       name: 'RuleHelper',
       text: `TextHelperDC`,
-      canToggle: true
+      canToggle: true,
     },
     {
       traitName: 'Marksman',
       name: 'RuleMarksman',
       text: `TextMarksman`,
-      canToggle: true
+      canToggle: true,
     },
   ];
 
-  public descriptions = {
+  public descriptions: Record<string, string> = {
     Tinker: `SpecificExtra.Vagabot (DC).DescTinker`,
     Thief: 'SpecificExtra.Vagabot (DC).DescThief',
-    Ranger: 'SpecificExtra.Vagabot (DC).DescRanger'
+    Ranger: 'SpecificExtra.Vagabot (DC).DescRanger',
   };
 
-  public customData = {
-
+  public customData: {
+    chosenVaga: string;
+    currentSuit: string;
+    satchelItems: Record<string, number>;
+    decree: Record<string, number>;
+    buildings: boolean[];
+  } = {
     chosenVaga: '',
 
     currentSuit: 'bird',
@@ -89,10 +88,10 @@ export class VagaBotDC extends Bot {
       fox: 0,
       mouse: 0,
       bunny: 0,
-      bird: 0
+      bird: 0,
     },
 
-    buildings: []
+    buildings: [],
   };
 
   private actions(vaga: VagaBotDC, translate: TranslateService) {
@@ -114,8 +113,12 @@ ${canBeModified && vaga.hasTrait('Adventurer') ? translate.instant('SpecificDayl
 
       battle() {
         const target = vaga.hasTrait('Berserker')
-          ? translate.instant('SpecificDaylight.Vagabot (DC).ActionBattleTargetBerserker')
-          : translate.instant('SpecificDaylight.Vagabot (DC).ActionBattleTarget');
+          ? translate.instant(
+              'SpecificDaylight.Vagabot (DC).ActionBattleTargetBerserker',
+            )
+          : translate.instant(
+              'SpecificDaylight.Vagabot (DC).ActionBattleTarget',
+            );
 
         return `
 ${translate.instant('SpecificDaylight.Vagabot (DC).ActionBattle', { target })}
@@ -134,66 +137,76 @@ ${translate.instant('SpecificDaylight.Vagabot (DC).ActionSpecial')}
 
 ${translate.instant('SpecificExtra.Vagabot (DC).Special' + vaga.customData.chosenVaga)}
         `;
-      }
+      },
     };
   }
 
   public setup(): void {
-
+    // Intentional empty hook for subclasses
   }
 
   public birdsong(translate: TranslateService) {
     return [
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Vagabot (DC).RevealOrder`)),
-      this.createMetaData('score', 1, translate.instant(`SpecificBirdsong.Vagabot (DC).CraftOrder`)),
-      this.createMetaData('text', '', translate.instant(`SpecificBirdsong.Vagabot (DC).RestOrder`))
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Vagabot (DC).RevealOrder`),
+      ),
+      this.createMetaData(
+        'score',
+        1,
+        translate.instant(`SpecificBirdsong.Vagabot (DC).CraftOrder`),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant(`SpecificBirdsong.Vagabot (DC).RestOrder`),
+      ),
     ];
   }
 
   public daylight(translate: TranslateService) {
     const actions = this.actions(this, translate);
 
-    let base = [];
+    let base: ReturnType<VagaBotDC['createMetaData']>[];
 
     switch (this.customData.currentSuit) {
-      case 'fox':   { 
-                      base = [
-                              this.createMetaData('text', '', actions.explore()),  
-                              this.createMetaData('text', '', actions.special()), 
-                              this.createMetaData('score', 1, actions.battle())
-                      ];                  
-                      break; 
-                    }
-      case 'bunny': { 
-                      base = [
-                              this.createMetaData('text', '', actions.special()),  
-                              this.createMetaData('text', '', actions.aid()),     
-                              this.createMetaData('score', 1, actions.battle())
-                      ];                  
-                      break; 
-                    }
-      case 'mouse': { 
-                      base = [
-                              this.createMetaData('score', 2, actions.quest()),    
-                              this.createMetaData('text', '', actions.aid()),     
-                              this.createMetaData('score', 1, actions.battle())
-                      ];                  
-                      break; 
-                    }
-      default:      { 
-                      base = [
-                              this.createMetaData('text', '', actions.explore()),  
-                              this.createMetaData('score', 2, actions.quest()),   
-                              this.createMetaData('score', 1, actions.battle())
-                      ];                  
-                      break; 
-                    }
+      case 'fox': {
+        base = [
+          this.createMetaData('text', '', actions.explore()),
+          this.createMetaData('text', '', actions.special()),
+          this.createMetaData('score', 1, actions.battle()),
+        ];
+        break;
+      }
+      case 'bunny': {
+        base = [
+          this.createMetaData('text', '', actions.special()),
+          this.createMetaData('text', '', actions.aid()),
+          this.createMetaData('score', 1, actions.battle()),
+        ];
+        break;
+      }
+      case 'mouse': {
+        base = [
+          this.createMetaData('score', 2, actions.quest()),
+          this.createMetaData('text', '', actions.aid()),
+          this.createMetaData('score', 1, actions.battle()),
+        ];
+        break;
+      }
+      default: {
+        base = [
+          this.createMetaData('text', '', actions.explore()),
+          this.createMetaData('score', 2, actions.quest()),
+          this.createMetaData('score', 1, actions.battle()),
+        ];
+        break;
+      }
     }
 
     if (this.hasTrait('Adventurer')) {
-      base.push(
-        this.createMetaData('score', 2, actions.quest(true))
-      );
+      base.push(this.createMetaData('score', 2, actions.quest(true)));
     }
 
     return base;
@@ -216,14 +229,35 @@ ${translate.instant('SpecificExtra.Vagabot (DC).Special' + vaga.customData.chose
     }
 
     const base = [
-      this.createMetaData('text', '', translate.instant('SpecificEvening.Vagabot (DC).Refresh', { itemRefreshMin, itemRefreshMax })),
-      this.createMetaData('text', '', translate.instant('SpecificEvening.Vagabot (DC).Forest', { itemRepairs })),
-      this.createMetaData('text', '', translate.instant('SpecificEvening.Vagabot (DC).Discard'))
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant('SpecificEvening.Vagabot (DC).Refresh', {
+          itemRefreshMin,
+          itemRefreshMax,
+        }),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant('SpecificEvening.Vagabot (DC).Forest', {
+          itemRepairs,
+        }),
+      ),
+      this.createMetaData(
+        'text',
+        '',
+        translate.instant('SpecificEvening.Vagabot (DC).Discard'),
+      ),
     ];
 
     if (this.difficulty === 'Nightmare') {
       base.push(
-        this.createMetaData('score', 1, translate.instant('SpecificEvening.Vagabot (DC).NightmareScore'))
+        this.createMetaData(
+          'score',
+          1,
+          translate.instant('SpecificEvening.Vagabot (DC).NightmareScore'),
+        ),
       );
     }
 

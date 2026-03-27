@@ -487,7 +487,7 @@
       "ActionExplore": "Muévete a la ruina mas cercana, entonces agota un objeto para coger un objeto de esa ruina",
       "ActionQuest": "Muévete al claro mas cercano correspondiente a la misión, agotando un objeto por movimiento. Entonces agota dos objetos cualesquiera para descartar la misión y obtener 2 PV. _(ignora el texto de la carta)_. A continuación, revela una nueva misión.",
       "ActionQuestRepeat": "Repite esto tantas veces como sea posible.",
-      "ActionAid": "Mueve al claro más cercano que contenga piezas de un jugador con cualquier número de objetos si es posible. Entonces, agota un objeto para coger uno de sus objetos y ponlo en tu hatillo. Obtén **vp:1** y roba una carta.<br>_(**Hay más de un jugador elegible**)_: Si varios jugadores tienen piezas a igual distancia, escoge al jugador con una menor puntuación.",      
+      "ActionAid": "Mueve al claro más cercano que contenga piezas de un jugador con cualquier número de objetos si es posible. Entonces, agota un objeto para coger uno de sus objetos y ponlo en tu hatillo. Obtén **vp:1** y roba una carta.<br>_(**Hay más de un jugador elegible**)_: Si varios jugadores tienen piezas a igual distancia, escoge al jugador con una menor puntuación.",
       "ActionBattle": "Muévete al claro más cercano con alguna pieza del enemigo que tenga más {{target}}, agotando un objeto por movimiento. Entonces agota un objeto para batallar contra ese jugador. Obtén **vp:1** por cada guerrero enemigo que retires.",
       "ActionBattleTarget": "PV",
       "ActionBattleTargetBerserker": "piezas",

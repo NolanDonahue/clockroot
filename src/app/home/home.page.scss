@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+ion-content {
+  --padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+
+// Fill the main (router) column; ion-split-pane leaves only part of the viewport for this page.
+ion-content ion-list {
+  width: 100%;
+}
+
+// ion-item’s inner flex layout often shrink-wraps the default slot; bot components then sit at ~partial width.
+ion-content ion-list ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-end: 0;
+  width: 100%;
+}
+
+ion-content ion-list ion-item > * {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}

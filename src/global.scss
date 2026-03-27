@@ -10,74 +10,88 @@
  */
 
 /* Core CSS required for Ionic components to work properly */
-@import "~@ionic/angular/css/core.css";
+@import '@ionic/angular/css/core.css';
 
 /* Basic CSS for apps built with Ionic */
-@import "~@ionic/angular/css/normalize.css";
-@import "~@ionic/angular/css/structure.css";
-@import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import '@ionic/angular/css/normalize.css';
+@import '@ionic/angular/css/structure.css';
+@import '@ionic/angular/css/typography.css';
+@import '@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
+@import '@ionic/angular/css/padding.css';
+@import '@ionic/angular/css/float-elements.css';
+@import '@ionic/angular/css/text-alignment.css';
+@import '@ionic/angular/css/text-transformation.css';
+@import '@ionic/angular/css/flex-utils.css';
 
 // plain
 @font-face {
-  font-family: "Libre Baskerville";
-  src: url("/assets/fonts/LibreBaskerville-Regular.eot");
-  src: url("/assets/fonts/LibreBaskerville-Regular.eot?#iefix") format('embedded-opentype'),
-       url("/assets/fonts/LibreBaskerville-Regular.woff2") format('woff2'),
-       url("/assets/fonts/LibreBaskerville-Regular.woff") format('woff'),
-       url("/assets/fonts/LibreBaskerville-Regular.ttf") format('truetype');
+  font-family: 'Libre Baskerville';
+  src: url('/assets/fonts/LibreBaskerville-Regular.eot');
+  src:
+    url('/assets/fonts/LibreBaskerville-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+    url('/assets/fonts/LibreBaskerville-Regular.woff') format('woff'),
+    url('/assets/fonts/LibreBaskerville-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 /* italic */
 @font-face {
-  font-family: "Libre Baskerville";
-  src: url("/assets/fonts/LibreBaskerville-Italic.eot");
-  src: url("/assets/fonts/LibreBaskerville-Italic.eot?#iefix") format('embedded-opentype'),
-       url("/assets/fonts/LibreBaskerville-Italic.woff2") format('woff2'),
-       url("/assets/fonts/LibreBaskerville-Italic.woff") format('woff'),
-       url("/assets/fonts/LibreBaskerville-Italic.ttf") format('truetype');
+  font-family: 'Libre Baskerville';
+  src: url('/assets/fonts/LibreBaskerville-Italic.eot');
+  src:
+    url('/assets/fonts/LibreBaskerville-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/LibreBaskerville-Italic.woff2') format('woff2'),
+    url('/assets/fonts/LibreBaskerville-Italic.woff') format('woff'),
+    url('/assets/fonts/LibreBaskerville-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 /* bold */
 @font-face {
-  font-family: "Libre Baskerville";
-  src: url("/assets/fonts/LibreBaskerville-Bold.eot");
-  src: url("/assets/fonts/LibreBaskerville-Bold.eot?#iefix") format('embedded-opentype'),
-       url("/assets/fonts/LibreBaskerville-Bold.woff2") format('woff2'),
-       url("/assets/fonts/LibreBaskerville-Bold.woff") format('woff'),
-       url("/assets/fonts/LibreBaskerville-Bold.ttf") format('truetype');
+  font-family: 'Libre Baskerville';
+  src: url('/assets/fonts/LibreBaskerville-Bold.eot');
+  src:
+    url('/assets/fonts/LibreBaskerville-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/LibreBaskerville-Bold.woff2') format('woff2'),
+    url('/assets/fonts/LibreBaskerville-Bold.woff') format('woff'),
+    url('/assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 * {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
-ion-toolbar, ion-content, ion-router-outlet, .popover-content, .alert-wrapper, .show-modal {
-  --background: url("/assets/background.png") repeat;
+ion-toolbar,
+ion-content,
+ion-router-outlet,
+.popover-content,
+.alert-wrapper,
+.show-modal {
+  --background: url('/assets/background.png') repeat;
 }
 
 ion-router-outlet {
-  background: url("/assets/background.png") repeat;
+  background: url('/assets/background.png') repeat;
 }
 
 ion-list {
-  --ion-item-background: url("/assets/background.png") repeat;
+  --ion-item-background: url('/assets/background.png') repeat;
 }
 
-ion-list:not(.no-pointer) ion-item, ion-button, ion-radio, .flip-icon {
+ion-list:not(.no-pointer) ion-item,
+ion-button,
+ion-radio,
+.flip-icon {
   cursor: pointer;
 }
 
@@ -109,7 +123,8 @@ ion-label {
   display: inline !important;
 }
 
-.flip-front, .flip-back {
+.flip-front,
+.flip-back {
   cursor: pointer;
 }
 
@@ -142,8 +157,8 @@ ion-label {
   margin-bottom: 5px;
 }
 
-p.paragraph {
-  display: inline; 
+.paragraph {
+  display: inline;
   width: fit-content;
 }
 
@@ -187,7 +202,7 @@ p.paragraph {
   justify-content: center;
 
   &.wrap {
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
   }
 
   .flip-container {
@@ -206,27 +221,26 @@ p.paragraph {
       position: relative;
 
       .flip-front {
-  
         display: flex;
         justify-content: center;
         align-items: center;
-  
+
         width: 100%;
         height: 100%;
 
         position: absolute;
         top: 0;
         left: 0;
-  
+
         font-size: 2rem;
-  
-        border: 3px solid #CC6E31;
+
+        border: 3px solid #cc6e31;
 
         &.token {
           border-radius: 50%;
         }
       }
-  
+
       .flip-back.hidden {
         visibility: hidden;
       }
@@ -252,4 +266,13 @@ ion-button.transparent {
 
 ion-toast {
   --button-color: var(--ion-color-light);
+}
+
+ion-list.no-pointer ion-item {
+  width: 98%;
+  margin: 0 auto;
+}
+ion-list.no-pointer ion-item ion-card {
+  border: 1px solid rgba(var(--ion-color-dark-rgb), 0.15);
+  border-radius: 10px;
 }

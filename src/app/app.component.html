@@ -1,6 +1,6 @@
 <ion-app>
-  <ion-split-pane contentId="main" [disabled]="botService.bots.length === 0">
-    <ion-menu contentId="main">
+  <ion-split-pane content-id="main" [disabled]="botService.splitPaneDisabled()">
+    <ion-menu content-id="main">
       <ion-header>
         <ion-toolbar>
           <ion-title>
@@ -11,9 +11,10 @@
 
       <ion-content>
         <ion-list lines="none" class="preserve-padding ion-no-padding">
-          <ion-item color="primary"
-                    href="https://ledergames.com/collections/full-catalog"
-                    target="_blank"
+          <ion-item
+            color="primary"
+            href="https://ledergames.com/collections/full-catalog"
+            target="_blank"
           >
             <div class="plug">
               {{ 'LederPlug' | translate }}
@@ -21,28 +22,57 @@
           </ion-item>
 
           <ion-menu-toggle autoHide="false">
-            <ng-container *ngFor="let bot of botService.bots">
-              <ion-item color="transparent"
-                        class="bot"
-                        (click)="botService.goToBot(bot.name)">
-                        <img class="inline-icon ion-margin-end" [src]="'assets/inicon/faction-' + botService.botMeta[bot.name].icon + '.png'" />
-                        {{ 'Factions.' + botService.botMeta[bot.name].fullName | translate }}
-                        <em class="ion-margin-start" *ngIf="!bot.setupHidden">({{ 'NeedsSetup' | translate }})</em>
+            @for (bot of botService.menuBots(); track bot) {
+              <ion-item
+                color="transparent"
+                class="bot"
+                (click)="botService.goToBot(bot.name)"
+              >
+                <img
+                  class="inline-icon ion-margin-end"
+                  [src]="
+                    'assets/inicon/faction-' +
+                    botService.botMeta[bot.name].icon +
+                    '.png'
+                  "
+                  [attr.alt]="
+                    'Factions.' + botService.botMeta[bot.name].fullName
+                      | translate
+                  "
+                />
+                {{
+                  'Factions.' + botService.botMeta[bot.name].fullName
+                    | translate
+                }}
+                @if (!bot.setupHidden) {
+                  <em class="ion-margin-start"
+                    >({{ 'NeedsSetup' | translate }})</em
+                  >
+                }
               </ion-item>
-            </ng-container>
+            }
             <ion-item (click)="botService.showPriorities()">
               <div class="inline-icon ion-margin-end"></div>
-                {{ 'PriorityMaps' | translate }}
+              {{ 'PriorityMaps' | translate }}
             </ion-item>
           </ion-menu-toggle>
 
           <ion-item class="language">
             <ion-label>Language</ion-label>
-            <ion-select placeholder="Select Language" (ionChange)="languageChange()" [(ngModel)]="language">
-              <ion-select-option value="en-US">English (verified)</ion-select-option>
+            <ion-select
+              placeholder="Select Language"
+              (ionChange)="languageChange()"
+              [(ngModel)]="language"
+              [interfaceOptions]="{ header: 'Language' }"
+            >
+              <ion-select-option value="en-US"
+                >English (verified)</ion-select-option
+              >
               <ion-select-option value="fr-FR">Français</ion-select-option>
               <ion-select-option value="es-ES">Español</ion-select-option>
-              <ion-select-option value="de-DE">Niederländisch</ion-select-option>
+              <ion-select-option value="de-DE"
+                >Niederländisch</ion-select-option
+              >
               <ion-select-option value="ja-JP">日本語</ion-select-option>
               <ion-select-option value="ko-KR">한국어</ion-select-option>
               <ion-select-option value="nl-NL">Nederlands</ion-select-option>
@@ -52,32 +82,47 @@
               <ion-select-option value="zh-CN">中文</ion-select-option>
             </ion-select>
           </ion-item>
-          </ion-list>
+        </ion-list>
 
-              <div class="inline-icon ion-margin-end"></div>
-                <ion-title>
-                  {{ 'GlobalSettings' | translate }}
-                </ion-title>
-            
-              <ion-list classname="preserve-padding ion-no-padding">
+        <div class="inline-icon ion-margin-end"></div>
+        <ion-title>
+          {{ 'GlobalSettings' | translate }}
+        </ion-title>
 
+        <ion-list class="preserve-padding ion-no-padding">
           <ion-item class="difficulty">
             <ion-label>Set All Difficulties</ion-label>
-            <ion-select [value]="selectedDifficulty" (ionChange)="changeAllDifficulties($event.detail.value)">
+            <ion-select
+              class="select-wrapper"
+              [value]="selectedDifficulty"
+              (ionChange)="changeAllDifficulties($event.detail.value)"
+            >
               <ion-select-option value="Easy">Easy</ion-select-option>
               <ion-select-option value="Normal">Normal</ion-select-option>
-              <ion-select-option value="Challenging">Challenging</ion-select-option>
+              <ion-select-option value="Challenging"
+                >Challenging</ion-select-option
+              >
               <ion-select-option value="Nightmare">Nightmare</ion-select-option>
             </ion-select>
           </ion-item>
-                
-                <ion-item class="difficulty" (click)="difficultyRandom()" button detail="false">
-                  <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon> <ion-label>Randomize Difficulties</ion-label>
-                </ion-item>
+
+          <ion-item
+            class="difficulty"
+            (click)="difficultyRandom()"
+            button
+            detail="false"
+          >
+            <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon>
+            <ion-label>Randomize Difficulties</ion-label>
+          </ion-item>
 
           <ion-item class="traits">
             <ion-label>Traits to Randomize</ion-label>
-            <ion-select [value]="selectedTraitCount" (ionChange)="selectedTraitCount = $event.detail.value">
+            <ion-select
+              class="select-wrapper"
+              [value]="selectedTraitCount"
+              (ionChange)="selectedTraitCount = $event.detail.value"
+            >
               <ion-select-option [value]="0">None</ion-select-option>
               <ion-select-option [value]="1">1 Trait</ion-select-option>
               <ion-select-option [value]="2">2 Traits</ion-select-option>
@@ -87,17 +132,24 @@
             </ion-select>
           </ion-item>
 
-          <ion-item class="traits" (click)="setTrait(selectedTraitCount)" button detail="false">
-            <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon> <ion-label>Randomize Traits</ion-label>
+          <ion-item
+            class="traits"
+            (click)="setTrait(selectedTraitCount)"
+            button
+            detail="false"
+          >
+            <ion-icon class="random-icon" name="shuffle" slot="end"></ion-icon>
+            <ion-label>Randomize Traits</ion-label>
           </ion-item>
-              
-            </ion-list>
-              
-          <h2 class="ion-text-center call-to-action">Want to contribute?<br>Check out the <a href="https://github.com/Vagabottos/clockroot">GitHub repo!</a></h2>
-        </ion-content>
-      </ion-menu>
-      
-    <ion-router-outlet id="main"></ion-router-outlet>
+        </ion-list>
 
+        <h2 class="ion-text-center call-to-action">
+          Want to contribute?<br />Check out the
+          <a href="https://github.com/Vagabottos/clockroot">GitHub repo!</a>
+        </h2>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>
