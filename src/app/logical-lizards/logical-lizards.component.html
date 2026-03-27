@@ -238,13 +238,17 @@
                             bot.customData.buildings[building.suit][num]
                           "
                           (click)="toggleBuilding(building.suit, num)"
+                          (keyup.enter)="toggleBuilding(building.suit, num)"
+                        tabindex="0"
                         />
 
                         @if (bot.customData.buildings[building.suit][num]) {
                           <div
                             class="flip-front"
                             (click)="toggleBuilding(building.suit, num)"
-                          >
+                            (keyup.enter)="toggleBuilding(building.suit, num)"
+                          
+                        tabindex="0">
                             +{{ num === 1 ? 2 : num }}
                           </div>
                         }
@@ -400,27 +404,26 @@
       </ion-item>
     </ng-container>
   }
+  @if (bot.setupHidden) {
+    <ng-container>
+      <ion-item>
+        <ion-card>
+          <ion-card-header>
+            <h2 class="birdsong-has-buttons">
+              {{ 'Sections.RulesLizard' | translate }}
+            </h2>
+          </ion-card-header>
+          <ion-card-content>
+            <ol>
+              @for (message of extraMessages; track $index) {
+                <li class="rule-message">
+                  <app-para [bot]="bot" [metadata]="message"></app-para>
+                </li>
+              }
+            </ol>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ng-container>
+  }
 </ion-list>
-
-@if (bot.setupHidden) {
-  <ng-container>
-    <ion-item>
-      <ion-card>
-        <ion-card-header>
-          <h2 class="birdsong-has-buttons">
-            {{ 'Sections.RulesLizard' | translate }}
-          </h2>
-        </ion-card-header>
-        <ion-card-content>
-          <ol>
-            @for (message of extraMessages; track $index) {
-              <li class="rule-message">
-                <app-para [bot]="bot" [metadata]="message"></app-para>
-              </li>
-            }
-          </ol>
-        </ion-card-content>
-      </ion-card>
-    </ion-item>
-  </ng-container>
-}

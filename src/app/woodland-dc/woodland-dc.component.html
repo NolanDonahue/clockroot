@@ -224,13 +224,17 @@
                       class="flip-back"
                       [class.transparent]="bot.customData.sympathy[num]"
                       (click)="toggleSympathy(num)"
+                      (keyup.enter)="toggleSympathy(num)"
+                    tabindex="0"
                     />
 
                     @if (bot.customData.sympathy[num]) {
                       <div
                         class="flip-front token"
                         (click)="toggleSympathy(num)"
-                      >
+                        (keyup.enter)="toggleSympathy(num)"
+                      
+                        tabindex="0">
                         +{{ sympathyScores[num] }}
                       </div>
                     }
@@ -249,13 +253,17 @@
                       class="flip-back"
                       [class.transparent]="bot.customData.buildings[suit]"
                       (click)="toggleBuilding(suit)"
+                      (keyup.enter)="toggleBuilding(suit)"
+                    tabindex="0"
                     />
 
                     @if (bot.customData.buildings[suit]) {
                       <div
                         class="flip-front"
                         (click)="toggleBuilding(suit)"
-                      ></div>
+                        (keyup.enter)="toggleBuilding(suit)"
+                      
+                        tabindex="0"></div>
                     }
                   </div>
                 </div>

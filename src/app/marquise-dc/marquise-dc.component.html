@@ -241,13 +241,17 @@
                             bot.customData.buildings[building.suit][num]
                           "
                           (click)="toggleBuilding(building.suit, num)"
+                          (keyup.enter)="toggleBuilding(building.suit, num)"
+                        tabindex="0"
                         />
 
                         @if (bot.customData.buildings[building.suit][num]) {
                           <div
                             class="flip-front"
                             (click)="toggleBuilding(building.suit, num)"
-                          >
+                            (keyup.enter)="toggleBuilding(building.suit, num)"
+                          
+                        tabindex="0">
                             +{{ num }}
                           </div>
                         }

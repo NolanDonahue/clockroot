@@ -246,12 +246,15 @@
                       class="flip-back"
                       [class.transparent]="bot.customData.buildings[num]"
                       (click)="toggleBuilding(num)"
+                      (keyup.enter)="toggleBuilding(num)"
+                    tabindex="0"
                     />
 
                     @if (bot.customData.buildings[num]) {
                       <div
                         class="flip-front"
                         (click)="toggleBuilding(num)"
+                        (keyup.enter)="toggleBuilding(num)"
                         (keydown.enter)="toggleBuilding(num)"
                         tabindex="0"
                         role="button"

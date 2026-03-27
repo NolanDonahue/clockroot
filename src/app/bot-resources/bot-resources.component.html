@@ -31,6 +31,8 @@
                   'flip-back': !bot.items[item],
                 }"
                 (click)="toggleItem(item)"
+                (keyup.enter)="toggleItem(item)"
+              tabindex="0"
               />
             </div>
           }

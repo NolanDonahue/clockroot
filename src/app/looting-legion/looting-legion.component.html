@@ -219,7 +219,9 @@
                   <div
                     class="flip-icon hoard-container"
                     (click)="removeHoardItem($event, num)"
-                  >
+                    (keyup.enter)="removeHoardItem($event, num)"
+                  
+                        tabindex="0">
                     @if (bot.customData.hoardItems[num]) {
                       <img
                         [src]="
@@ -246,6 +248,8 @@
                       alt=""
                       class="flip-front hoard-item"
                       (click)="addHoardItems($event, item)"
+                      (keyup.enter)="addHoardItems($event, item)"
+                    tabindex="0"
                     />
                   </div>
                 </div>

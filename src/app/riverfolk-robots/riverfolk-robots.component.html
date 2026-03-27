@@ -243,13 +243,17 @@
                             bot.customData.buildings[building.suit][num]
                           "
                           (click)="toggleBuilding(building.suit, num)"
+                          (keyup.enter)="toggleBuilding(building.suit, num)"
+                        tabindex="0"
                         />
 
                         @if (bot.customData.buildings[building.suit][num]) {
                           <div
                             class="flip-front"
                             (click)="toggleBuilding(building.suit, num)"
-                          >
+                            (keyup.enter)="toggleBuilding(building.suit, num)"
+                          
+                        tabindex="0">
                             +{{ num }}
                           </div>
                         }
@@ -267,8 +271,10 @@
               <div
                 class="protectionism-row"
                 (click)="toggleProtectionism(true)"
+                (keyup.enter)="toggleProtectionism(true)"
                 [class.swayed]="bot.customData.protectionismShield"
-              >
+              
+                        tabindex="0">
                 <img
                   src="assets/inicon/protectionism-shield.png"
                   alt=""
@@ -293,8 +299,10 @@
               <div
                 class="protectionism-row"
                 (click)="toggleProtectionism(false)"
+                (keyup.enter)="toggleProtectionism(false)"
                 [class.swayed]="bot.customData.protectionismSword"
-              >
+              
+                        tabindex="0">
                 <img
                   src="assets/inicon/protectionism-sword.png"
                   alt=""

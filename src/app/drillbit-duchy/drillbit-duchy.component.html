@@ -221,6 +221,8 @@
                           alt=""
                           [class.transparent]="!bot.customData.citadels[num]"
                           (click)="toggleTracker('citadels', num)"
+                          (keyup.enter)="toggleTracker('citadels', num)"
+                        tabindex="0"
                         />
 
                         @if (!bot.customData.citadels[num]) {
@@ -252,6 +254,8 @@
                         alt=""
                         [class.transparent]="!bot.customData.markets[num]"
                         (click)="toggleTracker('markets', num)"
+                        (keyup.enter)="toggleTracker('markets', num)"
+                      tabindex="0"
                       />
                     }
                   </div>
@@ -264,6 +268,8 @@
                         alt=""
                         [class.transparent]="!bot.customData.tunnels[num]"
                         (click)="toggleTracker('tunnels', num)"
+                        (keyup.enter)="toggleTracker('tunnels', num)"
+                      tabindex="0"
                       />
                     }
                   </div>
@@ -306,8 +312,10 @@
                   <div
                     class="minister-row"
                     (click)="toggleMinister(i)"
+                    (keyup.enter)="toggleMinister(i)"
                     [class.swayed]="minister.swayed"
-                  >
+                  
+                        tabindex="0">
                     <img
                       [src]="'assets/inicon/card-' + minister.suit + '.png'"
                       alt=""

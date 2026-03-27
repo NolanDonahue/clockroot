@@ -294,13 +294,17 @@
                         bot.customData.satchelItems[item.key] !== 1
                       "
                       (click)="toggleSatchelItem(item.key)"
+                      (keyup.enter)="toggleSatchelItem(item.key)"
+                    tabindex="0"
                     />
 
                     @if (bot.customData.satchelItems[item.key] === 0) {
                       <div
                         class="flip-front"
                         (click)="toggleSatchelItem(item.key)"
-                      >
+                        (keyup.enter)="toggleSatchelItem(item.key)"
+                      
+                        tabindex="0">
                         <div class="label">
                           {{
                             'SpecificExtra.Vagabot (DC).SatchelExhausted'
@@ -314,7 +318,9 @@
                       <div
                         class="flip-front damaged"
                         (click)="toggleSatchelItem(item.key)"
-                      >
+                        (keyup.enter)="toggleSatchelItem(item.key)"
+                      
+                        tabindex="0">
                         <div class="label">
                           {{
                             'SpecificExtra.Vagabot (DC).SatchelDamaged'
@@ -328,7 +334,9 @@
                       <div
                         class="flip-front"
                         (click)="toggleSatchelItem(item.key)"
-                      >
+                        (keyup.enter)="toggleSatchelItem(item.key)"
+                      
+                        tabindex="0">
                         <div class="label">
                           {{
                             'SpecificExtra.Vagabot (DC).SatchelBattleTrack'

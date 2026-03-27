@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { CorvidBot } from '../models/corvid';
 import { BotService } from '../bot.service';
 import { TranslateService, TranslatePipe } from '@ngx-translate/core';

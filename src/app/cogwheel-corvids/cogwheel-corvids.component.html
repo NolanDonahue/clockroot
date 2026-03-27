@@ -228,7 +228,7 @@
                   (click)="modifyPlot(-1, $event)"
                 >
                   <ion-icon name="remove"></ion-icon>
-                </ion-button>
+              </ion-button>
                 <ion-button
                   [disabled]="bot.customData.stowedPlots >= 7"
                   (click)="modifyPlot(1, $event)"
@@ -251,6 +251,8 @@
                         bot.customData.plots[plot.type][token] === false
                       "
                       (click)="cyclePlot(plot.type, token)"
+                      (keyup.enter)="cyclePlot(plot.type, token)"
+                    tabindex="0"
                     />
                   }
                 </div>
@@ -340,45 +342,44 @@
       </ion-item>
     </ng-container>
   }
+  @if (bot.setupHidden) {
+    <ng-container>
+      <ion-item>
+        <ion-card>
+          <ion-card-header>
+            <h2 class="birdsong-has-buttons">
+              {{ 'Sections.BotRules' | translate }}
+            </h2>
+          </ion-card-header>
+          <ion-card-content>
+            <h4>
+              {{
+                'SpecificExtra.Cogwheel Corvids.Plot-Tokens.Overview' | translate
+              }}
+            </h4>
+            <ol>
+              @for (message of plotRuleMessages; track $index) {
+                <li class="rule-message">
+                  <app-para [bot]="bot" [metadata]="message"></app-para>
+                </li>
+              }
+            </ol>
+            <h4>
+              {{
+                'SpecificExtra.Cogwheel Corvids.BotInteractions.Overview'
+                  | translate
+              }}
+            </h4>
+            <ol>
+              @for (message of botRuleMessages; track $index) {
+                <li class="rule-message">
+                  <app-para [bot]="bot" [metadata]="message"></app-para>
+                </li>
+              }
+            </ol>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ng-container>
+  }
 </ion-list>
-
-@if (bot.setupHidden) {
-  <ng-container>
-    <ion-item>
-      <ion-card>
-        <ion-card-header>
-          <h2 class="birdsong-has-buttons">
-            {{ 'Sections.BotRules' | translate }}
-          </h2>
-        </ion-card-header>
-        <ion-card-content>
-          <h4>
-            {{
-              'SpecificExtra.Cogwheel Corvids.Plot-Tokens.Overview' | translate
-            }}
-          </h4>
-          <ol>
-            @for (message of plotRuleMessages; track $index) {
-              <li class="rule-message">
-                <app-para [bot]="bot" [metadata]="message"></app-para>
-              </li>
-            }
-          </ol>
-          <h4>
-            {{
-              'SpecificExtra.Cogwheel Corvids.BotInteractions.Overview'
-                | translate
-            }}
-          </h4>
-          <ol>
-            @for (message of botRuleMessages; track $index) {
-              <li class="rule-message">
-                <app-para [bot]="bot" [metadata]="message"></app-para>
-              </li>
-            }
-          </ol>
-        </ion-card-content>
-      </ion-card>
-    </ion-item>
-  </ng-container>
-}
